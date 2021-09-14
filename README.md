@@ -7,16 +7,22 @@ Drop Troops Codex
 [![Contributors](https://img.shields.io/github/contributors/brendanmint/drooptroops-battlescribe.svg?style=flat-square)](https://github.combrendanmint/drooptroops-battlescribe/graphs/contributors)
 [![Commit activity the past year](https://img.shields.io/github/commit-activity/y/brendanmint/drooptroops-battlescribe.svg?style=flat-square)](https://github.com/brendanmint/drooptroops-battlescribe/pulse/monthly)
 
+#### Contents ####
+
+* [Overview][]
+* [Links][]
+
 ## Overview ##
+[Overview]: #overview
 
 __What's this?__
 
-Drop Troop Codex Distribution Test
+The Drop Troop Codex is a fanmade Codex for Warhammer 40,000 and has been written and compiled by the community of the Elysian Drop Troop Command discord.
 
 ## Links ##
+[Links]: #links
 
-* [BSData organization homepage][BSData.net]
-* [BattleScribe app homepage](https://www.battlescribe.net/)
+* [Elysian Drop Troops Command Discord][]
+* 
+[Elysian Drop Troops Command Discord]: https://discord.gg/VBHqShKV3T
 
-[BSData.net]: https://www.bsdata.net/
-[bug report]: https://github.com/BSData/TemplateDataRepo/issues/new/choose
