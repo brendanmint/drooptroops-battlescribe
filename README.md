@@ -23,6 +23,6 @@ The Drop Troop Codex is a fanmade Codex for Warhammer 40,000 and has been writte
 [Links]: #links
 
 * [Elysian Drop Troops Command Discord][]
-* 
+
 [Elysian Drop Troops Command Discord]: https://discord.gg/VBHqShKV3T
 
