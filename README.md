@@ -7,8 +7,6 @@ Drop Troops Codex
 [![Contributors](https://img.shields.io/github/contributors/brendanmint/drooptroops-battlescribe.svg?style=flat-square)](https://github.combrendanmint/drooptroops-battlescribe/graphs/contributors)
 [![Commit activity the past year](https://img.shields.io/github/commit-activity/y/brendanmint/drooptroops-battlescribe.svg?style=flat-square)](https://github.com/brendanmint/drooptroops-battlescribe/pulse/monthly)
 
-[![Elysian Drop Troop Command Discord](https://img.shields.io/discord/558412685981777922.svg?logo=discord&style=popout-square)](https://discord.gg/VBHqShKV3T)
-
 ## Overview ##
 
 __What's this?__
