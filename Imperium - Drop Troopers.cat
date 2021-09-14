@@ -533,15 +533,6 @@
         </modifier>
       </modifiers>
     </entryLink>
-    <entryLink id="22a2-4917-8ade-2f26" name="Captain Vivian" page="" hidden="false" collective="false" import="true" targetId="9136-51d7-544e-e710" type="selectionEntry">
-      <modifiers>
-        <modifier type="set" field="hidden" value="true">
-          <conditions>
-            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2c85-48bf-2c2c-b1c4" type="lessThan"/>
-          </conditions>
-        </modifier>
-      </modifiers>
-    </entryLink>
   </entryLinks>
   <rules>
     <rule id="1dc1-9250-821b-0b35" name="Death from Above" publicationId="cd8f-3e55-003e-b580" page="89" hidden="false">
@@ -9821,12 +9812,12 @@ If this model is destroyed, set up the Named Ace within 6&quot; of thid model in
         <cost name="pts" typeId="points" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="9136-51d7-544e-e710" name="Captain Vivian" hidden="false" collective="false" import="true" type="model">
+    <selectionEntry id="9136-51d7-544e-e710" name="Flight Captain Vivian" hidden="false" collective="false" import="true" type="model">
       <constraints>
         <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="012b-9244-1d40-e2e6" type="max"/>
       </constraints>
       <profiles>
-        <profile id="45d4-0ad9-aad9-e40c" name="Captain Vivian" hidden="false" typeId="800f-21d0-4387-c943" typeName="Unit">
+        <profile id="45d4-0ad9-aad9-e40c" name="Flight Captain Vivian" hidden="false" typeId="800f-21d0-4387-c943" typeName="Unit">
           <characteristics>
             <characteristic name="M" typeId="0bdf-a96e-9e38-7779">6&quot;</characteristic>
             <characteristic name="WS" typeId="e7f0-1278-0250-df0c">4+</characteristic>
