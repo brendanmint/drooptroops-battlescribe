@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="77d7-28cc-6700-0b8c" name="Imperium - Drop Troopers" revision="43" battleScribeVersion="2.03" authorName="SwampyTurtle, Wizard, Etansnail, Brendanmint" authorContact="Elysian discord: https://discord.gg/47u9YjKxYN" library="false" gameSystemId="28ec-711c-d87f-3aeb" gameSystemRevision="192" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="77d7-28cc-6700-0b8c" name="Imperium - Drop Troopers" revision="44" battleScribeVersion="2.03" authorName="SwampyTurtle, Wizard, Etansnail, Brendanmint" authorContact="Elysian discord: https://discord.gg/47u9YjKxYN" library="false" gameSystemId="28ec-711c-d87f-3aeb" gameSystemRevision="192" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <readme>Version 0.2.3</readme>
   <publications>
     <publication id="cd8f-3e55-003e-b580" name="Codex: Drop Troopers"/>
@@ -4560,7 +4560,7 @@ If this model is destroyed, set up Captain Vivian within 6&quot; of thid model i
       </entryLinks>
       <costs>
         <cost name="pts" typeId="points" value="30.0"/>
-        <cost name=" PL" typeId="e356-c769-5920-6e14" value="0.0"/>
+        <cost name=" PL" typeId="e356-c769-5920-6e14" value="2.0"/>
         <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0.0"/>
       </costs>
     </selectionEntry>
@@ -7636,6 +7636,7 @@ If a AIRCRAFT model being commanded by a Named Pilot is destroyed, set up this m
         <infoLink id="f268-2ce2-5ba1-0a5a" name="Supersonic" hidden="false" targetId="aa7d-5bde-eff9-b3c4" type="profile"/>
         <infoLink id="87b0-1805-204c-81a0" name="Grav-chute Insertion" hidden="false" targetId="8e0a-e616-dd20-f363" type="profile"/>
         <infoLink id="cc2f-97a1-394e-57d6" name="Aerial Drop" hidden="false" targetId="5aa1-7d07-f879-1fd5" type="profile"/>
+        <infoLink id="0d69-bd95-8c4d-1fb1" name="Heavy bolter" hidden="false" targetId="e2b0-b9f1-6c38-584c" type="profile"/>
       </infoLinks>
       <categoryLinks>
         <categoryLink id="51b4-66a3-8f17-43e1" name="Fly" hidden="false" targetId="3117-16d8-fcef-4f56" primary="false"/>
@@ -7651,15 +7652,6 @@ If a AIRCRAFT model being commanded by a Named Pilot is destroyed, set up this m
       </categoryLinks>
       <entryLinks>
         <entryLink id="fcdd-5228-b396-52e0" name="Valkyrie Wing Mounted Weapons" hidden="false" collective="false" import="true" targetId="d00a-34fd-c492-6a09" type="selectionEntryGroup"/>
-        <entryLink id="c70e-0163-9380-f286" name="Heavy bolter" hidden="false" collective="false" import="true" targetId="05ab-e7cc-e856-c36f" type="selectionEntry">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c520-5bc7-1e9a-b498" type="min"/>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6662-84ff-e4b9-fca1" type="max"/>
-          </constraints>
-          <costs>
-            <cost name="pts" typeId="points" value="15.0"/>
-          </costs>
-        </entryLink>
         <entryLink id="b982-cd45-9a30-315f" name="Advanced Countermeasures" hidden="false" collective="false" import="true" targetId="552f-a743-bbf4-2701" type="selectionEntry"/>
         <entryLink id="dfc3-f40a-91e6-13ca" name="Drop Troops - Aircraft Equipment List" hidden="false" collective="false" import="true" targetId="4e6c-1d7a-fc71-5556" type="selectionEntryGroup"/>
         <entryLink id="b44f-90a7-2700-1c56" name="Named Ace (Trait)" hidden="false" collective="false" import="true" targetId="785b-8fae-1c8c-f088" type="selectionEntry"/>
@@ -8872,6 +8864,7 @@ If this model is destroyed, set up the Named Ace within 6&quot; of thid model in
         <infoLink id="a9f8-1a2e-44e5-8307" name="Hard to Hit" hidden="false" targetId="6efc-4f0e-f41b-7374" type="profile"/>
         <infoLink id="73c8-b11a-22c5-9315" name="Supersonic" hidden="false" targetId="aa7d-5bde-eff9-b3c4" type="profile"/>
         <infoLink id="3ec0-49f5-988d-f284" name="Aerial Drop" hidden="false" targetId="5aa1-7d07-f879-1fd5" type="profile"/>
+        <infoLink id="cd31-2daf-cfbf-8f43" name="Heavy bolter" hidden="false" targetId="e2b0-b9f1-6c38-584c" type="profile"/>
       </infoLinks>
       <categoryLinks>
         <categoryLink id="ff30-1843-9b6f-d46e" name="Fly" hidden="false" targetId="3117-16d8-fcef-4f56" primary="false"/>
@@ -8907,9 +8900,10 @@ If this model is destroyed, set up the Named Ace within 6&quot; of thid model in
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="52d9-2aa9-52d2-00ac" type="max"/>
               </constraints>
               <entryLinks>
-                <entryLink id="7ad5-9cee-9505-481f" name="Punisher Gatling Cannon" hidden="false" collective="false" import="true" targetId="3ee3-74ec-d970-9b43" type="selectionEntry">
+                <entryLink id="c24e-cf4b-9dca-87fc" name="Punisher Gatling Cannon" hidden="false" collective="false" import="true" targetId="3ee3-74ec-d970-9b43" type="selectionEntry">
                   <constraints>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5d74-ee00-8245-3d5f" type="max"/>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a71d-618c-6ae8-222a" type="min"/>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="dab2-3ca2-4489-0a2b" type="max"/>
                   </constraints>
                 </entryLink>
               </entryLinks>
@@ -8953,15 +8947,6 @@ If this model is destroyed, set up the Named Ace within 6&quot; of thid model in
         </selectionEntryGroup>
       </selectionEntryGroups>
       <entryLinks>
-        <entryLink id="64aa-47f2-5f06-f15c" name="Heavy bolter" hidden="false" collective="false" import="true" targetId="05ab-e7cc-e856-c36f" type="selectionEntry">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8d4b-76aa-2e8d-bcf0" type="min"/>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a053-306e-8f72-9563" type="max"/>
-          </constraints>
-          <costs>
-            <cost name="pts" typeId="points" value="15.0"/>
-          </costs>
-        </entryLink>
         <entryLink id="7b25-39aa-69d4-2bb7" name="Drop Troops - Aircraft Equipment List" hidden="false" collective="false" import="true" targetId="4e6c-1d7a-fc71-5556" type="selectionEntryGroup"/>
         <entryLink id="b5f4-ba68-1594-4585" name="Named Ace (Trait)" hidden="false" collective="false" import="true" targetId="785b-8fae-1c8c-f088" type="selectionEntry"/>
         <entryLink id="ff49-af8e-0660-1f68" name="Ace Pilots - Aircraft" hidden="false" collective="false" import="true" targetId="335a-d6da-8c3f-2af6" type="selectionEntryGroup"/>
@@ -10958,31 +10943,21 @@ discard the lowest result.</characteristic>
           <conditionGroups>
             <conditionGroup type="and">
               <conditions>
-                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ae09-117e-a6fa-316b" type="equalTo"/>
-                <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d4f1-80a6-2416-a5dc" type="equalTo"/>
-                <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="6426-dc8f-4f58-ffe2" type="equalTo"/>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="ae09-117e-a6fa-316b" type="equalTo"/>
+                <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="d4f1-80a6-2416-a5dc" type="equalTo"/>
+                <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="6426-dc8f-4f58-ffe2" type="equalTo"/>
               </conditions>
             </conditionGroup>
           </conditionGroups>
         </modifier>
         <modifier type="increment" field="70b6-a2c0-44fa-006b" value="1.0">
           <conditions>
-            <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="2bf2-b1d7-916c-4252" type="atLeast"/>
+            <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="2bf2-b1d7-916c-4252" type="equalTo"/>
           </conditions>
         </modifier>
         <modifier type="increment" field="70b6-a2c0-44fa-006b" value="1.0">
           <conditions>
-            <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="95bf-7199-9fa0-01b5" type="equalTo"/>
-          </conditions>
-        </modifier>
-        <modifier type="increment" field="70b6-a2c0-44fa-006b" value="1.0">
-          <conditions>
-            <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="9136-51d7-544e-e710" type="equalTo"/>
-          </conditions>
-        </modifier>
-        <modifier type="set" field="9ce0-887f-182c-f399" value="1.0">
-          <conditions>
-            <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="4380-7508-05fa-db5d" type="equalTo"/>
+            <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="3c9d-4a64-b6ad-ac92" type="equalTo"/>
           </conditions>
         </modifier>
       </modifiers>
