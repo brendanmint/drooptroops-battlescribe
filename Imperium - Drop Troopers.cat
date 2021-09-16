@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="77d7-28cc-6700-0b8c" name="Imperium - Drop Troopers" revision="42" battleScribeVersion="2.03" authorName="SwampyTurtle, Wizard, Etansnail, Brendanmint" authorContact="Elysian discord: https://discord.gg/47u9YjKxYN" library="false" gameSystemId="28ec-711c-d87f-3aeb" gameSystemRevision="192" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="77d7-28cc-6700-0b8c" name="Imperium - Drop Troopers" revision="43" battleScribeVersion="2.03" authorName="SwampyTurtle, Wizard, Etansnail, Brendanmint" authorContact="Elysian discord: https://discord.gg/47u9YjKxYN" library="false" gameSystemId="28ec-711c-d87f-3aeb" gameSystemRevision="192" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <readme>Version 0.2.3</readme>
   <publications>
     <publication id="cd8f-3e55-003e-b580" name="Codex: Drop Troopers"/>
@@ -1368,7 +1368,6 @@
           <entryLinks>
             <entryLink id="4cd4-2b8b-db5b-fed4" name="Sentinel Options" hidden="false" collective="false" import="true" targetId="08bd-b1c0-21df-3486" type="selectionEntryGroup"/>
             <entryLink id="1009-3eea-4097-3827" name="Sentinel Weapons" hidden="false" collective="false" import="true" targetId="c424-6405-ed56-0806" type="selectionEntryGroup"/>
-            <entryLink id="fef0-74a7-db7a-4027" name="Regimental Equipment" hidden="false" collective="false" import="true" targetId="2069-2957-c832-e5c5" type="selectionEntryGroup"/>
           </entryLinks>
           <costs>
             <cost name=" PL" typeId="e356-c769-5920-6e14" value="3.0"/>
@@ -2119,7 +2118,7 @@
       <modifiers>
         <modifier type="set" field="e356-c769-5920-6e14" value="8.0">
           <conditions>
-            <condition field="selections" scope="parent" value="5.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="model" type="greaterThan"/>
+            <condition field="selections" scope="parent" value="6.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="model" type="atLeast"/>
           </conditions>
         </modifier>
       </modifiers>
@@ -5914,7 +5913,7 @@ If this model is destroyed, set up Captain Vivian within 6&quot; of thid model i
         <categoryLink id="4b70-7ccc-d2ad-f41f" name="Faction: Drop Troops" hidden="false" targetId="7740-5f32-8c61-c1ff" primary="false"/>
       </categoryLinks>
       <selectionEntries>
-        <selectionEntry id="34b8-7dcc-d2f7-145b" name="Drop Trooper" hidden="false" collective="false" import="true" type="upgrade">
+        <selectionEntry id="34b8-7dcc-d2f7-145b" name="Drop Trooper" hidden="false" collective="false" import="true" type="model">
           <constraints>
             <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="5dc6-8cbc-6d12-b4e3" type="max"/>
             <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="23bf-29c0-0cbf-f191" type="min"/>
@@ -5942,7 +5941,7 @@ If this model is destroyed, set up Captain Vivian within 6&quot; of thid model i
             <cost name="pts" typeId="points" value="0.0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry id="c379-5fe5-00b4-7db0" name="Drop Trooper w/ Special Weapon" hidden="false" collective="false" import="true" type="upgrade">
+        <selectionEntry id="c379-5fe5-00b4-7db0" name="Drop Trooper w/ Special Weapon" hidden="false" collective="false" import="true" type="model">
           <constraints>
             <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="f59c-6b27-e9e1-90b6" type="min"/>
             <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="1c12-be91-6570-c3c2" type="max"/>
@@ -7893,7 +7892,7 @@ If a AIRCRAFT model being commanded by a Named Pilot is destroyed, set up this m
                 <cost name="pts" typeId="points" value="0.0"/>
               </costs>
             </selectionEntry>
-            <selectionEntry id="5655-bf25-85d1-6e87" name="Recon Trooper w/ Demolition Charge" hidden="false" collective="false" import="true" type="upgrade">
+            <selectionEntry id="5655-bf25-85d1-6e87" name="Recon Trooper w/ Demolition Charge" hidden="false" collective="false" import="true" type="model">
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8f8b-80c1-80df-618b" type="max"/>
               </constraints>
@@ -7921,7 +7920,7 @@ If a AIRCRAFT model being commanded by a Named Pilot is destroyed, set up this m
                 <cost name="pts" typeId="points" value="0.0"/>
               </costs>
             </selectionEntry>
-            <selectionEntry id="5ae8-6c60-6a1f-5cd3" name="Recon Trooper w/ Special Weapon" hidden="false" collective="false" import="true" type="upgrade">
+            <selectionEntry id="5ae8-6c60-6a1f-5cd3" name="Recon Trooper w/ Special Weapon" hidden="false" collective="false" import="true" type="model">
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9ecc-d1fe-447b-8e21" type="max"/>
               </constraints>
@@ -7952,7 +7951,7 @@ If a AIRCRAFT model being commanded by a Named Pilot is destroyed, set up this m
                 <cost name="pts" typeId="points" value="0.0"/>
               </costs>
             </selectionEntry>
-            <selectionEntry id="ef4c-b7d0-de22-977d" name="Recon Trooper w/ Auxilary Grenade Launcher" hidden="false" collective="false" import="true" type="upgrade">
+            <selectionEntry id="ef4c-b7d0-de22-977d" name="Recon Trooper w/ Auxilary Grenade Launcher" hidden="false" collective="false" import="true" type="model">
               <modifiers>
                 <modifier type="set" field="6055-236d-3d10-3a74" value="0.0">
                   <conditions>
@@ -7985,7 +7984,7 @@ If a AIRCRAFT model being commanded by a Named Pilot is destroyed, set up this m
                 <cost name="pts" typeId="points" value="3.0"/>
               </costs>
             </selectionEntry>
-            <selectionEntry id="72a7-cd1c-c924-f164" name="Recon Trooper Vox Operator" hidden="false" collective="false" import="true" type="upgrade">
+            <selectionEntry id="72a7-cd1c-c924-f164" name="Recon Trooper Vox Operator" hidden="false" collective="false" import="true" type="model">
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="4a23-55e9-1be0-673a" type="max"/>
               </constraints>
