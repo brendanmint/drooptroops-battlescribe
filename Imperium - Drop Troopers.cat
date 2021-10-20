@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="77d7-28cc-6700-0b8c" name="Imperium - Drop Troopers" revision="50" battleScribeVersion="2.03" authorName="SwampyTurtle, Wizard, Etansnail, Brendanmint" authorContact="Elysian discord: https://discord.gg/47u9YjKxYN" library="false" gameSystemId="28ec-711c-d87f-3aeb" gameSystemRevision="192" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="77d7-28cc-6700-0b8c" name="Imperium - Drop Troopers" revision="51" battleScribeVersion="2.03" authorName="SwampyTurtle, Wizard, Etansnail, Brendanmint" authorContact="Elysian discord: https://discord.gg/47u9YjKxYN" library="false" gameSystemId="28ec-711c-d87f-3aeb" gameSystemRevision="192" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <readme>Codex Version 0.2.3</readme>
   <publications>
     <publication id="cd8f-3e55-003e-b580" name="Codex: Drop Troopers"/>
@@ -9996,6 +9996,9 @@ If the Valkyrie model being commanded by a Captain Vivian is destroyed, set up t
       </costs>
     </selectionEntry>
     <selectionEntry id="afd8-907d-39b2-4a24" name="Dual Bolt pistols" hidden="false" collective="false" import="true" type="upgrade">
+      <modifiers>
+        <modifier type="set" field="points" value="2.0"/>
+      </modifiers>
       <infoLinks>
         <infoLink id="1cd7-cad4-8a96-fa1f" name="Bolt pistol" hidden="false" targetId="e6d5-677a-d8ed-f6a5" type="profile"/>
       </infoLinks>
@@ -10006,6 +10009,9 @@ If the Valkyrie model being commanded by a Captain Vivian is destroyed, set up t
       </costs>
     </selectionEntry>
     <selectionEntry id="8d4c-2afa-1770-a35c" name="Dual Hot-shot laspistols" hidden="false" collective="false" import="true" type="upgrade">
+      <modifiers>
+        <modifier type="set" field="points" value="2.0"/>
+      </modifiers>
       <infoLinks>
         <infoLink id="146a-2aa7-53cb-a2a9" name="Hot-shot Laspistol" hidden="false" targetId="4609-79eb-7505-68a5" type="profile"/>
       </infoLinks>
@@ -10016,6 +10022,9 @@ If the Valkyrie model being commanded by a Captain Vivian is destroyed, set up t
       </costs>
     </selectionEntry>
     <selectionEntry id="6288-9d6c-9271-abeb" name="Dual Laspistols" hidden="false" collective="false" import="true" type="upgrade">
+      <modifiers>
+        <modifier type="set" field="points" value="0.0"/>
+      </modifiers>
       <infoLinks>
         <infoLink id="3b19-9bb9-cde4-c498" name="Laspistol" hidden="false" targetId="f2b7-768f-a270-de64" type="profile"/>
       </infoLinks>
@@ -10026,6 +10035,9 @@ If the Valkyrie model being commanded by a Captain Vivian is destroyed, set up t
       </costs>
     </selectionEntry>
     <selectionEntry id="0af8-9f26-4c7e-e118" name="Dual Plasma pistols" hidden="false" collective="false" import="true" type="upgrade">
+      <modifiers>
+        <modifier type="set" field="points" value="10.0"/>
+      </modifiers>
       <infoLinks>
         <infoLink id="03c9-168b-3991-d267" name="Plasma pistol, Standard" hidden="false" targetId="ff12-161a-ca85-339f" type="profile"/>
         <infoLink id="6267-74dd-75e5-e291" name="Plasma pistol, Supercharge" hidden="false" targetId="5779-2931-fe17-2b27" type="profile"/>
@@ -12205,7 +12217,7 @@ discard the lowest result.</characteristic>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d309-2cc3-e8b9-b777" type="max"/>
           </constraints>
           <costs>
-            <cost name="pts" typeId="points" value="1.0"/>
+            <cost name="pts" typeId="points" value="2.0"/>
           </costs>
         </entryLink>
         <entryLink id="61be-aab0-7510-e412" name="Dual Hot-shot laspistols" hidden="false" collective="false" import="true" targetId="8d4c-2afa-1770-a35c" type="selectionEntry">
@@ -12213,23 +12225,20 @@ discard the lowest result.</characteristic>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f245-ce14-751b-d5c9" type="max"/>
           </constraints>
           <costs>
-            <cost name="pts" typeId="points" value="1.0"/>
+            <cost name="pts" typeId="points" value="2.0"/>
           </costs>
         </entryLink>
         <entryLink id="95d5-3df7-8743-b028" name="Dual Laspistols" hidden="false" collective="false" import="true" targetId="6288-9d6c-9271-abeb" type="selectionEntry">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="cbbb-5755-3e9d-8922" type="max"/>
           </constraints>
-          <costs>
-            <cost name="pts" typeId="points" value="1.0"/>
-          </costs>
         </entryLink>
         <entryLink id="2a22-9cea-9bec-4d05" name="Dual Plasma pistols" hidden="false" collective="false" import="true" targetId="0af8-9f26-4c7e-e118" type="selectionEntry">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1a05-6d03-3ef4-f1cd" type="max"/>
           </constraints>
           <costs>
-            <cost name="pts" typeId="points" value="1.0"/>
+            <cost name="pts" typeId="points" value="10.0"/>
           </costs>
         </entryLink>
       </entryLinks>
@@ -12503,7 +12512,7 @@ discard the lowest result.</characteristic>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="09f8-12d1-aa99-cfc1" type="max"/>
           </constraints>
           <costs>
-            <cost name="pts" typeId="points" value="1.0"/>
+            <cost name="pts" typeId="points" value="2.0"/>
           </costs>
         </entryLink>
         <entryLink id="5f91-e2d7-99af-04a1" name="Dual Hot-shot laspistols" hidden="false" collective="false" import="true" targetId="8d4c-2afa-1770-a35c" type="selectionEntry">
@@ -12511,23 +12520,20 @@ discard the lowest result.</characteristic>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ffa9-bd30-0def-8908" type="max"/>
           </constraints>
           <costs>
-            <cost name="pts" typeId="points" value="1.0"/>
+            <cost name="pts" typeId="points" value="2.0"/>
           </costs>
         </entryLink>
         <entryLink id="393b-e5ee-d12e-1eb3" name="Dual Laspistols" hidden="false" collective="false" import="true" targetId="6288-9d6c-9271-abeb" type="selectionEntry">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="83ba-ecfa-a27d-1258" type="max"/>
           </constraints>
-          <costs>
-            <cost name="pts" typeId="points" value="1.0"/>
-          </costs>
         </entryLink>
         <entryLink id="359c-4c2a-f0b7-d551" name="Dual Plasma pistols" hidden="false" collective="false" import="true" targetId="0af8-9f26-4c7e-e118" type="selectionEntry">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6996-1e45-d8cb-14a8" type="max"/>
           </constraints>
           <costs>
-            <cost name="pts" typeId="points" value="1.0"/>
+            <cost name="pts" typeId="points" value="10.0"/>
           </costs>
         </entryLink>
       </entryLinks>
@@ -12623,7 +12629,7 @@ discard the lowest result.</characteristic>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e4ab-b0d7-386b-3e63" type="max"/>
           </constraints>
           <costs>
-            <cost name="pts" typeId="points" value="1.0"/>
+            <cost name="pts" typeId="points" value="10.0"/>
           </costs>
         </entryLink>
         <entryLink id="5a05-e21c-fcf8-e2cc" name="Dual Laspistols" hidden="false" collective="false" import="true" targetId="6288-9d6c-9271-abeb" type="selectionEntry">
@@ -12924,23 +12930,20 @@ discard the lowest result.</characteristic>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="447a-1c67-aa31-505f" type="max"/>
           </constraints>
           <costs>
-            <cost name="pts" typeId="points" value="1.0"/>
+            <cost name="pts" typeId="points" value="10.0"/>
           </costs>
         </entryLink>
         <entryLink id="3326-9652-cc22-8734" name="Dual Laspistols" hidden="false" collective="false" import="true" targetId="6288-9d6c-9271-abeb" type="selectionEntry">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b53d-42a5-a927-d5b8" type="max"/>
           </constraints>
-          <costs>
-            <cost name="pts" typeId="points" value="1.0"/>
-          </costs>
         </entryLink>
         <entryLink id="3740-6d2e-e614-d912" name="Dual Hot-shot laspistols" hidden="false" collective="false" import="true" targetId="8d4c-2afa-1770-a35c" type="selectionEntry">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3d36-66db-f360-91c8" type="max"/>
           </constraints>
           <costs>
-            <cost name="pts" typeId="points" value="1.0"/>
+            <cost name="pts" typeId="points" value="2.0"/>
           </costs>
         </entryLink>
         <entryLink id="1ecd-bab2-688d-e4e3" name="Dual Bolt pistols" hidden="false" collective="false" import="true" targetId="afd8-907d-39b2-4a24" type="selectionEntry">
@@ -12948,7 +12951,7 @@ discard the lowest result.</characteristic>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b18d-246c-0373-68a2" type="max"/>
           </constraints>
           <costs>
-            <cost name="pts" typeId="points" value="1.0"/>
+            <cost name="pts" typeId="points" value="2.0"/>
           </costs>
         </entryLink>
       </entryLinks>
@@ -15076,7 +15079,7 @@ discard the lowest result.</characteristic>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f30c-a018-641b-6faf" type="max"/>
           </constraints>
           <costs>
-            <cost name="pts" typeId="points" value="1.0"/>
+            <cost name="pts" typeId="points" value="2.0"/>
           </costs>
         </entryLink>
         <entryLink id="a62a-8218-e97b-c2e0" name="Dual Hot-shot laspistols" hidden="false" collective="false" import="true" targetId="8d4c-2afa-1770-a35c" type="selectionEntry">
@@ -15084,23 +15087,20 @@ discard the lowest result.</characteristic>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ebdc-a596-f4b6-cb36" type="max"/>
           </constraints>
           <costs>
-            <cost name="pts" typeId="points" value="1.0"/>
+            <cost name="pts" typeId="points" value="2.0"/>
           </costs>
         </entryLink>
         <entryLink id="badc-39a7-960a-a21b" name="Dual Laspistols" hidden="false" collective="false" import="true" targetId="6288-9d6c-9271-abeb" type="selectionEntry">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="42cb-c386-51b7-e73f" type="max"/>
           </constraints>
-          <costs>
-            <cost name="pts" typeId="points" value="1.0"/>
-          </costs>
         </entryLink>
         <entryLink id="656b-6224-b32f-01fb" name="Dual Plasma pistols" hidden="false" collective="false" import="true" targetId="0af8-9f26-4c7e-e118" type="selectionEntry">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="aec8-12cf-d08a-4369" type="max"/>
           </constraints>
           <costs>
-            <cost name="pts" typeId="points" value="1.0"/>
+            <cost name="pts" typeId="points" value="10.0"/>
           </costs>
         </entryLink>
       </entryLinks>
