@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="77d7-28cc-6700-0b8c" name="Imperium - Drop Troopers" revision="48" battleScribeVersion="2.03" authorName="SwampyTurtle, Wizard, Etansnail, Brendanmint" authorContact="Elysian discord: https://discord.gg/47u9YjKxYN" library="false" gameSystemId="28ec-711c-d87f-3aeb" gameSystemRevision="192" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="77d7-28cc-6700-0b8c" name="Imperium - Drop Troopers" revision="50" battleScribeVersion="2.03" authorName="SwampyTurtle, Wizard, Etansnail, Brendanmint" authorContact="Elysian discord: https://discord.gg/47u9YjKxYN" library="false" gameSystemId="28ec-711c-d87f-3aeb" gameSystemRevision="192" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <readme>Codex Version 0.2.3</readme>
   <publications>
     <publication id="cd8f-3e55-003e-b580" name="Codex: Drop Troopers"/>
@@ -5150,7 +5150,12 @@ If this model is destroyed, set up Captain Vivian within 6&quot; of thid model i
         <categoryLink id="c96e-a0aa-672d-f900" name="Faction: &lt;DROP REGIMENT&gt;" hidden="false" targetId="5347-52d6-a64c-7945" primary="false"/>
       </categoryLinks>
       <entryLinks>
-        <entryLink id="9f93-5a0e-735e-f8ce" name="Laspistol" hidden="false" collective="false" import="true" targetId="c10b-e1a4-c913-ae15" type="selectionEntry"/>
+        <entryLink id="9f93-5a0e-735e-f8ce" name="Laspistol" hidden="false" collective="false" import="true" targetId="c10b-e1a4-c913-ae15" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f0ea-a167-93b4-88a1" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7e63-9155-a6f8-71ec" type="min"/>
+          </constraints>
+        </entryLink>
         <entryLink id="7566-5825-bf2f-a8ec" name="Relics" hidden="false" collective="false" import="true" targetId="58ce-55c6-222f-0640" type="selectionEntryGroup"/>
         <entryLink id="d858-ea9c-aa34-d016" name="Regimental Equipment" hidden="false" collective="false" import="true" targetId="2069-2957-c832-e5c5" type="selectionEntryGroup"/>
         <entryLink id="ca2c-ebf9-fc30-c431" name="Frag &amp; Krak grenades" hidden="false" collective="false" import="true" targetId="cddf-945e-1335-e681" type="selectionEntry">
@@ -8990,7 +8995,7 @@ If this model is destroyed, set up the Named Ace within 6&quot; of thid model in
                   <costs>
                     <cost name=" PL" typeId="e356-c769-5920-6e14" value="0.0"/>
                     <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0.0"/>
-                    <cost name="pts" typeId="points" value="0.0"/>
+                    <cost name="pts" typeId="points" value="70.0"/>
                   </costs>
                 </selectionEntry>
               </selectionEntries>
@@ -14743,7 +14748,7 @@ discard the lowest result.</characteristic>
           <profiles>
             <profile id="035f-a373-0920-ccf8" name="Digital Weapons" hidden="false" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Abilities">
               <characteristics>
-                <characteristic name="Description" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">When a model with this Relic fights, it can make 1 additional attack using the close combat weapon profile. When resolvingthat attack, if a hit is scored the target suffers 1 mortal wound and the attack sequence ends.</characteristic>
+                <characteristic name="Description" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">When a model with this Relic fights, it can make 1 additional attack using the close combat weapon profile. When resolving that attack, if a hit is scored the target suffers 1 mortal wound and the attack sequence ends.</characteristic>
               </characteristics>
             </profile>
             <profile id="a0d2-2568-6b6a-c42b" name="Close combat weapon" hidden="false" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Weapon">
@@ -14781,7 +14786,7 @@ discard the lowest result.</characteristic>
             <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="bffc-7b42-3bba-8a4a" type="max"/>
           </constraints>
           <profiles>
-            <profile id="663b-c291-af06-1728" name="Digital Weapons" hidden="false" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Abilities">
+            <profile id="663b-c291-af06-1728" name="Xeno Weaponry" hidden="false" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Abilities">
               <characteristics>
                 <characteristic name="Description" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">The owner of this relic may improve the Strength and AP characteristics of one of its&apos; weapons by 1. When using this relic, on a hit roll of 1, the bearer is slain after all of this weapon&apos;s shots have been resolved</characteristic>
               </characteristics>
