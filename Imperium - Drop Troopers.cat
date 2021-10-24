@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="77d7-28cc-6700-0b8c" name="Imperium - Drop Troopers" revision="51" battleScribeVersion="2.03" authorName="SwampyTurtle, Wizard, Etansnail, Brendanmint" authorContact="Elysian discord: https://discord.gg/47u9YjKxYN" library="false" gameSystemId="28ec-711c-d87f-3aeb" gameSystemRevision="192" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="77d7-28cc-6700-0b8c" name="Imperium - Drop Troopers" revision="53" battleScribeVersion="2.03" authorName="SwampyTurtle, Wizard, Etansnail, Brendanmint" authorContact="Elysian discord: https://discord.gg/47u9YjKxYN" library="false" gameSystemId="28ec-711c-d87f-3aeb" gameSystemRevision="194" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <readme>Codex Version 0.2.3</readme>
   <publications>
     <publication id="cd8f-3e55-003e-b580" name="Codex: Drop Troopers"/>
@@ -7670,9 +7670,22 @@ If a AIRCRAFT model being commanded by a Named Pilot is destroyed, set up this m
       </categoryLinks>
       <selectionEntryGroups>
         <selectionEntryGroup id="0c53-ec2b-6aa4-3fe9" name="Armament Options" hidden="false" collective="false" import="true">
-          <infoLinks>
-            <infoLink id="e87d-286d-73e2-6149" name="Heavy bolter" hidden="false" targetId="e2b0-b9f1-6c38-584c" type="profile"/>
-          </infoLinks>
+          <selectionEntries>
+            <selectionEntry id="77ea-a014-f218-59da" name="Nose mounted heavy bolter" hidden="false" collective="false" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7ea3-ab62-7f39-4642" type="max"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7be7-c975-7b64-496a" type="min"/>
+              </constraints>
+              <infoLinks>
+                <infoLink id="5546-c8f6-682e-8e56" name="Heavy bolter" hidden="false" targetId="e2b0-b9f1-6c38-584c" type="profile"/>
+              </infoLinks>
+              <costs>
+                <cost name=" PL" typeId="e356-c769-5920-6e14" value="0.0"/>
+                <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0.0"/>
+                <cost name="pts" typeId="points" value="0.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
           <entryLinks>
             <entryLink id="ef57-9e3a-b7ff-3bf4" name="Valkyrie Wing Mounted Weapons" hidden="false" collective="false" import="true" targetId="d00a-34fd-c492-6a09" type="selectionEntryGroup"/>
           </entryLinks>
@@ -8959,9 +8972,22 @@ If this model is destroyed, set up the Named Ace within 6&quot; of thid model in
       </categoryLinks>
       <selectionEntryGroups>
         <selectionEntryGroup id="56f2-95b3-9bcf-b1eb" name="Armament Options" hidden="false" collective="false" import="true">
-          <infoLinks>
-            <infoLink id="541d-e07f-76dc-3162" name="Heavy bolter" hidden="false" targetId="e2b0-b9f1-6c38-584c" type="profile"/>
-          </infoLinks>
+          <selectionEntries>
+            <selectionEntry id="7252-b62a-8742-3e71" name="Nose mounted heavy bolter" hidden="false" collective="false" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="dc76-484c-bb6f-b231" type="max"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0a2a-60a2-1970-9000" type="min"/>
+              </constraints>
+              <infoLinks>
+                <infoLink id="4c05-16cc-9b2e-0c0b" name="Heavy bolter" hidden="false" targetId="e2b0-b9f1-6c38-584c" type="profile"/>
+              </infoLinks>
+              <costs>
+                <cost name=" PL" typeId="e356-c769-5920-6e14" value="0.0"/>
+                <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0.0"/>
+                <cost name="pts" typeId="points" value="0.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
           <selectionEntryGroups>
             <selectionEntryGroup id="b1c1-7b18-2b7b-2537" name="Wing Hardpoints" hidden="false" collective="false" import="true">
               <modifierGroups>
@@ -12413,22 +12439,6 @@ discard the lowest result.</characteristic>
       <constraints>
         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b9f9-e48d-f226-f552" type="max"/>
       </constraints>
-      <selectionEntries>
-        <selectionEntry id="1948-7404-00cb-a300" name="Two Plasma pistols" hidden="false" collective="false" import="true" type="upgrade">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5ba9-f8c4-5ff5-4b63" type="max"/>
-          </constraints>
-          <infoLinks>
-            <infoLink id="4c65-61df-672f-e544" name="Plasma pistol, Standard" hidden="false" targetId="ff12-161a-ca85-339f" type="profile"/>
-            <infoLink id="3e16-9ce4-49bb-e273" name="Plasma pistol, Supercharge" hidden="false" targetId="5779-2931-fe17-2b27" type="profile"/>
-          </infoLinks>
-          <costs>
-            <cost name=" PL" typeId="e356-c769-5920-6e14" value="0.0"/>
-            <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0.0"/>
-            <cost name="pts" typeId="points" value="10.0"/>
-          </costs>
-        </selectionEntry>
-      </selectionEntries>
       <entryLinks>
         <entryLink id="5de4-5d8a-27cc-b9f4" name="Bolt pistol" hidden="false" collective="false" import="true" targetId="0334-f487-8229-0c1a" type="selectionEntry">
           <constraints>
