@@ -8819,18 +8819,14 @@ If this model is destroyed, set up the Named Ace within 6&quot; of thid model in
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e70c-1054-067c-6e2c" type="max"/>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c743-fc47-6b55-c272" type="min"/>
               </constraints>
-              <profiles>
-                <profile id="dffc-83d3-b444-c74e" name="Vendetta Twin Lascannon" hidden="false" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Weapon">
-                  <characteristics>
-                    <characteristic name="Range" typeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464">48&quot;</characteristic>
-                    <characteristic name="Type" typeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2">Heavy 2</characteristic>
-                    <characteristic name="S" typeId="59b1-319e-ec13-d466">9</characteristic>
-                    <characteristic name="AP" typeId="75aa-a838-b675-6484">-3</characteristic>
-                    <characteristic name="D" typeId="ae8a-3137-d65b-4ca7">D6</characteristic>
-                    <characteristic name="Abilities" typeId="837d-5e63-aeb7-1410">-</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
+              <entryLinks>
+                <entryLink id="db8e-722d-1866-bfbf" name="Twin lascannon" hidden="false" collective="true" import="true" targetId="ee18-b1cd-6b60-464d" type="selectionEntry">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f1e8-5824-9749-e339" type="max"/>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e074-c95e-2ee4-1fb7" type="min"/>
+                  </constraints>
+                </entryLink>
+              </entryLinks>
               <costs>
                 <cost name=" PL" typeId="e356-c769-5920-6e14" value="0.0"/>
                 <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0.0"/>
@@ -8849,18 +8845,14 @@ If this model is destroyed, set up the Named Ace within 6&quot; of thid model in
                   <constraints>
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8756-272d-cde2-afb2" type="max"/>
                   </constraints>
-                  <profiles>
-                    <profile id="5bc7-f9dd-cece-d605" name="Vendetta twin lascannon" hidden="false" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Weapon">
-                      <characteristics>
-                        <characteristic name="Range" typeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464">48&quot;</characteristic>
-                        <characteristic name="Type" typeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2">Heavy 2</characteristic>
-                        <characteristic name="S" typeId="59b1-319e-ec13-d466">9</characteristic>
-                        <characteristic name="AP" typeId="75aa-a838-b675-6484">-3</characteristic>
-                        <characteristic name="D" typeId="ae8a-3137-d65b-4ca7">D6</characteristic>
-                        <characteristic name="Abilities" typeId="837d-5e63-aeb7-1410">-</characteristic>
-                      </characteristics>
-                    </profile>
-                  </profiles>
+                  <entryLinks>
+                    <entryLink id="4a88-0d26-2459-4f91" name="Twin lascannon" hidden="false" collective="true" import="true" targetId="ee18-b1cd-6b60-464d" type="selectionEntry">
+                      <constraints>
+                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="10ec-b7e7-1c02-ae1a" type="max"/>
+                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d5e7-687c-28ab-dc39" type="min"/>
+                      </constraints>
+                    </entryLink>
+                  </entryLinks>
                   <costs>
                     <cost name=" PL" typeId="e356-c769-5920-6e14" value="0.0"/>
                     <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0.0"/>
