@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="77d7-28cc-6700-0b8c" name="Imperium - Drop Troopers" revision="55" battleScribeVersion="2.03" authorName="SwampyTurtle, Wizard, Etansnail, Brendanmint" authorContact="Elysian discord: https://discord.gg/47u9YjKxYN" library="false" gameSystemId="28ec-711c-d87f-3aeb" gameSystemRevision="199" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
-  <readme>Codex Version 0.2.3</readme>
+<catalogue id="77d7-28cc-6700-0b8c" name="Imperium - Drop Troopers" revision="56" battleScribeVersion="2.03" authorName="SwampyTurtle, Wizard, Etansnail, Brendanmint(battlescribe)" authorContact="Elysian Drop Troop Command Discord: https://discord.gg/47u9YjKxYN" library="false" gameSystemId="28ec-711c-d87f-3aeb" gameSystemRevision="200" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+  <readme>Codex Version 0.2.4</readme>
   <publications>
     <publication id="cd8f-3e55-003e-b580" name="Codex: Drop Troopers"/>
   </publications>
@@ -2506,7 +2506,7 @@
               <profiles>
                 <profile id="cbd0-33ef-189a-5055" name="Airborne Assault" hidden="false" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Abilities">
                   <characteristics>
-                    <characteristic name="Description" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">The airborne assault mission allows the Stormtrooper squad to be deployed at more than 3” from enemy units when using the Aerial Drop ability butcannot declare a charge. Additionally at the end of the player turn this unit was deployed, if it is holding an objective, gain 1 CP.</characteristic>
+                    <characteristic name="Description" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">The airborne assault mission allows the Stormtrooper squad to be deployed at more than 5” from enemy units when using the Aerial Drop ability but cannot declare a charge. Additionally at the end of the player turn this unit was deployed, if it is holding an objective, gain 1 CP.</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -7654,6 +7654,11 @@ If a AIRCRAFT model being commanded by a Named Pilot is destroyed, set up this m
             <characteristic name="Save" typeId="c0df-df94-abd7-e8d3">3+</characteristic>
           </characteristics>
         </profile>
+        <profile id="f3d4-4c5b-7e1a-2f73" name="Air Bridge" hidden="false" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Abilities">
+          <characteristics>
+            <characteristic name="Description" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">For each Drop Troops TAUROS, SENTINEL or DROP WEAPONS PLATFORM in a Detachment, you can include one Drop Troops VALKYRIE SKY TALON without that unit taking up a battlefield role slot.</characteristic>
+          </characteristics>
+        </profile>
       </profiles>
       <infoLinks>
         <infoLink id="9a2d-b9b5-0013-027b" name="Roving Gunship" hidden="false" targetId="b621-ad04-0c51-5fe4" type="profile"/>
@@ -7710,7 +7715,7 @@ If a AIRCRAFT model being commanded by a Named Pilot is destroyed, set up this m
         <entryLink id="3ae5-4316-5940-516a" name="Regimental Equipment" hidden="false" collective="false" import="true" targetId="2069-2957-c832-e5c5" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
-        <cost name=" PL" typeId="e356-c769-5920-6e14" value="7.0"/>
+        <cost name=" PL" typeId="e356-c769-5920-6e14" value="6.0"/>
         <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0.0"/>
         <cost name="pts" typeId="points" value="90.0"/>
       </costs>
@@ -9340,7 +9345,7 @@ If this model is destroyed, set up the Named Ace within 6&quot; of thid model in
           <costs>
             <cost name=" PL" typeId="e356-c769-5920-6e14" value="0.0"/>
             <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0.0"/>
-            <cost name="pts" typeId="points" value="7.0"/>
+            <cost name="pts" typeId="points" value="12.0"/>
           </costs>
         </selectionEntry>
       </selectionEntries>
@@ -9387,7 +9392,7 @@ If this model is destroyed, set up the Named Ace within 6&quot; of thid model in
               <costs>
                 <cost name=" PL" typeId="e356-c769-5920-6e14" value="0.0"/>
                 <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0.0"/>
-                <cost name="pts" typeId="points" value="7.0"/>
+                <cost name="pts" typeId="points" value="12.0"/>
               </costs>
             </selectionEntry>
             <selectionEntry id="c683-1e96-821b-d8db" name="Veteran w/ Shotgun" hidden="false" collective="false" import="true" type="model">
@@ -9424,7 +9429,7 @@ If this model is destroyed, set up the Named Ace within 6&quot; of thid model in
               <costs>
                 <cost name=" PL" typeId="e356-c769-5920-6e14" value="0.0"/>
                 <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0.0"/>
-                <cost name="pts" typeId="points" value="7.0"/>
+                <cost name="pts" typeId="points" value="12.0"/>
               </costs>
             </selectionEntry>
             <selectionEntry id="7c0a-8197-fc89-bb29" name="Veteran Vox Operator" hidden="false" collective="false" import="true" type="model">
@@ -9481,7 +9486,7 @@ If this model is destroyed, set up the Named Ace within 6&quot; of thid model in
               <costs>
                 <cost name=" PL" typeId="e356-c769-5920-6e14" value="0.0"/>
                 <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0.0"/>
-                <cost name="pts" typeId="points" value="7.0"/>
+                <cost name="pts" typeId="points" value="12.0"/>
               </costs>
             </selectionEntry>
             <selectionEntry id="d72b-4a63-10a9-3db9" name="Veteran w/ Demolition Charge" hidden="false" collective="false" import="true" type="model">
@@ -9526,7 +9531,7 @@ If this model is destroyed, set up the Named Ace within 6&quot; of thid model in
               <costs>
                 <cost name=" PL" typeId="e356-c769-5920-6e14" value="0.0"/>
                 <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0.0"/>
-                <cost name="pts" typeId="points" value="7.0"/>
+                <cost name="pts" typeId="points" value="12.0"/>
               </costs>
             </selectionEntry>
             <selectionEntry id="44e6-b6d1-5302-0065" name="Veteran w/ Special Weapon" hidden="false" collective="false" import="true" type="model">
@@ -9553,7 +9558,7 @@ If this model is destroyed, set up the Named Ace within 6&quot; of thid model in
               <costs>
                 <cost name=" PL" typeId="e356-c769-5920-6e14" value="0.0"/>
                 <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0.0"/>
-                <cost name="pts" typeId="points" value="7.0"/>
+                <cost name="pts" typeId="points" value="12.0"/>
               </costs>
             </selectionEntry>
             <selectionEntry id="848e-e289-6e0e-f596" name="Veteran w/ Heavy Flamer" hidden="false" collective="false" import="true" type="model">
@@ -9580,7 +9585,7 @@ If this model is destroyed, set up the Named Ace within 6&quot; of thid model in
               <costs>
                 <cost name=" PL" typeId="e356-c769-5920-6e14" value="0.0"/>
                 <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0.0"/>
-                <cost name="pts" typeId="points" value="7.0"/>
+                <cost name="pts" typeId="points" value="712.0"/>
               </costs>
             </selectionEntry>
             <selectionEntry id="2c31-8fed-0a35-4b6b" name="Veteran Heavy Weapon Team" hidden="false" collective="false" import="true" type="model">
@@ -9640,7 +9645,7 @@ If this model is destroyed, set up the Named Ace within 6&quot; of thid model in
               <costs>
                 <cost name=" PL" typeId="e356-c769-5920-6e14" value="0.0"/>
                 <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0.0"/>
-                <cost name="pts" typeId="points" value="7.0"/>
+                <cost name="pts" typeId="points" value="12.0"/>
               </costs>
             </selectionEntry>
           </selectionEntries>
@@ -10257,8 +10262,7 @@ INFANTRY units with this doctrine may double the number of attacks they make wit
           <profiles>
             <profile id="6a41-89e9-2f73-069f" name="Armoured Descent" hidden="false" typeId="f57b-7062-2803-745c" typeName="Doctrine">
               <characteristics>
-                <characteristic name="Description" typeId="89dd-0235-cc0b-0ea9">When an INFANTRY model equipped with carapace armour or a VEHICLE with this doctrine loses a wound, on a 6+ that wound is not lost.
-INFANTRY units with this doctrine get access to the Carapace armour equipment</characteristic>
+                <characteristic name="Description" typeId="89dd-0235-cc0b-0ea9">INFANTRY units with this doctrine change their Armour Save to 4+. When a VEHICLE or INFANTRY unit with this doctrine loses a wound, on a 6+ that wound is not lost.</characteristic>
               </characteristics>
             </profile>
             <profile id="b012-4da5-b636-d359" name="Armoured Brawler" hidden="false" typeId="59fb-6c39-2d98-b323" typeName="Stratagem">
@@ -10945,7 +10949,7 @@ discard the lowest result.</characteristic>
           <profiles>
             <profile id="fb25-69d4-519d-14c0" name="Heavy Infantry" hidden="false" typeId="f57b-7062-2803-745c" typeName="Doctrine">
               <characteristics>
-                <characteristic name="Description" typeId="89dd-0235-cc0b-0ea9">INFANTRY units gain access to the Carapace Armour equipment. This doctrine can’t be combined with the Mobile Infantry doctrine.</characteristic>
+                <characteristic name="Description" typeId="89dd-0235-cc0b-0ea9">INFANTRY units with this doctrine change their Armour profile to 4+. This doctrine can’t be combined with the Mobile Infantry doctrine.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -13673,23 +13677,6 @@ discard the lowest result.</characteristic>
       <selectionEntries>
         <selectionEntry id="ec5c-fba8-915c-e225" name="Carapace Armour" hidden="true" collective="false" import="true" type="upgrade">
           <modifiers>
-            <modifier type="set" field="hidden" value="false">
-              <conditionGroups>
-                <conditionGroup type="and">
-                  <conditions>
-                    <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="3d52-fccf-10c0-3fae" type="instanceOf"/>
-                  </conditions>
-                  <conditionGroups>
-                    <conditionGroup type="or">
-                      <conditions>
-                        <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="05da-216d-bd10-ac52" type="atLeast"/>
-                        <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="f080-8eff-5059-4ef4" type="atLeast"/>
-                      </conditions>
-                    </conditionGroup>
-                  </conditionGroups>
-                </conditionGroup>
-              </conditionGroups>
-            </modifier>
             <modifier type="increment" field="092c-1c8d-810d-1430" value="1.0">
               <repeats>
                 <repeat field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="model" repeats="1" roundUp="false"/>
@@ -13704,33 +13691,14 @@ discard the lowest result.</characteristic>
               </conditions>
             </modifier>
           </modifiers>
-          <modifierGroups>
-            <modifierGroup>
-              <conditions>
-                <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="ef18-746a-369f-43a4" type="instanceOf"/>
-              </conditions>
-              <modifiers>
-                <modifier type="set" field="points" value="5.0"/>
-                <modifier type="set" field="name" value="Character Carapace Armour"/>
-              </modifiers>
-            </modifierGroup>
-            <modifierGroup>
-              <conditions>
-                <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="ef18-746a-369f-43a4" type="notInstanceOf"/>
-              </conditions>
-              <modifiers>
-                <modifier type="set" field="points" value="1.0"/>
-                <modifier type="set" field="name" value="Infantry Carapace Armour"/>
-              </modifiers>
-            </modifierGroup>
-          </modifierGroups>
           <constraints>
             <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="092c-1c8d-810d-1430" type="max"/>
+            <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="73ce-551f-743c-f4b8" type="min"/>
           </constraints>
           <profiles>
             <profile id="b144-f605-a4c6-9bf9" name="Carapace Armour" hidden="false" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Abilities">
               <characteristics>
-                <characteristic name="Description" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">Units equipped with carapace armour improve their armour save by 1 (for a maximum of 4+)</characteristic>
+                <characteristic name="Description" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">Units equipped with this change their Armour Save to 4+</characteristic>
               </characteristics>
             </profile>
           </profiles>
