@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="77d7-28cc-6700-0b8c" name="Imperium - Drop Troopers" revision="56" battleScribeVersion="2.03" authorName="SwampyTurtle, Wizard, Etansnail, Brendanmint(battlescribe)" authorContact="Elysian Drop Troop Command Discord: https://discord.gg/47u9YjKxYN" library="false" gameSystemId="28ec-711c-d87f-3aeb" gameSystemRevision="200" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="77d7-28cc-6700-0b8c" name="Imperium - Drop Troopers" revision="57" battleScribeVersion="2.03" authorName="SwampyTurtle, Wizard, Etansnail, Brendanmint(battlescribe)" authorContact="Elysian Drop Troop Command Discord: https://discord.gg/47u9YjKxYN" library="false" gameSystemId="28ec-711c-d87f-3aeb" gameSystemRevision="200" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <readme>Codex Version 0.2.4</readme>
   <publications>
     <publication id="cd8f-3e55-003e-b580" name="Codex: Drop Troopers"/>
@@ -963,7 +963,7 @@
         </profile>
         <profile id="b7a5-0002-8ece-4d11" name="Mounted Commander" hidden="false" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Abilities">
           <characteristics>
-            <characteristic name="Description" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">At the start of the shooting phase, Captain Gerek may issue two orders per turn to the Drop Vehicles under his command. Orders may only be issued to ELYSIAN TAUROS and SENTINEL units within 6” of this model. To issue an order, pick a target unit and choose which order you wish to issue from the Command Vehicle Orders List. A unit may only be affected by one order per turn</characteristic>
+            <characteristic name="Description" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">At the start of the shooting phase, Captain Gerek may issue two orders per turn to the Drop Vehicles under his command. Orders may only be issued to ELYSIAN VEHICLE units (excluding AIRCRAFT units) within 6” of this model. To issue an order, pick a target unit and choose which order you wish to issue from the table below. A unit may only be affected by one order per turn</characteristic>
           </characteristics>
         </profile>
         <profile id="e5d0-2ba3-b356-6cda" name="Captain Gerek" hidden="false" typeId="800f-21d0-4387-c943" typeName="Unit">
@@ -2383,7 +2383,7 @@
                 <infoLink id="bdc2-37d6-4ed0-1ee3" name="Stormtrooper" hidden="false" targetId="ac9c-7e81-78ff-eede" type="profile"/>
               </infoLinks>
               <entryLinks>
-                <entryLink id="daf7-7277-8d71-5cca" name="Drop Troops - Special Weapons List (Stormtrooper)" hidden="false" collective="false" import="true" targetId="14ce-3e86-84c6-db4d" type="selectionEntryGroup">
+                <entryLink id="daf7-7277-8d71-5cca" name="Drop Troops - Special Weapons List (BS3+)" hidden="false" collective="false" import="true" targetId="14ce-3e86-84c6-db4d" type="selectionEntryGroup">
                   <constraints>
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="fffe-f6b2-4981-dc66" type="max"/>
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="02cc-93b3-5e4f-f924" type="min"/>
@@ -5319,7 +5319,7 @@ If this model is destroyed, set up Captain Vivian within 6&quot; of thid model i
                 <infoLink id="ca10-fc67-95dc-b7aa" name="Veteran" hidden="false" targetId="4c67-61c4-a71e-4101" type="profile"/>
               </infoLinks>
               <entryLinks>
-                <entryLink id="dc49-d039-4089-0364" name="Drop Troops - Special Weapons List (BS3+)" hidden="false" collective="false" import="true" targetId="14ce-3e86-84c6-db4d" type="selectionEntryGroup">
+                <entryLink id="dc49-d039-4089-0364" name="Drop Troops - Special Weapons List" hidden="false" collective="false" import="true" targetId="9011-6e85-f9dd-9dbf" type="selectionEntryGroup">
                   <constraints>
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d397-7545-0afc-80f7" type="min"/>
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="dd55-2348-9424-4f84" type="max"/>
@@ -5815,7 +5815,7 @@ If this model is destroyed, set up Captain Vivian within 6&quot; of thid model i
                 <infoLink id="8642-51ea-5f1e-2244" name="Veteran" hidden="false" targetId="4c67-61c4-a71e-4101" type="profile"/>
               </infoLinks>
               <entryLinks>
-                <entryLink id="3afd-05d1-edbd-0100" name="Drop Troops - Special Weapons List (BS3+)" hidden="false" collective="false" import="true" targetId="14ce-3e86-84c6-db4d" type="selectionEntryGroup">
+                <entryLink id="3afd-05d1-edbd-0100" name="Drop Troops - Special Weapons List" hidden="false" collective="false" import="true" targetId="9011-6e85-f9dd-9dbf" type="selectionEntryGroup">
                   <constraints>
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="76f1-accd-9671-5872" type="min"/>
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5c5b-68ec-821b-4de6" type="max"/>
@@ -9542,7 +9542,7 @@ If this model is destroyed, set up the Named Ace within 6&quot; of thid model in
                 <infoLink id="ff7b-7a41-56a1-d496" name="Veteran" hidden="false" targetId="4c67-61c4-a71e-4101" type="profile"/>
               </infoLinks>
               <entryLinks>
-                <entryLink id="602e-2d42-cbb9-e6a0" name="Drop Troops - Special Weapons List (BS3+)" hidden="false" collective="false" import="true" targetId="14ce-3e86-84c6-db4d" type="selectionEntryGroup">
+                <entryLink id="602e-2d42-cbb9-e6a0" name="Drop Troops - Special Weapons List" hidden="false" collective="false" import="true" targetId="9011-6e85-f9dd-9dbf" type="selectionEntryGroup">
                   <constraints>
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e9f6-6ee5-4216-5ead" type="min"/>
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="61f0-4be2-b527-8a44" type="max"/>
@@ -14123,7 +14123,7 @@ discard the lowest result.</characteristic>
           <profiles>
             <profile id="4131-ffc1-03dc-8110" name="Internal Comm System" hidden="false" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Abilities">
               <characteristics>
-                <characteristic name="Description" typeId="21befb24-fc85-4f52-a745-64b2e48f8228"> While an OFFICER is embarked within this Valkyrie they can still use the Voice of Command ability. When doing so make any measurements from this Valkyrie’s base.</characteristic>
+                <characteristic name="Description" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">While an OFFICER is embarked within this Valkyrie they can still use the Voice of Command ability. When doing so make any measurements from this Valkyrie’s base.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -15116,7 +15116,7 @@ opponent&apos;s deployment zone and is more than 12&apos;&apos; away from any en
     </profile>
     <profile id="85d3-37a2-eeec-8ce4" name="Command Vehicle" hidden="false" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Abilities">
       <characteristics>
-        <characteristic name="Description" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">At the start of the shooting phase, this model may issue one order to the Drop Vehicles under its command. Orders may only be issued to &lt;DROP REGIMENT&gt; TAUROS and SENTINEL units within 6” of this model. To issue an order, pick a target unit and choose which order you wish to issue from the table below. A unit may only be affected by one order per turn.</characteristic>
+        <characteristic name="Description" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">At the start of the shooting phase, this model may issue one order to the Drop Vehicles under its command. Orders may only be issued to &lt;DROP REGIMENT&gt; VEHICLE (excluding AIRCRAFT units) units within 6” of this model. To issue an order, pick a target unit and choose which order you wish to issue from the table below. A unit may only be affected by one order per turn.</characteristic>
       </characteristics>
     </profile>
     <profile id="8ec5-5dce-8f41-becb" name="Crash and Burn" hidden="false" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Abilities">
@@ -15193,7 +15193,9 @@ opponent&apos;s deployment zone and is more than 12&apos;&apos; away from any en
     </profile>
     <profile id="591f-4f8c-b582-e4a7" name="Voice of Command" hidden="false" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Abilities">
       <characteristics>
-        <characteristic name="Description" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">This unit may issue one order per turn to the soldiers under their command at the start of their Shooting phase. Orders may only be issued to INFANTRY units within 6” of this unit that have the same &lt;DROP REGIMENT&gt; keyword as this unit. To issue an order, pick a target unit and choose which order you wish to issue from the table below. A unit may only be affected by one order per turn.</characteristic>
+        <characteristic name="Description" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">This unit may issue one order per turn to the soldiers under their command at the start of their Shooting phase. Orders may only be issued to INFANTRY units within 6” of this unit that have the same &lt;DROP REGIMENT&gt; keyword as this unit. To issue an order, pick a target unit and choose which order you wish to issue from the table below. A unit may only be affected by one order per turn.
+
+Each time a &lt;DROP REGIMENT&gt; unit with the Voice of Command ability issues one of the following orders to a &lt;DROP REGIMENT&gt; INFANTRY unit, that same order can be issued to one or more other friendly &lt;DROP REGIMENT&gt; INFANTRY units (excluding OFFICER units) that are within 6&quot; of the unit that order was originally issued to: Take Aim!; First Rank, Fire! Second Rank, Fire!; Bring it Down!; Hold the Line!; Get Back in the Fight!; Move and Fire!</characteristic>
       </characteristics>
     </profile>
     <profile id="72ac-5ac3-f192-5c28" name="Drop Platoon Commander" hidden="false" typeId="800f-21d0-4387-c943" typeName="Unit">
