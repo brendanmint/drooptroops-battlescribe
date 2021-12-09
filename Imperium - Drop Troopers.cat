@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="77d7-28cc-6700-0b8c" name="Imperium - Drop Troopers" revision="57" battleScribeVersion="2.03" authorName="SwampyTurtle, Wizard, Etansnail, Brendanmint(battlescribe)" authorContact="Elysian Drop Troop Command Discord: https://discord.gg/47u9YjKxYN" library="false" gameSystemId="28ec-711c-d87f-3aeb" gameSystemRevision="200" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="77d7-28cc-6700-0b8c" name="Imperium - Drop Troopers" revision="58" battleScribeVersion="2.03" authorName="SwampyTurtle, Wizard, Etansnail, Brendanmint(battlescribe)" authorContact="Elysian Drop Troop Command Discord: https://discord.gg/47u9YjKxYN" library="false" gameSystemId="28ec-711c-d87f-3aeb" gameSystemRevision="200" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <readme>Codex Version 0.2.4</readme>
   <publications>
     <publication id="cd8f-3e55-003e-b580" name="Codex: Drop Troopers"/>
@@ -2388,6 +2388,30 @@
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="fffe-f6b2-4981-dc66" type="max"/>
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="02cc-93b3-5e4f-f924" type="min"/>
                   </constraints>
+                  <selectionEntries>
+                    <selectionEntry id="ea2b-3d4e-6f00-7292" name="Hot-shot Volly gun" hidden="false" collective="false" import="true" type="upgrade">
+                      <constraints>
+                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b76e-7583-bd0a-87fd" type="max"/>
+                      </constraints>
+                      <profiles>
+                        <profile id="fbb5-e83c-cbc4-0de3" name="Hot-shot Volly gun" hidden="false" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Weapon">
+                          <characteristics>
+                            <characteristic name="Range" typeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464">24&quot;</characteristic>
+                            <characteristic name="Type" typeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2">Heavy 4</characteristic>
+                            <characteristic name="S" typeId="59b1-319e-ec13-d466">4</characteristic>
+                            <characteristic name="AP" typeId="75aa-a838-b675-6484">-2</characteristic>
+                            <characteristic name="D" typeId="ae8a-3137-d65b-4ca7">1</characteristic>
+                            <characteristic name="Abilities" typeId="837d-5e63-aeb7-1410">-</characteristic>
+                          </characteristics>
+                        </profile>
+                      </profiles>
+                      <costs>
+                        <cost name="pts" typeId="points" value="5.0"/>
+                        <cost name=" PL" typeId="e356-c769-5920-6e14" value="0.0"/>
+                        <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0.0"/>
+                      </costs>
+                    </selectionEntry>
+                  </selectionEntries>
                 </entryLink>
                 <entryLink id="36cc-7c05-59e3-4f53" name="Hot-Shot Laspistol" hidden="false" collective="false" import="true" targetId="aaf9-d8d4-9b17-0268" type="selectionEntry">
                   <constraints>
@@ -5319,7 +5343,7 @@ If this model is destroyed, set up Captain Vivian within 6&quot; of thid model i
                 <infoLink id="ca10-fc67-95dc-b7aa" name="Veteran" hidden="false" targetId="4c67-61c4-a71e-4101" type="profile"/>
               </infoLinks>
               <entryLinks>
-                <entryLink id="dc49-d039-4089-0364" name="Drop Troops - Special Weapons List" hidden="false" collective="false" import="true" targetId="9011-6e85-f9dd-9dbf" type="selectionEntryGroup">
+                <entryLink id="dc49-d039-4089-0364" name="Drop Troops - Special Weapons List (BS3+)" hidden="false" collective="false" import="true" targetId="14ce-3e86-84c6-db4d" type="selectionEntryGroup">
                   <constraints>
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d397-7545-0afc-80f7" type="min"/>
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="dd55-2348-9424-4f84" type="max"/>
@@ -5815,7 +5839,7 @@ If this model is destroyed, set up Captain Vivian within 6&quot; of thid model i
                 <infoLink id="8642-51ea-5f1e-2244" name="Veteran" hidden="false" targetId="4c67-61c4-a71e-4101" type="profile"/>
               </infoLinks>
               <entryLinks>
-                <entryLink id="3afd-05d1-edbd-0100" name="Drop Troops - Special Weapons List" hidden="false" collective="false" import="true" targetId="9011-6e85-f9dd-9dbf" type="selectionEntryGroup">
+                <entryLink id="3afd-05d1-edbd-0100" name="Drop Troops - Special Weapons List (BS3+)" hidden="false" collective="false" import="true" targetId="14ce-3e86-84c6-db4d" type="selectionEntryGroup">
                   <constraints>
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="76f1-accd-9671-5872" type="min"/>
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5c5b-68ec-821b-4de6" type="max"/>
@@ -9542,7 +9566,7 @@ If this model is destroyed, set up the Named Ace within 6&quot; of thid model in
                 <infoLink id="ff7b-7a41-56a1-d496" name="Veteran" hidden="false" targetId="4c67-61c4-a71e-4101" type="profile"/>
               </infoLinks>
               <entryLinks>
-                <entryLink id="602e-2d42-cbb9-e6a0" name="Drop Troops - Special Weapons List" hidden="false" collective="false" import="true" targetId="9011-6e85-f9dd-9dbf" type="selectionEntryGroup">
+                <entryLink id="602e-2d42-cbb9-e6a0" name="Drop Troops - Special Weapons List (BS3+)" hidden="false" collective="false" import="true" targetId="14ce-3e86-84c6-db4d" type="selectionEntryGroup">
                   <constraints>
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e9f6-6ee5-4216-5ead" type="min"/>
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="61f0-4be2-b527-8a44" type="max"/>
@@ -13006,28 +13030,6 @@ discard the lowest result.</characteristic>
           <costs>
             <cost name=" PL" typeId="e356-c769-5920-6e14" value="0.0"/>
             <cost name="pts" typeId="points" value="5.0"/>
-            <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0.0"/>
-          </costs>
-        </selectionEntry>
-        <selectionEntry id="279a-7a33-09b1-f4f8" name="Hot-shot Volly gun" hidden="false" collective="false" import="true" type="upgrade">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2760-6d99-2d00-e4e5" type="max"/>
-          </constraints>
-          <profiles>
-            <profile id="2fe6-68cb-1c90-4752" name="Hot-shot Volly gun" hidden="false" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Weapon">
-              <characteristics>
-                <characteristic name="Range" typeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464">24&quot;</characteristic>
-                <characteristic name="Type" typeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2">Heavy 4</characteristic>
-                <characteristic name="S" typeId="59b1-319e-ec13-d466">4</characteristic>
-                <characteristic name="AP" typeId="75aa-a838-b675-6484">-2</characteristic>
-                <characteristic name="D" typeId="ae8a-3137-d65b-4ca7">1</characteristic>
-                <characteristic name="Abilities" typeId="837d-5e63-aeb7-1410">-</characteristic>
-              </characteristics>
-            </profile>
-          </profiles>
-          <costs>
-            <cost name="pts" typeId="points" value="5.0"/>
-            <cost name=" PL" typeId="e356-c769-5920-6e14" value="0.0"/>
             <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0.0"/>
           </costs>
         </selectionEntry>
