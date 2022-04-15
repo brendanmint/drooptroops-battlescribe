@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="77d7-28cc-6700-0b8c" name="Imperium - Drop Troopers" revision="60" battleScribeVersion="2.03" authorName="SwampyTurtle, Wizard, Etansnail, Brendanmint(battlescribe)" authorContact="Elysian Drop Troop Command Discord" authorUrl="https://discord.gg/47u9YjKxYN" library="false" gameSystemId="28ec-711c-d87f-3aeb" gameSystemRevision="205" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
-  <readme>Codex Version 0.2.42
+<catalogue id="77d7-28cc-6700-0b8c" name="Imperium - Drop Troopers" revision="61" battleScribeVersion="2.03" authorName="SwampyTurtle, Wizard, Etansnail, Brendanmint(battlescribe)" authorContact="Elysian Drop Troop Command Discord" authorUrl="https://discord.gg/47u9YjKxYN" library="false" gameSystemId="28ec-711c-d87f-3aeb" gameSystemRevision="210" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+  <readme>Codex Version 0.2.422
 ---
 Report issues on Discord in #battlescribe-development</readme>
   <publications>
@@ -1276,9 +1276,9 @@ Report issues on Discord in #battlescribe-development</readme>
         <entryLink id="b6a3-68f7-b389-977a" name="Relics" hidden="false" collective="false" import="true" targetId="58ce-55c6-222f-0640" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
-        <cost name=" PL" typeId="e356-c769-5920-6e14" value="42.0"/>
+        <cost name=" PL" typeId="e356-c769-5920-6e14" value="2.0"/>
         <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0.0"/>
-        <cost name="pts" typeId="points" value="39.0"/>
+        <cost name="pts" typeId="points" value="40.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="2440-4b60-7059-a694" name="Drop Company Commander" hidden="false" collective="false" import="true" type="model">
@@ -1513,7 +1513,6 @@ Report issues on Discord in #battlescribe-development</readme>
               <costs>
                 <cost name=" PL" typeId="e356-c769-5920-6e14" value="0.0"/>
                 <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0.0"/>
-                <cost name="pts" typeId="points" value="3.0"/>
               </costs>
             </selectionEntry>
             <selectionEntry id="0157-fe38-f47d-547f" name="Drop Trooper w/ Explosive charge" hidden="false" collective="false" import="true" type="model">
@@ -1608,7 +1607,7 @@ Report issues on Discord in #battlescribe-development</readme>
       <costs>
         <cost name=" PL" typeId="e356-c769-5920-6e14" value="3.0"/>
         <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0.0"/>
-        <cost name="pts" typeId="points" value="60.0"/>
+        <cost name="pts" typeId="points" value="65.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="0c41-c056-b6ed-d904" name="Recon Bike Squad" hidden="false" collective="false" import="true" type="unit">
@@ -2115,6 +2114,7 @@ Report issues on Discord in #battlescribe-development</readme>
         <categoryLink id="8170-3a66-f04f-098f" name="Faction: Drop Troops" hidden="false" targetId="7740-5f32-8c61-c1ff" primary="false"/>
         <categoryLink id="8b92-8798-c601-89a3" name="Faction: &lt;DROP REGIMENT&gt;" hidden="false" targetId="5347-52d6-a64c-7945" primary="false"/>
         <categoryLink id="bc59-f957-0e29-f78e" name="Melta Bomb" hidden="false" targetId="d6b8-a04b-f114-5f1b" primary="false"/>
+        <categoryLink id="b2af-5f11-3afa-a31f" name="Core" hidden="false" targetId="08f1-d244-eb44-7e01" primary="false"/>
       </categoryLinks>
       <selectionEntries>
         <selectionEntry id="2c8e-e258-1dfb-ea7d" name="Stormtrooper Sergeant" hidden="false" collective="false" import="true" type="model">
@@ -3554,6 +3554,7 @@ If this model is destroyed, set up Captain Vivian within 6&quot; of thid model i
       </profiles>
       <infoLinks>
         <infoLink id="ae26-1ff3-48c7-14b3" name="Aerial Drop" hidden="false" targetId="5aa1-7d07-f879-1fd5" type="profile"/>
+        <infoLink id="be56-1bb0-0f8b-1019" name="Geno-surgical Enhancements" hidden="false" targetId="54a0-4ebd-7f9d-d502" type="profile"/>
       </infoLinks>
       <categoryLinks>
         <categoryLink id="0211-1624-f146-8943" name="New CategoryLink" hidden="false" targetId="638d74c6-bd97-4de5-b65a-6aaa24e9f4b2" primary="true"/>
@@ -3563,6 +3564,7 @@ If this model is destroyed, set up Captain Vivian within 6&quot; of thid model i
         <categoryLink id="4abc-471d-7efb-5bd6" name="Faction: Ordo Xenos" hidden="false" targetId="4112-8a05-d205-af24" primary="false"/>
         <categoryLink id="f72a-68cc-19b8-9d2f" name="Faction: Inquisition" hidden="false" targetId="5377-3e4e-ed7c-e0fa" primary="false"/>
         <categoryLink id="778f-d5e8-962f-7e1c" name="Infantry" hidden="false" targetId="3d52-fccf-10c0-3fae" primary="false"/>
+        <categoryLink id="d43c-19f7-7063-1153" name="Core" hidden="false" targetId="08f1-d244-eb44-7e01" primary="false"/>
       </categoryLinks>
       <selectionEntryGroups>
         <selectionEntryGroup id="6bf0-df6a-7bb7-e904" name="Squad Loadout" hidden="false" collective="false" import="true" defaultSelectionEntryId="8f87-0cf0-0f92-e383">
@@ -3664,7 +3666,7 @@ If this model is destroyed, set up Captain Vivian within 6&quot; of thid model i
               <costs>
                 <cost name=" PL" typeId="e356-c769-5920-6e14" value="0.0"/>
                 <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0.0"/>
-                <cost name="pts" typeId="points" value="10.0"/>
+                <cost name="pts" typeId="points" value="15.0"/>
               </costs>
             </selectionEntry>
             <selectionEntry id="e9ab-a68c-57b2-d0e9" name="Veteran Sniper Team Vox Operator" hidden="false" collective="false" import="true" type="model">
@@ -3761,15 +3763,12 @@ If this model is destroyed, set up Captain Vivian within 6&quot; of thid model i
               <costs>
                 <cost name=" PL" typeId="e356-c769-5920-6e14" value="0.0"/>
                 <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0.0"/>
-                <cost name="pts" typeId="points" value="10.0"/>
+                <cost name="pts" typeId="points" value="15.0"/>
               </costs>
             </selectionEntry>
           </selectionEntries>
         </selectionEntryGroup>
       </selectionEntryGroups>
-      <entryLinks>
-        <entryLink id="e85d-2d0d-879a-33d7" name="Regimental Equipment" hidden="false" collective="false" import="true" targetId="2069-2957-c832-e5c5" type="selectionEntryGroup"/>
-      </entryLinks>
       <costs>
         <cost name=" PL" typeId="e356-c769-5920-6e14" value="2.0"/>
         <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0.0"/>
@@ -3793,6 +3792,7 @@ If this model is destroyed, set up Captain Vivian within 6&quot; of thid model i
       </profiles>
       <infoLinks>
         <infoLink id="df2e-3ae4-b751-55e8" name="Aerial Drop" hidden="false" targetId="5aa1-7d07-f879-1fd5" type="profile"/>
+        <infoLink id="b00c-f06a-335a-99be" name="Geno-surgical Enhancements" hidden="false" targetId="54a0-4ebd-7f9d-d502" type="profile"/>
       </infoLinks>
       <categoryLinks>
         <categoryLink id="3b01-0099-bd74-1563" name="Infantry" hidden="false" targetId="3d52-fccf-10c0-3fae" primary="false"/>
@@ -3802,6 +3802,7 @@ If this model is destroyed, set up Captain Vivian within 6&quot; of thid model i
         <categoryLink id="8ab8-0568-76b5-8f34" name="Faction: Inquisition" hidden="false" targetId="5377-3e4e-ed7c-e0fa" primary="false"/>
         <categoryLink id="37f1-77bd-d57c-3927" name="Faction: Ordo Xenos" hidden="false" targetId="4112-8a05-d205-af24" primary="false"/>
         <categoryLink id="df91-a3ac-ffd3-e2df" name="Faction: D-99" hidden="false" targetId="cf04-7149-b4b8-387b" primary="false"/>
+        <categoryLink id="04f5-df5c-5c89-faa3" name="Core" hidden="false" targetId="08f1-d244-eb44-7e01" primary="false"/>
       </categoryLinks>
       <selectionEntries>
         <selectionEntry id="bf04-500a-9561-f992" name="Veteran Sergeant" hidden="false" collective="false" import="true" type="model">
@@ -3835,7 +3836,7 @@ If this model is destroyed, set up Captain Vivian within 6&quot; of thid model i
           <costs>
             <cost name=" PL" typeId="e356-c769-5920-6e14" value="0.0"/>
             <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0.0"/>
-            <cost name="pts" typeId="points" value="7.0"/>
+            <cost name="pts" typeId="points" value="12.0"/>
           </costs>
         </selectionEntry>
       </selectionEntries>
@@ -3896,7 +3897,7 @@ If this model is destroyed, set up Captain Vivian within 6&quot; of thid model i
               <costs>
                 <cost name=" PL" typeId="e356-c769-5920-6e14" value="0.0"/>
                 <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0.0"/>
-                <cost name="pts" typeId="points" value="7.0"/>
+                <cost name="pts" typeId="points" value="12.0"/>
               </costs>
             </selectionEntry>
             <selectionEntry id="1b52-c375-2c98-bb32" name="Veteran Melta Gunner" hidden="false" collective="false" import="true" type="model">
@@ -3933,7 +3934,7 @@ If this model is destroyed, set up Captain Vivian within 6&quot; of thid model i
               <costs>
                 <cost name=" PL" typeId="e356-c769-5920-6e14" value="0.0"/>
                 <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0.0"/>
-                <cost name="pts" typeId="points" value="7.0"/>
+                <cost name="pts" typeId="points" value="12.0"/>
               </costs>
             </selectionEntry>
             <selectionEntry id="0e56-fc03-5642-2c15" name="Veteran Plasma Gunner" hidden="false" collective="false" import="true" type="model">
@@ -3971,7 +3972,7 @@ If this model is destroyed, set up Captain Vivian within 6&quot; of thid model i
               <costs>
                 <cost name=" PL" typeId="e356-c769-5920-6e14" value="0.0"/>
                 <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0.0"/>
-                <cost name="pts" typeId="points" value="7.0"/>
+                <cost name="pts" typeId="points" value="12.0"/>
               </costs>
             </selectionEntry>
             <selectionEntry id="e860-ea9b-9f2a-a03d" name="Veteran" hidden="false" collective="false" import="true" type="model">
@@ -4008,15 +4009,12 @@ If this model is destroyed, set up Captain Vivian within 6&quot; of thid model i
               <costs>
                 <cost name=" PL" typeId="e356-c769-5920-6e14" value="0.0"/>
                 <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0.0"/>
-                <cost name="pts" typeId="points" value="7.0"/>
+                <cost name="pts" typeId="points" value="12.0"/>
               </costs>
             </selectionEntry>
           </selectionEntries>
         </selectionEntryGroup>
       </selectionEntryGroups>
-      <entryLinks>
-        <entryLink id="e072-bd03-a2ec-30ac" name="Regimental Equipment" hidden="false" collective="false" import="true" targetId="2069-2957-c832-e5c5" type="selectionEntryGroup"/>
-      </entryLinks>
       <costs>
         <cost name=" PL" typeId="e356-c769-5920-6e14" value="5.0"/>
         <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0.0"/>
@@ -4033,6 +4031,7 @@ If this model is destroyed, set up Captain Vivian within 6&quot; of thid model i
       </modifiers>
       <infoLinks>
         <infoLink id="e0a6-b76c-94e9-28fe" name="Aerial Drop" hidden="false" targetId="5aa1-7d07-f879-1fd5" type="profile"/>
+        <infoLink id="c5e9-2f5f-7fef-ba4a" name="Geno-surgical Enhancements" hidden="false" targetId="54a0-4ebd-7f9d-d502" type="profile"/>
       </infoLinks>
       <categoryLinks>
         <categoryLink id="e848-ada8-32e7-613f" name="Infantry" hidden="false" targetId="3d52-fccf-10c0-3fae" primary="false"/>
@@ -4042,6 +4041,7 @@ If this model is destroyed, set up Captain Vivian within 6&quot; of thid model i
         <categoryLink id="46a6-d92f-08c1-d005" name="Faction: Inquisition" hidden="false" targetId="5377-3e4e-ed7c-e0fa" primary="false"/>
         <categoryLink id="8d7f-4697-5a28-1bfe" name="Faction: Ordo Xenos" hidden="false" targetId="4112-8a05-d205-af24" primary="false"/>
         <categoryLink id="26cc-13ea-a358-44d4" name="Faction: D-99" hidden="false" targetId="cf04-7149-b4b8-387b" primary="false"/>
+        <categoryLink id="6be4-1add-e720-86df" name="Core" hidden="false" targetId="08f1-d244-eb44-7e01" primary="false"/>
       </categoryLinks>
       <selectionEntries>
         <selectionEntry id="7b14-3878-c0fd-2927" name="D-99 Extermination Sergeant" hidden="false" collective="false" import="true" type="model">
@@ -4066,7 +4066,7 @@ If this model is destroyed, set up Captain Vivian within 6&quot; of thid model i
           <costs>
             <cost name=" PL" typeId="e356-c769-5920-6e14" value="0.0"/>
             <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0.0"/>
-            <cost name="pts" typeId="points" value="10.0"/>
+            <cost name="pts" typeId="points" value="12.0"/>
           </costs>
         </selectionEntry>
       </selectionEntries>
@@ -4130,7 +4130,7 @@ If this model is destroyed, set up Captain Vivian within 6&quot; of thid model i
               <costs>
                 <cost name=" PL" typeId="e356-c769-5920-6e14" value="0.0"/>
                 <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0.0"/>
-                <cost name="pts" typeId="points" value="7.0"/>
+                <cost name="pts" typeId="points" value="12.0"/>
               </costs>
             </selectionEntry>
             <selectionEntry id="a30a-07c9-e6ed-53aa" name="Veteran w/ Explosive charge" hidden="false" collective="false" import="true" type="model">
@@ -4212,7 +4212,7 @@ If this model is destroyed, set up Captain Vivian within 6&quot; of thid model i
               <costs>
                 <cost name=" PL" typeId="e356-c769-5920-6e14" value="0.0"/>
                 <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0.0"/>
-                <cost name="pts" typeId="points" value="7.0"/>
+                <cost name="pts" typeId="points" value="12.0"/>
               </costs>
             </selectionEntry>
             <selectionEntry id="1c25-1572-be98-9528" name="Veteran Vox Operator" hidden="false" collective="false" import="true" type="model">
@@ -4294,7 +4294,7 @@ If this model is destroyed, set up Captain Vivian within 6&quot; of thid model i
               <costs>
                 <cost name=" PL" typeId="e356-c769-5920-6e14" value="0.0"/>
                 <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0.0"/>
-                <cost name="pts" typeId="points" value="7.0"/>
+                <cost name="pts" typeId="points" value="12.0"/>
               </costs>
             </selectionEntry>
             <selectionEntry id="06df-445d-2c74-33ee" name="Veteran w/ Flamer" hidden="false" collective="false" import="true" type="model">
@@ -4331,7 +4331,7 @@ If this model is destroyed, set up Captain Vivian within 6&quot; of thid model i
               <costs>
                 <cost name=" PL" typeId="e356-c769-5920-6e14" value="0.0"/>
                 <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0.0"/>
-                <cost name="pts" typeId="points" value="7.0"/>
+                <cost name="pts" typeId="points" value="12.0"/>
               </costs>
             </selectionEntry>
             <selectionEntry id="0975-daeb-70a8-ee3a" name="Veteran w/ Heavy flamer" hidden="false" collective="false" import="true" type="model">
@@ -4368,15 +4368,12 @@ If this model is destroyed, set up Captain Vivian within 6&quot; of thid model i
               <costs>
                 <cost name=" PL" typeId="e356-c769-5920-6e14" value="0.0"/>
                 <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0.0"/>
-                <cost name="pts" typeId="points" value="7.0"/>
+                <cost name="pts" typeId="points" value="12.0"/>
               </costs>
             </selectionEntry>
           </selectionEntries>
         </selectionEntryGroup>
       </selectionEntryGroups>
-      <entryLinks>
-        <entryLink id="310d-358c-63c2-0e44" name="Regimental Equipment" hidden="false" collective="false" import="true" targetId="2069-2957-c832-e5c5" type="selectionEntryGroup"/>
-      </entryLinks>
       <costs>
         <cost name=" PL" typeId="e356-c769-5920-6e14" value="4.0"/>
         <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0.0"/>
@@ -4718,6 +4715,7 @@ If this model is destroyed, set up Captain Vivian within 6&quot; of thid model i
         <categoryLink id="08ed-87a2-e93d-af90" name="Faction: Drop Troops" hidden="false" targetId="7740-5f32-8c61-c1ff" primary="false"/>
         <categoryLink id="bbf9-78f6-8a3a-48c8" name="Sappers Squad" hidden="false" targetId="e01e-1107-bbc3-a305" primary="false"/>
         <categoryLink id="e9a5-4469-b1d5-a04e" name="Melta Bomb" hidden="false" targetId="d6b8-a04b-f114-5f1b" primary="false"/>
+        <categoryLink id="33b0-fdb2-3f28-0f6b" name="Core" hidden="false" targetId="08f1-d244-eb44-7e01" primary="false"/>
       </categoryLinks>
       <selectionEntries>
         <selectionEntry id="3504-1158-9a6d-d466" name="Sapper Sergeant" hidden="false" collective="false" import="true" type="model">
@@ -4800,7 +4798,7 @@ If this model is destroyed, set up Captain Vivian within 6&quot; of thid model i
                 <cost name="pts" typeId="points" value="0.0"/>
               </costs>
             </selectionEntry>
-            <selectionEntry id="e6e1-29e2-9e9f-3f80" name="Sapper w/ Explosive charge or Ballistic shield" hidden="false" collective="false" import="true" type="model">
+            <selectionEntry id="e6e1-29e2-9e9f-3f80" name="Sapper w/ Explosive charge" hidden="false" collective="false" import="true" type="model">
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="17a4-bf6d-bc16-e240" type="max"/>
               </constraints>
@@ -4826,20 +4824,6 @@ If this model is destroyed, set up Captain Vivian within 6&quot; of thid model i
                     </entryLink>
                   </entryLinks>
                 </selectionEntryGroup>
-                <selectionEntryGroup id="a4df-ce3b-f839-079d" name="Explosive charge or Ballistic shield" hidden="false" collective="false" import="true">
-                  <constraints>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0b09-0673-dbec-5ac3" type="max"/>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="532a-385a-337c-e022" type="min"/>
-                  </constraints>
-                  <entryLinks>
-                    <entryLink id="470a-11fc-0138-1635" name="Ballistic sheild" hidden="false" collective="false" import="true" targetId="c8fe-37df-72e4-61ca" type="selectionEntry">
-                      <constraints>
-                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="434d-5ec4-dc28-008b" type="max"/>
-                      </constraints>
-                    </entryLink>
-                    <entryLink id="c655-192f-cb7b-2d31" name="Breacher or Demolition charge" hidden="false" collective="false" import="true" targetId="d105-6721-1e97-d8de" type="selectionEntryGroup"/>
-                  </entryLinks>
-                </selectionEntryGroup>
               </selectionEntryGroups>
               <entryLinks>
                 <entryLink id="6884-7a0c-f8c8-bec6" name="Frag &amp; Krak grenades" hidden="false" collective="false" import="true" targetId="cddf-945e-1335-e681" type="selectionEntry">
@@ -4848,6 +4832,7 @@ If this model is destroyed, set up Captain Vivian within 6&quot; of thid model i
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a40f-f4a2-dafc-8284" type="max"/>
                   </constraints>
                 </entryLink>
+                <entryLink id="8fd4-8f3e-1202-28dc" name="Breacher or Demolition Charge" hidden="false" collective="false" import="true" targetId="d105-6721-1e97-d8de" type="selectionEntryGroup"/>
               </entryLinks>
               <costs>
                 <cost name=" PL" typeId="e356-c769-5920-6e14" value="0.0"/>
@@ -5103,6 +5088,7 @@ If this model is destroyed, set up Captain Vivian within 6&quot; of thid model i
         <categoryLink id="e46b-738b-7b14-43e8" name="Faction: Drop Troops" hidden="false" targetId="7740-5f32-8c61-c1ff" primary="false"/>
         <categoryLink id="0eba-c6ca-9a5f-5ce8" name="Infantry" hidden="false" targetId="3d52-fccf-10c0-3fae" primary="false"/>
         <categoryLink id="9d69-d9de-7e03-97c1" name="Command Squad" hidden="false" targetId="1746-d2ce-dace-7800" primary="false"/>
+        <categoryLink id="81a5-e20f-ee5d-f496" name="Core" hidden="false" targetId="08f1-d244-eb44-7e01" primary="false"/>
       </categoryLinks>
       <selectionEntryGroups>
         <selectionEntryGroup id="f100-9dd9-ded7-8130" name="Squad Loadout" hidden="false" collective="false" import="true" defaultSelectionEntryId="c7c6-4034-c573-6105">
@@ -5678,7 +5664,11 @@ If this model is destroyed, set up Captain Vivian within 6&quot; of thid model i
                 <infoLink id="2fd6-2202-fff5-6b12" name="Veteran" hidden="false" targetId="4c67-61c4-a71e-4101" type="profile"/>
               </infoLinks>
               <selectionEntryGroups>
-                <selectionEntryGroup id="7cd4-809c-f25e-f68d" name="Lasgun or Shotgun" hidden="false" collective="false" import="true">
+                <selectionEntryGroup id="7cd4-809c-f25e-f68d" name="Lasgun or Shotgun" hidden="false" collective="false" import="true" defaultSelectionEntryId="b45f-ad45-f954-56fc">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="092a-92b5-92cc-2531" type="max"/>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="6dca-1ffb-e576-819c" type="min"/>
+                  </constraints>
                   <entryLinks>
                     <entryLink id="ea6f-f310-9967-be67" name="Shotgun" hidden="false" collective="false" import="true" targetId="2094-c9a6-a426-0970" type="selectionEntry">
                       <constraints>
@@ -5836,6 +5826,7 @@ If this model is destroyed, set up Captain Vivian within 6&quot; of thid model i
         <categoryLink id="409b-731c-d984-6cb4" name="Faction: Astra Militarum" hidden="false" targetId="3263-4233-4344-6228" primary="false"/>
         <categoryLink id="b2dc-65b5-8a08-28e2" name="Faction: &lt;DROP REGIMENT&gt;" hidden="false" targetId="5347-52d6-a64c-7945" primary="false"/>
         <categoryLink id="4b70-7ccc-d2ad-f41f" name="Faction: Drop Troops" hidden="false" targetId="7740-5f32-8c61-c1ff" primary="false"/>
+        <categoryLink id="ace1-721d-7eba-c812" name="Core" hidden="false" targetId="08f1-d244-eb44-7e01" primary="false"/>
       </categoryLinks>
       <selectionEntries>
         <selectionEntry id="34b8-7dcc-d2f7-145b" name="Drop Trooper" hidden="false" collective="false" import="true" type="model">
@@ -7454,7 +7445,7 @@ discard the lowest result.</characteristic>
       <costs>
         <cost name=" PL" typeId="e356-c769-5920-6e14" value="3.0"/>
         <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0.0"/>
-        <cost name="pts" typeId="points" value="0.0"/>
+        <cost name="pts" typeId="points" value="55.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="3c9d-4a64-b6ad-ac92" name="Named Ace" hidden="false" collective="false" import="true" type="model">
@@ -9173,6 +9164,7 @@ If this model is destroyed, set up the Named Ace within 6&quot; of thid model in
     <selectionEntry id="c212-f9c7-cbd4-a14a" name="(D-99) Veteran Squad" hidden="false" collective="false" import="true" type="unit">
       <infoLinks>
         <infoLink id="3c89-8203-309b-bc7e" name="Aerial Drop" hidden="false" targetId="5aa1-7d07-f879-1fd5" type="profile"/>
+        <infoLink id="c2e0-14fe-9a34-9b51" name="Geno-surgical Enhancements" hidden="false" targetId="54a0-4ebd-7f9d-d502" type="profile"/>
       </infoLinks>
       <categoryLinks>
         <categoryLink id="dd34-d3c7-28f8-fe32" name="Infantry" hidden="false" targetId="3d52-fccf-10c0-3fae" primary="false"/>
@@ -9217,7 +9209,7 @@ If this model is destroyed, set up the Named Ace within 6&quot; of thid model in
           <costs>
             <cost name=" PL" typeId="e356-c769-5920-6e14" value="0.0"/>
             <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0.0"/>
-            <cost name="pts" typeId="points" value="12.0"/>
+            <cost name="pts" typeId="points" value="9.0"/>
           </costs>
         </selectionEntry>
       </selectionEntries>
@@ -9264,7 +9256,7 @@ If this model is destroyed, set up the Named Ace within 6&quot; of thid model in
               <costs>
                 <cost name=" PL" typeId="e356-c769-5920-6e14" value="0.0"/>
                 <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0.0"/>
-                <cost name="pts" typeId="points" value="12.0"/>
+                <cost name="pts" typeId="points" value="9.0"/>
               </costs>
             </selectionEntry>
             <selectionEntry id="c683-1e96-821b-d8db" name="Veteran w/ Shotgun" hidden="false" collective="false" import="true" type="model">
@@ -9301,7 +9293,7 @@ If this model is destroyed, set up the Named Ace within 6&quot; of thid model in
               <costs>
                 <cost name=" PL" typeId="e356-c769-5920-6e14" value="0.0"/>
                 <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0.0"/>
-                <cost name="pts" typeId="points" value="12.0"/>
+                <cost name="pts" typeId="points" value="9.0"/>
               </costs>
             </selectionEntry>
             <selectionEntry id="7c0a-8197-fc89-bb29" name="Veteran Vox Operator" hidden="false" collective="false" import="true" type="model">
@@ -9343,7 +9335,7 @@ If this model is destroyed, set up the Named Ace within 6&quot; of thid model in
               <costs>
                 <cost name=" PL" typeId="e356-c769-5920-6e14" value="0.0"/>
                 <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0.0"/>
-                <cost name="pts" typeId="points" value="12.0"/>
+                <cost name="pts" typeId="points" value="9.0"/>
               </costs>
             </selectionEntry>
             <selectionEntry id="d72b-4a63-10a9-3db9" name="Veteran w/ Explosive Charge" hidden="false" collective="false" import="true" type="model">
@@ -9383,7 +9375,7 @@ If this model is destroyed, set up the Named Ace within 6&quot; of thid model in
               <costs>
                 <cost name=" PL" typeId="e356-c769-5920-6e14" value="0.0"/>
                 <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0.0"/>
-                <cost name="pts" typeId="points" value="12.0"/>
+                <cost name="pts" typeId="points" value="9.0"/>
               </costs>
             </selectionEntry>
             <selectionEntry id="44e6-b6d1-5302-0065" name="Veteran w/ Special Weapon" hidden="false" collective="false" import="true" type="model">
@@ -9410,7 +9402,7 @@ If this model is destroyed, set up the Named Ace within 6&quot; of thid model in
               <costs>
                 <cost name=" PL" typeId="e356-c769-5920-6e14" value="0.0"/>
                 <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0.0"/>
-                <cost name="pts" typeId="points" value="12.0"/>
+                <cost name="pts" typeId="points" value="9.0"/>
               </costs>
             </selectionEntry>
             <selectionEntry id="848e-e289-6e0e-f596" name="Veteran w/ Heavy Flamer" hidden="false" collective="false" import="true" type="model">
@@ -9437,7 +9429,7 @@ If this model is destroyed, set up the Named Ace within 6&quot; of thid model in
               <costs>
                 <cost name=" PL" typeId="e356-c769-5920-6e14" value="0.0"/>
                 <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0.0"/>
-                <cost name="pts" typeId="points" value="712.0"/>
+                <cost name="pts" typeId="points" value="9.0"/>
               </costs>
             </selectionEntry>
             <selectionEntry id="2c31-8fed-0a35-4b6b" name="Veteran Heavy Weapon Team" hidden="false" collective="false" import="true" type="model">
@@ -9497,15 +9489,12 @@ If this model is destroyed, set up the Named Ace within 6&quot; of thid model in
               <costs>
                 <cost name=" PL" typeId="e356-c769-5920-6e14" value="0.0"/>
                 <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0.0"/>
-                <cost name="pts" typeId="points" value="12.0"/>
+                <cost name="pts" typeId="points" value="9.0"/>
               </costs>
             </selectionEntry>
           </selectionEntries>
         </selectionEntryGroup>
       </selectionEntryGroups>
-      <entryLinks>
-        <entryLink id="1e94-16eb-37b4-4508" name="Regimental Equipment" hidden="false" collective="false" import="true" targetId="2069-2957-c832-e5c5" type="selectionEntryGroup"/>
-      </entryLinks>
       <costs>
         <cost name=" PL" typeId="e356-c769-5920-6e14" value="5.0"/>
         <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0.0"/>
@@ -9934,6 +9923,13 @@ If the Valkyrie model being commanded by a Captain Vivian is destroyed, set up t
       </costs>
     </selectionEntry>
     <selectionEntry id="201d-afea-b0a6-3c51" name="Vox-caster" hidden="false" collective="false" import="true" type="upgrade">
+      <modifiers>
+        <modifier type="set" field="points" value="0.0">
+          <conditions>
+            <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" childId="f6f9-b139-abb3-b719" type="instanceOf"/>
+          </conditions>
+        </modifier>
+      </modifiers>
       <constraints>
         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="27c7-badc-36f0-695e" type="min"/>
         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1eab-669c-1999-1f87" type="max"/>
@@ -11917,6 +11913,13 @@ discard the lowest result.</characteristic>
       </constraints>
       <selectionEntries>
         <selectionEntry id="6c6f-8d33-77d9-6df0" name="Grenade Launcher" hidden="false" collective="false" import="true" type="upgrade">
+          <modifiers>
+            <modifier type="set" field="points" value="0.0">
+              <conditions>
+                <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" childId="f6f9-b139-abb3-b719" type="instanceOf"/>
+              </conditions>
+            </modifier>
+          </modifiers>
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7e49-e607-67ef-a01f" type="max"/>
           </constraints>
@@ -11951,6 +11954,13 @@ discard the lowest result.</characteristic>
       </selectionEntries>
       <entryLinks>
         <entryLink id="7e89-6ca0-b213-dfb1" name="Flamer" hidden="false" collective="false" import="true" targetId="fd22-6743-2d4c-dd62" type="selectionEntry">
+          <modifiers>
+            <modifier type="set" field="points" value="0.0">
+              <conditions>
+                <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" childId="f6f9-b139-abb3-b719" type="instanceOf"/>
+              </conditions>
+            </modifier>
+          </modifiers>
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="5ab9-b7a0-a219-3790" type="max"/>
           </constraints>
@@ -11959,6 +11969,13 @@ discard the lowest result.</characteristic>
           </costs>
         </entryLink>
         <entryLink id="0cc1-a31f-c744-5676" name="Meltagun" hidden="false" collective="false" import="true" targetId="efc8-c51d-5b02-a3a2" type="selectionEntry">
+          <modifiers>
+            <modifier type="set" field="points" value="0.0">
+              <conditions>
+                <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" childId="f6f9-b139-abb3-b719" type="instanceOf"/>
+              </conditions>
+            </modifier>
+          </modifiers>
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="f6ed-0c82-7f0f-c9cf" type="max"/>
           </constraints>
@@ -11967,6 +11984,13 @@ discard the lowest result.</characteristic>
           </costs>
         </entryLink>
         <entryLink id="e8f5-a634-a0c6-e5e4" name="Plasma gun" hidden="false" collective="false" import="true" targetId="8c14-22cc-93ce-b85a" type="selectionEntry">
+          <modifiers>
+            <modifier type="set" field="points" value="0.0">
+              <conditions>
+                <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" childId="f6f9-b139-abb3-b719" type="instanceOf"/>
+              </conditions>
+            </modifier>
+          </modifiers>
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="c1af-c2b6-c556-6695" type="max"/>
           </constraints>
@@ -11975,6 +11999,13 @@ discard the lowest result.</characteristic>
           </costs>
         </entryLink>
         <entryLink id="fb29-85a9-2a72-edaf" name="Sniper rifle" hidden="false" collective="false" import="true" targetId="ba62-f2c3-d7bb-4f5d" type="selectionEntry">
+          <modifiers>
+            <modifier type="set" field="points" value="0.0">
+              <conditions>
+                <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" childId="f6f9-b139-abb3-b719" type="instanceOf"/>
+              </conditions>
+            </modifier>
+          </modifiers>
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="f8b1-2e4f-42dd-b040" type="max"/>
           </constraints>
@@ -11983,6 +12014,13 @@ discard the lowest result.</characteristic>
           </costs>
         </entryLink>
         <entryLink id="7dae-0132-0f66-3747" name="Las-cutter" hidden="false" collective="false" import="true" targetId="e1f1-ceed-d399-6599" type="selectionEntry">
+          <modifiers>
+            <modifier type="set" field="points" value="0.0">
+              <conditions>
+                <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" childId="f6f9-b139-abb3-b719" type="instanceOf"/>
+              </conditions>
+            </modifier>
+          </modifiers>
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="1d56-2d47-52c2-946a" type="max"/>
           </constraints>
@@ -13556,7 +13594,7 @@ discard the lowest result.</characteristic>
                 <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b9a0-586a-2464-280d" type="equalTo"/>
               </conditions>
             </modifier>
-            <modifier type="increment" field="points" value="5.0">
+            <modifier type="increment" field="points" value="3.0">
               <repeats>
                 <repeat field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="model" repeats="1" roundUp="false"/>
               </repeats>
@@ -13564,7 +13602,7 @@ discard the lowest result.</characteristic>
                 <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="model" type="atLeast"/>
               </conditions>
             </modifier>
-            <modifier type="increment" field="points" value="5.0">
+            <modifier type="increment" field="points" value="3.0">
               <conditions>
                 <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="model" type="instanceOf"/>
               </conditions>
@@ -14911,13 +14949,27 @@ discard the lowest result.</characteristic>
         </entryLink>
       </entryLinks>
     </selectionEntryGroup>
-    <selectionEntryGroup id="d105-6721-1e97-d8de" name="Breacher or Demolition charge" hidden="false" collective="false" import="true" defaultSelectionEntryId="9d54-e3d0-9766-257b">
+    <selectionEntryGroup id="d105-6721-1e97-d8de" name="Breacher or Demolition Charge" hidden="false" collective="false" import="true" defaultSelectionEntryId="9d54-e3d0-9766-257b">
+      <modifiers>
+        <modifier type="set" field="name" value="Ballstic Shield or Explosive Charge">
+          <conditions>
+            <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" childId="e01e-1107-bbc3-a305" type="instanceOf"/>
+          </conditions>
+        </modifier>
+      </modifiers>
       <constraints>
         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6b75-5874-db94-9ac4" type="min"/>
         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="553e-d1be-f930-0fbf" type="max"/>
       </constraints>
       <selectionEntries>
         <selectionEntry id="9d54-e3d0-9766-257b" name="Demolition charge" hidden="false" collective="false" import="true" type="upgrade">
+          <modifiers>
+            <modifier type="set" field="points" value="0.0">
+              <conditions>
+                <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" childId="f6f9-b139-abb3-b719" type="instanceOf"/>
+              </conditions>
+            </modifier>
+          </modifiers>
           <profiles>
             <profile id="c161-a2b2-b8c5-adf3" name="Demolition charge" hidden="false" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Weapon">
               <characteristics>
@@ -14932,9 +14984,18 @@ discard the lowest result.</characteristic>
           </profiles>
           <costs>
             <cost name="pts" typeId="points" value="5.0"/>
+            <cost name=" PL" typeId="e356-c769-5920-6e14" value="0.0"/>
+            <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0.0"/>
           </costs>
         </selectionEntry>
         <selectionEntry id="c461-af6c-9e2d-f9a1" name="Breacher charge" hidden="false" collective="false" import="true" type="upgrade">
+          <modifiers>
+            <modifier type="set" field="points" value="0.0">
+              <conditions>
+                <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" childId="f6f9-b139-abb3-b719" type="instanceOf"/>
+              </conditions>
+            </modifier>
+          </modifiers>
           <profiles>
             <profile id="b3ac-251f-4566-e8ce" name="Breacher charge" hidden="false" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Weapon">
               <characteristics>
@@ -14949,9 +15010,22 @@ discard the lowest result.</characteristic>
           </profiles>
           <costs>
             <cost name="pts" typeId="points" value="5.0"/>
+            <cost name=" PL" typeId="e356-c769-5920-6e14" value="0.0"/>
+            <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0.0"/>
           </costs>
         </selectionEntry>
       </selectionEntries>
+      <entryLinks>
+        <entryLink id="6f24-b0bc-4e99-2e72" name="Ballistic Sheild" hidden="true" collective="false" import="true" targetId="c8fe-37df-72e4-61ca" type="selectionEntry">
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <conditions>
+                <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" childId="e01e-1107-bbc3-a305" type="instanceOf"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </entryLink>
+      </entryLinks>
     </selectionEntryGroup>
   </sharedSelectionEntryGroups>
   <sharedProfiles>
@@ -15051,7 +15125,7 @@ opponent&apos;s deployment zone and is more than 12&apos;&apos; away from any en
     </profile>
     <profile id="eea2-199d-a4b0-3aef" name="Summary Execution" hidden="false" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Abilities">
       <characteristics>
-        <characteristic name="Description" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">The first time an ASTRA MILITARUM unit fails a Morale test during the Morale phase whilst it is within 6&apos;&apos; of any friendly COMMISSAR, one model of your choice in that unit is slain and the Morale test is re-rolled (do not include this slain model when re-rolling the Morale test).</characteristic>
+        <characteristic name="Description" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">The first time any model on an ASTRA MILITARUM unit fails a Combat Attrition test during the Morale phase whilst it is within 6&quot; of any friendly COMMISAR, one model of your choice in that unit is slain and all the failed Combat Attrition tests are re-rolled (do not include this slain model when re-rolling the Combat Attrition test).</characteristic>
       </characteristics>
     </profile>
     <profile id="aa7d-5bde-eff9-b3c4" name="Supersonic" hidden="false" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Abilities">
