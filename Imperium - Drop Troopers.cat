@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="77d7-28cc-6700-0b8c" name="Imperium - Drop Troopers" revision="61" battleScribeVersion="2.03" authorName="SwampyTurtle, Wizard, Etansnail, Brendanmint(battlescribe)" authorContact="Elysian Drop Troop Command Discord" authorUrl="https://discord.gg/47u9YjKxYN" library="false" gameSystemId="28ec-711c-d87f-3aeb" gameSystemRevision="210" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="77d7-28cc-6700-0b8c" name="Imperium - Drop Troopers" revision="62" battleScribeVersion="2.03" authorName="SwampyTurtle, Wizard, Etansnail, Brendanmint(battlescribe)" authorContact="Elysian Drop Troop Command Discord" authorUrl="https://discord.gg/47u9YjKxYN" library="false" gameSystemId="28ec-711c-d87f-3aeb" gameSystemRevision="210" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <readme>Codex Version 0.2.422
 ---
 Report issues on Discord in #battlescribe-development</readme>
@@ -1513,6 +1513,7 @@ Report issues on Discord in #battlescribe-development</readme>
               <costs>
                 <cost name=" PL" typeId="e356-c769-5920-6e14" value="0.0"/>
                 <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0.0"/>
+                <cost name="pts" typeId="points" value="0.0"/>
               </costs>
             </selectionEntry>
             <selectionEntry id="0157-fe38-f47d-547f" name="Drop Trooper w/ Explosive charge" hidden="false" collective="false" import="true" type="model">
@@ -12205,6 +12206,13 @@ discard the lowest result.</characteristic>
           </constraints>
         </entryLink>
         <entryLink id="02a9-c309-2b73-08c0" name="Power fist" hidden="false" collective="false" import="true" targetId="f122-3720-fa32-4215" type="selectionEntry">
+          <modifiers>
+            <modifier type="set" field="points" value="0.0">
+              <conditions>
+                <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" childId="f6f9-b139-abb3-b719" type="instanceOf"/>
+              </conditions>
+            </modifier>
+          </modifiers>
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4b26-925e-2d74-a760" type="max"/>
           </constraints>
@@ -12213,6 +12221,13 @@ discard the lowest result.</characteristic>
           </costs>
         </entryLink>
         <entryLink id="94d5-2be5-9347-a8af" name="Power sword" hidden="false" collective="false" import="true" targetId="bc9e-551d-9afb-78d5" type="selectionEntry">
+          <modifiers>
+            <modifier type="set" field="points" value="0.0">
+              <conditions>
+                <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" childId="f6f9-b139-abb3-b719" type="instanceOf"/>
+              </conditions>
+            </modifier>
+          </modifiers>
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b895-2a00-b1ac-8422" type="max"/>
           </constraints>
@@ -12351,6 +12366,13 @@ discard the lowest result.</characteristic>
       </constraints>
       <entryLinks>
         <entryLink id="5de4-5d8a-27cc-b9f4" name="Bolt pistol" hidden="false" collective="false" import="true" targetId="0334-f487-8229-0c1a" type="selectionEntry">
+          <modifiers>
+            <modifier type="set" field="points" value="0.0">
+              <conditions>
+                <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" childId="f6f9-b139-abb3-b719" type="instanceOf"/>
+              </conditions>
+            </modifier>
+          </modifiers>
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a17b-e5d7-5be2-0a77" type="max"/>
           </constraints>
@@ -12359,6 +12381,13 @@ discard the lowest result.</characteristic>
           </costs>
         </entryLink>
         <entryLink id="b8a7-485f-32e4-6570" name="Boltgun" hidden="false" collective="false" import="true" targetId="b61f-a3c1-827d-c5b6" type="selectionEntry">
+          <modifiers>
+            <modifier type="set" field="points" value="0.0">
+              <conditions>
+                <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" childId="f6f9-b139-abb3-b719" type="instanceOf"/>
+              </conditions>
+            </modifier>
+          </modifiers>
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8299-347f-019b-13ee" type="max"/>
           </constraints>
@@ -12391,9 +12420,6 @@ discard the lowest result.</characteristic>
           </costs>
         </entryLink>
         <entryLink id="3ae9-4310-2d3c-438f" name="Shotgun" hidden="false" collective="false" import="true" targetId="2094-c9a6-a426-0970" type="selectionEntry">
-          <modifiers>
-            <modifier type="set" field="points" value="0.0"/>
-          </modifiers>
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="dd36-d722-ce39-1de4" type="max"/>
           </constraints>
@@ -12412,6 +12438,13 @@ discard the lowest result.</characteristic>
           </costs>
         </entryLink>
         <entryLink id="826e-4fe2-fa6e-4f4f" name="Plasma pistol" hidden="false" collective="false" import="true" targetId="83be-1ba9-c326-4760" type="selectionEntry">
+          <modifiers>
+            <modifier type="set" field="points" value="0.0">
+              <conditions>
+                <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" childId="f6f9-b139-abb3-b719" type="instanceOf"/>
+              </conditions>
+            </modifier>
+          </modifiers>
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="51e5-bd27-4d4f-6d8b" type="max"/>
           </constraints>
@@ -12421,7 +12454,11 @@ discard the lowest result.</characteristic>
         </entryLink>
         <entryLink id="385c-18c1-aafe-c3aa" name="Sniper rifle" hidden="false" collective="false" import="true" targetId="ba62-f2c3-d7bb-4f5d" type="selectionEntry">
           <modifiers>
-            <modifier type="set" field="points" value="2.0"/>
+            <modifier type="set" field="points" value="0.0">
+              <conditions>
+                <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" childId="f6f9-b139-abb3-b719" type="instanceOf"/>
+              </conditions>
+            </modifier>
           </modifiers>
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="13a7-1306-414c-e962" type="max"/>
@@ -12467,6 +12504,13 @@ discard the lowest result.</characteristic>
       </constraints>
       <entryLinks>
         <entryLink id="778a-9e24-f110-7ac2" name="Bolt pistol" hidden="false" collective="false" import="true" targetId="0334-f487-8229-0c1a" type="selectionEntry">
+          <modifiers>
+            <modifier type="set" field="points" value="0.0">
+              <conditions>
+                <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" childId="f6f9-b139-abb3-b719" type="instanceOf"/>
+              </conditions>
+            </modifier>
+          </modifiers>
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="355f-6e48-a025-b970" type="max"/>
             <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="fd49-2744-07d5-2ddb" type="min"/>
@@ -12477,19 +12521,33 @@ discard the lowest result.</characteristic>
         </entryLink>
         <entryLink id="919e-3382-5d16-ab3e" name="Boltgun" hidden="false" collective="false" import="true" targetId="b61f-a3c1-827d-c5b6" type="selectionEntry">
           <modifiers>
-            <modifier type="set" field="points" value="2.0"/>
+            <modifier type="set" field="points" value="0.0">
+              <conditions>
+                <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" childId="f6f9-b139-abb3-b719" type="instanceOf"/>
+              </conditions>
+            </modifier>
           </modifiers>
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d671-8d19-f3d9-c613" type="max"/>
           </constraints>
+          <costs>
+            <cost name="pts" typeId="points" value="2.0"/>
+          </costs>
         </entryLink>
         <entryLink id="68dd-b385-c594-6e74" name="Lasgun with auxiliary grenade launcher" hidden="false" collective="false" import="true" targetId="d4ce-4f9b-ab3a-9a52" type="selectionEntry">
           <modifiers>
-            <modifier type="set" field="points" value="3.0"/>
+            <modifier type="set" field="points" value="0.0">
+              <conditions>
+                <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" childId="f6f9-b139-abb3-b719" type="instanceOf"/>
+              </conditions>
+            </modifier>
           </modifiers>
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="bb5e-9f9c-6fff-0105" type="max"/>
           </constraints>
+          <costs>
+            <cost name="pts" typeId="points" value="3.0"/>
+          </costs>
         </entryLink>
         <entryLink id="da4d-7f4e-7f0f-248e" name="Lasgun" hidden="false" collective="false" import="true" targetId="fd87-854b-d284-184a" type="selectionEntry">
           <modifiers>
@@ -12500,6 +12558,13 @@ discard the lowest result.</characteristic>
           </constraints>
         </entryLink>
         <entryLink id="2081-4485-7ac2-0103" name="Hot-Shot Lasgun" hidden="false" collective="false" import="true" targetId="5188-4b26-73ac-1160" type="selectionEntry">
+          <modifiers>
+            <modifier type="set" field="points" value="0.0">
+              <conditions>
+                <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" childId="f6f9-b139-abb3-b719" type="instanceOf"/>
+              </conditions>
+            </modifier>
+          </modifiers>
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4d1e-e957-7f9b-8059" type="max"/>
           </constraints>
@@ -12521,6 +12586,13 @@ discard the lowest result.</characteristic>
           </constraints>
         </entryLink>
         <entryLink id="8d79-6583-0cc8-60fb" name="Hot-Shot Laspistol" hidden="false" collective="false" import="true" targetId="aaf9-d8d4-9b17-0268" type="selectionEntry">
+          <modifiers>
+            <modifier type="set" field="points" value="0.0">
+              <conditions>
+                <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" childId="f6f9-b139-abb3-b719" type="instanceOf"/>
+              </conditions>
+            </modifier>
+          </modifiers>
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="747b-0d4c-6514-53b2" type="max"/>
           </constraints>
@@ -12530,21 +12602,42 @@ discard the lowest result.</characteristic>
         </entryLink>
         <entryLink id="1379-7c4f-b6a1-99aa" name="Plasma pistol" hidden="false" collective="false" import="true" targetId="83be-1ba9-c326-4760" type="selectionEntry">
           <modifiers>
-            <modifier type="set" field="points" value="5.0"/>
+            <modifier type="set" field="points" value="0.0">
+              <conditions>
+                <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" childId="f6f9-b139-abb3-b719" type="instanceOf"/>
+              </conditions>
+            </modifier>
           </modifiers>
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d02e-149a-9b15-513e" type="max"/>
           </constraints>
+          <costs>
+            <cost name="pts" typeId="points" value="5.0"/>
+          </costs>
         </entryLink>
         <entryLink id="aa13-c790-32ec-70db" name="Sniper rifle" hidden="false" collective="false" import="true" targetId="ba62-f2c3-d7bb-4f5d" type="selectionEntry">
           <modifiers>
-            <modifier type="set" field="points" value="2.0"/>
+            <modifier type="set" field="points" value="0.0">
+              <conditions>
+                <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" childId="f6f9-b139-abb3-b719" type="instanceOf"/>
+              </conditions>
+            </modifier>
           </modifiers>
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="bd03-210b-85c8-bc26" type="max"/>
           </constraints>
+          <costs>
+            <cost name="pts" typeId="points" value="2.0"/>
+          </costs>
         </entryLink>
         <entryLink id="47c7-5084-d23e-c22a" name="Dual Plasma pistols" hidden="false" collective="false" import="true" targetId="0af8-9f26-4c7e-e118" type="selectionEntry">
+          <modifiers>
+            <modifier type="set" field="points" value="0.0">
+              <conditions>
+                <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" childId="f6f9-b139-abb3-b719" type="instanceOf"/>
+              </conditions>
+            </modifier>
+          </modifiers>
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e4ab-b0d7-386b-3e63" type="max"/>
           </constraints>
@@ -12553,6 +12646,13 @@ discard the lowest result.</characteristic>
           </costs>
         </entryLink>
         <entryLink id="5a05-e21c-fcf8-e2cc" name="Dual Laspistols" hidden="false" collective="false" import="true" targetId="6288-9d6c-9271-abeb" type="selectionEntry">
+          <modifiers>
+            <modifier type="set" field="points" value="0.0">
+              <conditions>
+                <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" childId="f6f9-b139-abb3-b719" type="instanceOf"/>
+              </conditions>
+            </modifier>
+          </modifiers>
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="03a5-d5a6-b5a7-e4ec" type="max"/>
           </constraints>
@@ -12561,6 +12661,13 @@ discard the lowest result.</characteristic>
           </costs>
         </entryLink>
         <entryLink id="a51f-0c4a-f7cb-1ef0" name="Dual Hot-shot laspistols" hidden="false" collective="false" import="true" targetId="8d4c-2afa-1770-a35c" type="selectionEntry">
+          <modifiers>
+            <modifier type="set" field="points" value="0.0">
+              <conditions>
+                <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" childId="f6f9-b139-abb3-b719" type="instanceOf"/>
+              </conditions>
+            </modifier>
+          </modifiers>
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="48d7-0b2a-35db-b027" type="max"/>
           </constraints>
@@ -12569,6 +12676,13 @@ discard the lowest result.</characteristic>
           </costs>
         </entryLink>
         <entryLink id="f16b-f5fc-0945-de5b" name="Dual Bolt pistols" hidden="false" collective="false" import="true" targetId="afd8-907d-39b2-4a24" type="selectionEntry">
+          <modifiers>
+            <modifier type="set" field="points" value="0.0">
+              <conditions>
+                <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" childId="f6f9-b139-abb3-b719" type="instanceOf"/>
+              </conditions>
+            </modifier>
+          </modifiers>
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="18ce-0bee-7cf8-8435" type="max"/>
           </constraints>
