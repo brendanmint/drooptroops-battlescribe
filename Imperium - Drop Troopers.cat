@@ -10430,7 +10430,7 @@ If the Valkyrie model being commanded by a Captain Vivian is destroyed, set up t
               <modifiers>
                 <modifier type="set" field="hidden" value="false">
                   <conditions>
-                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="b440-1354-7026-e96a" type="equalTo"/>
+                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="2fbe-62b3-8113-82c8" type="equalTo"/>
                   </conditions>
                 </modifier>
               </modifiers>
@@ -10655,7 +10655,7 @@ If the Valkyrie model being commanded by a Captain Vivian is destroyed, set up t
               <modifiers>
                 <modifier type="set" field="hidden" value="false">
                   <conditions>
-                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="b440-1354-7026-e96a" type="equalTo"/>
+                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="2fbe-62b3-8113-82c8" type="equalTo"/>
                   </conditions>
                 </modifier>
               </modifiers>
