@@ -10080,6 +10080,7 @@ If the Valkyrie model being commanded by a Captain Vivian is destroyed, set up t
       <costs>
         <cost name=" PL" typeId="e356-c769-5920-6e14" value="0.0"/>
         <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0.0"/>
+        <cost name="pts" typeId="points" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="afc3-368d-2ebc-27c4" name="Add Experimental / Legends Units" hidden="false" collective="false" import="true" type="upgrade">
@@ -10098,6 +10099,11 @@ If the Valkyrie model being commanded by a Captain Vivian is destroyed, set up t
                   <description>This Roster contains untested units, which can be seen with the [Experimental] tag.</description>
                 </rule>
               </rules>
+              <costs>
+                <cost name=" PL" typeId="e356-c769-5920-6e14" value="0.0"/>
+                <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0.0"/>
+                <cost name="pts" typeId="points" value="0.0"/>
+              </costs>
             </selectionEntry>
             <selectionEntry id="8b61-0f3f-f1c0-aa24" name="Legends Units" hidden="false" collective="false" import="true" type="upgrade">
               <constraints>
@@ -10108,10 +10114,20 @@ If the Valkyrie model being commanded by a Captain Vivian is destroyed, set up t
                   <description>This Roster contains potentially outdated units, which can be seen with the [Legeneds] tag.</description>
                 </rule>
               </rules>
+              <costs>
+                <cost name=" PL" typeId="e356-c769-5920-6e14" value="0.0"/>
+                <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0.0"/>
+                <cost name="pts" typeId="points" value="0.0"/>
+              </costs>
             </selectionEntry>
           </selectionEntries>
         </selectionEntryGroup>
       </selectionEntryGroups>
+      <costs>
+        <cost name=" PL" typeId="e356-c769-5920-6e14" value="0.0"/>
+        <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0.0"/>
+        <cost name="pts" typeId="points" value="0.0"/>
+      </costs>
     </selectionEntry>
     <selectionEntry id="ab5b-1e75-37e1-f4b2" name="Specialist Team [Experimental]" page="" hidden="false" collective="false" import="true" type="unit">
       <modifiers>
@@ -10326,7 +10342,7 @@ If the Valkyrie model being commanded by a Captain Vivian is destroyed, set up t
                 </modifier>
                 <modifier type="set" field="hidden" value="false">
                   <conditions>
-                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="a900-b0e2-533a-9a3a" type="equalTo"/>
+                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="b440-1354-7026-e96a" type="equalTo"/>
                   </conditions>
                 </modifier>
               </modifiers>
@@ -10414,7 +10430,7 @@ If the Valkyrie model being commanded by a Captain Vivian is destroyed, set up t
               <modifiers>
                 <modifier type="set" field="hidden" value="false">
                   <conditions>
-                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="9da9-b1d0-6123-5de1" type="equalTo"/>
+                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="b440-1354-7026-e96a" type="equalTo"/>
                   </conditions>
                 </modifier>
               </modifiers>
@@ -10492,7 +10508,7 @@ If the Valkyrie model being commanded by a Captain Vivian is destroyed, set up t
               <modifiers>
                 <modifier type="set" field="hidden" value="false">
                   <conditions>
-                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="b69a-79d3-0d78-f6e2" type="equalTo"/>
+                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="b342-8785-d7d7-a990" type="equalTo"/>
                   </conditions>
                 </modifier>
               </modifiers>
@@ -10570,7 +10586,7 @@ If the Valkyrie model being commanded by a Captain Vivian is destroyed, set up t
               <modifiers>
                 <modifier type="set" field="hidden" value="false">
                   <conditions>
-                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="b69a-79d3-0d78-f6e2" type="equalTo"/>
+                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="b342-8785-d7d7-a990" type="equalTo"/>
                   </conditions>
                 </modifier>
               </modifiers>
@@ -10607,6 +10623,8 @@ If the Valkyrie model being commanded by a Captain Vivian is destroyed, set up t
                       </entryLinks>
                       <costs>
                         <cost name="pts" typeId="points" value="5.0"/>
+                        <cost name=" PL" typeId="e356-c769-5920-6e14" value="0.0"/>
+                        <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0.0"/>
                       </costs>
                     </selectionEntry>
                   </selectionEntries>
@@ -10637,7 +10655,7 @@ If the Valkyrie model being commanded by a Captain Vivian is destroyed, set up t
               <modifiers>
                 <modifier type="set" field="hidden" value="false">
                   <conditions>
-                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="9da9-b1d0-6123-5de1" type="equalTo"/>
+                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="b440-1354-7026-e96a" type="equalTo"/>
                   </conditions>
                 </modifier>
               </modifiers>
@@ -10691,7 +10709,7 @@ If the Valkyrie model being commanded by a Captain Vivian is destroyed, set up t
               <modifiers>
                 <modifier type="set" field="hidden" value="false">
                   <conditions>
-                    <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="b69a-79d3-0d78-f6e2" type="equalTo"/>
+                    <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="b342-8785-d7d7-a990" type="equalTo"/>
                   </conditions>
                 </modifier>
               </modifiers>
@@ -10740,52 +10758,65 @@ If the Valkyrie model being commanded by a Captain Vivian is destroyed, set up t
               </costs>
             </selectionEntry>
           </selectionEntries>
-          <selectionEntryGroups>
-            <selectionEntryGroup id="8184-d018-a8a9-72a9" name="Speciality" hidden="false" collective="false" import="true">
+        </selectionEntryGroup>
+        <selectionEntryGroup id="8e8f-bca3-af06-1ccc" name="Speciality" hidden="false" collective="false" import="true">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="2ae5-4d75-c427-a1d0" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="ce1e-04a3-5d72-5066" type="max"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry id="b342-8785-d7d7-a990" name="Breacher Speciality" hidden="false" collective="false" import="true" type="upgrade">
               <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="d9b5-db74-c254-c654" type="min"/>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="d6c1-780f-52b6-5d83" type="max"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="bba3-b95c-b604-7965" type="max"/>
               </constraints>
-              <selectionEntries>
-                <selectionEntry id="b69a-79d3-0d78-f6e2" name="Breacher Squad" hidden="false" collective="false" import="true" type="upgrade">
-                  <constraints>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="f50e-fbc8-9c6b-71ac" type="max"/>
-                  </constraints>
-                  <profiles>
-                    <profile id="4f13-1ff2-d973-f696" name="Breacher Squad" hidden="false" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Abilities">
-                      <characteristics>
-                        <characteristic name="Description" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">Add +1 AP to this unit’s weapons when within half range or in close combat. In addition this unit get the FLY and JUMP PACK Key Word and its movement becomes 12”.</characteristic>
-                      </characteristics>
-                    </profile>
-                  </profiles>
-                </selectionEntry>
-                <selectionEntry id="9da9-b1d0-6123-5de1" name="Sapper Squad" hidden="false" collective="false" import="true" type="upgrade">
-                  <constraints>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="ba38-70a3-53ec-4c25" type="max"/>
-                  </constraints>
-                  <profiles>
-                    <profile id="e3b9-59de-e0d7-35f2" name="Sapper Squad" hidden="false" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Abilities">
-                      <characteristics>
-                        <characteristic name="Description" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">When this unit resolves an attack against a VEHICLE or BUILDING unit with a weapon that has a damage characteristic of greater than 1, add 1 to the Damage characteristic of that weapon for that attack. In addition Units do not receive the benefit of cover to their saving throws for attacks made by this unit</characteristic>
-                      </characteristics>
-                    </profile>
-                  </profiles>
-                </selectionEntry>
-                <selectionEntry id="a900-b0e2-533a-9a3a" name="Recon Squad" hidden="false" collective="false" import="true" type="upgrade">
-                  <constraints>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="d4ee-3b63-5160-3527" type="max"/>
-                  </constraints>
-                  <profiles>
-                    <profile id="6d48-e985-7206-8a23" name="Recon Squad" hidden="false" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Abilities">
-                      <characteristics>
-                        <characteristic name="Description" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">This unit get the Concealed Positions special ability. In addition model in this unit add +2 to their armour save when in light cover instead of +1.</characteristic>
-                      </characteristics>
-                    </profile>
-                  </profiles>
-                </selectionEntry>
-              </selectionEntries>
-            </selectionEntryGroup>
-          </selectionEntryGroups>
+              <profiles>
+                <profile id="be91-8a7f-8cd4-9454" name="Breacher Squad" hidden="false" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Abilities">
+                  <characteristics>
+                    <characteristic name="Description" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">Add +1 AP to this unit’s weapons when within half range or in close combat. In addition this unit get the FLY and JUMP PACK Key Word and its movement becomes 12”.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name=" PL" typeId="e356-c769-5920-6e14" value="0.0"/>
+                <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0.0"/>
+                <cost name="pts" typeId="points" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="2fbe-62b3-8113-82c8" name="Sapper Speciality" hidden="false" collective="false" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="8865-8b9d-fe02-716a" type="max"/>
+              </constraints>
+              <profiles>
+                <profile id="e317-9f5a-3937-c601" name="Sapper Squad" hidden="false" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Abilities">
+                  <characteristics>
+                    <characteristic name="Description" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">When this unit resolves an attack against a VEHICLE or BUILDING unit with a weapon that has a damage characteristic of greater than 1, add 1 to the Damage characteristic of that weapon for that attack. In addition Units do not receive the benefit of cover to their saving throws for attacks made by this unit</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name=" PL" typeId="e356-c769-5920-6e14" value="0.0"/>
+                <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0.0"/>
+                <cost name="pts" typeId="points" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="b440-1354-7026-e96a" name="Recon Speciality" hidden="false" collective="false" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="cfb8-4cd7-0586-7478" type="max"/>
+              </constraints>
+              <profiles>
+                <profile id="66d8-93b4-6bac-61fb" name="Recon Squad" hidden="false" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Abilities">
+                  <characteristics>
+                    <characteristic name="Description" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">This unit get the Concealed Positions special ability. In addition model in this unit add +2 to their armour save when in light cover instead of +1.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name=" PL" typeId="e356-c769-5920-6e14" value="0.0"/>
+                <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0.0"/>
+                <cost name="pts" typeId="points" value="0.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
         </selectionEntryGroup>
       </selectionEntryGroups>
       <entryLinks>
@@ -10793,6 +10824,8 @@ If the Valkyrie model being commanded by a Captain Vivian is destroyed, set up t
       </entryLinks>
       <costs>
         <cost name=" PL" typeId="e356-c769-5920-6e14" value="4.0"/>
+        <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0.0"/>
+        <cost name="pts" typeId="points" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="22e0-91b6-494c-baec" name="Lascarabine" hidden="false" collective="true" import="true" type="upgrade">
@@ -10808,11 +10841,21 @@ If the Valkyrie model being commanded by a Captain Vivian is destroyed, set up t
           </characteristics>
         </profile>
       </profiles>
+      <costs>
+        <cost name=" PL" typeId="e356-c769-5920-6e14" value="0.0"/>
+        <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0.0"/>
+        <cost name="pts" typeId="points" value="0.0"/>
+      </costs>
     </selectionEntry>
     <selectionEntry id="2711-1fdd-14e4-933a" name="Drop Shotgun" hidden="false" collective="true" import="true" type="upgrade">
       <infoLinks>
         <infoLink id="d551-9fd8-5cfc-5694" name="Drop Shotgun" hidden="false" targetId="7625-cff2-f6a4-1571" type="profile"/>
       </infoLinks>
+      <costs>
+        <cost name=" PL" typeId="e356-c769-5920-6e14" value="0.0"/>
+        <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0.0"/>
+        <cost name="pts" typeId="points" value="0.0"/>
+      </costs>
     </selectionEntry>
     <selectionEntry id="1cbe-da53-ef9f-5cfa" name="Grenade Launcher" hidden="false" collective="false" import="true" type="upgrade">
       <profiles>
@@ -10840,6 +10883,7 @@ If the Valkyrie model being commanded by a Captain Vivian is destroyed, set up t
       <costs>
         <cost name=" PL" typeId="e356-c769-5920-6e14" value="0.0"/>
         <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0.0"/>
+        <cost name="pts" typeId="points" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="4967-1bb8-64b3-fe32" name="Tauros Explorer [Experimental]" hidden="false" collective="false" import="true" type="model">
@@ -10892,6 +10936,7 @@ If the Valkyrie model being commanded by a Captain Vivian is destroyed, set up t
       <costs>
         <cost name=" PL" typeId="e356-c769-5920-6e14" value="3.0"/>
         <cost name="pts" typeId="points" value="40.0"/>
+        <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="ad90-716a-9512-eced" name="Sky Hammer Battery [Experimental]" hidden="false" collective="false" import="true" type="model">
@@ -10967,6 +11012,11 @@ If the Valkyrie model being commanded by a Captain Vivian is destroyed, set up t
                   </characteristics>
                 </profile>
               </profiles>
+              <costs>
+                <cost name=" PL" typeId="e356-c769-5920-6e14" value="0.0"/>
+                <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0.0"/>
+                <cost name="pts" typeId="points" value="0.0"/>
+              </costs>
             </selectionEntry>
             <selectionEntry id="b62f-2313-4cbd-0493" name="Light howitzer" hidden="false" collective="false" import="true" type="upgrade">
               <constraints>
@@ -10986,6 +11036,8 @@ If the Valkyrie model being commanded by a Captain Vivian is destroyed, set up t
               </profiles>
               <costs>
                 <cost name="pts" typeId="points" value="10.0"/>
+                <cost name=" PL" typeId="e356-c769-5920-6e14" value="0.0"/>
+                <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0.0"/>
               </costs>
             </selectionEntry>
           </selectionEntries>
@@ -10994,6 +11046,7 @@ If the Valkyrie model being commanded by a Captain Vivian is destroyed, set up t
       <costs>
         <cost name=" PL" typeId="e356-c769-5920-6e14" value="3.0"/>
         <cost name="pts" typeId="points" value="70.0"/>
+        <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="cb7e-feef-488b-a91a" name="Tauros Mechanis [Experimental]" hidden="false" collective="false" import="true" type="model">
@@ -11046,6 +11099,7 @@ If the Valkyrie model being commanded by a Captain Vivian is destroyed, set up t
       <costs>
         <cost name=" PL" typeId="e356-c769-5920-6e14" value="3.0"/>
         <cost name="pts" typeId="points" value="50.0"/>
+        <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="7f32-8639-003a-e520" name="Sky-Drifter [Experimental]" hidden="false" collective="false" import="true" type="model">
@@ -11099,6 +11153,8 @@ If the Valkyrie model being commanded by a Captain Vivian is destroyed, set up t
               </profiles>
               <costs>
                 <cost name="pts" typeId="points" value="10.0"/>
+                <cost name=" PL" typeId="e356-c769-5920-6e14" value="0.0"/>
+                <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0.0"/>
               </costs>
             </selectionEntry>
             <selectionEntry id="a36d-6996-bcb5-6d71" name="2x Light howitzer" hidden="false" collective="false" import="true" type="upgrade">
@@ -11119,6 +11175,8 @@ If the Valkyrie model being commanded by a Captain Vivian is destroyed, set up t
               </profiles>
               <costs>
                 <cost name="pts" typeId="points" value="20.0"/>
+                <cost name=" PL" typeId="e356-c769-5920-6e14" value="0.0"/>
+                <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0.0"/>
               </costs>
             </selectionEntry>
             <selectionEntry id="9820-8bbf-4641-8d95" name="No Weapons" hidden="false" collective="false" import="true" type="upgrade">
@@ -11142,6 +11200,11 @@ If the Valkyrie model being commanded by a Captain Vivian is destroyed, set up t
                   </characteristics>
                 </profile>
               </profiles>
+              <costs>
+                <cost name=" PL" typeId="e356-c769-5920-6e14" value="0.0"/>
+                <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0.0"/>
+                <cost name="pts" typeId="points" value="0.0"/>
+              </costs>
             </selectionEntry>
           </selectionEntries>
         </selectionEntryGroup>
@@ -11149,6 +11212,7 @@ If the Valkyrie model being commanded by a Captain Vivian is destroyed, set up t
       <costs>
         <cost name=" PL" typeId="e356-c769-5920-6e14" value="4.0"/>
         <cost name="pts" typeId="points" value="40.0"/>
+        <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="4a89-d2d1-06f1-ba99" name="Tauros Magnum [Experimental]" hidden="false" collective="false" import="true" type="model">
