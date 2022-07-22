@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="77d7-28cc-6700-0b8c" name="Imperium - Drop Troopers" revision="63" battleScribeVersion="2.03" authorName="SwampyTurtle, Wizard, Etansnail, Brendanmint(battlescribe)" authorContact="Elysian Drop Troop Command Discord" authorUrl="https://discord.gg/47u9YjKxYN" library="false" gameSystemId="28ec-711c-d87f-3aeb" gameSystemRevision="210" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="77d7-28cc-6700-0b8c" name="Imperium - Drop Troopers" revision="64" battleScribeVersion="2.03" authorName="SwampyTurtle, Wizard, Etansnail, Brendanmint(battlescribe)" authorContact="Elysian Drop Troop Command Discord" authorUrl="https://discord.gg/47u9YjKxYN" library="false" gameSystemId="28ec-711c-d87f-3aeb" gameSystemRevision="222" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <readme>Codex Version 0.2.5
 ---
 Report issues on Discord in #battlescribe-development</readme>
@@ -132,6 +132,11 @@ Report issues on Discord in #battlescribe-development</readme>
     <categoryEntry id="ab43-e565-62b5-222a" name="Sky Hammer Battery" hidden="false"/>
     <categoryEntry id="536d-cb85-20b0-c741" name="Tauros Mechanis" hidden="false"/>
     <categoryEntry id="2f88-c698-3974-6ea5" name="Tauros Magnum" hidden="false"/>
+    <categoryEntry id="52a4-24ce-8580-e549" name="Platoon" hidden="false"/>
+    <categoryEntry id="06a8-467f-e3d8-f0ed" name="Organized" hidden="false"/>
+    <categoryEntry id="bf3d-a016-3f24-1a8a" name="Sky-Drifter" hidden="false"/>
+    <categoryEntry id="c433-5fae-d67b-194e" name="Air Defence Squadron" hidden="false"/>
+    <categoryEntry id="6d44-12e4-d5ea-09c0" name="Ground Assault Squadron" hidden="false"/>
   </categoryEntries>
   <entryLinks>
     <entryLink id="15e3-3696-b3b0-55da" name="Avenger Strike Fighter" hidden="false" collective="false" import="true" targetId="047d-20b5-1f5d-a706" type="selectionEntry">
@@ -432,13 +437,14 @@ Report issues on Discord in #battlescribe-development</readme>
         </modifier>
       </modifiers>
     </entryLink>
-    <entryLink id="9ade-1a47-bb0a-ea97" name="Thunderbolt Fury Heavy Fighter" hidden="false" collective="false" import="true" targetId="c47a-67b8-0534-57cd" type="selectionEntry">
+    <entryLink id="9ade-1a47-bb0a-ea97" name="Flyer - Thunderbolt Fury" hidden="false" collective="false" import="true" targetId="c47a-67b8-0534-57cd" type="selectionEntry">
       <modifiers>
         <modifier type="set" field="hidden" value="true">
           <conditions>
             <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b9a0-586a-2464-280d" type="atLeast"/>
           </conditions>
         </modifier>
+        <modifier type="set" field="name" value="Thunderbolt Fury"/>
       </modifiers>
     </entryLink>
     <entryLink id="8463-811f-26f5-8af1" name="Vendetta Gunship" hidden="false" collective="false" import="true" targetId="321d-c0d2-095b-4960" type="selectionEntry"/>
@@ -622,6 +628,20 @@ Report issues on Discord in #battlescribe-development</readme>
       </modifiers>
     </entryLink>
     <entryLink id="405a-e2ae-567a-e107" name="Tauros Magnum [Experimental]" hidden="true" collective="false" import="true" targetId="4a89-d2d1-06f1-ba99" type="selectionEntry">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="0425-1688-ab45-5a69" type="atLeast"/>
+                <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b9a0-586a-2464-280d" type="equalTo"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+    </entryLink>
+    <entryLink id="a06d-9059-a338-6bb2" name="Squadron - Ground Assault Wing" hidden="true" collective="false" import="true" targetId="e177-6cbc-3c11-9632" type="selectionEntry">
       <modifiers>
         <modifier type="set" field="hidden" value="false">
           <conditionGroups>
@@ -3164,6 +3184,9 @@ Report issues on Discord in #battlescribe-development</readme>
       </costs>
     </selectionEntry>
     <selectionEntry id="5231-0210-617d-44ca" name="Valkyrie Airborne Assault Carrier" hidden="false" collective="false" import="true" type="model">
+      <modifiers>
+        <modifier type="set" field="name" value="Valkyrie"/>
+      </modifiers>
       <profiles>
         <profile id="21cb-1601-7c60-3fbc" name="Transport" hidden="false" typeId="b3a8-0452-7436-44d1" typeName="Transport">
           <characteristics>
@@ -8490,7 +8513,7 @@ If this model is destroyed, set up the Named Ace within 6&quot; of thid model in
         <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="ba79-0909-10b0-98ba" name="Thunderbolt Heavy Fighter" hidden="false" collective="false" import="true" type="model">
+    <selectionEntry id="ba79-0909-10b0-98ba" name="Thunderbolt" hidden="false" collective="false" import="true" type="model">
       <profiles>
         <profile id="d535-f9d0-1a4a-6289" name="Thunderbolt [1] (7+ Wounds)" hidden="false" typeId="800f-21d0-4387-c943" typeName="Unit">
           <characteristics>
@@ -8606,7 +8629,7 @@ If this model is destroyed, set up the Named Ace within 6&quot; of thid model in
         <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="c47a-67b8-0534-57cd" name="Thunderbolt Fury Heavy Fighter" hidden="false" collective="false" import="true" type="model">
+    <selectionEntry id="c47a-67b8-0534-57cd" name="Thunderbolt Fury" hidden="false" collective="false" import="true" type="model">
       <profiles>
         <profile id="dabe-b15e-b0ca-4438" name="Thunderbolt Fury [1] (7+ Wounds)" hidden="false" typeId="800f-21d0-4387-c943" typeName="Unit">
           <characteristics>
@@ -8978,93 +9001,41 @@ If this model is destroyed, set up the Named Ace within 6&quot; of thid model in
         <categoryLink id="65c2-0f67-6ba5-8052" name="Faction: Drop Troops" hidden="false" targetId="7740-5f32-8c61-c1ff" primary="false"/>
         <categoryLink id="afd6-64c1-ad5f-c3b3" name="Vulture Gunship" hidden="false" targetId="8fd8-9667-06c6-3cf9" primary="false"/>
       </categoryLinks>
+      <selectionEntries>
+        <selectionEntry id="29a2-1a62-05c9-36a7" name="Nose mounted heavy bolter" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="512f-f73c-717d-1b17" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a849-4a51-8111-a643" type="min"/>
+          </constraints>
+          <infoLinks>
+            <infoLink id="bd75-5d75-6ba3-6d05" name="Heavy bolter" hidden="false" targetId="e2b0-b9f1-6c38-584c" type="profile"/>
+          </infoLinks>
+          <costs>
+            <cost name=" PL" typeId="e356-c769-5920-6e14" value="0.0"/>
+            <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0.0"/>
+            <cost name="pts" typeId="points" value="0.0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
       <selectionEntryGroups>
         <selectionEntryGroup id="56f2-95b3-9bcf-b1eb" name="Armament Options" hidden="false" collective="false" import="true">
-          <selectionEntries>
-            <selectionEntry id="7252-b62a-8742-3e71" name="Nose mounted heavy bolter" hidden="false" collective="false" import="true" type="upgrade">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="dc76-484c-bb6f-b231" type="max"/>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0a2a-60a2-1970-9000" type="min"/>
-              </constraints>
-              <infoLinks>
-                <infoLink id="4c05-16cc-9b2e-0c0b" name="Heavy bolter" hidden="false" targetId="e2b0-b9f1-6c38-584c" type="profile"/>
-              </infoLinks>
-              <costs>
-                <cost name=" PL" typeId="e356-c769-5920-6e14" value="0.0"/>
-                <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0.0"/>
-                <cost name="pts" typeId="points" value="0.0"/>
-              </costs>
-            </selectionEntry>
-          </selectionEntries>
-          <selectionEntryGroups>
-            <selectionEntryGroup id="b1c1-7b18-2b7b-2537" name="Wing Hardpoints" hidden="false" collective="false" import="true">
-              <modifierGroups>
-                <modifierGroup>
+          <entryLinks>
+            <entryLink id="66ef-791c-886d-7e29" name="Vulture Inner Hardpoint Weapons" hidden="false" collective="false" import="true" targetId="dcbf-6b4d-2b03-55e9" type="selectionEntryGroup"/>
+            <entryLink id="c257-6c74-961b-1f72" name="Vulture Outer Hardpoint Weapons" hidden="false" collective="false" import="true" targetId="b182-1782-09b5-54ea" type="selectionEntryGroup">
+              <modifiers>
+                <modifier type="set" field="5f55-78fe-c0ce-f1d8" value="0.0">
                   <conditions>
-                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="bb26-9b06-3ad0-1327" type="equalTo"/>
+                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1814-36aa-4e2a-9ab1" type="equalTo"/>
                   </conditions>
-                  <modifiers>
-                    <modifier type="set" field="a8ad-e35d-c22d-d216" value="1.0"/>
-                    <modifier type="set" field="46d9-0758-006b-7b3e" value="1.0"/>
-                  </modifiers>
-                </modifierGroup>
-              </modifierGroups>
-              <constraints>
-                <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="46d9-0758-006b-7b3e" type="max"/>
-                <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a8ad-e35d-c22d-d216" type="min"/>
-              </constraints>
-              <selectionEntries>
-                <selectionEntry id="bb26-9b06-3ad0-1327" name="2x Punisher gatling cannon" hidden="false" collective="false" import="true" type="upgrade">
-                  <constraints>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a4ec-fd57-aea9-5174" type="max"/>
-                  </constraints>
-                  <entryLinks>
-                    <entryLink id="b99f-06b8-6807-5ee0" name="Punisher Gatling Cannon" hidden="false" collective="false" import="true" targetId="3ee3-74ec-d970-9b43" type="selectionEntry">
-                      <constraints>
-                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a2a5-8d69-8a14-cf3f" type="min"/>
-                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5f07-9982-1c7c-a2f0" type="max"/>
-                      </constraints>
-                    </entryLink>
-                  </entryLinks>
-                  <costs>
-                    <cost name=" PL" typeId="e356-c769-5920-6e14" value="0.0"/>
-                    <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0.0"/>
-                    <cost name="pts" typeId="points" value="70.0"/>
-                  </costs>
-                </selectionEntry>
-              </selectionEntries>
-              <entryLinks>
-                <entryLink id="13a5-8b89-c436-b7be" name="Vulture Inner Hardpoint Weapons" hidden="false" collective="false" import="true" targetId="dcbf-6b4d-2b03-55e9" type="selectionEntryGroup">
-                  <modifiers>
-                    <modifier type="set" field="0ad8-20bb-c309-8df0" value="0.0">
-                      <conditions>
-                        <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="bb26-9b06-3ad0-1327" type="equalTo"/>
-                      </conditions>
-                    </modifier>
-                    <modifier type="set" field="3535-8add-c8ec-df92" value="0.0">
-                      <conditions>
-                        <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="bb26-9b06-3ad0-1327" type="equalTo"/>
-                      </conditions>
-                    </modifier>
-                  </modifiers>
-                </entryLink>
-                <entryLink id="9473-8012-c906-f582" name="Vulture Outer Hardpoint Weapons" hidden="false" collective="false" import="true" targetId="b182-1782-09b5-54ea" type="selectionEntryGroup">
-                  <modifiers>
-                    <modifier type="set" field="5f55-78fe-c0ce-f1d8" value="0.0">
-                      <conditions>
-                        <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="bb26-9b06-3ad0-1327" type="equalTo"/>
-                      </conditions>
-                    </modifier>
-                    <modifier type="set" field="34b8-15eb-9a9b-d76e" value="0.0">
-                      <conditions>
-                        <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="bb26-9b06-3ad0-1327" type="equalTo"/>
-                      </conditions>
-                    </modifier>
-                  </modifiers>
-                </entryLink>
-              </entryLinks>
-            </selectionEntryGroup>
-          </selectionEntryGroups>
+                </modifier>
+                <modifier type="set" field="34b8-15eb-9a9b-d76e" value="0.0">
+                  <conditions>
+                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1814-36aa-4e2a-9ab1" type="equalTo"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </entryLink>
+          </entryLinks>
         </selectionEntryGroup>
       </selectionEntryGroups>
       <entryLinks>
@@ -11093,7 +11064,6 @@ If the Valkyrie model being commanded by a Captain Vivian is destroyed, set up t
         <categoryLink id="9a49-b601-6dab-65b5" name="Tauros Mechanis" hidden="false" targetId="536d-cb85-20b0-c741" primary="false"/>
       </categoryLinks>
       <entryLinks>
-        <entryLink id="c7de-d386-3a1a-fa7a" name="Tauros Options " hidden="false" collective="false" import="true" targetId="1dab-e2cb-3bbf-4a6e" type="selectionEntryGroup"/>
         <entryLink id="1839-08f1-a66e-8138" name="Regimental Equipment" hidden="false" collective="false" import="true" targetId="2069-2957-c832-e5c5" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
@@ -11128,6 +11098,16 @@ If the Valkyrie model being commanded by a Captain Vivian is destroyed, set up t
         <infoLink id="7910-db9a-d476-d87b" name="Armour of Contempt" hidden="false" targetId="1560-3f6d-19d3-ba2c" type="profile"/>
         <infoLink id="1826-ae78-7ced-a3cc" name="Explodes (6+,3&quot;, 1MW)" hidden="false" targetId="8b0f-df78-86ac-55c9" type="profile"/>
       </infoLinks>
+      <categoryLinks>
+        <categoryLink id="3196-2e46-12fd-e9b2" name="Faction: Imperium" hidden="false" targetId="84e2-9fa9-ebe6-1d18" primary="false"/>
+        <categoryLink id="d11d-6ca4-d393-2401" name="Faction: Astra Militarum" hidden="false" targetId="3263-4233-4344-6228" primary="false"/>
+        <categoryLink id="c56d-8039-68e5-856d" name="Faction: &lt;DROP REGIMENT&gt;" hidden="false" targetId="5347-52d6-a64c-7945" primary="false"/>
+        <categoryLink id="8e13-9026-87f1-c322" name="Faction: Drop Troops" hidden="false" targetId="7740-5f32-8c61-c1ff" primary="false"/>
+        <categoryLink id="ddd5-5f60-773f-e2ce" name="Vehicle" hidden="false" targetId="c8fd-783f-3230-493e" primary="false"/>
+        <categoryLink id="0553-97dc-ea1f-196f" name="Smokescreen" hidden="false" targetId="5d1d-c80e-b1ea-6d6d" primary="false"/>
+        <categoryLink id="18a0-6ba6-8286-a395" name="Payload" hidden="false" targetId="cc4b-1bc5-d751-9031" primary="false"/>
+        <categoryLink id="2ef3-8f03-6b47-93c9" name="Sky-Drifter" hidden="false" targetId="bf3d-a016-3f24-1a8a" primary="false"/>
+      </categoryLinks>
       <selectionEntryGroups>
         <selectionEntryGroup id="3f98-960a-c1c5-e4ea" name="Wargear" hidden="false" collective="false" import="true">
           <constraints>
@@ -11266,6 +11246,262 @@ If the Valkyrie model being commanded by a Captain Vivian is destroyed, set up t
         <cost name=" PL" typeId="e356-c769-5920-6e14" value="2.0"/>
         <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0.0"/>
         <cost name="pts" typeId="points" value="40.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="e177-6cbc-3c11-9632" name="Squadron [VERY Experimental Concept]" hidden="false" collective="false" import="true" type="unit">
+      <categoryLinks>
+        <categoryLink id="747c-7142-bcd0-0151" name="New CategoryLink" hidden="false" targetId="e888-1504-aa61-95ff" primary="true"/>
+        <categoryLink id="0dd5-aea3-9f6a-89df" name="Faction: Imperium" hidden="false" targetId="84e2-9fa9-ebe6-1d18" primary="false"/>
+        <categoryLink id="84d7-cc7b-8193-0d5f" name="Faction: Drop Troops" hidden="false" targetId="7740-5f32-8c61-c1ff" primary="false"/>
+        <categoryLink id="fb7c-cd6b-ca9b-bd3a" name="Faction: &lt;DROP REGIMENT&gt;" hidden="false" targetId="5347-52d6-a64c-7945" primary="false"/>
+        <categoryLink id="8070-1154-e91d-6d31" name="Aircraft" hidden="false" targetId="d569-3d56-cd24-6a31" primary="false"/>
+        <categoryLink id="3377-8f85-9a84-f2da" name="Vehicle" hidden="false" targetId="c8fd-783f-3230-493e" primary="false"/>
+      </categoryLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="d5f3-4afa-c3d4-1d94" name="Squadron Lead" hidden="false" collective="false" import="true" defaultSelectionEntryId="ddd9-d20d-c6cd-8125">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b705-ae12-114d-c72f" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0f0a-86a2-4ee1-b1bd" type="min"/>
+          </constraints>
+          <entryLinks>
+            <entryLink id="ddd9-d20d-c6cd-8125" name="Avenger Strike Fighter" hidden="false" collective="false" import="true" targetId="047d-20b5-1f5d-a706" type="selectionEntry">
+              <modifiers>
+                <modifier type="add" field="category" value="6d44-12e4-d5ea-09c0">
+                  <conditionGroups>
+                    <conditionGroup type="or">
+                      <conditions>
+                        <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="abd8-eaa2-c55c-e988" type="equalTo"/>
+                        <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="a189-dd82-7031-50ac" type="equalTo"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                </modifier>
+                <modifier type="add" field="category" value="c433-5fae-d67b-194e">
+                  <conditions>
+                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="09c7-30fa-b2fa-52cb" type="equalTo"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" field="name" value="(Lead) Avenger Strike Fighter"/>
+                <modifier type="remove" field="category" value="e888-1504-aa61-95ff"/>
+              </modifiers>
+            </entryLink>
+            <entryLink id="356f-45a3-ae1c-57bc" name="Lightning Strike Fighter" hidden="false" collective="false" import="true" targetId="f1a5-4850-1372-83f9" type="selectionEntry">
+              <modifiers>
+                <modifier type="add" field="category" value="6d44-12e4-d5ea-09c0">
+                  <conditionGroups>
+                    <conditionGroup type="or">
+                      <conditions>
+                        <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="abd8-eaa2-c55c-e988" type="equalTo"/>
+                        <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="a189-dd82-7031-50ac" type="equalTo"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                </modifier>
+                <modifier type="add" field="category" value="c433-5fae-d67b-194e">
+                  <conditions>
+                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="09c7-30fa-b2fa-52cb" type="equalTo"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" field="name" value="(Lead) Lightning Strike Fighter"/>
+                <modifier type="remove" field="category" value="e888-1504-aa61-95ff"/>
+              </modifiers>
+            </entryLink>
+            <entryLink id="b21a-d3d6-0bc5-1cfd" name="Thunderbolt" hidden="false" collective="false" import="true" targetId="ba79-0909-10b0-98ba" type="selectionEntry">
+              <modifiers>
+                <modifier type="add" field="category" value="6d44-12e4-d5ea-09c0">
+                  <conditionGroups>
+                    <conditionGroup type="or">
+                      <conditions>
+                        <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="abd8-eaa2-c55c-e988" type="equalTo"/>
+                        <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="a189-dd82-7031-50ac" type="equalTo"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                </modifier>
+                <modifier type="add" field="category" value="c433-5fae-d67b-194e">
+                  <conditions>
+                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="09c7-30fa-b2fa-52cb" type="equalTo"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" field="name" value="(Lead) Thunderbolt"/>
+                <modifier type="remove" field="category" value="e888-1504-aa61-95ff"/>
+              </modifiers>
+            </entryLink>
+            <entryLink id="5e17-9613-26fa-319a" name="Thunderbolt Fury" hidden="false" collective="false" import="true" targetId="c47a-67b8-0534-57cd" type="selectionEntry">
+              <modifiers>
+                <modifier type="add" field="category" value="6d44-12e4-d5ea-09c0">
+                  <conditionGroups>
+                    <conditionGroup type="or">
+                      <conditions>
+                        <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="abd8-eaa2-c55c-e988" type="equalTo"/>
+                        <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="a189-dd82-7031-50ac" type="equalTo"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                </modifier>
+                <modifier type="add" field="category" value="c433-5fae-d67b-194e">
+                  <conditions>
+                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="09c7-30fa-b2fa-52cb" type="equalTo"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" field="name" value="(Lead) Thunderbolt Fury"/>
+                <modifier type="remove" field="category" value="e888-1504-aa61-95ff"/>
+              </modifiers>
+            </entryLink>
+          </entryLinks>
+        </selectionEntryGroup>
+        <selectionEntryGroup id="a884-d6b1-3c43-1612" name="Squadron Makeup" hidden="false" collective="false" import="true" defaultSelectionEntryId="3bd3-784e-15ea-06d5">
+          <constraints>
+            <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="27ab-db78-cdaa-ee14" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7721-0cc8-42c6-abcd" type="min"/>
+          </constraints>
+          <entryLinks>
+            <entryLink id="3bd3-784e-15ea-06d5" name="Avenger Strike Fighter" hidden="false" collective="false" import="true" targetId="047d-20b5-1f5d-a706" type="selectionEntry">
+              <modifiers>
+                <modifier type="add" field="category" value="6d44-12e4-d5ea-09c0">
+                  <conditionGroups>
+                    <conditionGroup type="or">
+                      <conditions>
+                        <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="abd8-eaa2-c55c-e988" type="equalTo"/>
+                        <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="a189-dd82-7031-50ac" type="equalTo"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                </modifier>
+                <modifier type="add" field="category" value="c433-5fae-d67b-194e">
+                  <conditions>
+                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="09c7-30fa-b2fa-52cb" type="equalTo"/>
+                  </conditions>
+                </modifier>
+                <modifier type="remove" field="category" value="e888-1504-aa61-95ff"/>
+              </modifiers>
+            </entryLink>
+            <entryLink id="e935-f7de-a4a3-7281" name="Lightning Strike Fighter" hidden="false" collective="false" import="true" targetId="f1a5-4850-1372-83f9" type="selectionEntry">
+              <modifiers>
+                <modifier type="add" field="category" value="6d44-12e4-d5ea-09c0">
+                  <conditionGroups>
+                    <conditionGroup type="or">
+                      <conditions>
+                        <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="abd8-eaa2-c55c-e988" type="equalTo"/>
+                        <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="a189-dd82-7031-50ac" type="equalTo"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                </modifier>
+                <modifier type="add" field="category" value="c433-5fae-d67b-194e">
+                  <conditions>
+                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="09c7-30fa-b2fa-52cb" type="equalTo"/>
+                  </conditions>
+                </modifier>
+                <modifier type="remove" field="category" value="e888-1504-aa61-95ff"/>
+              </modifiers>
+            </entryLink>
+            <entryLink id="8cab-31cd-0752-b251" name="Thunderbolt" hidden="false" collective="false" import="true" targetId="ba79-0909-10b0-98ba" type="selectionEntry">
+              <modifiers>
+                <modifier type="add" field="category" value="6d44-12e4-d5ea-09c0">
+                  <conditionGroups>
+                    <conditionGroup type="or">
+                      <conditions>
+                        <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="abd8-eaa2-c55c-e988" type="equalTo"/>
+                        <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="a189-dd82-7031-50ac" type="equalTo"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                </modifier>
+                <modifier type="add" field="category" value="c433-5fae-d67b-194e">
+                  <conditions>
+                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="09c7-30fa-b2fa-52cb" type="equalTo"/>
+                  </conditions>
+                </modifier>
+                <modifier type="remove" field="category" value="e888-1504-aa61-95ff"/>
+              </modifiers>
+            </entryLink>
+            <entryLink id="243a-8d17-67e6-c3a3" name="Thunderbolt Fury" hidden="false" collective="false" import="true" targetId="c47a-67b8-0534-57cd" type="selectionEntry">
+              <modifiers>
+                <modifier type="add" field="category" value="6d44-12e4-d5ea-09c0">
+                  <conditionGroups>
+                    <conditionGroup type="or">
+                      <conditions>
+                        <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="abd8-eaa2-c55c-e988" type="equalTo"/>
+                        <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="a189-dd82-7031-50ac" type="equalTo"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                </modifier>
+                <modifier type="add" field="category" value="c433-5fae-d67b-194e">
+                  <conditions>
+                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="09c7-30fa-b2fa-52cb" type="equalTo"/>
+                  </conditions>
+                </modifier>
+                <modifier type="remove" field="category" value="e888-1504-aa61-95ff"/>
+              </modifiers>
+            </entryLink>
+          </entryLinks>
+        </selectionEntryGroup>
+        <selectionEntryGroup id="40dd-71bc-9ff0-9bc9" name="Squadron Specialization" hidden="false" collective="false" import="true">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c7bb-9f5d-d7ff-efd6" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="98e5-db34-e6c6-4e19" type="max"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry id="a189-dd82-7031-50ac" name="(Specialization) Ground Assault - Light" hidden="false" collective="false" import="true" type="upgrade">
+              <profiles>
+                <profile id="4cf4-43f5-3017-10ce" name="Ground Assault - Light" hidden="false" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Abilities">
+                  <characteristics>
+                    <characteristic name="Description" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">Each time a model in this unit makes an attack against an enemy unit with the Troops Battlefield Role, you can re-roll the wound roll.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <categoryLinks>
+                <categoryLink id="67de-7fce-b29a-44b5" name="Ground Assault Squadron" hidden="false" targetId="6d44-12e4-d5ea-09c0" primary="false"/>
+              </categoryLinks>
+              <costs>
+                <cost name=" PL" typeId="e356-c769-5920-6e14" value="2.0"/>
+                <cost name="pts" typeId="points" value="20.0"/>
+                <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="abd8-eaa2-c55c-e988" name="(Specialization) Ground Assault - Heavy" hidden="false" collective="false" import="true" type="upgrade">
+              <profiles>
+                <profile id="01d5-e169-fc0f-c474" name="Ground Assault - Heavy" hidden="false" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Abilities">
+                  <characteristics>
+                    <characteristic name="Description" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">Each time a model in this unit makes an attack against an enemy unit with the Heavy Support, Lord of War or Dedicated Transport Battlefield Role, you can re-roll the wound roll.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <categoryLinks>
+                <categoryLink id="c770-2db8-2ef2-82a6" name="Ground Assault Squadron" hidden="false" targetId="6d44-12e4-d5ea-09c0" primary="false"/>
+              </categoryLinks>
+              <costs>
+                <cost name="pts" typeId="points" value="20.0"/>
+                <cost name=" PL" typeId="e356-c769-5920-6e14" value="2.0"/>
+                <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="09c7-30fa-b2fa-52cb" name="(Specialization) Air Defense" hidden="false" collective="false" import="true" type="upgrade">
+              <profiles>
+                <profile id="21bb-8b0f-3fc7-e7e3" name="Air Defense" hidden="false" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Abilities">
+                  <characteristics>
+                    <characteristic name="Description" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">Each time a model in this unit makes an attack against an enemy unit with the Fly keyword, you can re-roll the wound roll.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <categoryLinks>
+                <categoryLink id="38ee-e24a-e596-1689" name="Air Assault Squadron" hidden="false" targetId="c433-5fae-d67b-194e" primary="false"/>
+              </categoryLinks>
+              <costs>
+                <cost name="pts" typeId="points" value="15.0"/>
+                <cost name=" PL" typeId="e356-c769-5920-6e14" value="1.0"/>
+                <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <costs>
+        <cost name=" PL" typeId="e356-c769-5920-6e14" value="0.0"/>
+        <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0.0"/>
+        <cost name="pts" typeId="points" value="0.0"/>
       </costs>
     </selectionEntry>
   </sharedSelectionEntries>
@@ -13198,7 +13434,7 @@ discard the lowest result.</characteristic>
         </selectionEntry>
       </selectionEntries>
     </selectionEntryGroup>
-    <selectionEntryGroup id="d00a-34fd-c492-6a09" name="Valkyrie Wing Mounted Weapons" publicationId="cd8f-3e55-003e-b580" page="" hidden="false" collective="false" import="true" defaultSelectionEntryId="aab7-e84e-f7d4-0eac">
+    <selectionEntryGroup id="d00a-34fd-c492-6a09" name="Valkyrie Wing Mounted Weapons" page="" hidden="false" collective="false" import="true" defaultSelectionEntryId="aab7-e84e-f7d4-0eac">
       <constraints>
         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="32b7-803f-0264-9b57" type="min"/>
         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="8f65-bc6e-e48e-d929" type="max"/>
@@ -13238,94 +13474,34 @@ discard the lowest result.</characteristic>
       </constraints>
       <entryLinks>
         <entryLink id="7e89-6ca0-b213-dfb1" name="Flamer" hidden="false" collective="false" import="true" targetId="fd22-6743-2d4c-dd62" type="selectionEntry">
-          <modifiers>
-            <modifier type="set" field="points" value="0.0">
-              <conditions>
-                <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" childId="f6f9-b139-abb3-b719" type="instanceOf"/>
-              </conditions>
-            </modifier>
-          </modifiers>
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="5ab9-b7a0-a219-3790" type="max"/>
           </constraints>
-          <costs>
-            <cost name="pts" typeId="points" value="5.0"/>
-          </costs>
         </entryLink>
         <entryLink id="0cc1-a31f-c744-5676" name="Meltagun" hidden="false" collective="false" import="true" targetId="efc8-c51d-5b02-a3a2" type="selectionEntry">
-          <modifiers>
-            <modifier type="set" field="points" value="0.0">
-              <conditions>
-                <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" childId="f6f9-b139-abb3-b719" type="instanceOf"/>
-              </conditions>
-            </modifier>
-          </modifiers>
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="f6ed-0c82-7f0f-c9cf" type="max"/>
           </constraints>
-          <costs>
-            <cost name="pts" typeId="points" value="5.0"/>
-          </costs>
         </entryLink>
         <entryLink id="e8f5-a634-a0c6-e5e4" name="Plasma gun" hidden="false" collective="false" import="true" targetId="8c14-22cc-93ce-b85a" type="selectionEntry">
-          <modifiers>
-            <modifier type="set" field="points" value="0.0">
-              <conditions>
-                <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" childId="f6f9-b139-abb3-b719" type="instanceOf"/>
-              </conditions>
-            </modifier>
-          </modifiers>
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="c1af-c2b6-c556-6695" type="max"/>
           </constraints>
-          <costs>
-            <cost name="pts" typeId="points" value="5.0"/>
-          </costs>
         </entryLink>
         <entryLink id="fb29-85a9-2a72-edaf" name="Sniper rifle" hidden="false" collective="false" import="true" targetId="ba62-f2c3-d7bb-4f5d" type="selectionEntry">
-          <modifiers>
-            <modifier type="set" field="points" value="0.0">
-              <conditions>
-                <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" childId="f6f9-b139-abb3-b719" type="instanceOf"/>
-              </conditions>
-            </modifier>
-          </modifiers>
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="f8b1-2e4f-42dd-b040" type="max"/>
           </constraints>
-          <costs>
-            <cost name="pts" typeId="points" value="2.0"/>
-          </costs>
         </entryLink>
         <entryLink id="7dae-0132-0f66-3747" name="Las-cutter" hidden="false" collective="false" import="true" targetId="e1f1-ceed-d399-6599" type="selectionEntry">
-          <modifiers>
-            <modifier type="set" field="points" value="0.0">
-              <conditions>
-                <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" childId="f6f9-b139-abb3-b719" type="instanceOf"/>
-              </conditions>
-            </modifier>
-          </modifiers>
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="1d56-2d47-52c2-946a" type="max"/>
           </constraints>
-          <costs>
-            <cost name="pts" typeId="points" value="5.0"/>
-          </costs>
         </entryLink>
         <entryLink id="cbae-ae9a-6ac8-3a57" name="Grenade Launcher" hidden="false" collective="false" import="true" targetId="1cbe-da53-ef9f-5cfa" type="selectionEntry">
-          <modifiers>
-            <modifier type="set" field="points" value="0.0">
-              <conditions>
-                <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" childId="f6f9-b139-abb3-b719" type="instanceOf"/>
-              </conditions>
-            </modifier>
-          </modifiers>
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="bde3-cf8f-1efa-c0df" type="max"/>
           </constraints>
-          <costs>
-            <cost name="pts" typeId="points" value="5.0"/>
-          </costs>
         </entryLink>
       </entryLinks>
     </selectionEntryGroup>
@@ -14541,7 +14717,7 @@ discard the lowest result.</characteristic>
     </selectionEntryGroup>
     <selectionEntryGroup id="5a3c-340d-cbb5-db8d" name="Drop Troops - Aircraft Wing Mounts" publicationId="cd8f-3e55-003e-b580" page="168" hidden="false" collective="false" import="true">
       <selectionEntries>
-        <selectionEntry id="f26c-9b99-11a8-b217" name="2x Tactical Bombs" hidden="true" collective="false" import="true" type="upgrade">
+        <selectionEntry id="f26c-9b99-11a8-b217" name="2x Bombs - Tactical" hidden="true" collective="false" import="true" type="upgrade">
           <modifiers>
             <modifier type="set" field="hidden" value="false">
               <conditionGroups>
@@ -14665,13 +14841,9 @@ discard the lowest result.</characteristic>
         <selectionEntry id="f1a1-0676-f4d6-7e79" name="2x Autocannon" hidden="true" collective="false" import="true" type="upgrade">
           <modifiers>
             <modifier type="set" field="hidden" value="false">
-              <conditionGroups>
-                <conditionGroup type="or">
-                  <conditions>
-                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="192a-6fd1-1b56-1be9" type="instanceOf"/>
-                  </conditions>
-                </conditionGroup>
-              </conditionGroups>
+              <conditions>
+                <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="192a-6fd1-1b56-1be9" type="instanceOf"/>
+              </conditions>
             </modifier>
           </modifiers>
           <constraints>
@@ -14741,9 +14913,33 @@ discard the lowest result.</characteristic>
             <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0.0"/>
           </costs>
         </selectionEntry>
+        <selectionEntry id="77ba-8b68-4a08-ccad" name="2x Bombs - Cluster" hidden="true" collective="false" import="true" type="upgrade">
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <conditions>
+                <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="6d44-12e4-d5ea-09c0" type="instanceOf"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="cdef-4c71-3143-c72b" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="8d2a-eeff-4386-29ff" name="Cluster Bomb" hidden="false" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Abilities">
+              <characteristics>
+                <characteristic name="Description" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">In your Movement phase, after this model makes a Normal Move or Advances, you can select one enemy unit this model moved across as part of that move. If you do, roll one D6 for each INFANTRY model in that unit, and roll 2D6 for any CHARACTER in that unit: for each roll of a 3+, that unit suffers 1 mortal wound. Each Cluster Bomb can be dropped only once per battle, and only one can be dropped per phase.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name="pts" typeId="points" value="40.0"/>
+            <cost name=" PL" typeId="e356-c769-5920-6e14" value="0.0"/>
+            <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0.0"/>
+          </costs>
+        </selectionEntry>
       </selectionEntries>
     </selectionEntryGroup>
-    <selectionEntryGroup id="dcbf-6b4d-2b03-55e9" name="Vulture Inner Hardpoint Weapons" publicationId="cd8f-3e55-003e-b580" page="" hidden="false" collective="false" import="true" defaultSelectionEntryId="591c-b6f8-0e4c-d9d0">
+    <selectionEntryGroup id="dcbf-6b4d-2b03-55e9" name="Vulture Inner Hardpoint" page="" hidden="false" collective="false" import="true" defaultSelectionEntryId="591c-b6f8-0e4c-d9d0">
       <constraints>
         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="3535-8add-c8ec-df92" type="min"/>
         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="0ad8-20bb-c309-8df0" type="max"/>
@@ -14849,9 +15045,22 @@ discard the lowest result.</characteristic>
             <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0.0"/>
           </costs>
         </selectionEntry>
+        <selectionEntry id="1814-36aa-4e2a-9ab1" name="2x Punisher gatling cannon" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6fa8-66f9-65a3-6770" type="max"/>
+          </constraints>
+          <infoLinks>
+            <infoLink id="5db0-410e-84ef-f46e" name="Punisher Gatling Cannon" hidden="false" targetId="9fac-07c9-3595-784e" type="profile"/>
+          </infoLinks>
+          <costs>
+            <cost name=" PL" typeId="e356-c769-5920-6e14" value="0.0"/>
+            <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0.0"/>
+            <cost name="pts" typeId="points" value="70.0"/>
+          </costs>
+        </selectionEntry>
       </selectionEntries>
     </selectionEntryGroup>
-    <selectionEntryGroup id="b182-1782-09b5-54ea" name="Vulture Outer Hardpoint Weapons" publicationId="cd8f-3e55-003e-b580" page="" hidden="false" collective="false" import="true" defaultSelectionEntryId="a5cc-39bc-7950-68ba">
+    <selectionEntryGroup id="b182-1782-09b5-54ea" name="Vulture Outer Hardpoint" publicationId="cd8f-3e55-003e-b580" page="" hidden="false" collective="false" import="true" defaultSelectionEntryId="a5cc-39bc-7950-68ba">
       <constraints>
         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="5f55-78fe-c0ce-f1d8" type="max"/>
         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="34b8-15eb-9a9b-d76e" type="min"/>
