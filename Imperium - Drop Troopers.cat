@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="77d7-28cc-6700-0b8c" name="Imperium - Drop Troopers" revision="64" battleScribeVersion="2.03" authorName="SwampyTurtle, Wizard, Etansnail, Brendanmint(battlescribe)" authorContact="Elysian Drop Troop Command Discord" authorUrl="https://discord.gg/47u9YjKxYN" library="false" gameSystemId="28ec-711c-d87f-3aeb" gameSystemRevision="222" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="77d7-28cc-6700-0b8c" name="Imperium - Drop Troopers" revision="65" battleScribeVersion="2.03" authorName="SwampyTurtle, Wizard, Etansnail, Brendanmint(battlescribe)" authorContact="Elysian Drop Troop Command Discord" authorUrl="https://discord.gg/47u9YjKxYN" library="false" gameSystemId="28ec-711c-d87f-3aeb" gameSystemRevision="222" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <readme>Codex Version 0.2.5
 ---
 Report issues on Discord in #battlescribe-development</readme>
@@ -9121,9 +9121,18 @@ If this model is destroyed, set up the Named Ace within 6&quot; of thid model in
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="57fc-70f4-0d2c-c876" type="min"/>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="cae9-3d2a-3b1b-553e" type="max"/>
               </constraints>
-              <infoLinks>
-                <infoLink id="8215-37cb-0438-6e1d" name="Twin assault cannon" hidden="false" targetId="acb8-7501-1f1b-b483" type="profile"/>
-              </infoLinks>
+              <profiles>
+                <profile id="c045-ec39-fdbe-37c3" name="Twin heavy bolter" hidden="false" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Weapon">
+                  <characteristics>
+                    <characteristic name="Range" typeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464">36&quot;</characteristic>
+                    <characteristic name="Type" typeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2">Heavy 6</characteristic>
+                    <characteristic name="S" typeId="59b1-319e-ec13-d466">65</characteristic>
+                    <characteristic name="AP" typeId="75aa-a838-b675-6484">-1</characteristic>
+                    <characteristic name="D" typeId="ae8a-3137-d65b-4ca7">2</characteristic>
+                    <characteristic name="Abilities" typeId="837d-5e63-aeb7-1410">-</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
               <costs>
                 <cost name=" PL" typeId="e356-c769-5920-6e14" value="0.0"/>
                 <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0.0"/>
@@ -9135,9 +9144,18 @@ If this model is destroyed, set up the Named Ace within 6&quot; of thid model in
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="cee4-49a0-b4b2-f95a" type="min"/>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9d16-bfb3-1d28-bcb3" type="max"/>
               </constraints>
-              <infoLinks>
-                <infoLink id="e14b-7fb8-6f84-f1eb" name="Lascannon" hidden="false" targetId="f14a-07e5-5465-69cf" type="profile"/>
-              </infoLinks>
+              <profiles>
+                <profile id="d8ae-bec6-26b5-ec1e" name="Twin assault cannon" hidden="false" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Weapon">
+                  <characteristics>
+                    <characteristic name="Range" typeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464">24&quot;</characteristic>
+                    <characteristic name="Type" typeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2">Heavy 12</characteristic>
+                    <characteristic name="S" typeId="59b1-319e-ec13-d466">6</characteristic>
+                    <characteristic name="AP" typeId="75aa-a838-b675-6484">-1</characteristic>
+                    <characteristic name="D" typeId="ae8a-3137-d65b-4ca7">1</characteristic>
+                    <characteristic name="Abilities" typeId="837d-5e63-aeb7-1410">-</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
               <costs>
                 <cost name=" PL" typeId="e356-c769-5920-6e14" value="0.0"/>
                 <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0.0"/>
@@ -11107,6 +11125,7 @@ If the Valkyrie model being commanded by a Captain Vivian is destroyed, set up t
         <categoryLink id="0553-97dc-ea1f-196f" name="Smokescreen" hidden="false" targetId="5d1d-c80e-b1ea-6d6d" primary="false"/>
         <categoryLink id="18a0-6ba6-8286-a395" name="Payload" hidden="false" targetId="cc4b-1bc5-d751-9031" primary="false"/>
         <categoryLink id="2ef3-8f03-6b47-93c9" name="Sky-Drifter" hidden="false" targetId="bf3d-a016-3f24-1a8a" primary="false"/>
+        <categoryLink id="6462-8863-30a6-b9ef" name="Fortification" hidden="false" targetId="d713cda3-5d0f-40d8-b621-69233263ec2a" primary="true"/>
       </categoryLinks>
       <selectionEntryGroups>
         <selectionEntryGroup id="3f98-960a-c1c5-e4ea" name="Wargear" hidden="false" collective="false" import="true">
