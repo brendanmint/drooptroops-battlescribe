@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="77d7-28cc-6700-0b8c" name="Imperium - Drop Troopers" revision="65" battleScribeVersion="2.03" authorName="SwampyTurtle, Wizard, Etansnail, Brendanmint(battlescribe)" authorContact="Elysian Drop Troop Command Discord" authorUrl="https://discord.gg/47u9YjKxYN" library="false" gameSystemId="28ec-711c-d87f-3aeb" gameSystemRevision="222" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="77d7-28cc-6700-0b8c" name="Imperium - Drop Troopers" revision="66" battleScribeVersion="2.03" authorName="SwampyTurtle, Wizard, Etansnail, Brendanmint(battlescribe)" authorContact="Elysian Drop Troop Command Discord" authorUrl="https://discord.gg/47u9YjKxYN" library="false" gameSystemId="28ec-711c-d87f-3aeb" gameSystemRevision="222" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <readme>Codex Version 0.2.5
 ---
 Report issues on Discord in #battlescribe-development</readme>
@@ -1619,7 +1619,7 @@ Report issues on Discord in #battlescribe-development</readme>
               <modifiers>
                 <modifier type="set" field="2f8e-1b43-a52c-2e01" value="0.0">
                   <conditions>
-                    <condition field="selections" scope="2164-65f3-9725-babf" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d4ce-4f9b-ab3a-9a52" type="atLeast"/>
+                    <condition field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d4ce-4f9b-ab3a-9a52" type="atLeast"/>
                   </conditions>
                 </modifier>
               </modifiers>
@@ -3257,43 +3257,6 @@ Report issues on Discord in #battlescribe-development</readme>
         <categoryLink id="82dd-f5ac-1c8c-6040" name="Faction: &lt;DROP REGIMENT&gt;" hidden="false" targetId="5347-52d6-a64c-7945" primary="false"/>
         <categoryLink id="db52-5179-2422-262b" name="Faction: Drop Troops" hidden="false" targetId="7740-5f32-8c61-c1ff" primary="false"/>
       </categoryLinks>
-      <selectionEntries>
-        <selectionEntry id="4380-7508-05fa-db5d" name="Captain Vivian (Trait)" hidden="true" collective="false" import="true" type="upgrade">
-          <modifiers>
-            <modifier type="set" field="hidden" value="false">
-              <conditions>
-                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="9136-51d7-544e-e710" type="equalTo"/>
-              </conditions>
-            </modifier>
-            <modifier type="add" field="category" value="f3fe-a341-1ab8-f1e6"/>
-            <modifier type="add" field="category" value="ef18-746a-369f-43a4"/>
-          </modifiers>
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="49fd-65d8-0aa5-757a" type="max"/>
-            <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e959-902c-cbea-c7b3" type="max"/>
-          </constraints>
-          <profiles>
-            <profile id="2b66-9937-eee0-8262" name="Distinguished Drop Pilot" hidden="false" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Abilities">
-              <comment>ToDo: Add Aircraft options.</comment>
-              <characteristics>
-                <characteristic name="Description" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">Whilst model is being commander by Captain Vivian, it has a Ballistic Skill of 3+ (even when it has suffered damage) and gains the CAPTAIN VIVIAN and CHARACTER keywords as well as the Vox Amplifier ability. This model must take one Ace Pilot Ability and a Lascannon.
-
-If this model is destroyed, set up Captain Vivian within 6&quot; of thid model in the same manner as a model disembarking from a transport.</characteristic>
-              </characteristics>
-            </profile>
-            <profile id="e250-66c5-5f2d-a261" name="Vox Amplifier" hidden="false" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Abilities">
-              <characteristics>
-                <characteristic name="Description" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">Captain Vivian may issue one order per turn to the Aircraft under her command. Orders may only be issued to PHANTINE AIRCRAFT units within 12” of this model. To issue an order, pick a target unit and choose which order you wish to issue from the Aircraft Orders List. A unit may only be affected by one order per turn. If Captain Vivian is ejected from her Valkyrie, she can only issue orders to units within 8&quot;.</characteristic>
-              </characteristics>
-            </profile>
-          </profiles>
-          <costs>
-            <cost name=" PL" typeId="e356-c769-5920-6e14" value="0.0"/>
-            <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0.0"/>
-            <cost name="pts" typeId="points" value="0.0"/>
-          </costs>
-        </selectionEntry>
-      </selectionEntries>
       <selectionEntryGroups>
         <selectionEntryGroup id="765b-5222-5024-a56e" name="Armament Options" hidden="false" collective="false" import="true">
           <selectionEntries>
@@ -3327,15 +3290,7 @@ If this model is destroyed, set up Captain Vivian within 6&quot; of thid model i
         <entryLink id="9d93-691e-3945-b9b0" name="Advanced Countermeasures" hidden="false" collective="false" import="true" targetId="552f-a743-bbf4-2701" type="selectionEntry"/>
         <entryLink id="afd3-ab0b-9d8d-8320" name="Drop Troops - Aircraft Equipment List" hidden="false" collective="false" import="true" targetId="4e6c-1d7a-fc71-5556" type="selectionEntryGroup"/>
         <entryLink id="92dd-2365-1fc2-1385" name="Named Ace (Trait)" hidden="false" collective="false" import="true" targetId="785b-8fae-1c8c-f088" type="selectionEntry"/>
-        <entryLink id="0dcc-a40b-9e95-9b36" name="Relics" hidden="false" collective="false" import="true" targetId="58ce-55c6-222f-0640" type="selectionEntryGroup">
-          <modifiers>
-            <modifier type="set" field="hidden" value="true">
-              <conditions>
-                <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4380-7508-05fa-db5d" type="equalTo"/>
-              </conditions>
-            </modifier>
-          </modifiers>
-        </entryLink>
+        <entryLink id="0dcc-a40b-9e95-9b36" name="Relics" hidden="false" collective="false" import="true" targetId="58ce-55c6-222f-0640" type="selectionEntryGroup"/>
         <entryLink id="e1f0-a26e-6da3-24a5" name="Regimental Equipment" hidden="false" collective="false" import="true" targetId="2069-2957-c832-e5c5" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
@@ -5820,13 +5775,11 @@ If this model is destroyed, set up Captain Vivian within 6&quot; of thid model i
                   <entryLinks>
                     <entryLink id="ea6f-f310-9967-be67" name="Shotgun" hidden="false" collective="false" import="true" targetId="2094-c9a6-a426-0970" type="selectionEntry">
                       <constraints>
-                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9ae6-5d15-4439-90b2" type="min"/>
                         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6d0f-e758-d96b-5c5f" type="max"/>
                       </constraints>
                     </entryLink>
                     <entryLink id="b45f-ad45-f954-56fc" name="Lasgun" hidden="false" collective="false" import="true" targetId="fd87-854b-d284-184a" type="selectionEntry">
                       <constraints>
-                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b6f1-63ad-616b-ea63" type="min"/>
                         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="dc52-e02f-6c69-1bc2" type="max"/>
                       </constraints>
                     </entryLink>
@@ -7747,7 +7700,7 @@ If a AIRCRAFT model being commanded by a Named Pilot is destroyed, set up this m
               <costs>
                 <cost name=" PL" typeId="e356-c769-5920-6e14" value="0.0"/>
                 <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0.0"/>
-                <cost name="pts" typeId="points" value="0.0"/>
+                <cost name="pts" typeId="points" value="15.0"/>
               </costs>
             </selectionEntry>
           </selectionEntries>
@@ -7808,6 +7761,9 @@ If a AIRCRAFT model being commanded by a Named Pilot is destroyed, set up this m
       </costs>
     </selectionEntry>
     <selectionEntry id="d4ce-4f9b-ab3a-9a52" name="Lasgun with auxiliary grenade launcher" hidden="false" collective="false" import="true" type="upgrade">
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="fc9e-2726-fc97-b745" type="max"/>
+      </constraints>
       <profiles>
         <profile id="4f19-8864-3e5e-2a28" name="Lasgun with auxiliary grenade launcher" hidden="false" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Weapon">
           <characteristics>
@@ -8034,7 +7990,7 @@ If a AIRCRAFT model being commanded by a Named Pilot is destroyed, set up this m
               <modifiers>
                 <modifier type="set" field="6055-236d-3d10-3a74" value="0.0">
                   <conditions>
-                    <condition field="selections" scope="6cf8-7181-deec-4165" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d4ce-4f9b-ab3a-9a52" type="atLeast"/>
+                    <condition field="selections" scope="6cf8-7181-deec-4165" value="2.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d4ce-4f9b-ab3a-9a52" type="atLeast"/>
                   </conditions>
                 </modifier>
               </modifiers>
@@ -10180,7 +10136,7 @@ If the Valkyrie model being commanded by a Captain Vivian is destroyed, set up t
             </entryLink>
           </entryLinks>
           <costs>
-            <cost name="pts" typeId="points" value="7.0"/>
+            <cost name="pts" typeId="points" value="11.0"/>
             <cost name=" PL" typeId="e356-c769-5920-6e14" value="0.0"/>
             <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0.0"/>
           </costs>
@@ -13389,25 +13345,16 @@ discard the lowest result.</characteristic>
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ab74-57aa-75ed-bcff" type="max"/>
           </constraints>
-          <costs>
-            <cost name="pts" typeId="points" value="10.0"/>
-          </costs>
         </entryLink>
         <entryLink id="49af-078e-5e98-88d6" name="Heavy flamer" hidden="false" collective="false" import="true" targetId="18bc-b335-29c2-2ae2" type="selectionEntry">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="60b5-b340-7e8c-a977" type="max"/>
           </constraints>
-          <costs>
-            <cost name="pts" typeId="points" value="10.0"/>
-          </costs>
         </entryLink>
         <entryLink id="8af5-2567-8509-e305" name="Multi-melta" hidden="false" collective="false" import="true" targetId="2b37-65ee-9443-b4ef" type="selectionEntry">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d75c-299c-f27a-19a6" type="max"/>
           </constraints>
-          <costs>
-            <cost name="pts" typeId="points" value="25.0"/>
-          </costs>
         </entryLink>
       </entryLinks>
     </selectionEntryGroup>
@@ -13431,13 +13378,6 @@ discard the lowest result.</characteristic>
           </costs>
         </selectionEntry>
         <selectionEntry id="3e66-75bb-8e16-eae3" name="Lascannon" page="0" hidden="false" collective="false" import="true" type="upgrade">
-          <modifiers>
-            <modifier type="set" field="e625-0b25-4921-ae61" value="1.0">
-              <conditions>
-                <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4380-7508-05fa-db5d" type="equalTo"/>
-              </conditions>
-            </modifier>
-          </modifiers>
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="d53f-3535-8abe-fd53" type="max"/>
             <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e625-0b25-4921-ae61" type="min"/>
@@ -15234,19 +15174,6 @@ discard the lowest result.</characteristic>
                 <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b9a0-586a-2464-280d" type="equalTo"/>
               </conditions>
             </modifier>
-            <modifier type="increment" field="points" value="3.0">
-              <repeats>
-                <repeat field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="model" repeats="1" roundUp="false"/>
-              </repeats>
-              <conditions>
-                <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="model" type="atLeast"/>
-              </conditions>
-            </modifier>
-            <modifier type="increment" field="points" value="3.0">
-              <conditions>
-                <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="model" type="instanceOf"/>
-              </conditions>
-            </modifier>
             <modifier type="set" field="name" value="Geno-surgical Enhancements (5pts/model)"/>
           </modifiers>
           <constraints>
@@ -15285,19 +15212,6 @@ discard the lowest result.</characteristic>
                 <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b9a0-586a-2464-280d" type="equalTo"/>
               </conditions>
             </modifier>
-            <modifier type="increment" field="points" value="10.0">
-              <repeats>
-                <repeat field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="model" repeats="1" roundUp="false"/>
-              </repeats>
-              <conditions>
-                <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="model" type="atLeast"/>
-              </conditions>
-            </modifier>
-            <modifier type="increment" field="points" value="10.0">
-              <conditions>
-                <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="model" type="instanceOf"/>
-              </conditions>
-            </modifier>
             <modifier type="set" field="name" value="Geno-surgical Enhanced Crew (10pts/model)"/>
           </modifiers>
           <constraints>
@@ -15333,19 +15247,6 @@ discard the lowest result.</characteristic>
             <modifier type="set" field="33cd-1848-447e-99a3" value="1.0">
               <conditions>
                 <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b9a0-586a-2464-280d" type="equalTo"/>
-              </conditions>
-            </modifier>
-            <modifier type="increment" field="points" value="15.0">
-              <repeats>
-                <repeat field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="model" repeats="1" roundUp="false"/>
-              </repeats>
-              <conditions>
-                <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="model" type="atLeast"/>
-              </conditions>
-            </modifier>
-            <modifier type="increment" field="points" value="15.0">
-              <conditions>
-                <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="model" type="instanceOf"/>
               </conditions>
             </modifier>
             <modifier type="set" field="name" value="Geno-surgical Enhanced Flight Crew (15pts/model)"/>
@@ -16491,24 +16392,18 @@ discard the lowest result.</characteristic>
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ab14-92f8-96f0-4492" type="max"/>
           </constraints>
-          <costs>
-            <cost name="pts" typeId="points" value="1.0"/>
-          </costs>
         </entryLink>
         <entryLink id="2285-1720-0944-8d93" name="Boltgun" hidden="false" collective="false" import="true" targetId="b61f-a3c1-827d-c5b6" type="selectionEntry">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0df8-43c8-423b-973b" type="max"/>
           </constraints>
-          <costs>
-            <cost name="pts" typeId="points" value="2.0"/>
-          </costs>
         </entryLink>
         <entryLink id="acb9-8dc0-a32a-bec3" name="Lasgun with auxiliary grenade launcher" hidden="false" collective="false" import="true" targetId="d4ce-4f9b-ab3a-9a52" type="selectionEntry">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="dee7-450e-0605-9fe4" type="max"/>
           </constraints>
           <costs>
-            <cost name="pts" typeId="points" value="3.0"/>
+            <cost name="pts" typeId="points" value="30.0"/>
           </costs>
         </entryLink>
         <entryLink id="1655-2fbb-a74c-09c8" name="Lasgun" hidden="false" collective="false" import="true" targetId="fd87-854b-d284-184a" type="selectionEntry">
@@ -16520,9 +16415,6 @@ discard the lowest result.</characteristic>
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7f7a-b08d-42e7-3f1e" type="max"/>
           </constraints>
-          <costs>
-            <cost name="pts" typeId="points" value="1.0"/>
-          </costs>
         </entryLink>
         <entryLink id="b15f-598c-d304-fc3e" name="Shotgun" hidden="false" collective="false" import="true" targetId="2094-c9a6-a426-0970" type="selectionEntry">
           <constraints>
@@ -16538,9 +16430,6 @@ discard the lowest result.</characteristic>
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f9f3-965a-03dd-a96b" type="max"/>
           </constraints>
-          <costs>
-            <cost name="pts" typeId="points" value="1.0"/>
-          </costs>
         </entryLink>
         <entryLink id="63ba-cd4d-e0c4-da4d" name="Plasma pistol" hidden="false" collective="false" import="true" targetId="83be-1ba9-c326-4760" type="selectionEntry">
           <constraints>
@@ -16554,25 +16443,16 @@ discard the lowest result.</characteristic>
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8b59-4365-412b-4092" type="max"/>
           </constraints>
-          <costs>
-            <cost name="pts" typeId="points" value="2.0"/>
-          </costs>
         </entryLink>
         <entryLink id="a665-3e4f-2aaf-ee2e" name="Dual Bolt pistols" hidden="false" collective="false" import="true" targetId="afd8-907d-39b2-4a24" type="selectionEntry">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f30c-a018-641b-6faf" type="max"/>
           </constraints>
-          <costs>
-            <cost name="pts" typeId="points" value="2.0"/>
-          </costs>
         </entryLink>
-        <entryLink id="a62a-8218-e97b-c2e0" name="Dual Hot-shot laspistols" hidden="false" collective="false" import="true" targetId="8d4c-2afa-1770-a35c" type="selectionEntry">
+        <entryLink id="a62a-8218-e97b-c2e0" name="Dual Hot-Shot laspistols" hidden="false" collective="false" import="true" targetId="8d4c-2afa-1770-a35c" type="selectionEntry">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ebdc-a596-f4b6-cb36" type="max"/>
           </constraints>
-          <costs>
-            <cost name="pts" typeId="points" value="2.0"/>
-          </costs>
         </entryLink>
         <entryLink id="badc-39a7-960a-a21b" name="Dual Laspistols" hidden="false" collective="false" import="true" targetId="6288-9d6c-9271-abeb" type="selectionEntry">
           <constraints>
