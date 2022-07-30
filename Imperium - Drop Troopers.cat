@@ -5260,6 +5260,7 @@ I broke a lot of stuff I&apos;m sowwy
                   <costs>
                     <cost name=" PL" typeId="e356-c769-5920-6e14" value="0.0"/>
                     <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0.0"/>
+                    <cost name="pts" typeId="points" value="0.0"/>
                   </costs>
                 </selectionEntry>
               </selectionEntries>
@@ -11369,6 +11370,11 @@ If the Valkyrie model being commanded by a Captain Vivian is destroyed, set up t
           </characteristics>
         </profile>
       </profiles>
+      <costs>
+        <cost name=" PL" typeId="e356-c769-5920-6e14" value="0.0"/>
+        <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0.0"/>
+        <cost name="pts" typeId="points" value="0.0"/>
+      </costs>
     </selectionEntry>
   </sharedSelectionEntries>
   <sharedSelectionEntryGroups>
@@ -13059,7 +13065,7 @@ discard the lowest result.</characteristic>
         </entryLink>
       </entryLinks>
     </selectionEntryGroup>
-    <selectionEntryGroup id="aaa4-1202-4e50-44e9" name="Tauros Weapons" hidden="false" collective="false" import="true">
+    <selectionEntryGroup id="aaa4-1202-4e50-44e9" name="Tauros Weapons" hidden="false" collective="false" import="true" defaultSelectionEntryId="95a4-75d2-7b6a-d579">
       <constraints>
         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5d38-3458-33ce-42c3" type="max"/>
         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d67a-d240-3ed8-87b4" type="min"/>
@@ -13106,6 +13112,7 @@ discard the lowest result.</characteristic>
           <costs>
             <cost name=" PL" typeId="e356-c769-5920-6e14" value="0.0"/>
             <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0.0"/>
+            <cost name="pts" typeId="points" value="0.0"/>
           </costs>
         </selectionEntry>
         <selectionEntry id="0fe3-d4b9-3509-2073" name="(Venator) Twin Multi-Laser" hidden="true" collective="false" import="true" type="upgrade">
@@ -13130,6 +13137,7 @@ discard the lowest result.</characteristic>
           <costs>
             <cost name=" PL" typeId="e356-c769-5920-6e14" value="0.0"/>
             <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0.0"/>
+            <cost name="pts" typeId="points" value="0.0"/>
           </costs>
         </selectionEntry>
         <selectionEntry id="bfd9-0ed3-ec1b-43ac" name="(Venator) Twin Lascannon" hidden="true" collective="false" import="true" type="upgrade">
@@ -13677,6 +13685,7 @@ discard the lowest result.</characteristic>
           <costs>
             <cost name=" PL" typeId="e356-c769-5920-6e14" value="0.0"/>
             <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0.0"/>
+            <cost name="pts" typeId="points" value="0.0"/>
           </costs>
         </selectionEntry>
       </selectionEntries>
@@ -13712,6 +13721,7 @@ discard the lowest result.</characteristic>
           <costs>
             <cost name=" PL" typeId="e356-c769-5920-6e14" value="0.0"/>
             <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0.0"/>
+            <cost name="pts" typeId="points" value="0.0"/>
           </costs>
         </selectionEntry>
         <selectionEntry id="5bb8-805f-0075-e1b6" name="Regimental Standard" hidden="false" collective="false" import="true" type="upgrade">
@@ -13728,6 +13738,7 @@ discard the lowest result.</characteristic>
           <costs>
             <cost name=" PL" typeId="e356-c769-5920-6e14" value="0.0"/>
             <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0.0"/>
+            <cost name="pts" typeId="points" value="0.0"/>
           </costs>
         </selectionEntry>
       </selectionEntries>
@@ -13748,6 +13759,7 @@ discard the lowest result.</characteristic>
           <costs>
             <cost name=" PL" typeId="e356-c769-5920-6e14" value="0.0"/>
             <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0.0"/>
+            <cost name="pts" typeId="points" value="0.0"/>
           </costs>
         </selectionEntry>
       </selectionEntries>
@@ -14224,6 +14236,7 @@ discard the lowest result.</characteristic>
           <costs>
             <cost name=" PL" typeId="e356-c769-5920-6e14" value="2.0"/>
             <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0.0"/>
+            <cost name="pts" typeId="points" value="0.0"/>
           </costs>
         </selectionEntry>
         <selectionEntry id="7cfc-ec66-2ae2-d8de" name="Geno-surgical Enhancement (Aircraft)" hidden="true" collective="false" import="true" type="upgrade">
@@ -14301,6 +14314,7 @@ discard the lowest result.</characteristic>
           <costs>
             <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0.0"/>
             <cost name=" PL" typeId="e356-c769-5920-6e14" value="1.0"/>
+            <cost name="pts" typeId="points" value="0.0"/>
           </costs>
         </selectionEntry>
       </selectionEntries>
@@ -15385,6 +15399,7 @@ discard the lowest result.</characteristic>
           <costs>
             <cost name=" PL" typeId="e356-c769-5920-6e14" value="0.0"/>
             <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0.0"/>
+            <cost name="pts" typeId="points" value="0.0"/>
           </costs>
         </selectionEntry>
         <selectionEntry id="c461-af6c-9e2d-f9a1" name="Breacher charge" hidden="false" collective="false" import="true" type="upgrade">
@@ -15403,6 +15418,7 @@ discard the lowest result.</characteristic>
           <costs>
             <cost name=" PL" typeId="e356-c769-5920-6e14" value="0.0"/>
             <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0.0"/>
+            <cost name="pts" typeId="points" value="0.0"/>
           </costs>
         </selectionEntry>
       </selectionEntries>
@@ -15970,9 +15986,9 @@ opponent&apos;s deployment zone and is more than 12&apos;&apos; away from any en
     </profile>
     <profile id="54a0-4ebd-7f9d-d502" name="Geno-surgical Enhancements" hidden="false" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Abilities">
       <characteristics>
-        <characteristic name="Description" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">Units equipped with this equipment improve their Ballistic skill and Weapon skill by 1 (For a maximum of 3+).
+        <characteristic name="Description" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">INFANTRY units with this doctrine never suffer any negative modifier to their leadership characteristic. 
 Each time a model with this tactic makes a shooting attack against a unit that is not CHAOS, IMPERIUM or UNALIGNED, re-roll a hit roll of 1.
-Units equipped with this equipment add +1 to their Ballistic skill and Weapon skill (For a maximum of 3+).</characteristic>
+Units equipped with this add +1 to their Ballistic skill and Weapon skill (For a maximum of 3+).</characteristic>
       </characteristics>
     </profile>
     <profile id="ac30-69d0-dabe-05dd" name="D-99 Veteran" hidden="false" typeId="800f-21d0-4387-c943" typeName="Unit">
