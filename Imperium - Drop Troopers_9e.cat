@@ -1,13 +1,11 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="a8e4-d35d-f98b-c549" name="Imperium - Drop Troopers Fandex 9e" revision="69" battleScribeVersion="2.03" authorName="Elysian Drop Troop Command Discord Server" authorContact="Report issues on the Discord in #battlescribe-development" authorUrl="https://discord.gg/47u9YjKxYN" library="false" gameSystemId="28ec-711c-d87f-3aeb" gameSystemRevision="225" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="a8e4-d35d-f98b-c549" name="Imperium - Drop Troopers Fandex 9e" revision="70" battleScribeVersion="2.03" authorName="Elysian Drop Troop Command Discord Server" authorContact="Report issues on the Discord in #battlescribe-development" authorUrl="https://discord.gg/47u9YjKxYN" library="false" gameSystemId="28ec-711c-d87f-3aeb" gameSystemRevision="225" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <readme>Codex Version a9.1.1
--
-Revision 69
-9th Edition Update
-Remade from the ground up!
-Seriously report any issues on the discord.
-
-This currently includes datasheets from everything except D-99 and WIP units.</readme>
+- Revision 70 -
+Highlights:
+Fixed Mad Jack
+Fixed D-99 Vets
+Fixed Ogryns Points</readme>
   <publications>
     <publication id="cd8f-3e55-003e-b580" name="Codex: Drop Troopers"/>
   </publications>
@@ -798,7 +796,7 @@ This currently includes datasheets from everything except D-99 and WIP units.</r
         </modifier>
       </modifiers>
     </entryLink>
-    <entryLink id="59d5-2821-5dde-c560" name="(D-99) Veteran Squad" hidden="false" collective="false" import="true" targetId="2ed1-0fad-0eb7-18cb" type="selectionEntry">
+    <entryLink id="59d5-2821-5dde-c560" name="(D-99) Veteran Squad" hidden="true" collective="false" import="true" targetId="2ed1-0fad-0eb7-18cb" type="selectionEntry">
       <modifiers>
         <modifier type="set" field="hidden" value="false">
           <conditions>
@@ -1012,6 +1010,11 @@ This currently includes datasheets from everything except D-99 and WIP units.</r
                   </characteristics>
                 </profile>
               </profiles>
+              <costs>
+                <cost name=" PL" typeId="e356-c769-5920-6e14" value="0.0"/>
+                <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0.0"/>
+                <cost name="pts" typeId="points" value="0.0"/>
+              </costs>
             </selectionEntry>
             <selectionEntry id="7514-6440-dc9a-18e6" name="Elite Sharpshooters" hidden="false" collective="false" import="true" type="upgrade">
               <constraints>
@@ -1025,6 +1028,11 @@ This currently includes datasheets from everything except D-99 and WIP units.</r
                   </characteristics>
                 </profile>
               </profiles>
+              <costs>
+                <cost name=" PL" typeId="e356-c769-5920-6e14" value="0.0"/>
+                <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0.0"/>
+                <cost name="pts" typeId="points" value="0.0"/>
+              </costs>
             </selectionEntry>
             <selectionEntry id="0062-47b1-1503-31b9" name="Heavy Infantry" hidden="false" collective="false" import="true" type="upgrade">
               <constraints>
@@ -1037,6 +1045,11 @@ This currently includes datasheets from everything except D-99 and WIP units.</r
                   </characteristics>
                 </profile>
               </profiles>
+              <costs>
+                <cost name=" PL" typeId="e356-c769-5920-6e14" value="0.0"/>
+                <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0.0"/>
+                <cost name="pts" typeId="points" value="0.0"/>
+              </costs>
             </selectionEntry>
             <selectionEntry id="73d9-f1fb-e7e1-5d90" name="High Energy Ammunition" hidden="false" collective="false" import="true" type="upgrade">
               <constraints>
@@ -1049,6 +1062,11 @@ This currently includes datasheets from everything except D-99 and WIP units.</r
                   </characteristics>
                 </profile>
               </profiles>
+              <costs>
+                <cost name=" PL" typeId="e356-c769-5920-6e14" value="0.0"/>
+                <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0.0"/>
+                <cost name="pts" typeId="points" value="0.0"/>
+              </costs>
             </selectionEntry>
             <selectionEntry id="85a9-34ad-9a92-b64e" name="Industrial Efficiency" hidden="false" collective="false" import="true" type="upgrade">
               <constraints>
@@ -1061,6 +1079,11 @@ This currently includes datasheets from everything except D-99 and WIP units.</r
                   </characteristics>
                 </profile>
               </profiles>
+              <costs>
+                <cost name=" PL" typeId="e356-c769-5920-6e14" value="0.0"/>
+                <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0.0"/>
+                <cost name="pts" typeId="points" value="0.0"/>
+              </costs>
             </selectionEntry>
             <selectionEntry id="2851-ef95-47be-3a5d" name="Leaf in the Wind" hidden="false" collective="false" import="true" type="upgrade">
               <constraints>
@@ -1073,6 +1096,11 @@ This currently includes datasheets from everything except D-99 and WIP units.</r
                   </characteristics>
                 </profile>
               </profiles>
+              <costs>
+                <cost name=" PL" typeId="e356-c769-5920-6e14" value="0.0"/>
+                <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0.0"/>
+                <cost name="pts" typeId="points" value="0.0"/>
+              </costs>
             </selectionEntry>
             <selectionEntry id="44d0-52b0-1c1e-464d" name="Recon Operators" hidden="false" collective="false" import="true" type="upgrade">
               <constraints>
@@ -1085,6 +1113,11 @@ This currently includes datasheets from everything except D-99 and WIP units.</r
                   </characteristics>
                 </profile>
               </profiles>
+              <costs>
+                <cost name=" PL" typeId="e356-c769-5920-6e14" value="0.0"/>
+                <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0.0"/>
+                <cost name="pts" typeId="points" value="0.0"/>
+              </costs>
             </selectionEntry>
             <selectionEntry id="ba3a-86de-f0e5-7b1f" name="Close Combat Experts" hidden="false" collective="false" import="true" type="upgrade">
               <constraints>
@@ -1097,6 +1130,11 @@ This currently includes datasheets from everything except D-99 and WIP units.</r
                   </characteristics>
                 </profile>
               </profiles>
+              <costs>
+                <cost name=" PL" typeId="e356-c769-5920-6e14" value="0.0"/>
+                <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0.0"/>
+                <cost name="pts" typeId="points" value="0.0"/>
+              </costs>
             </selectionEntry>
             <selectionEntry id="9ab4-6e69-4de8-9a8a" name="Swift as the Wind" hidden="false" collective="false" import="true" type="upgrade">
               <constraints>
@@ -1110,6 +1148,11 @@ This currently includes datasheets from everything except D-99 and WIP units.</r
                   </characteristics>
                 </profile>
               </profiles>
+              <costs>
+                <cost name=" PL" typeId="e356-c769-5920-6e14" value="0.0"/>
+                <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0.0"/>
+                <cost name="pts" typeId="points" value="0.0"/>
+              </costs>
             </selectionEntry>
             <selectionEntry id="2123-e031-eff7-d27c" name="Veteran Guerrillas" hidden="false" collective="false" import="true" type="upgrade">
               <constraints>
@@ -1123,6 +1166,11 @@ This currently includes datasheets from everything except D-99 and WIP units.</r
                   </characteristics>
                 </profile>
               </profiles>
+              <costs>
+                <cost name=" PL" typeId="e356-c769-5920-6e14" value="0.0"/>
+                <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0.0"/>
+                <cost name="pts" typeId="points" value="0.0"/>
+              </costs>
             </selectionEntry>
             <selectionEntry id="8bf1-2d2a-453f-124f" name="Wings and Talons" hidden="false" collective="false" import="true" type="upgrade">
               <constraints>
@@ -1135,6 +1183,11 @@ This currently includes datasheets from everything except D-99 and WIP units.</r
                   </characteristics>
                 </profile>
               </profiles>
+              <costs>
+                <cost name=" PL" typeId="e356-c769-5920-6e14" value="0.0"/>
+                <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0.0"/>
+                <cost name="pts" typeId="points" value="0.0"/>
+              </costs>
             </selectionEntry>
           </selectionEntries>
         </selectionEntryGroup>
@@ -2823,7 +2876,7 @@ phase, each time a Combat Attrition test is taken for that unit, it is automatic
           <costs>
             <cost name=" PL" typeId="e356-c769-5920-6e14" value="0.0"/>
             <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0.0"/>
-            <cost name="pts" typeId="points" value="0.0"/>
+            <cost name="pts" typeId="points" value="32.0"/>
           </costs>
         </selectionEntry>
       </selectionEntries>
@@ -2914,7 +2967,7 @@ phase, each time a Combat Attrition test is taken for that unit, it is automatic
               <costs>
                 <cost name=" PL" typeId="e356-c769-5920-6e14" value="0.0"/>
                 <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0.0"/>
-                <cost name="pts" typeId="points" value="0.0"/>
+                <cost name="pts" typeId="points" value="32.0"/>
               </costs>
             </selectionEntry>
             <selectionEntry id="b9c5-27fb-53f1-1667" name="Ogryn - Explosive Charge" hidden="false" collective="false" import="true" type="model">
@@ -3019,7 +3072,7 @@ phase, each time a Combat Attrition test is taken for that unit, it is automatic
               <costs>
                 <cost name=" PL" typeId="e356-c769-5920-6e14" value="0.0"/>
                 <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0.0"/>
-                <cost name="pts" typeId="points" value="0.0"/>
+                <cost name="pts" typeId="points" value="32.0"/>
               </costs>
             </selectionEntry>
           </selectionEntries>
@@ -8648,10 +8701,10 @@ If a AIRCRAFT model being commanded by a Named Pilot is destroyed, set up this m
             <profile id="6c04-efc0-852e-b899" name="Family claymore" hidden="false" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Weapon">
               <characteristics>
                 <characteristic name="Range" typeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464">Melee</characteristic>
-                <characteristic name="Type" typeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2">MeleeHeavy 1</characteristic>
-                <characteristic name="S" typeId="59b1-319e-ec13-d466">+23</characteristic>
-                <characteristic name="AP" typeId="75aa-a838-b675-6484">-1-3</characteristic>
-                <characteristic name="D" typeId="ae8a-3137-d65b-4ca7">21</characteristic>
+                <characteristic name="Type" typeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2">Heavy 1</characteristic>
+                <characteristic name="S" typeId="59b1-319e-ec13-d466">+2</characteristic>
+                <characteristic name="AP" typeId="75aa-a838-b675-6484">-1</characteristic>
+                <characteristic name="D" typeId="ae8a-3137-d65b-4ca7">2</characteristic>
                 <characteristic name="Abilities" typeId="837d-5e63-aeb7-1410">When attacking with this weapon, you must subtract 1 from the hit roll.</characteristic>
               </characteristics>
             </profile>
@@ -10579,6 +10632,7 @@ If a AIRCRAFT model being commanded by a Named Pilot is destroyed, set up this m
       <costs>
         <cost name=" PL" typeId="e356-c769-5920-6e14" value="4.0"/>
         <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0.0"/>
+        <cost name="pts" typeId="points" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="99ad-9d1c-ca93-2fad" name="(D-99) Decimator Squad" hidden="false" collective="false" import="true" type="unit">
@@ -10626,6 +10680,8 @@ If a AIRCRAFT model being commanded by a Named Pilot is destroyed, set up this m
           </infoLinks>
           <costs>
             <cost name="pts" typeId="points" value="2.0"/>
+            <cost name=" PL" typeId="e356-c769-5920-6e14" value="0.0"/>
+            <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0.0"/>
           </costs>
         </selectionEntry>
       </selectionEntries>
@@ -10669,6 +10725,8 @@ If a AIRCRAFT model being commanded by a Named Pilot is destroyed, set up this m
                   </profiles>
                   <costs>
                     <cost name="pts" typeId="points" value="2.0"/>
+                    <cost name=" PL" typeId="e356-c769-5920-6e14" value="0.0"/>
+                    <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0.0"/>
                   </costs>
                 </selectionEntry>
               </selectionEntries>
@@ -10686,6 +10744,11 @@ If a AIRCRAFT model being commanded by a Named Pilot is destroyed, set up this m
                       <infoLinks>
                         <infoLink id="9bb8-5b0d-3f77-9218" name="Sniper rifle" hidden="false" targetId="45a4-5982-7f8b-fb33" type="profile"/>
                       </infoLinks>
+                      <costs>
+                        <cost name=" PL" typeId="e356-c769-5920-6e14" value="0.0"/>
+                        <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0.0"/>
+                        <cost name="pts" typeId="points" value="0.0"/>
+                      </costs>
                     </selectionEntry>
                     <selectionEntry id="7e9d-9f43-864a-7bbc" name="Anti-material rifle" hidden="false" collective="false" import="true" type="upgrade">
                       <constraints>
@@ -10694,6 +10757,11 @@ If a AIRCRAFT model being commanded by a Named Pilot is destroyed, set up this m
                       <infoLinks>
                         <infoLink id="187c-24c7-d712-a114" name="Anti-material rifle" hidden="false" targetId="b29f-de4a-9564-2e1f" type="profile"/>
                       </infoLinks>
+                      <costs>
+                        <cost name=" PL" typeId="e356-c769-5920-6e14" value="0.0"/>
+                        <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0.0"/>
+                        <cost name="pts" typeId="points" value="0.0"/>
+                      </costs>
                     </selectionEntry>
                   </selectionEntries>
                 </selectionEntryGroup>
@@ -10765,6 +10833,8 @@ If a AIRCRAFT model being commanded by a Named Pilot is destroyed, set up this m
                   </profiles>
                   <costs>
                     <cost name="pts" typeId="points" value="2.0"/>
+                    <cost name=" PL" typeId="e356-c769-5920-6e14" value="0.0"/>
+                    <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0.0"/>
                   </costs>
                 </selectionEntry>
               </selectionEntries>
@@ -10782,6 +10852,11 @@ If a AIRCRAFT model being commanded by a Named Pilot is destroyed, set up this m
                       <infoLinks>
                         <infoLink id="d0b1-2ace-59bb-a600" name="Sniper rifle" hidden="false" targetId="45a4-5982-7f8b-fb33" type="profile"/>
                       </infoLinks>
+                      <costs>
+                        <cost name=" PL" typeId="e356-c769-5920-6e14" value="0.0"/>
+                        <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0.0"/>
+                        <cost name="pts" typeId="points" value="0.0"/>
+                      </costs>
                     </selectionEntry>
                     <selectionEntry id="3316-a59a-39a9-8003" name="Anti-material rifle" hidden="false" collective="false" import="true" type="upgrade">
                       <constraints>
@@ -10790,6 +10865,11 @@ If a AIRCRAFT model being commanded by a Named Pilot is destroyed, set up this m
                       <infoLinks>
                         <infoLink id="ac9e-aaa2-cbcc-9e92" name="Anti-material rifle" hidden="false" targetId="b29f-de4a-9564-2e1f" type="profile"/>
                       </infoLinks>
+                      <costs>
+                        <cost name=" PL" typeId="e356-c769-5920-6e14" value="0.0"/>
+                        <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0.0"/>
+                        <cost name="pts" typeId="points" value="0.0"/>
+                      </costs>
                     </selectionEntry>
                   </selectionEntries>
                 </selectionEntryGroup>
@@ -10847,6 +10927,8 @@ If a AIRCRAFT model being commanded by a Named Pilot is destroyed, set up this m
                   </profiles>
                   <costs>
                     <cost name="pts" typeId="points" value="2.0"/>
+                    <cost name=" PL" typeId="e356-c769-5920-6e14" value="0.0"/>
+                    <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0.0"/>
                   </costs>
                 </selectionEntry>
               </selectionEntries>
@@ -10864,6 +10946,11 @@ If a AIRCRAFT model being commanded by a Named Pilot is destroyed, set up this m
                       <infoLinks>
                         <infoLink id="aa6c-3078-467b-d82b" name="Sniper rifle" hidden="false" targetId="45a4-5982-7f8b-fb33" type="profile"/>
                       </infoLinks>
+                      <costs>
+                        <cost name=" PL" typeId="e356-c769-5920-6e14" value="0.0"/>
+                        <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0.0"/>
+                        <cost name="pts" typeId="points" value="0.0"/>
+                      </costs>
                     </selectionEntry>
                     <selectionEntry id="e321-ba13-5828-60fb" name="Anti-material rifle" hidden="false" collective="false" import="true" type="upgrade">
                       <constraints>
@@ -10872,6 +10959,11 @@ If a AIRCRAFT model being commanded by a Named Pilot is destroyed, set up this m
                       <infoLinks>
                         <infoLink id="02a9-663a-8868-f35e" name="Anti-material rifle" hidden="false" targetId="b29f-de4a-9564-2e1f" type="profile"/>
                       </infoLinks>
+                      <costs>
+                        <cost name=" PL" typeId="e356-c769-5920-6e14" value="0.0"/>
+                        <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0.0"/>
+                        <cost name="pts" typeId="points" value="0.0"/>
+                      </costs>
                     </selectionEntry>
                   </selectionEntries>
                 </selectionEntryGroup>
@@ -10903,6 +10995,7 @@ If a AIRCRAFT model being commanded by a Named Pilot is destroyed, set up this m
       <costs>
         <cost name=" PL" typeId="e356-c769-5920-6e14" value="2.0"/>
         <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0.0"/>
+        <cost name="pts" typeId="points" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="8df8-ce9f-4da4-64ee" name="(D-99) Executioner Squad" hidden="false" collective="false" import="true" type="unit">
@@ -11091,6 +11184,11 @@ If a AIRCRAFT model being commanded by a Named Pilot is destroyed, set up this m
                     <infoLink id="d0e6-9e8b-b3bd-1cc7" name="Plasma gun, Standard" hidden="false" targetId="03e5-60f2-4726-5cdd" type="profile"/>
                     <infoLink id="a828-97d5-8236-7e74" name="Plasma gun, Supercharge" hidden="false" targetId="acb5-7b58-0d17-a33a" type="profile"/>
                   </infoLinks>
+                  <costs>
+                    <cost name=" PL" typeId="e356-c769-5920-6e14" value="0.0"/>
+                    <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0.0"/>
+                    <cost name="pts" typeId="points" value="0.0"/>
+                  </costs>
                 </selectionEntry>
               </selectionEntries>
               <entryLinks>
@@ -11123,6 +11221,11 @@ If a AIRCRAFT model being commanded by a Named Pilot is destroyed, set up this m
                   <infoLinks>
                     <infoLink id="5c3f-a7b6-4612-ad29" name="Meltagun" hidden="false" targetId="ec4c-1132-ddaf-db8e" type="profile"/>
                   </infoLinks>
+                  <costs>
+                    <cost name=" PL" typeId="e356-c769-5920-6e14" value="0.0"/>
+                    <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0.0"/>
+                    <cost name="pts" typeId="points" value="0.0"/>
+                  </costs>
                 </selectionEntry>
               </selectionEntries>
               <entryLinks>
@@ -11145,6 +11248,7 @@ If a AIRCRAFT model being commanded by a Named Pilot is destroyed, set up this m
       <costs>
         <cost name=" PL" typeId="e356-c769-5920-6e14" value="3.0"/>
         <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0.0"/>
+        <cost name="pts" typeId="points" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="2bf9-a84a-a6da-c16b" name="(D-99) Extermination Squad" hidden="false" collective="false" import="true" type="unit">
@@ -11237,6 +11341,11 @@ If a AIRCRAFT model being commanded by a Named Pilot is destroyed, set up this m
                   <infoLinks>
                     <infoLink id="e93e-c2e5-56a1-9138" name="Flamer" hidden="false" targetId="cdc3-3459-a28c-a9cf" type="profile"/>
                   </infoLinks>
+                  <costs>
+                    <cost name=" PL" typeId="e356-c769-5920-6e14" value="0.0"/>
+                    <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0.0"/>
+                    <cost name="pts" typeId="points" value="0.0"/>
+                  </costs>
                 </selectionEntry>
               </selectionEntries>
               <entryLinks>
@@ -11286,6 +11395,11 @@ If a AIRCRAFT model being commanded by a Named Pilot is destroyed, set up this m
                   <infoLinks>
                     <infoLink id="f707-86ca-bea1-e46f" name="Flamer" hidden="false" targetId="cdc3-3459-a28c-a9cf" type="profile"/>
                   </infoLinks>
+                  <costs>
+                    <cost name=" PL" typeId="e356-c769-5920-6e14" value="0.0"/>
+                    <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0.0"/>
+                    <cost name="pts" typeId="points" value="0.0"/>
+                  </costs>
                 </selectionEntry>
               </selectionEntries>
               <entryLinks>
@@ -11318,6 +11432,11 @@ If a AIRCRAFT model being commanded by a Named Pilot is destroyed, set up this m
                   <infoLinks>
                     <infoLink id="ee4c-e129-d279-410b" name="Heavy flamer" hidden="false" targetId="2608-8425-4f4f-7f41" type="profile"/>
                   </infoLinks>
+                  <costs>
+                    <cost name=" PL" typeId="e356-c769-5920-6e14" value="0.0"/>
+                    <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0.0"/>
+                    <cost name="pts" typeId="points" value="0.0"/>
+                  </costs>
                 </selectionEntry>
               </selectionEntries>
               <entryLinks>
@@ -11408,6 +11527,11 @@ If a AIRCRAFT model being commanded by a Named Pilot is destroyed, set up this m
                   <infoLinks>
                     <infoLink id="a55f-1105-1444-0745" name="Flamer" hidden="false" targetId="cdc3-3459-a28c-a9cf" type="profile"/>
                   </infoLinks>
+                  <costs>
+                    <cost name=" PL" typeId="e356-c769-5920-6e14" value="0.0"/>
+                    <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0.0"/>
+                    <cost name="pts" typeId="points" value="0.0"/>
+                  </costs>
                 </selectionEntry>
               </selectionEntries>
               <entryLinks>
@@ -11431,6 +11555,7 @@ If a AIRCRAFT model being commanded by a Named Pilot is destroyed, set up this m
       <costs>
         <cost name=" PL" typeId="e356-c769-5920-6e14" value="3.0"/>
         <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0.0"/>
+        <cost name="pts" typeId="points" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="6506-669a-8b52-c820" name="Command Squad - (D-99) Major Markus Duras" hidden="false" collective="false" import="true" type="unit">
@@ -11520,6 +11645,11 @@ If a AIRCRAFT model being commanded by a Named Pilot is destroyed, set up this m
               <infoLinks>
                 <infoLink id="b167-10b4-45ad-c3e9" name="Drop shotgun" hidden="false" targetId="d8da-b8fb-68d2-3b0d" type="profile"/>
               </infoLinks>
+              <costs>
+                <cost name=" PL" typeId="e356-c769-5920-6e14" value="0.0"/>
+                <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0.0"/>
+                <cost name="pts" typeId="points" value="0.0"/>
+              </costs>
             </selectionEntry>
             <selectionEntry id="6a25-7a83-c0b9-3b7a" name="Heavy chainsword" hidden="false" collective="false" import="true" type="upgrade">
               <constraints>
@@ -11538,6 +11668,11 @@ If a AIRCRAFT model being commanded by a Named Pilot is destroyed, set up this m
                   </characteristics>
                 </profile>
               </profiles>
+              <costs>
+                <cost name=" PL" typeId="e356-c769-5920-6e14" value="0.0"/>
+                <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0.0"/>
+                <cost name="pts" typeId="points" value="0.0"/>
+              </costs>
             </selectionEntry>
           </selectionEntries>
           <entryLinks>
@@ -11896,6 +12031,7 @@ If a AIRCRAFT model being commanded by a Named Pilot is destroyed, set up this m
       <costs>
         <cost name=" PL" typeId="e356-c769-5920-6e14" value="6.0"/>
         <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0.0"/>
+        <cost name="pts" typeId="points" value="0.0"/>
       </costs>
     </selectionEntry>
   </sharedSelectionEntries>
@@ -15731,7 +15867,7 @@ can be an INFANTRY OFFICER or ABHUMAN unit, but in such cases, the Regimental Ta
       <characteristics>
         <characteristic name="M" typeId="0bdf-a96e-9e38-7779">6&quot;</characteristic>
         <characteristic name="WS" typeId="e7f0-1278-0250-df0c">3+</characteristic>
-        <characteristic name="BS" typeId="381b-eb28-74c3-df5f">4+3+</characteristic>
+        <characteristic name="BS" typeId="381b-eb28-74c3-df5f">3+</characteristic>
         <characteristic name="S" typeId="2218-aa3c-265f-2939">3</characteristic>
         <characteristic name="T" typeId="9c9f-9774-a358-3a39">3</characteristic>
         <characteristic name="W" typeId="f330-5e6e-4110-0978">1</characteristic>
