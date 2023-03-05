@@ -1,11 +1,13 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="a8e4-d35d-f98b-c549" name="Imperium - Drop Troopers Fandex 9e" revision="70" battleScribeVersion="2.03" authorName="Elysian Drop Troop Command Discord Server" authorContact="Report issues on the Discord in #battlescribe-development" authorUrl="https://discord.gg/47u9YjKxYN" library="false" gameSystemId="28ec-711c-d87f-3aeb" gameSystemRevision="225" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
-  <readme>Codex Version a9.1.1
-- Revision 70 -
+<catalogue id="a8e4-d35d-f98b-c549" name="Imperium - Drop Troopers Fandex 9e" revision="71" battleScribeVersion="2.03" authorName="Elysian Drop Troop Discord Server" authorContact="Report typos/issues on the Discord in #battlescribe-development to brendanmint." authorUrl="https://discord.gg/47u9YjKxYN" library="false" gameSystemId="28ec-711c-d87f-3aeb" gameSystemRevision="244" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+  <readme>Codex Version a9.2.0
+- Revision 71 -
 Highlights:
-Fixed Mad Jack
-Fixed D-99 Vets
-Fixed Ogryns Points</readme>
+Added changes/additions for a2.0
+Fixed Pilot Ace not showing up on some datasheets.
+Fixed Commissar No-Org slot.
+Fixed Battle-Worn Veteran.
+WIP Units added under [Experimental Units] option.</readme>
   <publications>
     <publication id="cd8f-3e55-003e-b580" name="Codex: Drop Troopers"/>
   </publications>
@@ -130,11 +132,10 @@ Fixed Ogryns Points</readme>
     <categoryEntry id="d32e-1c29-7953-ebb2" name="Special Weapons Squad" hidden="false"/>
     <categoryEntry id="15c7-ee44-fe5b-627a" name="Specialist" hidden="false"/>
     <categoryEntry id="cb68-8014-1ef1-8be2" name="Stormtrooper Squad" hidden="false"/>
-    <categoryEntry id="cf4f-f989-92b4-7a16" name="Specialist Team" hidden="false"/>
+    <categoryEntry id="cf4f-f989-92b4-7a16" name="Specialist Squad" hidden="false"/>
     <categoryEntry id="a5bd-9880-4a99-8374" name="Tauros Explorer" hidden="false"/>
     <categoryEntry id="93e1-1769-4425-8702" name="Drop Ogryn Squad" hidden="false"/>
     <categoryEntry id="738a-2466-f977-d4d2" name="Recon Bike Squad" hidden="false"/>
-    <categoryEntry id="e67a-f710-f8ee-f3f5" name="Lancers Squad" hidden="false"/>
     <categoryEntry id="efda-beeb-3d1c-c740" name="Melta" hidden="false"/>
     <categoryEntry id="3fec-5c75-3c45-89c9" name="Tauros Assault Vehicle" hidden="false"/>
     <categoryEntry id="7fd2-9b86-f1ca-5d83" name="Tauros Medicae" hidden="false"/>
@@ -181,9 +182,26 @@ Fixed Ogryns Points</readme>
     <categoryEntry id="1059-34c2-fef6-2241" name="Named Character" hidden="false"/>
     <categoryEntry id="e8ee-4362-a65c-2ebd" name="Gunship" hidden="false"/>
     <categoryEntry id="4333-32a0-abb1-0116" name="Fighter" hidden="false"/>
+    <categoryEntry id="6588-6544-37ec-1b43" name="Tauros Heby" hidden="false"/>
+    <categoryEntry id="9b6a-a3a1-b260-f099" name="Lancer Squad" hidden="false"/>
   </categoryEntries>
+  <selectionEntries>
+    <selectionEntry id="3633-1458-351e-02a3" name="[Experimental Units]" hidden="false" collective="false" import="true" type="upgrade">
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4240-ea18-2c17-38b2" type="max"/>
+      </constraints>
+      <rules>
+        <rule id="cf7f-73de-bb6b-9580" name="[Experimental Units]" hidden="false">
+          <description>Units with the [Ex] tag are works in progress, and are subject to change or to be removed.</description>
+        </rule>
+      </rules>
+      <categoryLinks>
+        <categoryLink id="67aa-223c-b2b6-37d1" name="New CategoryLink" hidden="false" targetId="fcff-0f21-93e6-1ddc" primary="true"/>
+      </categoryLinks>
+    </selectionEntry>
+  </selectionEntries>
   <entryLinks>
-    <entryLink id="aee9-fa53-5b5e-b3fe" name="Regimental Doctrine" hidden="false" collective="false" import="true" targetId="99ec-85bb-2d2a-64da" type="selectionEntry"/>
+    <entryLink id="aee9-fa53-5b5e-b3fe" name="Detachment Traits" hidden="false" collective="false" import="true" targetId="99ec-85bb-2d2a-64da" type="selectionEntry"/>
     <entryLink id="4d64-3264-7cd7-70a3" name="Drop Trooper Squad" hidden="false" collective="false" import="true" targetId="f70d-3afe-39b3-21c9" type="selectionEntry">
       <modifiers>
         <modifier type="set" field="hidden" value="true">
@@ -241,6 +259,7 @@ Fixed Ogryns Points</readme>
       </modifiers>
     </entryLink>
     <entryLink id="eeb5-0c7f-fbdb-b35f" name="Drop Commissar" hidden="false" collective="false" import="true" targetId="8122-e572-5192-9aa8" type="selectionEntry">
+      <comment>Elite</comment>
       <modifiers>
         <modifier type="set" field="hidden" value="true">
           <conditions>
@@ -248,6 +267,9 @@ Fixed Ogryns Points</readme>
           </conditions>
         </modifier>
       </modifiers>
+      <categoryLinks>
+        <categoryLink id="93e5-0eef-b470-f93c" name="New CategoryLink" hidden="false" targetId="638d74c6-bd97-4de5-b65a-6aaa24e9f4b2" primary="true"/>
+      </categoryLinks>
     </entryLink>
     <entryLink id="f8b4-6f7f-9dfe-16cd" name="Drop Sentinel" hidden="false" collective="false" import="true" targetId="e1d4-1945-289d-e45b" type="selectionEntry">
       <modifiers>
@@ -292,7 +314,7 @@ Fixed Ogryns Points</readme>
         </modifier>
       </modifiers>
     </entryLink>
-    <entryLink id="271b-a02b-76ea-0258" name="Tauros Assault Vehicle" hidden="false" collective="false" import="true" targetId="574f-993f-a725-9c8f" type="selectionEntry">
+    <entryLink id="271b-a02b-76ea-0258" name="Tauros - Assault" hidden="false" collective="false" import="true" targetId="574f-993f-a725-9c8f" type="selectionEntry">
       <modifiers>
         <modifier type="set" field="hidden" value="true">
           <conditions>
@@ -445,7 +467,7 @@ Fixed Ogryns Points</readme>
         </modifier>
       </modifiers>
     </entryLink>
-    <entryLink id="1adc-d6d5-9c79-5097" name="Tauros Magnum" hidden="false" collective="false" import="true" targetId="2532-7690-6a1b-9421" type="selectionEntry">
+    <entryLink id="1adc-d6d5-9c79-5097" name="Tauros - Magnum" hidden="false" collective="false" import="true" targetId="2532-7690-6a1b-9421" type="selectionEntry">
       <modifiers>
         <modifier type="set" field="hidden" value="true">
           <conditions>
@@ -811,6 +833,108 @@ Fixed Ogryns Points</readme>
           <conditions>
             <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a6d5-631b-74dc-90c1" type="equalTo"/>
           </conditions>
+        </modifier>
+      </modifiers>
+    </entryLink>
+    <entryLink id="64cd-a594-1b91-59b0" name="Drop Commissar" hidden="true" collective="false" import="true" targetId="8122-e572-5192-9aa8" type="selectionEntry">
+      <comment>No-Force Org</comment>
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="a6d5-631b-74dc-90c1" type="equalTo"/>
+              </conditions>
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="b277-74da-0fc4-6d0c" type="atLeast"/>
+                    <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="4247-f8bb-e51b-4049" type="atLeast"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <modifierGroups>
+        <modifierGroup>
+          <modifiers>
+            <modifier type="increment" field="2bad-7f7b-d1b5-eee6" value="1.0">
+              <repeats>
+                <repeat field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="f02c-96d2-b101-8c6d" repeats="1" roundUp="false"/>
+                <repeat field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="b93d-213b-a0a9-d397" repeats="1" roundUp="false"/>
+                <repeat field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="5bf6-0d7c-6b3c-9382" repeats="1" roundUp="false"/>
+                <repeat field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="548a-1b66-27be-0a58" repeats="1" roundUp="false"/>
+                <repeat field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="c75b-586d-4240-eb36" repeats="1" roundUp="false"/>
+                <repeat field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="3f8a-02ac-80f7-f224" repeats="1" roundUp="false"/>
+                <repeat field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="c2cf-a03e-2f28-db0a" repeats="1" roundUp="false"/>
+                <repeat field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="fe3a-abbd-a2a3-89aa" repeats="1" roundUp="false"/>
+              </repeats>
+            </modifier>
+          </modifiers>
+        </modifierGroup>
+      </modifierGroups>
+      <constraints>
+        <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2bad-7f7b-d1b5-eee6" type="max"/>
+      </constraints>
+      <categoryLinks>
+        <categoryLink id="59c3-e94a-a787-d065" name="New CategoryLink" hidden="false" targetId="ff36a6f3-19bf-4f48-8956-adacfd28fe74" primary="true"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="af6c-ed9b-fc1c-d70c" name="Drop Company Commander" hidden="false" collective="false" import="true" targetId="87cb-eedc-d665-8afd" type="selectionEntry">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2c1b-df40-0884-0520" type="atLeast"/>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a6d5-631b-74dc-90c1" type="atLeast"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+    </entryLink>
+    <entryLink id="55e1-6534-b3bd-481b" name="[Ex] Tauros - Chungus™" hidden="false" collective="false" import="true" targetId="b5fc-9d62-a17f-569d" type="selectionEntry">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2c1b-df40-0884-0520" type="atLeast"/>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a6d5-631b-74dc-90c1" type="atLeast"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+    </entryLink>
+    <entryLink id="8980-438d-b998-01f3" name="[Ex] Lancers Squad" hidden="false" collective="false" import="true" targetId="1d10-d1aa-967b-3daa" type="selectionEntry">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2c1b-df40-0884-0520" type="atLeast"/>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a6d5-631b-74dc-90c1" type="atLeast"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+    </entryLink>
+    <entryLink id="46f6-96c7-eff2-f5e0" name="[Ex] Specialist Squad" hidden="false" collective="false" import="true" targetId="5e61-a6ca-b709-8f0c" type="selectionEntry">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2c1b-df40-0884-0520" type="atLeast"/>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a6d5-631b-74dc-90c1" type="atLeast"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
         </modifier>
       </modifiers>
     </entryLink>
@@ -1413,7 +1537,7 @@ Fixed Ogryns Points</readme>
                 <cost name="pts" typeId="points" value="0.0"/>
               </costs>
             </selectionEntry>
-            <selectionEntry id="90c8-3da1-3365-b305" name="Drop Trooper - Sepcial Weapon" hidden="false" collective="false" import="true" type="model">
+            <selectionEntry id="90c8-3da1-3365-b305" name="Drop Trooper - Special Weapon" hidden="false" collective="false" import="true" type="model">
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5013-7627-a946-3b44" type="max"/>
               </constraints>
@@ -1441,7 +1565,7 @@ Fixed Ogryns Points</readme>
       <costs>
         <cost name=" PL" typeId="e356-c769-5920-6e14" value="3.0"/>
         <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0.0"/>
-        <cost name="pts" typeId="points" value="65.0"/>
+        <cost name="pts" typeId="points" value="70.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="9e1e-81d3-e87e-4bf0" name="Lasgun" hidden="false" collective="true" import="true" type="upgrade">
@@ -2194,9 +2318,9 @@ Fixed Ogryns Points</readme>
         </selectionEntryGroup>
       </selectionEntryGroups>
       <costs>
-        <cost name=" PL" typeId="e356-c769-5920-6e14" value="3.0"/>
+        <cost name=" PL" typeId="e356-c769-5920-6e14" value="4.0"/>
         <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0.0"/>
-        <cost name="pts" typeId="points" value="75.0"/>
+        <cost name="pts" typeId="points" value="80.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="f5f4-7e1e-d54a-81c5" name="Lavina Fisher" hidden="false" collective="false" import="true" type="model">
@@ -2411,7 +2535,6 @@ phase, each time a Combat Attrition test is taken for that unit, it is automatic
         <infoLink id="1ea7-11a2-224a-4b1b" name="Refractor Field" hidden="false" targetId="6063-65b6-45ef-17b3" type="profile"/>
       </infoLinks>
       <categoryLinks>
-        <categoryLink id="54b2-5af9-9b03-2437" name="New CategoryLink" hidden="false" targetId="638d74c6-bd97-4de5-b65a-6aaa24e9f4b2" primary="true"/>
         <categoryLink id="b8b9-c56c-5a77-54c8" name="Faction: Imperium" hidden="false" targetId="84e2-9fa9-ebe6-1d18" primary="false"/>
         <categoryLink id="5247-a609-dd84-0d7a" name="Faction: Astra Militarum" hidden="false" targetId="3263-4233-4344-6228" primary="false"/>
         <categoryLink id="0fd7-62da-3de5-bde4" name="Faction: Drop Troops" hidden="false" targetId="007a-bbe2-fa6b-49d6" primary="false"/>
@@ -2719,7 +2842,7 @@ phase, each time a Combat Attrition test is taken for that unit, it is automatic
         </profile>
         <profile id="f132-dee6-d392-d9d0" name="Keywords" hidden="false" typeId="c9a8-61f1-0234-bb1b" typeName="[Keyword]">
           <characteristics>
-            <characteristic name="Keywords" typeId="20f9-f9d7-7010-120f">VEHICLE, CORE, TAUROS, SMOKE, REGIMENTAL, TAUROS EXPLORER </characteristic>
+            <characteristic name="Keywords" typeId="20f9-f9d7-7010-120f">VEHICLE, TAUROS, SMOKE, REGIMENTAL, TAUROS EXPLORER </characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -2735,7 +2858,6 @@ phase, each time a Combat Attrition test is taken for that unit, it is automatic
         <categoryLink id="ffe9-f748-3fe9-376c" name="Faction: Astra Militarum" hidden="false" targetId="3263-4233-4344-6228" primary="false"/>
         <categoryLink id="d11b-e9bd-9f21-a3b8" name="Faction: Drop Troops" hidden="false" targetId="007a-bbe2-fa6b-49d6" primary="false"/>
         <categoryLink id="6555-85a4-4d3e-f490" name="Vehicle" hidden="false" targetId="c8fd-783f-3230-493e" primary="false"/>
-        <categoryLink id="e04a-ccc4-5cc5-4ded" name="Core" hidden="false" targetId="08f1-d244-eb44-7e01" primary="false"/>
         <categoryLink id="01b1-f85f-dcac-090d" name="Tauros" hidden="false" targetId="0785-74d6-25e7-1ca2" primary="false"/>
         <categoryLink id="299a-1112-e0d9-4804" name="Tauros Explorer" hidden="false" targetId="a5bd-9880-4a99-8374" primary="false"/>
         <categoryLink id="c738-8c16-6b02-3493" name="Regimental" hidden="false" targetId="2804-b025-09eb-3b84" primary="false"/>
@@ -3183,7 +3305,7 @@ phase, each time a Combat Attrition test is taken for that unit, it is automatic
         </profile>
         <profile id="c9d2-36c5-7720-00a1" name="Keywords" hidden="false" typeId="c9a8-61f1-0234-bb1b" typeName="[Keyword]">
           <characteristics>
-            <characteristic name="Keywords" typeId="20f9-f9d7-7010-120f">CORE, VEHICLE, TAUROS, SMOKE, REGIMENTAL, SQUADRON, TAUROS MEDICAE</characteristic>
+            <characteristic name="Keywords" typeId="20f9-f9d7-7010-120f">VEHICLE, TAUROS, SMOKE, REGIMENTAL, SQUADRON, TAUROS MEDICAE</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -3195,17 +3317,16 @@ phase, each time a Combat Attrition test is taken for that unit, it is automatic
         <infoLink id="5a42-5aa3-83fd-d1fb" name="Galvanic Motor" hidden="false" targetId="f253-399e-6710-7d9d" type="profile"/>
       </infoLinks>
       <categoryLinks>
-        <categoryLink id="07be-b2bd-d5bd-d00d" name="New CategoryLink" hidden="false" targetId="c274d0b0-5866-44bc-9810-91c136ae7438" primary="true"/>
         <categoryLink id="1533-242f-f2b8-ca04" name="Faction: Imperium" hidden="false" targetId="84e2-9fa9-ebe6-1d18" primary="false"/>
         <categoryLink id="f14b-8da9-0aa0-df96" name="Faction: Astra Militarum" hidden="false" targetId="3263-4233-4344-6228" primary="false"/>
         <categoryLink id="de59-ff3a-9d11-cd62" name="Faction: Drop Troops" hidden="false" targetId="007a-bbe2-fa6b-49d6" primary="false"/>
-        <categoryLink id="bbf2-e53b-0687-8723" name="Core" hidden="false" targetId="08f1-d244-eb44-7e01" primary="false"/>
         <categoryLink id="4714-8aa9-f2af-bc91" name="Vehicle" hidden="false" targetId="c8fd-783f-3230-493e" primary="false"/>
         <categoryLink id="554e-1a8a-7bfa-a2c9" name="Tauros" hidden="false" targetId="0785-74d6-25e7-1ca2" primary="false"/>
         <categoryLink id="4d70-245b-452d-659c" name="Smoke" hidden="false" targetId="5250-835a-e5c9-c5da" primary="false"/>
         <categoryLink id="b4f2-1a8f-50ac-9abf" name="Regimental" hidden="false" targetId="2804-b025-09eb-3b84" primary="false"/>
         <categoryLink id="0a19-20a4-2c77-f5fc" name="Squadron" hidden="false" targetId="ff89-3db9-aeea-9b1a" primary="false"/>
         <categoryLink id="b829-a247-3edf-baea" name="Tauros Medicae" hidden="false" targetId="7fd2-9b86-f1ca-5d83" primary="false"/>
+        <categoryLink id="88de-a1d4-9b1b-fc1f" name="Elites" hidden="false" targetId="638d74c6-bd97-4de5-b65a-6aaa24e9f4b2" primary="true"/>
       </categoryLinks>
       <entryLinks>
         <entryLink id="d8b1-d729-18e4-003b" name="Tauros Options" hidden="false" collective="false" import="true" targetId="03fd-2c68-1329-fd7f" type="selectionEntryGroup"/>
@@ -4132,7 +4253,7 @@ phase, each time a Combat Attrition test is taken for that unit, it is automatic
         </profile>
         <profile id="8979-015c-4300-aed3" name="Keywords" hidden="false" typeId="c9a8-61f1-0234-bb1b" typeName="[Keyword]">
           <characteristics>
-            <characteristic name="Keywords" typeId="20f9-f9d7-7010-120f">CORE, VEHICLE, ARTILLERY, REGIMENTAL, SQUADRON, SKY HAMMER BATTERY </characteristic>
+            <characteristic name="Keywords" typeId="20f9-f9d7-7010-120f">VEHICLE, ARTILLERY, REGIMENTAL, PLATOON, SKY HAMMER BATTERY </characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -4145,12 +4266,11 @@ phase, each time a Combat Attrition test is taken for that unit, it is automatic
         <categoryLink id="6ce8-5b30-d704-6522" name="Faction: Imperium" hidden="false" targetId="84e2-9fa9-ebe6-1d18" primary="false"/>
         <categoryLink id="1017-c2d8-0f4b-7fcd" name="Faction: Astra Militarum" hidden="false" targetId="3263-4233-4344-6228" primary="false"/>
         <categoryLink id="fb06-3a2b-71bb-7ece" name="Faction: Drop Troops" hidden="false" targetId="007a-bbe2-fa6b-49d6" primary="false"/>
-        <categoryLink id="f3d6-a51e-3a63-0b62" name="Core" hidden="false" targetId="08f1-d244-eb44-7e01" primary="false"/>
         <categoryLink id="b274-d2c7-3131-7137" name="Vehicle" hidden="false" targetId="c8fd-783f-3230-493e" primary="false"/>
         <categoryLink id="ef09-3e92-86d3-8a49" name="Artillery" hidden="false" targetId="ae37-74e2-8391-d0f8" primary="false"/>
         <categoryLink id="28ca-3bd8-ba3b-5ea1" name="Regimental" hidden="false" targetId="2804-b025-09eb-3b84" primary="false"/>
-        <categoryLink id="e88d-599f-414a-d890" name="Squadron" hidden="false" targetId="ff89-3db9-aeea-9b1a" primary="false"/>
         <categoryLink id="05c9-90dd-f969-e3b5" name="Sky Hammer Battery" hidden="false" targetId="3433-7403-cd04-e1cc" primary="false"/>
+        <categoryLink id="396b-7f4a-ffe0-bb03" name="Platoon" hidden="false" targetId="1845-e55c-b285-d44a" primary="false"/>
       </categoryLinks>
       <selectionEntryGroups>
         <selectionEntryGroup id="024a-7397-2416-8667" name="Armament" hidden="false" collective="false" import="true" defaultSelectionEntryId="42e3-c7c4-7762-262f">
@@ -4208,7 +4328,7 @@ phase, each time a Combat Attrition test is taken for that unit, it is automatic
         </profile>
         <profile id="688f-ab0b-0033-1d86" name="Keywords" hidden="false" typeId="c9a8-61f1-0234-bb1b" typeName="[Keyword]">
           <characteristics>
-            <characteristic name="Keywords" typeId="20f9-f9d7-7010-120f">INFANTRY, CORE, SNIPER SQUAD</characteristic>
+            <characteristic name="Keywords" typeId="20f9-f9d7-7010-120f">INFANTRY, CORE,  REGIMENTAL, PLATOON, SNIPER SQUAD</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -4410,8 +4530,8 @@ phase, each time a Combat Attrition test is taken for that unit, it is automatic
         <categoryLink id="cd9a-64df-5c31-ccb9" name="Smoke" hidden="false" targetId="5250-835a-e5c9-c5da" primary="false"/>
         <categoryLink id="4aea-8d99-d3c8-0cc7" name="Regimental" hidden="false" targetId="2804-b025-09eb-3b84" primary="false"/>
         <categoryLink id="e22e-2831-af23-ee39" name="Squadron" hidden="false" targetId="ff89-3db9-aeea-9b1a" primary="false"/>
-        <categoryLink id="401f-62e8-c085-3903" name="New CategoryLink" hidden="false" targetId="abf5fd55-9ac7-4263-8bc1-a9fb0a8fa6a6" primary="true"/>
         <categoryLink id="4c91-6d5a-2a1b-79ac" name="Tauros Mechanis" hidden="false" targetId="cc39-4c12-a091-00fc" primary="false"/>
+        <categoryLink id="490e-e888-2514-3f39" name="New CategoryLink" hidden="false" targetId="638d74c6-bd97-4de5-b65a-6aaa24e9f4b2" primary="true"/>
       </categoryLinks>
       <entryLinks>
         <entryLink id="85c1-322b-6d52-9287" name="Tauros Options" hidden="false" collective="false" import="true" targetId="03fd-2c68-1329-fd7f" type="selectionEntryGroup"/>
@@ -5766,7 +5886,7 @@ If a AIRCRAFT model being commanded by a Named Pilot is destroyed, set up this m
       </profiles>
       <infoLinks>
         <infoLink id="4dff-b572-6301-401a" name="Audacious Recon" hidden="false" targetId="ff9b-2b5c-a1e9-156d" type="profile"/>
-        <infoLink id="203e-c761-8fd4-bc41" name="Explodes (D6/3)" hidden="false" targetId="d974-0bb3-70b8-3556" type="profile"/>
+        <infoLink id="203e-c761-8fd4-bc41" name="Explodes (D6/3&quot;)" hidden="false" targetId="d974-0bb3-70b8-3556" type="profile"/>
         <infoLink id="437c-9bb0-b85e-9e2c" name="Aerial Drop" hidden="false" targetId="ef7b-a0ef-2e93-5a1c" type="profile"/>
         <infoLink id="3b15-1f4a-c102-c3ae" name="Regimental Tactics" hidden="false" targetId="596b-e76b-0437-40f5" type="profile"/>
         <infoLink id="9054-5a11-eaae-f461" name="Galvanic Motor" hidden="false" targetId="f253-399e-6710-7d9d" type="profile"/>
@@ -8808,6 +8928,7 @@ If a AIRCRAFT model being commanded by a Named Pilot is destroyed, set up this m
         <categoryLink id="0ae0-ebbe-2eff-6f7a" name="New CategoryLink" hidden="false" targetId="e888-1504-aa61-95ff" primary="true"/>
         <categoryLink id="1f3c-f588-b843-8dc3" name="Flares" hidden="false" targetId="424a-b7fb-a137-d3e3" primary="false"/>
         <categoryLink id="4fde-66de-0ae1-622d" name="Regimental" hidden="false" targetId="2804-b025-09eb-3b84" primary="false"/>
+        <categoryLink id="09a1-fead-d41f-ac17" name="Aircraft" hidden="false" targetId="d569-3d56-cd24-6a31" primary="false"/>
       </categoryLinks>
       <selectionEntryGroups>
         <selectionEntryGroup id="3eb0-21b1-c5e6-0354" name="Armament" hidden="false" collective="false" import="true">
@@ -9031,6 +9152,7 @@ If a AIRCRAFT model being commanded by a Named Pilot is destroyed, set up this m
         <categoryLink id="0eba-1a21-87ea-a8c3" name="Flares" hidden="false" targetId="424a-b7fb-a137-d3e3" primary="false"/>
         <categoryLink id="b4eb-932f-a82d-f38c" name="Regimental" hidden="false" targetId="2804-b025-09eb-3b84" primary="false"/>
         <categoryLink id="6780-f922-0fa5-0e14" name="Lightning Strike Fighter" hidden="false" targetId="80f8-b470-fc90-630b" primary="false"/>
+        <categoryLink id="69da-fecb-954b-1902" name="Aircraft" hidden="false" targetId="d569-3d56-cd24-6a31" primary="false"/>
       </categoryLinks>
       <selectionEntryGroups>
         <selectionEntryGroup id="7aac-c0a6-ab59-0e07" name="Armament" hidden="false" collective="false" import="true">
@@ -9218,6 +9340,7 @@ If a AIRCRAFT model being commanded by a Named Pilot is destroyed, set up this m
         <categoryLink id="ddb8-82be-821c-2292" name="Flares" hidden="false" targetId="424a-b7fb-a137-d3e3" primary="false"/>
         <categoryLink id="5d3f-a782-8f88-1700" name="Regimental" hidden="false" targetId="2804-b025-09eb-3b84" primary="false"/>
         <categoryLink id="1d61-770d-fcae-8fa7" name="Thunderbolt Heavy Fighter" hidden="false" targetId="0833-8ab7-2f5d-bc01" primary="false"/>
+        <categoryLink id="1a7f-2f83-cec2-5eb0" name="Aircraft" hidden="false" targetId="d569-3d56-cd24-6a31" primary="false"/>
       </categoryLinks>
       <selectionEntryGroups>
         <selectionEntryGroup id="bd95-d22b-3679-07cc" name="Armament" hidden="false" collective="false" import="true">
@@ -9389,6 +9512,7 @@ If a AIRCRAFT model being commanded by a Named Pilot is destroyed, set up this m
         <categoryLink id="6b7b-fcc4-6818-f402" name="Flares" hidden="false" targetId="424a-b7fb-a137-d3e3" primary="false"/>
         <categoryLink id="0d02-fc46-4a67-d125" name="Regimental" hidden="false" targetId="2804-b025-09eb-3b84" primary="false"/>
         <categoryLink id="df25-caa7-24c7-c194" name="Thunderbolt Fury" hidden="false" targetId="3dc4-e9e1-4d23-dfe5" primary="false"/>
+        <categoryLink id="2cc4-6f1f-6e4f-7d9e" name="Aircraft" hidden="false" targetId="d569-3d56-cd24-6a31" primary="false"/>
       </categoryLinks>
       <selectionEntryGroups>
         <selectionEntryGroup id="7a92-cb1c-077a-f878" name="Armament" hidden="false" collective="false" import="true">
@@ -9837,7 +9961,7 @@ If a AIRCRAFT model being commanded by a Named Pilot is destroyed, set up this m
         </profile>
         <profile id="b6cd-ba06-5072-a06d" name="Keywords" hidden="false" typeId="c9a8-61f1-0234-bb1b" typeName="[Keyword]">
           <characteristics>
-            <characteristic name="Keywords" typeId="20f9-f9d7-7010-120f">VEHICLE, ARTILLERY, DROP WEAPONS PLATFORM</characteristic>
+            <characteristic name="Keywords" typeId="20f9-f9d7-7010-120f">VEHICLE, ARTILLERY, DROP WEAPONS PLATFORM, REGIMENTAL</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -9853,6 +9977,7 @@ If a AIRCRAFT model being commanded by a Named Pilot is destroyed, set up this m
         <categoryLink id="41f5-c637-b638-7363" name="Artillery" hidden="false" targetId="ae37-74e2-8391-d0f8" primary="false"/>
         <categoryLink id="7ca5-3ede-5f20-9cb6" name="Drop Weapons Platform" hidden="false" targetId="182e-6cd3-7404-4bde" primary="false"/>
         <categoryLink id="d44e-6e0c-f5af-b2a1" name="New CategoryLink" hidden="false" targetId="d713cda3-5d0f-40d8-b621-69233263ec2a" primary="true"/>
+        <categoryLink id="97e3-f7eb-0d57-15de" name="Regimental" hidden="false" targetId="2804-b025-09eb-3b84" primary="false"/>
       </categoryLinks>
       <selectionEntries>
         <selectionEntry id="7178-5728-1ce9-a19b" name="Drop Weapons Platform" hidden="false" collective="false" import="true" type="model">
@@ -12034,6 +12159,706 @@ If a AIRCRAFT model being commanded by a Named Pilot is destroyed, set up this m
         <cost name="pts" typeId="points" value="0.0"/>
       </costs>
     </selectionEntry>
+    <selectionEntry id="87cb-eedc-d665-8afd" name="Drop Company Commander" hidden="false" collective="false" import="true" type="model">
+      <profiles>
+        <profile id="99d0-0718-5a12-4c38" name="Drop Company Commander" hidden="false" typeId="800f-21d0-4387-c943" typeName="Unit">
+          <characteristics>
+            <characteristic name="M" typeId="0bdf-a96e-9e38-7779">6&quot;</characteristic>
+            <characteristic name="WS" typeId="e7f0-1278-0250-df0c">3+</characteristic>
+            <characteristic name="BS" typeId="381b-eb28-74c3-df5f">3+</characteristic>
+            <characteristic name="S" typeId="2218-aa3c-265f-2939">3</characteristic>
+            <characteristic name="T" typeId="9c9f-9774-a358-3a39">3</characteristic>
+            <characteristic name="W" typeId="f330-5e6e-4110-0978">4</characteristic>
+            <characteristic name="A" typeId="13fc-b29b-31f2-ab9f">3</characteristic>
+            <characteristic name="Ld" typeId="00ca-f8b8-876d-b705">9</characteristic>
+            <characteristic name="Save" typeId="c0df-df94-abd7-e8d3">5+</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="54e4-e1d0-6598-b9cc" name="Refractor Field" hidden="false" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Abilities">
+          <characteristics>
+            <characteristic name="Description" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">The COMMANDER model has a 5+ invulnerable save.</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="1941-8b43-3ad4-5fb5" name="Commanding Authority (Regimental)" hidden="false" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Abilities">
+          <characteristics>
+            <characteristic name="Description" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">This model knows Regimental Orders. In your Command phase, it can issue up to two Orders.</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="2e9a-8f30-2308-9ab4" name="Faction Keywords" hidden="false" typeId="c9a8-61f1-0234-bb1b" typeName="[Keyword]">
+          <characteristics>
+            <characteristic name="Keywords" typeId="20f9-f9d7-7010-120f">IMPERIUM, ASTRA MILITARUM, DROP TROOPS</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="604f-7d68-0921-502c" name="Keywords" hidden="false" typeId="c9a8-61f1-0234-bb1b" typeName="[Keyword]">
+          <characteristics>
+            <characteristic name="Keywords" typeId="20f9-f9d7-7010-120f">INFANTRY, CHARACTER, OFFICER, REGIMENTAL, COMMANDER, DROP COMPANY COMMANDER</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink id="6635-e2ca-5d1d-1ac7" name="Voice of Command" hidden="false" targetId="4a75-2cb5-61bd-8203" type="profile"/>
+        <infoLink id="4a8c-6e1b-77bb-10fb" name="Regimental Tactics" hidden="false" targetId="596b-e76b-0437-40f5" type="profile"/>
+        <infoLink id="5e0e-5f32-2472-9e8e" name="Iron Discipline (Aura)" hidden="false" targetId="9d57-19c9-4dee-efa7" type="profile"/>
+        <infoLink id="3806-168d-9edd-739e" name="Aerial Drop" hidden="false" targetId="ef7b-a0ef-2e93-5a1c" type="profile"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink id="fdaa-6b16-9f60-554d" name="Character" hidden="false" targetId="ef18-746a-369f-43a4" primary="false"/>
+        <categoryLink id="d4cd-e214-76ce-2e7b" name="Infantry" hidden="false" targetId="3d52-fccf-10c0-3fae" primary="false"/>
+        <categoryLink id="640a-c510-34c5-a7c6" name="Officer" hidden="false" targetId="5a7f-45dd-2132-935c" primary="false"/>
+        <categoryLink id="6dc0-4a7c-bc91-9649" name="Regimental" hidden="false" targetId="2804-b025-09eb-3b84" primary="false"/>
+        <categoryLink id="d18e-4a9e-557f-6659" name="Commander" hidden="false" targetId="4247-f8bb-e51b-4049" primary="false"/>
+        <categoryLink id="9d4a-4791-640c-53ba" name="New CategoryLink" hidden="false" targetId="848a6ff2-0def-4c72-8433-ff7da70e6bc7" primary="true"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="188d-18f4-3674-51c9" name="Weapons - Ranged" hidden="false" collective="false" import="true" targetId="b5da-e80a-63f0-8ac1" type="selectionEntryGroup"/>
+        <entryLink id="62fd-931f-0e1c-69d0" name="Weapons - Melee" hidden="false" collective="false" import="true" targetId="0527-6d97-fc48-ba93" type="selectionEntryGroup"/>
+        <entryLink id="95b7-de54-0125-6341" name="(HQ, Character, &amp; Relic Options)" hidden="false" collective="false" import="true" targetId="89dc-ee87-3083-7502" type="selectionEntryGroup"/>
+        <entryLink id="80ea-5f35-cf82-bc09" name="Frag &amp; Krak grenades" hidden="false" collective="false" import="true" targetId="cddf-945e-1335-e681" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="fcbe-9f43-8dc6-7d48" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="bd6c-bb78-e479-1d3b" type="max"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
+      <costs>
+        <cost name=" PL" typeId="e356-c769-5920-6e14" value="3.0"/>
+        <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0.0"/>
+        <cost name="pts" typeId="points" value="50.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="b5fc-9d62-a17f-569d" name="[Ex] Tauros - Chungus™" hidden="false" collective="false" import="true" type="unit">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <conditions>
+            <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="3633-1458-351e-02a3" type="equalTo"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <profiles>
+        <profile id="9097-f0bd-19f2-ed4b" name="Faction Keywords" hidden="false" typeId="c9a8-61f1-0234-bb1b" typeName="[Keyword]">
+          <characteristics>
+            <characteristic name="Keywords" typeId="20f9-f9d7-7010-120f">IMPERIUM, ASTRA MILITARUM, DROP TROOPS</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="d165-5855-b0d9-d904" name="Keywords" hidden="false" typeId="c9a8-61f1-0234-bb1b" typeName="[Keyword]">
+          <characteristics>
+            <characteristic name="Keywords" typeId="20f9-f9d7-7010-120f">CORE, VEHICLE, TAUROS, SMOKE, REGIMENTAL, SQUADRON, TAUROS CHUNGUS</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink id="2c21-15e8-a75d-1f42" name="Aerial Drop" hidden="false" targetId="ef7b-a0ef-2e93-5a1c" type="profile"/>
+        <infoLink id="2a84-5469-43ab-438c" name="Regimental Tactics" hidden="false" targetId="596b-e76b-0437-40f5" type="profile"/>
+        <infoLink id="8460-647f-0ec2-148a" name="Audacious Recon" hidden="false" targetId="ff9b-2b5c-a1e9-156d" type="profile"/>
+        <infoLink id="0589-56b8-ebe6-0010" name="Explodes (D6/3&quot;)" hidden="false" targetId="d974-0bb3-70b8-3556" type="profile"/>
+        <infoLink id="6a31-0dec-5961-ffba" name="Galvanic Motor" hidden="false" targetId="f253-399e-6710-7d9d" type="profile"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink id="d7f1-d7a7-b075-c36d" name="Faction: Imperium" hidden="false" targetId="84e2-9fa9-ebe6-1d18" primary="false"/>
+        <categoryLink id="4eff-ebbb-c055-d108" name="Faction: Astra Militarum" hidden="false" targetId="3263-4233-4344-6228" primary="false"/>
+        <categoryLink id="977a-5743-62b7-3efb" name="Faction: Drop Troops" hidden="false" targetId="007a-bbe2-fa6b-49d6" primary="false"/>
+        <categoryLink id="08b3-8bef-8b13-faca" name="Core" hidden="false" targetId="08f1-d244-eb44-7e01" primary="false"/>
+        <categoryLink id="114c-a5ca-b196-92f2" name="Vehicle" hidden="false" targetId="c8fd-783f-3230-493e" primary="false"/>
+        <categoryLink id="34d7-12c3-d49e-c7e8" name="Tauros" hidden="false" targetId="0785-74d6-25e7-1ca2" primary="false"/>
+        <categoryLink id="594a-6128-2cae-8956" name="Smoke" hidden="false" targetId="5250-835a-e5c9-c5da" primary="false"/>
+        <categoryLink id="0456-987a-8576-8e27" name="Regimental" hidden="false" targetId="2804-b025-09eb-3b84" primary="false"/>
+        <categoryLink id="ba1c-7a9c-c3ae-2e0e" name="Squadron" hidden="false" targetId="ff89-3db9-aeea-9b1a" primary="false"/>
+        <categoryLink id="1ba0-ac22-fe67-1be5" name="New CategoryLink" hidden="false" targetId="abf5fd55-9ac7-4263-8bc1-a9fb0a8fa6a6" primary="true"/>
+        <categoryLink id="2f52-78d7-1cc0-f904" name="Tauros Chungus" hidden="false" targetId="6588-6544-37ec-1b43" primary="false"/>
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry id="6e8e-26b3-8c8b-2dbc" name="Tauros Chungus" hidden="false" collective="false" import="true" type="model">
+          <constraints>
+            <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="337b-daec-e2df-5a54" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="33f0-cfe9-e3f3-9b71" type="min"/>
+          </constraints>
+          <profiles>
+            <profile id="0548-c0f4-224e-cd7e" name="Chungros" hidden="false" typeId="800f-21d0-4387-c943" typeName="Unit">
+              <characteristics>
+                <characteristic name="M" typeId="0bdf-a96e-9e38-7779">15&quot;</characteristic>
+                <characteristic name="WS" typeId="e7f0-1278-0250-df0c">4+</characteristic>
+                <characteristic name="BS" typeId="381b-eb28-74c3-df5f">4+</characteristic>
+                <characteristic name="S" typeId="2218-aa3c-265f-2939">4</characteristic>
+                <characteristic name="T" typeId="9c9f-9774-a358-3a39">5</characteristic>
+                <characteristic name="W" typeId="f330-5e6e-4110-0978">6</characteristic>
+                <characteristic name="A" typeId="13fc-b29b-31f2-ab9f">2</characteristic>
+                <characteristic name="Ld" typeId="00ca-f8b8-876d-b705">7</characteristic>
+                <characteristic name="Save" typeId="c0df-df94-abd7-e8d3">4+</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <entryLinks>
+            <entryLink id="b957-9ae0-1363-2cc5" name="Tauros Weapons" hidden="false" collective="false" import="true" targetId="5d09-f3ca-9f10-867f" type="selectionEntryGroup"/>
+            <entryLink id="3d6d-2bda-9a94-7697" name="Tauros Options" hidden="false" collective="false" import="true" targetId="03fd-2c68-1329-fd7f" type="selectionEntryGroup"/>
+          </entryLinks>
+          <costs>
+            <cost name=" PL" typeId="e356-c769-5920-6e14" value="3.0"/>
+            <cost name="pts" typeId="points" value="45.0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+    </selectionEntry>
+    <selectionEntry id="1d10-d1aa-967b-3daa" name="[Ex] Lancers Squad" hidden="false" collective="false" import="true" type="unit">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <conditions>
+            <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="3633-1458-351e-02a3" type="equalTo"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <profiles>
+        <profile id="692c-3a66-edde-7d16" name="Faction Keywords" hidden="false" typeId="c9a8-61f1-0234-bb1b" typeName="[Keyword]">
+          <characteristics>
+            <characteristic name="Keywords" typeId="20f9-f9d7-7010-120f">IMPERIUM, ASTRA MILITARUM, DROP TROOPS</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="6b67-e820-13b5-5e81" name="Keywords" hidden="false" typeId="c9a8-61f1-0234-bb1b" typeName="[Keyword]">
+          <characteristics>
+            <characteristic name="Keywords" typeId="20f9-f9d7-7010-120f">INFANTRY, MELTA BOMB, PLATOON, REGIMENTAL, SPECIALIST, FLY, LANCER SQUAD</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink id="f617-2c9d-607d-d1c6" name="Aerial Drop" hidden="false" targetId="ef7b-a0ef-2e93-5a1c" type="profile"/>
+        <infoLink id="1f1b-467d-b361-8e00" name="Regimental Tactics" hidden="false" targetId="596b-e76b-0437-40f5" type="profile"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink id="fc54-1e92-009e-8ead" name="New CategoryLink" hidden="false" targetId="c274d0b0-5866-44bc-9810-91c136ae7438" primary="true"/>
+        <categoryLink id="a26e-2d01-0a36-f709" name="Faction: Imperium" hidden="false" targetId="84e2-9fa9-ebe6-1d18" primary="false"/>
+        <categoryLink id="a64d-1324-10a4-cd52" name="Faction: Astra Militarum" hidden="false" targetId="3263-4233-4344-6228" primary="false"/>
+        <categoryLink id="5410-b7cb-0818-7311" name="Faction: Drop Troops" hidden="false" targetId="007a-bbe2-fa6b-49d6" primary="false"/>
+        <categoryLink id="d79f-330c-22f2-349d" name="Infantry" hidden="false" targetId="3d52-fccf-10c0-3fae" primary="false"/>
+        <categoryLink id="6c6f-b768-b7f4-0286" name="Melta" hidden="false" targetId="efda-beeb-3d1c-c740" primary="false"/>
+        <categoryLink id="d29f-c9df-5fbf-94a9" name="Platoon" hidden="false" targetId="1845-e55c-b285-d44a" primary="false"/>
+        <categoryLink id="5843-73f7-cce0-b1ac" name="Regimental" hidden="false" targetId="2804-b025-09eb-3b84" primary="false"/>
+        <categoryLink id="f84d-d469-71df-0d98" name="Specialist" hidden="false" targetId="15c7-ee44-fe5b-627a" primary="false"/>
+        <categoryLink id="c89f-1452-3607-4e55" name="Fly" hidden="false" targetId="3117-16d8-fcef-4f56" primary="false"/>
+        <categoryLink id="09a4-ac84-f9f3-ed4d" name="Lancer Squad" hidden="false" targetId="9b6a-a3a1-b260-f099" primary="false"/>
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry id="496f-d9ee-2192-b12e" name="Lancer Sergeant" hidden="false" collective="false" import="true" type="model">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f444-49b4-d5aa-2fb3" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f543-8bf4-5b15-ba4f" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="4d28-93e2-aa74-5d38" name="Lancer Sergeant" hidden="false" typeId="800f-21d0-4387-c943" typeName="Unit">
+              <characteristics>
+                <characteristic name="M" typeId="0bdf-a96e-9e38-7779">12&quot;</characteristic>
+                <characteristic name="WS" typeId="e7f0-1278-0250-df0c">4+</characteristic>
+                <characteristic name="BS" typeId="381b-eb28-74c3-df5f">4+</characteristic>
+                <characteristic name="S" typeId="2218-aa3c-265f-2939">3</characteristic>
+                <characteristic name="T" typeId="9c9f-9774-a358-3a39">3</characteristic>
+                <characteristic name="W" typeId="f330-5e6e-4110-0978">1</characteristic>
+                <characteristic name="A" typeId="13fc-b29b-31f2-ab9f">2</characteristic>
+                <characteristic name="Ld" typeId="00ca-f8b8-876d-b705">8</characteristic>
+                <characteristic name="Save" typeId="c0df-df94-abd7-e8d3">5+</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <entryLinks>
+            <entryLink id="17dd-8450-f88a-59fa" name="Weapons - Melee" hidden="false" collective="false" import="true" targetId="0527-6d97-fc48-ba93" type="selectionEntryGroup"/>
+            <entryLink id="4791-bc49-2f8a-5bc8" name="Weapons - Ranged" hidden="false" collective="false" import="true" targetId="b5da-e80a-63f0-8ac1" type="selectionEntryGroup"/>
+          </entryLinks>
+        </selectionEntry>
+      </selectionEntries>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="6390-65e0-118f-3ef5" name="(Squad Loadout)" hidden="false" collective="false" import="true" defaultSelectionEntryId="3a83-ba96-8cc8-b8e5">
+          <constraints>
+            <constraint field="selections" scope="parent" value="9.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b0a0-2da3-cd15-62ed" type="max"/>
+            <constraint field="selections" scope="parent" value="9.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="055a-c4fc-a337-9b8d" type="min"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry id="3a83-ba96-8cc8-b8e5" name="Lancer" hidden="false" collective="false" import="true" type="model">
+              <constraints>
+                <constraint field="selections" scope="parent" value="9.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ba12-fad4-fa15-40dd" type="max"/>
+              </constraints>
+              <infoLinks>
+                <infoLink id="c7a9-2882-d406-df9e" name="Lancer" hidden="false" targetId="ec36-f19c-34b3-3066" type="profile"/>
+              </infoLinks>
+              <selectionEntries>
+                <selectionEntry id="7d54-756a-01b0-4f0f" name="Auto-sub machine gun" hidden="false" collective="true" import="true" type="upgrade">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6c27-62e3-805e-b751" type="min"/>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="434a-aacb-ce79-ae6e" type="max"/>
+                  </constraints>
+                  <infoLinks>
+                    <infoLink id="f90e-e2e2-79c8-e97b" name="Auto-sub machine gun" hidden="false" targetId="a267-9295-e305-2043" type="profile"/>
+                  </infoLinks>
+                </selectionEntry>
+              </selectionEntries>
+              <entryLinks>
+                <entryLink id="6390-41ed-29bd-8eab" name="Frag &amp; Krak grenades" hidden="false" collective="false" import="true" targetId="cddf-945e-1335-e681" type="selectionEntry">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b54f-7aa3-d6bd-febf" type="min"/>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3411-7cf0-f98f-2700" type="max"/>
+                  </constraints>
+                </entryLink>
+              </entryLinks>
+              <costs>
+                <cost name=" PL" typeId="e356-c769-5920-6e14" value="0.0"/>
+                <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0.0"/>
+                <cost name="pts" typeId="points" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="a888-c414-0b9d-f473" name="Lancer - Shotgun" hidden="false" collective="false" import="true" type="model">
+              <constraints>
+                <constraint field="selections" scope="parent" value="9.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8ba0-5d7e-c0e2-3e05" type="max"/>
+              </constraints>
+              <infoLinks>
+                <infoLink id="279a-0c53-e723-fd5b" name="Lancer" hidden="false" targetId="ec36-f19c-34b3-3066" type="profile"/>
+              </infoLinks>
+              <selectionEntries>
+                <selectionEntry id="83f1-0cc8-5281-0ef1" name="Drop shotgun" hidden="false" collective="true" import="true" type="upgrade">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f6a6-5169-4d3f-3a70" type="min"/>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="fbba-f9bf-5445-34fe" type="max"/>
+                  </constraints>
+                  <infoLinks>
+                    <infoLink id="7d4d-9064-04aa-f4a9" name="Drop shotgun" hidden="false" targetId="d8da-b8fb-68d2-3b0d" type="profile"/>
+                  </infoLinks>
+                </selectionEntry>
+              </selectionEntries>
+              <entryLinks>
+                <entryLink id="596e-5085-292d-517b" name="Frag &amp; Krak grenades" hidden="false" collective="false" import="true" targetId="cddf-945e-1335-e681" type="selectionEntry">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2813-4cdc-bc0c-7b52" type="min"/>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c126-fb98-95c4-e70f" type="max"/>
+                  </constraints>
+                </entryLink>
+              </entryLinks>
+              <costs>
+                <cost name=" PL" typeId="e356-c769-5920-6e14" value="0.0"/>
+                <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0.0"/>
+                <cost name="pts" typeId="points" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="a699-8489-0c95-2666" name="Lancer - Dual hot-shot laspistols" hidden="false" collective="false" import="true" type="model">
+              <constraints>
+                <constraint field="selections" scope="parent" value="9.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c2ed-2eb5-e713-b9c4" type="max"/>
+              </constraints>
+              <infoLinks>
+                <infoLink id="482e-7957-260e-9f8e" name="Lancer" hidden="false" targetId="ec36-f19c-34b3-3066" type="profile"/>
+              </infoLinks>
+              <selectionEntries>
+                <selectionEntry id="6fe0-2769-83e1-ede2" name="Dual hot-shot laspistols" hidden="false" collective="true" import="true" type="upgrade">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="586c-bda5-5105-97e8" type="min"/>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d231-6e8a-0bcf-045c" type="max"/>
+                  </constraints>
+                  <infoLinks>
+                    <infoLink id="13f5-0775-b3c8-ebfe" name="Hot-shot Laspistol" hidden="false" targetId="4609-79eb-7505-68a5" type="profile"/>
+                  </infoLinks>
+                </selectionEntry>
+              </selectionEntries>
+              <entryLinks>
+                <entryLink id="9e08-5310-2c6a-22e0" name="Frag &amp; Krak grenades" hidden="false" collective="false" import="true" targetId="cddf-945e-1335-e681" type="selectionEntry">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0b81-50b9-cf67-3aa4" type="min"/>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d3c0-2c09-a03d-0cd4" type="max"/>
+                  </constraints>
+                </entryLink>
+              </entryLinks>
+              <costs>
+                <cost name=" PL" typeId="e356-c769-5920-6e14" value="0.0"/>
+                <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0.0"/>
+                <cost name="pts" typeId="points" value="0.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <entryLinks>
+        <entryLink id="9543-00a8-ea25-d9e9" name="Specialist Team" hidden="false" collective="false" import="true" targetId="e03f-4061-07c1-7b4b" type="selectionEntryGroup"/>
+      </entryLinks>
+      <costs>
+        <cost name=" PL" typeId="e356-c769-5920-6e14" value="4.0"/>
+        <cost name="pts" typeId="points" value="80.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="5e61-a6ca-b709-8f0c" name="[Ex] Specialist Squad" hidden="false" collective="false" import="true" type="unit">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <conditions>
+            <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="3633-1458-351e-02a3" type="equalTo"/>
+          </conditions>
+        </modifier>
+        <modifier type="set" field="e356-c769-5920-6e14" value="6.0">
+          <conditions>
+            <condition field="selections" scope="parent" value="5.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="model" type="greaterThan"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <profiles>
+        <profile id="a4de-b41a-fc57-3cf3" name="Keywords" hidden="false" typeId="c9a8-61f1-0234-bb1b" typeName="[Keyword]">
+          <characteristics>
+            <characteristic name="Keywords" typeId="20f9-f9d7-7010-120f">INFANTRY, CORE, PLATOON, REGIMENTAL, SPECIALIST, SPECIALIST TEAM</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="11ee-8a71-f443-d1c2" name="Faction Keywords" hidden="false" typeId="c9a8-61f1-0234-bb1b" typeName="[Keyword]">
+          <characteristics>
+            <characteristic name="Keywords" typeId="20f9-f9d7-7010-120f">IMPERIUM, ASTRA MILITARUM, DROP TROOPS</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink id="0c45-0769-23c9-35e3" name="Aerial Drop" hidden="false" targetId="ef7b-a0ef-2e93-5a1c" type="profile"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink id="dadd-d6ff-7f4c-c4d3" name="New CategoryLink" hidden="false" targetId="638d74c6-bd97-4de5-b65a-6aaa24e9f4b2" primary="true"/>
+        <categoryLink id="d961-78e0-395b-5b41" name="Faction: Astra Militarum" hidden="false" targetId="3263-4233-4344-6228" primary="false"/>
+        <categoryLink id="fc2a-6ced-521b-2595" name="Faction: Drop Troops" hidden="false" targetId="007a-bbe2-fa6b-49d6" primary="false"/>
+        <categoryLink id="3bdb-d7e4-b496-8280" name="Faction: Imperium" hidden="false" targetId="84e2-9fa9-ebe6-1d18" primary="false"/>
+        <categoryLink id="a573-8039-0809-ec81" name="Infantry" hidden="false" targetId="3d52-fccf-10c0-3fae" primary="false"/>
+        <categoryLink id="42ba-9576-23f9-2b23" name="Core" hidden="false" targetId="08f1-d244-eb44-7e01" primary="false"/>
+        <categoryLink id="d53f-1d73-64ed-8209" name="Platoon" hidden="false" targetId="1845-e55c-b285-d44a" primary="false"/>
+        <categoryLink id="91fb-77cc-b008-e8ef" name="Regimental" hidden="false" targetId="2804-b025-09eb-3b84" primary="false"/>
+        <categoryLink id="14bb-e76c-29ca-954f" name="Specialist" hidden="false" targetId="15c7-ee44-fe5b-627a" primary="false"/>
+        <categoryLink id="42de-67a4-f927-89e2" name="Specialist Team" hidden="false" targetId="cf4f-f989-92b4-7a16" primary="false"/>
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry id="84ce-437a-1a9d-9dc7" name="Specialist Sergeant" hidden="false" collective="false" import="true" type="model">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7207-f9a4-a315-eee8" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0af9-d5b7-9ab9-b841" type="min"/>
+          </constraints>
+          <profiles>
+            <profile id="15c2-72e5-74c5-6408" name="Specialist Sergeant" hidden="false" typeId="800f-21d0-4387-c943" typeName="Unit">
+              <characteristics>
+                <characteristic name="M" typeId="0bdf-a96e-9e38-7779">6&quot;</characteristic>
+                <characteristic name="WS" typeId="e7f0-1278-0250-df0c">4+</characteristic>
+                <characteristic name="BS" typeId="381b-eb28-74c3-df5f">4+</characteristic>
+                <characteristic name="S" typeId="2218-aa3c-265f-2939">3</characteristic>
+                <characteristic name="T" typeId="9c9f-9774-a358-3a39">3</characteristic>
+                <characteristic name="W" typeId="f330-5e6e-4110-0978">1</characteristic>
+                <characteristic name="A" typeId="13fc-b29b-31f2-ab9f">2</characteristic>
+                <characteristic name="Ld" typeId="00ca-f8b8-876d-b705">8</characteristic>
+                <characteristic name="Save" typeId="c0df-df94-abd7-e8d3">5+</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <entryLinks>
+            <entryLink id="34da-3e01-b30b-db85" name="Weapons - Melee" hidden="false" collective="false" import="true" targetId="0527-6d97-fc48-ba93" type="selectionEntryGroup"/>
+            <entryLink id="e9c6-ea5a-dd62-1e65" name="Weapons - Ranged" hidden="false" collective="false" import="true" targetId="b5da-e80a-63f0-8ac1" type="selectionEntryGroup"/>
+            <entryLink id="f6f1-0de8-a1aa-bd8b" name="Frag &amp; Krak grenades" hidden="false" collective="false" import="true" targetId="cddf-945e-1335-e681" type="selectionEntry">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c753-2e4a-371f-9098" type="min"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="bae6-67ae-cf91-8c56" type="max"/>
+              </constraints>
+            </entryLink>
+          </entryLinks>
+          <costs>
+            <cost name="pts" typeId="points" value="8.0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="9f3c-28c4-51ec-f5bf" name="(Squad Loadout)" hidden="false" collective="false" import="true" defaultSelectionEntryId="b530-7f8c-88cf-8a6d">
+          <modifiers>
+            <modifier type="set" field="56eb-58b2-578d-80ee" value="8.0">
+              <conditions>
+                <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="b37b-5777-de8c-6818" type="greaterThan"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="parent" value="9.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="56eb-58b2-578d-80ee" type="max"/>
+            <constraint field="selections" scope="parent" value="4.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c68c-c720-8198-a7e6" type="min"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry id="b530-7f8c-88cf-8a6d" name="Specialist" hidden="false" collective="false" import="true" type="model">
+              <constraints>
+                <constraint field="selections" scope="parent" value="9.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f6ed-9227-c1e2-8907" type="max"/>
+              </constraints>
+              <infoLinks>
+                <infoLink id="2453-0216-4dd7-10ed" name="Specialist" hidden="false" targetId="2414-1971-e273-52fe" type="profile"/>
+              </infoLinks>
+              <entryLinks>
+                <entryLink id="67c1-c4bc-7258-7108" name="Lasgun" hidden="false" collective="false" import="true" targetId="9e1e-81d3-e87e-4bf0" type="selectionEntry">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c3e3-64e1-04ab-3f55" type="min"/>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4347-d026-d413-b657" type="max"/>
+                  </constraints>
+                </entryLink>
+                <entryLink id="025b-cac9-418a-5a6a" name="Frag &amp; Krak grenades" hidden="false" collective="false" import="true" targetId="cddf-945e-1335-e681" type="selectionEntry">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="213b-4651-e39b-321d" type="min"/>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ac3d-80a6-2987-6a8b" type="max"/>
+                  </constraints>
+                </entryLink>
+              </entryLinks>
+              <costs>
+                <cost name=" PL" typeId="e356-c769-5920-6e14" value="0.0"/>
+                <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0.0"/>
+                <cost name="pts" typeId="points" value="8.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="4d28-8bd6-a8c1-7913" name="Specialist - Vox-Caster" hidden="false" collective="false" import="true" type="model">
+              <modifiers>
+                <modifier type="add" field="category" value="4963-08ea-52a0-c78b"/>
+              </modifiers>
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ac66-1448-c456-dd0f" type="max"/>
+              </constraints>
+              <infoLinks>
+                <infoLink id="db93-a37c-359e-f291" name="Specialist" hidden="false" targetId="2414-1971-e273-52fe" type="profile"/>
+              </infoLinks>
+              <selectionEntries>
+                <selectionEntry id="fa98-fe3b-51e9-fd3d" name="Vox-Caster" hidden="false" collective="false" import="true" type="upgrade">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="35e6-228b-c0fa-8905" type="min"/>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="44a2-bc77-7ad7-6ec8" type="max"/>
+                  </constraints>
+                  <infoLinks>
+                    <infoLink id="0f33-d51c-6321-f98c" name="Vox-Caster" hidden="false" targetId="6e7c-4d72-fc24-04d1" type="profile"/>
+                  </infoLinks>
+                  <costs>
+                    <cost name=" PL" typeId="e356-c769-5920-6e14" value="0.0"/>
+                    <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0.0"/>
+                    <cost name="pts" typeId="points" value="0.0"/>
+                  </costs>
+                </selectionEntry>
+              </selectionEntries>
+              <entryLinks>
+                <entryLink id="7d66-4748-fb6f-ee57" name="Lasgun" hidden="false" collective="false" import="true" targetId="9e1e-81d3-e87e-4bf0" type="selectionEntry">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="51ee-49ab-71b2-7ea3" type="min"/>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="19ab-3c91-5bf2-1eba" type="max"/>
+                  </constraints>
+                </entryLink>
+                <entryLink id="8e2d-a1a3-8821-9953" name="Frag &amp; Krak grenades" hidden="false" collective="false" import="true" targetId="cddf-945e-1335-e681" type="selectionEntry">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="fea7-4caa-714e-3fe9" type="min"/>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e708-1da8-bbab-ae6c" type="max"/>
+                  </constraints>
+                </entryLink>
+              </entryLinks>
+              <costs>
+                <cost name=" PL" typeId="e356-c769-5920-6e14" value="0.0"/>
+                <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0.0"/>
+                <cost name="pts" typeId="points" value="8.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="7cc1-ec90-e2a7-a0a4" name="Specialist - Special Weapon" hidden="false" collective="false" import="true" type="model">
+              <modifiers>
+                <modifier type="set" field="b1d1-4e1e-6076-e2f6" value="4.0">
+                  <conditions>
+                    <condition field="selections" scope="parent" value="4.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="model" type="greaterThan"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <constraints>
+                <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b1d1-4e1e-6076-e2f6" type="max"/>
+              </constraints>
+              <infoLinks>
+                <infoLink id="b366-e5a5-a04f-7ea6" name="Specialist" hidden="false" targetId="2414-1971-e273-52fe" type="profile"/>
+              </infoLinks>
+              <entryLinks>
+                <entryLink id="d02e-89e0-258b-1e31" name="Frag &amp; Krak grenades" hidden="false" collective="false" import="true" targetId="cddf-945e-1335-e681" type="selectionEntry">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b511-6879-5d2e-f84d" type="min"/>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2c54-ee29-75d2-baea" type="max"/>
+                  </constraints>
+                </entryLink>
+                <entryLink id="c4f9-bd51-87c6-4a24" name="Weapons - Special" hidden="false" collective="false" import="true" targetId="d15e-467d-288b-9f8e" type="selectionEntryGroup"/>
+              </entryLinks>
+              <costs>
+                <cost name=" PL" typeId="e356-c769-5920-6e14" value="0.0"/>
+                <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0.0"/>
+                <cost name="pts" typeId="points" value="8.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="645a-ed57-6549-36d1" name="Specialist - Drop shotgun" hidden="false" collective="false" import="true" type="model">
+              <constraints>
+                <constraint field="selections" scope="parent" value="9.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="948c-734c-dea5-8834" type="max"/>
+              </constraints>
+              <infoLinks>
+                <infoLink id="4f7e-5165-657b-aa4b" name="Specialist" hidden="false" targetId="2414-1971-e273-52fe" type="profile"/>
+              </infoLinks>
+              <selectionEntries>
+                <selectionEntry id="5438-c276-2edc-a8bb" name="Drop shotgun" hidden="false" collective="true" import="true" type="upgrade">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8f27-4748-1f89-de10" type="min"/>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4020-1a40-9f96-f45b" type="max"/>
+                  </constraints>
+                  <infoLinks>
+                    <infoLink id="61ef-09c5-8000-f68e" name="Drop shotgun" hidden="false" targetId="d8da-b8fb-68d2-3b0d" type="profile"/>
+                  </infoLinks>
+                </selectionEntry>
+              </selectionEntries>
+              <entryLinks>
+                <entryLink id="aebd-0140-399e-5f16" name="Frag &amp; Krak grenades" hidden="false" collective="false" import="true" targetId="cddf-945e-1335-e681" type="selectionEntry">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8e95-cf99-818b-65e8" type="min"/>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="47b2-60db-0bc3-f508" type="max"/>
+                  </constraints>
+                </entryLink>
+              </entryLinks>
+              <costs>
+                <cost name=" PL" typeId="e356-c769-5920-6e14" value="0.0"/>
+                <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0.0"/>
+                <cost name="pts" typeId="points" value="8.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="1ffe-c609-a1ac-b1a2" name="Specialist - Lascarbine" hidden="false" collective="false" import="true" type="model">
+              <constraints>
+                <constraint field="selections" scope="parent" value="9.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2e6d-80e9-57e0-b972" type="max"/>
+              </constraints>
+              <infoLinks>
+                <infoLink id="a897-40a1-6d2a-e995" name="Specialist" hidden="false" targetId="2414-1971-e273-52fe" type="profile"/>
+              </infoLinks>
+              <selectionEntries>
+                <selectionEntry id="3b29-cfd1-742a-37d0" name="Lascarbine" hidden="false" collective="true" import="true" type="upgrade">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3234-d2ad-5ba1-e715" type="min"/>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="64dc-3dd2-d0ce-f092" type="max"/>
+                  </constraints>
+                  <profiles>
+                    <profile id="c805-10fd-1089-36ef" name="Lascarbine" hidden="false" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Weapon">
+                      <characteristics>
+                        <characteristic name="Range" typeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464">12&quot;</characteristic>
+                        <characteristic name="Type" typeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2">Assault 3</characteristic>
+                        <characteristic name="S" typeId="59b1-319e-ec13-d466">3</characteristic>
+                        <characteristic name="AP" typeId="75aa-a838-b675-6484">0</characteristic>
+                        <characteristic name="D" typeId="ae8a-3137-d65b-4ca7">1</characteristic>
+                        <characteristic name="Abilities" typeId="837d-5e63-aeb7-1410">-</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                </selectionEntry>
+              </selectionEntries>
+              <entryLinks>
+                <entryLink id="21f2-1fe3-47c3-58e4" name="Frag &amp; Krak grenades" hidden="false" collective="false" import="true" targetId="cddf-945e-1335-e681" type="selectionEntry">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="54dc-e5ab-8a7e-1394" type="min"/>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="90c8-e15d-eb12-dc4d" type="max"/>
+                  </constraints>
+                </entryLink>
+              </entryLinks>
+              <costs>
+                <cost name=" PL" typeId="e356-c769-5920-6e14" value="0.0"/>
+                <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0.0"/>
+                <cost name="pts" typeId="points" value="8.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="10e7-a771-7de2-e40f" name="Specialist - Ballistic shield" hidden="false" collective="false" import="true" type="model">
+              <constraints>
+                <constraint field="selections" scope="parent" value="9.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0d97-3c24-0b0e-027e" type="max"/>
+              </constraints>
+              <profiles>
+                <profile id="16c4-1209-2c4b-b0a2" name=" Ballistic Shield" hidden="false" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Abilities">
+                  <characteristics>
+                    <characteristic name="Description" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">A model equipped with a Ballistic shield improves its armour to 2+.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <infoLinks>
+                <infoLink id="809d-5942-c114-babb" name="Specialist" hidden="false" targetId="2414-1971-e273-52fe" type="profile"/>
+              </infoLinks>
+              <selectionEntryGroups>
+                <selectionEntryGroup id="8325-8d30-d6b4-2e52" name="Armament" hidden="false" collective="false" import="true" defaultSelectionEntryId="da1c-8345-0eec-f96b">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8739-e784-6a46-ccfb" type="min"/>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d5bf-5f6a-d452-cba3" type="max"/>
+                  </constraints>
+                  <selectionEntries>
+                    <selectionEntry id="39cd-73aa-92f6-7bfc" name="Drop shotgun" hidden="false" collective="false" import="true" type="upgrade">
+                      <constraints>
+                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="bc0f-73cd-8833-d3c9" type="max"/>
+                      </constraints>
+                      <infoLinks>
+                        <infoLink id="5f89-ea98-1ef5-a632" name="Drop shotgun" hidden="false" targetId="d8da-b8fb-68d2-3b0d" type="profile"/>
+                      </infoLinks>
+                    </selectionEntry>
+                    <selectionEntry id="5750-8335-765b-7934" name="Lascarbine" hidden="false" collective="false" import="true" type="upgrade">
+                      <constraints>
+                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ba3c-4635-5b6c-f968" type="max"/>
+                      </constraints>
+                      <profiles>
+                        <profile id="8c79-0880-0829-fcfd" name="Lascarbine" hidden="false" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Weapon">
+                          <characteristics>
+                            <characteristic name="Range" typeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464">12&quot;</characteristic>
+                            <characteristic name="Type" typeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2">Assault 3</characteristic>
+                            <characteristic name="S" typeId="59b1-319e-ec13-d466">3</characteristic>
+                            <characteristic name="AP" typeId="75aa-a838-b675-6484">0</characteristic>
+                            <characteristic name="D" typeId="ae8a-3137-d65b-4ca7">1</characteristic>
+                            <characteristic name="Abilities" typeId="837d-5e63-aeb7-1410">-</characteristic>
+                          </characteristics>
+                        </profile>
+                      </profiles>
+                    </selectionEntry>
+                  </selectionEntries>
+                  <entryLinks>
+                    <entryLink id="da1c-8345-0eec-f96b" name="Lasgun" hidden="false" collective="false" import="true" targetId="9e1e-81d3-e87e-4bf0" type="selectionEntry">
+                      <constraints>
+                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="19b8-c2d0-a002-a251" type="max"/>
+                      </constraints>
+                    </entryLink>
+                  </entryLinks>
+                </selectionEntryGroup>
+              </selectionEntryGroups>
+              <entryLinks>
+                <entryLink id="8709-aac8-22d1-f18d" name="Frag &amp; Krak grenades" hidden="false" collective="false" import="true" targetId="cddf-945e-1335-e681" type="selectionEntry">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1a79-cb5b-887b-0853" type="min"/>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="16a1-4806-c837-d814" type="max"/>
+                  </constraints>
+                </entryLink>
+              </entryLinks>
+              <costs>
+                <cost name=" PL" typeId="e356-c769-5920-6e14" value="0.0"/>
+                <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0.0"/>
+                <cost name="pts" typeId="points" value="8.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="b37b-5777-de8c-6818" name="Specialist Heavy Weapons Team" hidden="false" collective="false" import="true" type="model">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7e27-a9df-332d-a4d5" type="max"/>
+              </constraints>
+              <profiles>
+                <profile id="b322-30dc-2c00-030e" name="Specialist Heavy Weapons Team" hidden="false" typeId="800f-21d0-4387-c943" typeName="Unit">
+                  <characteristics>
+                    <characteristic name="M" typeId="0bdf-a96e-9e38-7779">6&quot;</characteristic>
+                    <characteristic name="WS" typeId="e7f0-1278-0250-df0c">4+</characteristic>
+                    <characteristic name="BS" typeId="381b-eb28-74c3-df5f">4+</characteristic>
+                    <characteristic name="S" typeId="2218-aa3c-265f-2939">3</characteristic>
+                    <characteristic name="T" typeId="9c9f-9774-a358-3a39">3</characteristic>
+                    <characteristic name="W" typeId="f330-5e6e-4110-0978">1</characteristic>
+                    <characteristic name="A" typeId="13fc-b29b-31f2-ab9f">1</characteristic>
+                    <characteristic name="Ld" typeId="00ca-f8b8-876d-b705">7</characteristic>
+                    <characteristic name="Save" typeId="c0df-df94-abd7-e8d3">5+</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <entryLinks>
+                <entryLink id="8f6f-3324-af72-01f5" name="Lasgun" hidden="false" collective="false" import="true" targetId="9e1e-81d3-e87e-4bf0" type="selectionEntry">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3f88-cf46-2af2-dafe" type="min"/>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7d64-dafb-1ddc-96be" type="max"/>
+                  </constraints>
+                </entryLink>
+                <entryLink id="d82d-a1f3-fa87-d4ca" name="Frag &amp; Krak grenades" hidden="false" collective="false" import="true" targetId="cddf-945e-1335-e681" type="selectionEntry">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="dffe-2faa-126f-2aeb" type="min"/>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="97c8-0f36-0422-d1a7" type="max"/>
+                  </constraints>
+                </entryLink>
+                <entryLink id="652e-3a4d-0095-a059" name="Weapons - Heavy" hidden="false" collective="false" import="true" targetId="e18a-de4c-54af-219f" type="selectionEntryGroup"/>
+              </entryLinks>
+              <costs>
+                <cost name="pts" typeId="points" value="8.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <entryLinks>
+        <entryLink id="550c-98c6-07cc-9ac2" name="Specialist Team" hidden="false" collective="false" import="true" targetId="e03f-4061-07c1-7b4b" type="selectionEntryGroup"/>
+      </entryLinks>
+      <costs>
+        <cost name=" PL" typeId="e356-c769-5920-6e14" value="3.0"/>
+      </costs>
+    </selectionEntry>
   </sharedSelectionEntries>
   <sharedSelectionEntryGroups>
     <selectionEntryGroup id="03f8-be08-4673-6020" name="Explosive Charges" hidden="false" collective="false" import="true">
@@ -12110,6 +12935,7 @@ If a AIRCRAFT model being commanded by a Named Pilot is destroyed, set up this m
                     <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="d32e-1c29-7953-ebb2" type="instanceOf"/>
                     <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="1622-0b40-304e-eeee" type="instanceOf"/>
                     <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="b277-74da-0fc4-6d0c" type="instanceOf"/>
+                    <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="2d26-d5a0-1f69-51ba" type="instanceOf"/>
                   </conditions>
                 </conditionGroup>
               </conditionGroups>
@@ -12155,6 +12981,7 @@ If a AIRCRAFT model being commanded by a Named Pilot is destroyed, set up this m
                     <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="d32e-1c29-7953-ebb2" type="instanceOf"/>
                     <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="1622-0b40-304e-eeee" type="instanceOf"/>
                     <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="b277-74da-0fc4-6d0c" type="instanceOf"/>
+                    <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="2d26-d5a0-1f69-51ba" type="instanceOf"/>
                   </conditions>
                 </conditionGroup>
               </conditionGroups>
@@ -12270,6 +13097,7 @@ If a AIRCRAFT model being commanded by a Named Pilot is destroyed, set up this m
                     <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="d32e-1c29-7953-ebb2" type="instanceOf"/>
                     <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="1622-0b40-304e-eeee" type="instanceOf"/>
                     <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="b277-74da-0fc4-6d0c" type="instanceOf"/>
+                    <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="2d26-d5a0-1f69-51ba" type="instanceOf"/>
                   </conditions>
                 </conditionGroup>
               </conditionGroups>
@@ -12291,6 +13119,7 @@ If a AIRCRAFT model being commanded by a Named Pilot is destroyed, set up this m
                     <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="d32e-1c29-7953-ebb2" type="instanceOf"/>
                     <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="1622-0b40-304e-eeee" type="instanceOf"/>
                     <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="b277-74da-0fc4-6d0c" type="instanceOf"/>
+                    <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="2d26-d5a0-1f69-51ba" type="instanceOf"/>
                   </conditions>
                 </conditionGroup>
               </conditionGroups>
@@ -12312,6 +13141,7 @@ If a AIRCRAFT model being commanded by a Named Pilot is destroyed, set up this m
                     <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="d32e-1c29-7953-ebb2" type="instanceOf"/>
                     <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="1622-0b40-304e-eeee" type="instanceOf"/>
                     <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="b277-74da-0fc4-6d0c" type="instanceOf"/>
+                    <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="2d26-d5a0-1f69-51ba" type="instanceOf"/>
                   </conditions>
                 </conditionGroup>
               </conditionGroups>
@@ -12568,23 +13398,29 @@ If a AIRCRAFT model being commanded by a Named Pilot is destroyed, set up this m
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="919b-88d3-c6bf-8235" type="max"/>
           </constraints>
-          <profiles>
-            <profile id="716e-4650-5f4b-adae" name="Hot-shot Laspistol" hidden="false" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Weapon">
-              <characteristics>
-                <characteristic name="Range" typeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464">12&quot;</characteristic>
-                <characteristic name="Type" typeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2">Pistol 1</characteristic>
-                <characteristic name="S" typeId="59b1-319e-ec13-d466">3</characteristic>
-                <characteristic name="AP" typeId="75aa-a838-b675-6484">-2</characteristic>
-                <characteristic name="D" typeId="ae8a-3137-d65b-4ca7">1</characteristic>
-                <characteristic name="Abilities" typeId="837d-5e63-aeb7-1410">-</characteristic>
-              </characteristics>
-            </profile>
-          </profiles>
+          <infoLinks>
+            <infoLink id="91cc-b40e-f9e8-1e94" name="Hot-shot Laspistol" hidden="false" targetId="4609-79eb-7505-68a5" type="profile"/>
+          </infoLinks>
           <costs>
             <cost name=" PL" typeId="e356-c769-5920-6e14" value="0.0"/>
             <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0.0"/>
             <cost name="pts" typeId="points" value="0.0"/>
           </costs>
+        </selectionEntry>
+        <selectionEntry id="6677-ffa2-cda3-d062" name="Auto-sub machine gun" hidden="true" collective="false" import="true" type="upgrade">
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <conditions>
+                <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="9b6a-a3a1-b260-f099" type="instanceOf"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a6dc-c07a-8d21-0c46" type="max"/>
+          </constraints>
+          <infoLinks>
+            <infoLink id="b765-a128-b93b-28f7" name="Auto-sub machine gun" hidden="false" targetId="a267-9295-e305-2043" type="profile"/>
+          </infoLinks>
         </selectionEntry>
       </selectionEntries>
       <entryLinks>
@@ -14044,7 +14880,7 @@ Each time this model makes a normal move, advances, or falls back, this model mu
               <profiles>
                 <profile id="ae92-22e4-3935-094c" name="(Warlord) Battle-worn Drop Veteran (Aura)" hidden="false" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Abilities">
                   <characteristics>
-                    <characteristic name="Description" typeId="21befb24-fc85-4f52-a745-64b2e48f8228"> Add 1 to hit rolls for attacks made by friendly INFANTRY units the turn they arrived from reserve using the Aerial drop ability or if they disembarked from a friendly DROP TROOPS VALKYRIE.</characteristic>
+                    <characteristic name="Description" typeId="21befb24-fc85-4f52-a745-64b2e48f8228"> Add 1 to hit rolls for attacks made by friendly INFANTRY units the turn they arrived from reserve using the Aerial drop ability or if they disembarked from a friendly DROP TROOPS VALKYRIE this turnw hile they are within 6&quot; of your Warlord.</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -14476,6 +15312,7 @@ Each time this model makes a normal move, advances, or falls back, this model mu
                   <conditions>
                     <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="d623-bac7-69fa-b08b" type="instanceOf"/>
                     <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="6458-6bec-4d3b-0e7c" type="equalTo"/>
+                    <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="6588-6544-37ec-1b43" type="instanceOf"/>
                   </conditions>
                 </conditionGroup>
               </conditionGroups>
@@ -14583,14 +15420,9 @@ Each time this model makes a normal move, advances, or falls back, this model mu
         <selectionEntry id="344f-7824-83d2-49b8" name="Tauros twin missile launcher" hidden="true" collective="false" import="true" type="upgrade">
           <modifiers>
             <modifier type="set" field="hidden" value="false">
-              <conditionGroups>
-                <conditionGroup type="or">
-                  <conditions>
-                    <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="d623-bac7-69fa-b08b" type="instanceOf"/>
-                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="6458-6bec-4d3b-0e7c" type="equalTo"/>
-                  </conditions>
-                </conditionGroup>
-              </conditionGroups>
+              <conditions>
+                <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="6588-6544-37ec-1b43" type="instanceOf"/>
+              </conditions>
             </modifier>
           </modifiers>
           <constraints>
@@ -14621,20 +15453,15 @@ Each time this model makes a normal move, advances, or falls back, this model mu
           <costs>
             <cost name=" PL" typeId="e356-c769-5920-6e14" value="0.0"/>
             <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0.0"/>
-            <cost name="pts" typeId="points" value="0.0"/>
+            <cost name="pts" typeId="points" value="10.0"/>
           </costs>
         </selectionEntry>
         <selectionEntry id="ccb1-cb47-c2da-20d9" name="Tauros twin multiple rocket pods" hidden="true" collective="false" import="true" type="upgrade">
           <modifiers>
             <modifier type="set" field="hidden" value="false">
-              <conditionGroups>
-                <conditionGroup type="or">
-                  <conditions>
-                    <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="d623-bac7-69fa-b08b" type="instanceOf"/>
-                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="6458-6bec-4d3b-0e7c" type="equalTo"/>
-                  </conditions>
-                </conditionGroup>
-              </conditionGroups>
+              <conditions>
+                <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="6588-6544-37ec-1b43" type="instanceOf"/>
+              </conditions>
             </modifier>
           </modifiers>
           <constraints>
@@ -14655,8 +15482,74 @@ Each time this model makes a normal move, advances, or falls back, this model mu
           <costs>
             <cost name=" PL" typeId="e356-c769-5920-6e14" value="0.0"/>
             <cost name="CP" typeId="2d3b-b544-ad49-fb75" value="0.0"/>
-            <cost name="pts" typeId="points" value="0.0"/>
+            <cost name="pts" typeId="points" value="10.0"/>
           </costs>
+        </selectionEntry>
+        <selectionEntry id="ef73-235f-9fb2-6bfd" name="Tauros bofers system" hidden="true" collective="false" import="true" type="upgrade">
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <conditions>
+                <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="6588-6544-37ec-1b43" type="instanceOf"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7f01-a8b5-a23d-628c" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="4ccb-f550-ac0e-8e73" name="Tauros bofers system" hidden="false" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Weapon">
+              <characteristics>
+                <characteristic name="Range" typeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464">48&quot;</characteristic>
+                <characteristic name="Type" typeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2">Heavy 4</characteristic>
+                <characteristic name="S" typeId="59b1-319e-ec13-d466">7</characteristic>
+                <characteristic name="AP" typeId="75aa-a838-b675-6484">-2</characteristic>
+                <characteristic name="D" typeId="ae8a-3137-d65b-4ca7">2</characteristic>
+                <characteristic name="Abilities" typeId="837d-5e63-aeb7-1410">Turret Weapon. Each time an attack is made with this weapon against AIRCRAFT models, make 2 hit rolls insteaf of 1 and add 1 to both hit rolls.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+        </selectionEntry>
+        <selectionEntry id="1dec-1d85-c3a9-bcd1" name="Hunter-killer missile racks" hidden="true" collective="false" import="true" type="upgrade">
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <conditions>
+                <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="6588-6544-37ec-1b43" type="instanceOf"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d7b1-9b59-aa59-16dd" type="max"/>
+          </constraints>
+          <infoLinks>
+            <infoLink id="6e45-47a5-02cd-6b4e" name="Hunter-killer missile racks" hidden="false" targetId="8cbf-61d7-c6ca-e2d0" type="profile"/>
+          </infoLinks>
+          <costs>
+            <cost name="pts" typeId="points" value="10.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="3c9c-a8be-b02b-edbb" name="Light storm eagle rockets" hidden="true" collective="false" import="true" type="upgrade">
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <conditions>
+                <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="6588-6544-37ec-1b43" type="instanceOf"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a469-a0ca-dc2a-b81a" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="1236-5a87-1f32-dcb3" name="Light storm eagle rockets" hidden="false" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Weapon">
+              <characteristics>
+                <characteristic name="Range" typeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464">72&quot;</characteristic>
+                <characteristic name="Type" typeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2">Heavy D3+3</characteristic>
+                <characteristic name="S" typeId="59b1-319e-ec13-d466">9</characteristic>
+                <characteristic name="AP" typeId="75aa-a838-b675-6484">-2</characteristic>
+                <characteristic name="D" typeId="ae8a-3137-d65b-4ca7">3</characteristic>
+                <characteristic name="Abilities" typeId="837d-5e63-aeb7-1410">Blast. This weapon can target units that are not visible to the bearer. The bearer can only shoot with each light storm eagle rockets it is equipped with once per battle.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
         </selectionEntry>
       </selectionEntries>
       <entryLinks>
@@ -14668,6 +15561,7 @@ Each time this model makes a normal move, advances, or falls back, this model mu
                   <conditions>
                     <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="d623-bac7-69fa-b08b" type="instanceOf"/>
                     <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="6458-6bec-4d3b-0e7c" type="equalTo"/>
+                    <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="6588-6544-37ec-1b43" type="instanceOf"/>
                   </conditions>
                 </conditionGroup>
               </conditionGroups>
@@ -15876,18 +16770,78 @@ can be an INFANTRY OFFICER or ABHUMAN unit, but in such cases, the Regimental Ta
         <characteristic name="Save" typeId="c0df-df94-abd7-e8d3">5+</characteristic>
       </characteristics>
     </profile>
+    <profile id="a267-9295-e305-2043" name="Auto-sub machine gun" hidden="false" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Weapon">
+      <characteristics>
+        <characteristic name="Range" typeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464">18&quot;</characteristic>
+        <characteristic name="Type" typeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2">Rapid Fire 2</characteristic>
+        <characteristic name="S" typeId="59b1-319e-ec13-d466">3</characteristic>
+        <characteristic name="AP" typeId="75aa-a838-b675-6484">-</characteristic>
+        <characteristic name="D" typeId="ae8a-3137-d65b-4ca7">1</characteristic>
+        <characteristic name="Abilities" typeId="837d-5e63-aeb7-1410">-</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="ec36-f19c-34b3-3066" name="Lancer" hidden="false" typeId="800f-21d0-4387-c943" typeName="Unit">
+      <characteristics>
+        <characteristic name="M" typeId="0bdf-a96e-9e38-7779">12&quot;</characteristic>
+        <characteristic name="WS" typeId="e7f0-1278-0250-df0c">4+</characteristic>
+        <characteristic name="BS" typeId="381b-eb28-74c3-df5f">4+</characteristic>
+        <characteristic name="S" typeId="2218-aa3c-265f-2939">3</characteristic>
+        <characteristic name="T" typeId="9c9f-9774-a358-3a39">3</characteristic>
+        <characteristic name="W" typeId="f330-5e6e-4110-0978">1</characteristic>
+        <characteristic name="A" typeId="13fc-b29b-31f2-ab9f">1</characteristic>
+        <characteristic name="Ld" typeId="00ca-f8b8-876d-b705">7</characteristic>
+        <characteristic name="Save" typeId="c0df-df94-abd7-e8d3">5+</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="2414-1971-e273-52fe" name="Specialist" hidden="false" typeId="800f-21d0-4387-c943" typeName="Unit">
+      <characteristics>
+        <characteristic name="M" typeId="0bdf-a96e-9e38-7779">6&quot;</characteristic>
+        <characteristic name="WS" typeId="e7f0-1278-0250-df0c">4+</characteristic>
+        <characteristic name="BS" typeId="381b-eb28-74c3-df5f">4+</characteristic>
+        <characteristic name="S" typeId="2218-aa3c-265f-2939">3</characteristic>
+        <characteristic name="T" typeId="9c9f-9774-a358-3a39">3</characteristic>
+        <characteristic name="W" typeId="f330-5e6e-4110-0978">1</characteristic>
+        <characteristic name="A" typeId="13fc-b29b-31f2-ab9f">1</characteristic>
+        <characteristic name="Ld" typeId="00ca-f8b8-876d-b705">7</characteristic>
+        <characteristic name="Save" typeId="c0df-df94-abd7-e8d3">5+</characteristic>
+      </characteristics>
+    </profile>
   </sharedProfiles>
   <sharedInfoGroups>
     <infoGroup id="82a3-1868-af39-9625" name="Regimental Orders" hidden="false">
       <profiles>
-        <profile id="932e-72f1-902a-62e6" name="First Rank, Fire! Second Rank, Fire!" hidden="false" typeId="8c9c-8aa2-3a59-0c4d" typeName="Regimental Orders">
+        <profile id="932e-72f1-902a-62e6" name="Suppressing Fire!" hidden="false" typeId="8c9c-8aa2-3a59-0c4d" typeName="Regimental Orders">
           <characteristics>
-            <characteristic name="Order Effect" typeId="f689-ab92-71e1-852e">Until the end of your next Shooting phase, change the Type of all lasguns and hot-shot lasguns models in this unit are equipped with to Heavy 3.</characteristic>
+            <characteristic name="Order Effect" typeId="f689-ab92-71e1-852e">In your next Shooting phase, the first time this unit is selected to shoot, you can select one enemy INFANTRY unit that is visible to it. If you do so:
+- Models in this unit can only make attacks against that enemy unit that phase (and only if that enemy unit is an eligible target for those attacks).
+- If this unit scores 5 or more hits against that enemy unit, then until the end of your opponent’s next turn, that enemy unit is suppressed.
+- While a unit is suppressed, each time a model in that unit makes an attack, subtract 1 from that attack’s hit roll.</characteristic>
           </characteristics>
         </profile>
         <profile id="0d38-dc9b-8a9c-e683" name="Hold the Line!" hidden="false" typeId="8c9c-8aa2-3a59-0c4d" typeName="Regimental Orders">
           <characteristics>
             <characteristic name="Order Effect" typeId="f689-ab92-71e1-852e">Until your next Command phase, the ordered unit ignores models killed during the enemy Shooting phase or Fight phase when taking Morale tests.</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="c4e1-7754-30dd-0470" name="First Rank, Fire! Second Rank, Fire!" hidden="false" typeId="8c9c-8aa2-3a59-0c4d" typeName="Regimental Orders">
+          <characteristics>
+            <characteristic name="Order Effect" typeId="f689-ab92-71e1-852e">Until the end of your next Shooting phase, change the Type of all lasguns and hot-shot lasguns models in this unit are equipped with to Heavy 3.</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="8512-fdd8-c025-bb47" name="Take Aim!" hidden="false" typeId="8c9c-8aa2-3a59-0c4d" typeName="Regimental Orders">
+          <characteristics>
+            <characteristic name="Order Effect" typeId="f689-ab92-71e1-852e">Until the end of your next Shooting phase, each time a model in this unit makes a ranged attack, add 1 to that attack’s hit roll and improve the Armor Penetration characteristic of that attack by 1.</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="aa93-f424-f262-6f62" name="Move and Fire!" hidden="false" typeId="8c9c-8aa2-3a59-0c4d" typeName="Regimental Orders">
+          <characteristics>
+            <characteristic name="Order Effect" typeId="f689-ab92-71e1-852e">All INFANTRY models in the ordered unit count their weapons as being Assault weapons until the end of the turn.</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="f4a9-7f87-c230-0407" name="Move! Move! Move!" hidden="false" typeId="8c9c-8aa2-3a59-0c4d" typeName="Regimental Orders">
+          <characteristics>
+            <characteristic name="Order Effect" typeId="f689-ab92-71e1-852e">- Until the end of your next Movement phase, if this unit makes a Normal Move, add 2” to the Move characteristic of models in this unit.
+- Until the end of your next Movement phase, if this unit Advances, do not make an Advance roll. Instead, until the end of the phase, add 6” to the Move characteristic of models in this unit.</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -15924,12 +16878,48 @@ can be an INFANTRY OFFICER or ABHUMAN unit, but in such cases, the Regimental Ta
         <profile id="aca4-069e-02ff-c40e" name="Remain Vigilant!" hidden="false" typeId="daaa-f845-aee0-2d2e" typeName="Prefectus Orders">
           <characteristics>
             <characteristic name="Order Effect" typeId="db78-0cd5-018e-29c1">Until the start of your next Command phase:
--Enemy units that are set up on the battlefield as Reinforcements cannot be set up within 12” of this unit.
+- Enemy units that are set up on the battlefield as Reinforcements cannot be set up within 12” of this unit.
 - If an enemy unit declares a charge against this unit and this unit is not within Engagement Range of any enemy units, it can Hold Steady. If it does so, then until the end of the phase, any  Overwatch attacks made by models in this unit score hits on  unmodified rolls of 5+, instead of 6+.</characteristic>
           </characteristics>
         </profile>
       </profiles>
     </infoGroup>
-    <infoGroup id="9973-e361-e8de-e2e9" name="Mechanized Orders" hidden="false"/>
+    <infoGroup id="9973-e361-e8de-e2e9" name="Mechanized Orders" hidden="false">
+      <profiles>
+        <profile id="5ad0-88eb-b9a5-ddf5" name="Unleash Hell!" hidden="false" typeId="154f-3f60-28b1-bc5b" typeName="Mechanised Orders">
+          <characteristics>
+            <characteristic name="Order Effect" typeId="57b9-2d40-379c-ebec">In your next Shooting phase, the ordered unit can shoot twice but it can only make attacks that target the same enemy unit (and only if that enemy unit is an eligible target for those attacks) but the attack must be done with a -1 to hit.</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="5c73-6851-4fea-d940" name="Strike And Fade!" hidden="false" typeId="154f-3f60-28b1-bc5b" typeName="Mechanised Orders">
+          <characteristics>
+            <characteristic name="Order Effect" typeId="57b9-2d40-379c-ebec">In your Shooting phase and after shooting its weapon, if the ordered unit didn’t move during the Movement phase, it can immediately move (and Advance) as if it was the Movement phase. If it do so, the ordered unit cannot declare a charge this turn or end up within Engagement range of any enemy model during this movement.</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="2345-8aca-577f-6941" name="Evasive Manoeuvre! " hidden="false" typeId="154f-3f60-28b1-bc5b" typeName="Mechanised Orders">
+          <characteristics>
+            <characteristic name="Order Effect" typeId="57b9-2d40-379c-ebec">Until your next Command phase, if the ordered unit advance during your next Movement phase, it gets a 5+ invulnerable save. If the ordered unit already has an Invulnerable save, improve it by 1 instead.</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="1471-a970-f85b-f4c0" name="Shock and Awe!" hidden="false" typeId="154f-3f60-28b1-bc5b" typeName="Mechanised Orders">
+          <characteristics>
+            <characteristic name="Order Effect" typeId="57b9-2d40-379c-ebec">Until the end of your next Command phase, this unit gains the Objective Secured ability (see the Warhammer 40,000 Core Book).</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="2e1f-85ec-aa23-e95a" name="Pinning Fire!" hidden="false" typeId="154f-3f60-28b1-bc5b" typeName="Mechanised Orders">
+          <characteristics>
+            <characteristic name="Order Effect" typeId="57b9-2d40-379c-ebec">In your next Shooting phase, the first time this unit is selected to shoot, you can select one enemy INFANTRY unit that is visible to it. If you do so:
+- Models in this unit can only make attacks against that enemy unit this phase (and only if that enemy unit is an eligible target for those attacks).
+- If this unit scores 5 or more hits against that enemy unit, then until the end of your opponent’s next turn, that enemy unit is pinned.
+- While a unit is pinned, subtract 2” from the Move characteristic of models in that unit.</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="bf24-9740-b314-649c" name="Gunners, Kill on SIght!" hidden="false" typeId="154f-3f60-28b1-bc5b" typeName="Mechanised Orders">
+          <characteristics>
+            <characteristic name="Order Effect" typeId="57b9-2d40-379c-ebec">Until the end of your next Shooting phase, each time a model in this unit makes a ranged attack, re-roll a hit roll of 1.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+    </infoGroup>
   </sharedInfoGroups>
 </catalogue>
