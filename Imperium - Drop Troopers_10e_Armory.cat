@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="1fa0-82c3-b596-3c67" name="Imperium - Drop Troops - Armory" revision="1" battleScribeVersion="2.03" authorName="Elysian Drop Troop Discord Server" authorContact="Report typos/issues on the Discord in #battlescribe-development to brendanmint." authorUrl="https://discord.gg/47u9YjKxYN" library="true" gameSystemId="sys-352e-adc2-7639-d6a9" gameSystemRevision="3" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
-  <readme>This catalogue contains all the weapon profiles for the Drop Troops Fandex/Fan Index.</readme>
+<catalogue id="1fa0-82c3-b596-3c67" name="Imperium - Drop Troops - Armory" revision="2" battleScribeVersion="2.03" authorName="Elysian Drop Troop Discord Server" authorContact="Report typos/issues on the Discord in #battlescribe-development to brendanmint." authorUrl="https://discord.gg/47u9YjKxYN" library="true" gameSystemId="sys-352e-adc2-7639-d6a9" gameSystemRevision="3" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
+  <readme>This catalogue contains weapon profiles for the Drop Troops Fandex/Fan Index.</readme>
   <profileTypes>
     <profileType id="drop-0000-0000-0002" name="(2) Ranged Weapons">
       <characteristicTypes>
@@ -61,7 +61,7 @@
     <categoryEntry id="2463-cff0-8d3e-16c2" name="Tarantula Battery" hidden="false"/>
     <categoryEntry id="c3ac-ba74-4d1f-86de" name="Tauros Assault Vehicle" hidden="false"/>
     <categoryEntry id="aa00-0bc7-dfa3-ab89" name="Tauros Annihilator" hidden="false"/>
-    <categoryEntry id="2448-c079-557c-0144" name="Tauros Eraser" hidden="false"/>
+    <categoryEntry id="2448-c079-557c-0144" name="Tauros Striker" hidden="false"/>
     <categoryEntry id="55e8-0307-ef0c-e1eb" name="Tauros Venator" hidden="false"/>
     <categoryEntry id="89ac-ffc7-62dd-69eb" name="Heavy Weapon Squad" hidden="false"/>
     <categoryEntry id="bd83-4d1a-43b3-b9c3" name="Sniper Squad" hidden="false"/>
@@ -2263,7 +2263,7 @@
       <profiles>
         <profile name="Thunderbolt nose bolt cannon" typeId="drop-0000-0000-0002" typeName="(2) Ranged Weapons" hidden="false" id="21db-58aa-c2cc-b4be">
           <characteristics>
-            <characteristic name="Keywords" typeId="157a-063a-0fc2-18b6">SUSTAINED HITS 1</characteristic>
+            <characteristic name="Keywords" typeId="157a-063a-0fc2-18b6">SUSTAINED HITS 1, TWIN-LINKED</characteristic>
             <characteristic name="Range" typeId="b112-14ec-89e7-1cff">36&quot;</characteristic>
             <characteristic name="A" typeId="0b5a-540c-4640-c561">10</characteristic>
             <characteristic name="BS" typeId="142d-5bca-588a-1ef0">4+</characteristic>
@@ -2274,7 +2274,16 @@
         </profile>
       </profiles>
       <infoLinks>
-        <infoLink id="40e-894f-9b1d-385" name="Sustained Hits" hidden="false" targetId="1897-c22c-9597-12b1" type="rule">
+        <infoLink id="40e-894f-9b1d-385" name="Twin-linked" hidden="false" targetId="cf93-ad4d-2f08-a79d" type="rule">
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <conditions>
+                <condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="edc0-ab68-6a3a-4ba7" type="lessThan"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </infoLink>
+        <infoLink id="2c7d-76de-400f-72de" name="Sustained Hits" hidden="false" targetId="1897-c22c-9597-12b1" type="rule">
           <modifiers>
             <modifier type="set" field="hidden" value="true">
               <conditions>
@@ -2731,6 +2740,204 @@
       <costs>
         <cost name="pts" typeId="51b2-306e-1021-d207" value="0"/>
       </costs>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Tauros missile launcher" hidden="false" id="5148-cf0-2efd-e805">
+      <profiles>
+        <profile id="55b7-fa40-c86-ae75" name="➤ Tauros missile launcher - frag" hidden="false" typeId="drop-0000-0000-0002" typeName="(2) Ranged Weapons">
+          <characteristics>
+            <characteristic name="Keywords" typeId="157a-063a-0fc2-18b6">BLAST, HEAVY</characteristic>
+            <characteristic name="Range" typeId="b112-14ec-89e7-1cff">48&quot;</characteristic>
+            <characteristic name="A" typeId="0b5a-540c-4640-c561">2D6</characteristic>
+            <characteristic name="BS" typeId="142d-5bca-588a-1ef0">4+</characteristic>
+            <characteristic name="S" typeId="abcb-6e5c-c603-49f2">4</characteristic>
+            <characteristic name="AP" typeId="2239-5a6b-492d-cd27">0</characteristic>
+            <characteristic name="D" typeId="2a24-d5ba-05b6-add4">1</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="a0e1-e8a-e570-c750" name="➤ Tauros missile launcher - krak" hidden="false" typeId="drop-0000-0000-0002" typeName="(2) Ranged Weapons">
+          <characteristics>
+            <characteristic name="Keywords" typeId="157a-063a-0fc2-18b6">HEAVY</characteristic>
+            <characteristic name="Range" typeId="b112-14ec-89e7-1cff">24&quot;</characteristic>
+            <characteristic name="A" typeId="0b5a-540c-4640-c561">2</characteristic>
+            <characteristic name="BS" typeId="142d-5bca-588a-1ef0">4+</characteristic>
+            <characteristic name="S" typeId="abcb-6e5c-c603-49f2">9</characteristic>
+            <characteristic name="AP" typeId="2239-5a6b-492d-cd27">-2</characteristic>
+            <characteristic name="D" typeId="2a24-d5ba-05b6-add4">D6</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink id="bbb9-d86f-56bf-c770" name="Blast" hidden="false" targetId="6c1f-1cf7-ff25-c99e" type="rule">
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <conditions>
+                <condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="edc0-ab68-6a3a-4ba7" type="lessThan"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </infoLink>
+        <infoLink id="82d9-e8f2-189a-d761" name="Heavy" hidden="false" targetId="1202-10a8-78e9-4c67" type="rule">
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <conditions>
+                <condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="edc0-ab68-6a3a-4ba7" type="lessThan"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </infoLink>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Tauros twin flak cannons" hidden="false" id="2eb6-e422-5b4a-a9db">
+      <profiles>
+        <profile id="9dae-8b51-2626-37bc" name="Tauros twin flak cannons" hidden="false" typeId="drop-0000-0000-0002" typeName="(2) Ranged Weapons">
+          <characteristics>
+            <characteristic name="Keywords" typeId="157a-063a-0fc2-18b6">ANTI-FLY 2+, HEAVY, TWIN-LINKED</characteristic>
+            <characteristic name="Range" typeId="b112-14ec-89e7-1cff">36&quot;</characteristic>
+            <characteristic name="A" typeId="0b5a-540c-4640-c561">4</characteristic>
+            <characteristic name="BS" typeId="142d-5bca-588a-1ef0">4+</characteristic>
+            <characteristic name="S" typeId="abcb-6e5c-c603-49f2">9</characteristic>
+            <characteristic name="AP" typeId="2239-5a6b-492d-cd27">-1</characteristic>
+            <characteristic name="D" typeId="2a24-d5ba-05b6-add4">3</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink id="331f-bee5-261c-ceb9" name="Heavy" hidden="false" targetId="1202-10a8-78e9-4c67" type="rule">
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <conditions>
+                <condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="edc0-ab68-6a3a-4ba7" type="lessThan"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </infoLink>
+        <infoLink id="f733-a970-b30a-be3" name="Twin-linked" hidden="false" targetId="cf93-ad4d-2f08-a79d" type="rule">
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <conditions>
+                <condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="edc0-ab68-6a3a-4ba7" type="lessThan"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </infoLink>
+        <infoLink id="fd65-8854-5b56-df19" name="Anti-" hidden="false" targetId="4111-82e3-9444-e942" type="rule">
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <conditions>
+                <condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="edc0-ab68-6a3a-4ba7" type="lessThan"/>
+              </conditions>
+            </modifier>
+            <modifier type="set" value="Anti-Fly 2+" field="name"/>
+          </modifiers>
+        </infoLink>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Tauros hellstrike missiles" hidden="false" id="92de-bd51-d6fd-6971">
+      <profiles>
+        <profile id="a319-4d77-fce8-58bd" name="Tauros hellstrike missiles" hidden="false" typeId="drop-0000-0000-0002" typeName="(2) Ranged Weapons">
+          <characteristics>
+            <characteristic name="Keywords" typeId="157a-063a-0fc2-18b6">ANTI-FLY 2+, HEAVY</characteristic>
+            <characteristic name="Range" typeId="b112-14ec-89e7-1cff">48&quot;</characteristic>
+            <characteristic name="A" typeId="0b5a-540c-4640-c561">1</characteristic>
+            <characteristic name="BS" typeId="142d-5bca-588a-1ef0">4+</characteristic>
+            <characteristic name="S" typeId="abcb-6e5c-c603-49f2">10</characteristic>
+            <characteristic name="AP" typeId="2239-5a6b-492d-cd27">-3</characteristic>
+            <characteristic name="D" typeId="2a24-d5ba-05b6-add4">D6</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink id="d45e-fd8d-79b8-c98e" name="Anti-" hidden="false" targetId="4111-82e3-9444-e942" type="rule">
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <conditions>
+                <condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="edc0-ab68-6a3a-4ba7" type="lessThan"/>
+              </conditions>
+            </modifier>
+            <modifier type="set" value="Anti-Fly 2+" field="name"/>
+          </modifiers>
+        </infoLink>
+        <infoLink id="91fd-b130-8b1f-e8e6" name="Heavy" hidden="false" targetId="1202-10a8-78e9-4c67" type="rule">
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <conditions>
+                <condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="edc0-ab68-6a3a-4ba7" type="lessThan"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </infoLink>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Tauros bull bar" hidden="false" id="8062-3cd1-631c-d7a4">
+      <profiles>
+        <profile name="Tauros bull bar" typeId="drop-0000-0000-0003" typeName="(3) Melee Weapons" hidden="false" id="a050-171f-dc54-4d92">
+          <characteristics>
+            <characteristic name="Keywords" typeId="0e3f-bafb-acb0-1686"/>
+            <characteristic name="Range" typeId="90c0-7005-ea63-310a">Melee</characteristic>
+            <characteristic name="A" typeId="6dcc-b14d-28fa-925a">3</characteristic>
+            <characteristic name="WS" typeId="239a-a913-887d-47e2">4+</characteristic>
+            <characteristic name="S" typeId="e03e-7e24-9f08-8ee1">5</characteristic>
+            <characteristic name="AP" typeId="60c6-2697-02bd-9114">0</characteristic>
+            <characteristic name="D" typeId="64dd-dc29-b221-0d2b">1</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+    </selectionEntry>
+    <selectionEntry id="e011-5cc5-f2b0-8c9" name="Lightning autocannon" hidden="false" collective="false" import="true" type="upgrade">
+      <profiles>
+        <profile id="2213-19c0-cb1c-c9e4" name="Lightning autocannon" hidden="false" typeId="drop-0000-0000-0002" typeName="(2) Ranged Weapons">
+          <characteristics>
+            <characteristic name="Keywords" typeId="157a-063a-0fc2-18b6">ANTI-FLY 4+</characteristic>
+            <characteristic name="Range" typeId="b112-14ec-89e7-1cff">48&quot;</characteristic>
+            <characteristic name="A" typeId="0b5a-540c-4640-c561">2</characteristic>
+            <characteristic name="BS" typeId="142d-5bca-588a-1ef0">4+</characteristic>
+            <characteristic name="S" typeId="abcb-6e5c-c603-49f2">9</characteristic>
+            <characteristic name="AP" typeId="2239-5a6b-492d-cd27">-1</characteristic>
+            <characteristic name="D" typeId="2a24-d5ba-05b6-add4">3</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink id="6ffd-d9d9-43bf-f952" name="Anti-" hidden="false" targetId="4111-82e3-9444-e942" type="rule">
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <conditions>
+                <condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="edc0-ab68-6a3a-4ba7" type="lessThan"/>
+              </conditions>
+            </modifier>
+            <modifier type="set" value="Anti-Fly 4+" field="name"/>
+          </modifiers>
+        </infoLink>
+      </infoLinks>
+      <costs>
+        <cost name="pts" typeId="51b2-306e-1021-d207" value="0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Marauder nose autocannons" hidden="false" id="fd45-99c3-428b-709c">
+      <profiles>
+        <profile name="Marauder nose autocannons" typeId="drop-0000-0000-0002" typeName="(2) Ranged Weapons" hidden="false" id="58ef-798-1378-6c94">
+          <characteristics>
+            <characteristic name="Keywords" typeId="157a-063a-0fc2-18b6">TWIN-LINKED</characteristic>
+            <characteristic name="Range" typeId="b112-14ec-89e7-1cff">48&quot;</characteristic>
+            <characteristic name="A" typeId="0b5a-540c-4640-c561">4</characteristic>
+            <characteristic name="BS" typeId="142d-5bca-588a-1ef0">4+</characteristic>
+            <characteristic name="S" typeId="abcb-6e5c-c603-49f2">10</characteristic>
+            <characteristic name="AP" typeId="2239-5a6b-492d-cd27">-2</characteristic>
+            <characteristic name="D" typeId="2a24-d5ba-05b6-add4">3</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink id="9347-bad0-2844-3327" name="Twin-linked" hidden="false" targetId="cf93-ad4d-2f08-a79d" type="rule">
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <conditions>
+                <condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="edc0-ab68-6a3a-4ba7" type="lessThan"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </infoLink>
+      </infoLinks>
     </selectionEntry>
   </sharedSelectionEntries>
 </catalogue>

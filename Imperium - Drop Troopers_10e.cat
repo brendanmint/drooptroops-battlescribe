@@ -1,8 +1,15 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="e2fd-5870-7ccd-a263" name="Imperium - Drop Troops - Fan Index 10e" revision="71" battleScribeVersion="2.03" authorName="Elysian Drop Troop Discord Server" authorContact="Report typos/issues on the Discord in #battlescribe-development to brendanmint." authorUrl="https://discord.gg/47u9YjKxYN" library="false" gameSystemId="sys-352e-adc2-7639-d6a9" gameSystemRevision="3" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
+<catalogue id="e2fd-5870-7ccd-a263" name="Imperium - Drop Troops Fan Index 10e" revision="72" battleScribeVersion="2.03" authorName="Elysian Drop Troop Discord Server" authorContact="Report typos/issues on the Discord in #battlescribe-development to brendanmint." authorUrl="https://discord.gg/47u9YjKxYN" library="false" gameSystemId="sys-352e-adc2-7639-d6a9" gameSystemRevision="3" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
   <readme>Index Version a10.1.3
-- BS Data Revision 71a -
-Updated for 10th. Don&apos;t Support BattleSribe. Harrass the French.</readme>
+- BS Data Revision 72 -
+Updated for 10th.
+
+
+All units in the Index have been added. Please reach out on the Elysian Discord server if you find any typos or errors. Note that I have changed some things around for better balance and readability.
+
+
+Don&apos;t Support BattleSribe.
+Do harrass the French.</readme>
   <profileTypes>
     <profileType id="drop-0000-0000-key1" name="[Keywords]">
       <characteristicTypes>
@@ -115,9 +122,31 @@ Updated for 10th. Don&apos;t Support BattleSribe. Harrass the French.</readme>
         </profile>
       </profiles>
     </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Tactical bombs" hidden="true" id="48f1-cca6-3fc4-b391">
+      <modifiers>
+        <modifier type="set" value="false" field="hidden">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition type="notInstanceOf" value="1" field="selections" scope="ancestor" childId="7a42-f036-ddac-f402" shared="true" id="64ec-4780-7a5a-c5a0"/>
+                <condition type="notInstanceOf" value="1" field="selections" scope="ancestor" childId="c098-8e8a-4232-9c97" shared="true" id="98ee-245e-91b-5b86"/>
+                <condition type="notInstanceOf" value="1" field="selections" scope="ancestor" childId="cb68-e402-aac3-f3c4" shared="true" id="48f0-8399-7412-117"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <profiles>
+        <profile name="Tactical bombs" typeId="2c22-15c0-450f-768" typeName="(4) Abilities" hidden="false" id="d196-2b95-2d11-2c09">
+          <characteristics>
+            <characteristic name="Description" typeId="770f-11ab-9f54-73e8">Each time this model ends a Normal move, you can select one enemy unit it moved over during that move and roll one D6: on a 4+, that unit suffers D6 mortal wounds.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+    </selectionEntry>
   </sharedSelectionEntries>
   <sharedSelectionEntryGroups>
-    <selectionEntryGroup id="3d09-88ba-8e23-8aff" name="Aircraft Equipment &amp; Options" hidden="false" collective="false" import="true">
+    <selectionEntryGroup id="3d09-88ba-8e23-8aff" name="(Aircraft Equipment &amp; Options)" hidden="false" collective="false" import="true">
       <selectionEntries>
         <selectionEntry id="drop-flag-name-ace1" name="Named Ace" hidden="false" collective="false" import="true" type="upgrade">
           <modifiers>
@@ -129,7 +158,7 @@ Updated for 10th. Don&apos;t Support BattleSribe. Harrass the French.</readme>
           </modifiers>
           <constraints>
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5e19-6e7a-4a0a-7966" type="max"/>
-            <constraint field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="41ce-d3fe-1f14-8184" type="max"/>
+            <constraint field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="41ce-d3fe-1f14-8184" type="max"/>
           </constraints>
           <profiles>
             <profile id="304e-6598-e8a4-9a9f" name="Navy Pilot" hidden="false" typeId="drop-0000-0000-0004" typeName="(4) Abilities">
@@ -171,6 +200,20 @@ Updated for 10th. Don&apos;t Support BattleSribe. Harrass the French.</readme>
           <constraints>
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e532-3fec-694e-e5f0" type="max"/>
           </constraints>
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition type="notInstanceOf" value="1" field="selections" scope="ancestor" childId="7a42-f036-ddac-f402" shared="true"/>
+                    <condition type="notInstanceOf" value="1" field="selections" scope="ancestor" childId="cb68-e402-aac3-f3c4" shared="true"/>
+                    <condition type="notInstanceOf" value="1" field="selections" scope="ancestor" childId="c098-8e8a-4232-9c97" shared="true"/>
+                    <condition type="notInstanceOf" value="1" field="selections" scope="ancestor" childId="1de2-24db-fc2c-1025" shared="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
         </selectionEntry>
       </selectionEntries>
     </selectionEntryGroup>
@@ -358,23 +401,10 @@ Updated for 10th. Don&apos;t Support BattleSribe. Harrass the French.</readme>
                 </modifier>
               </modifiers>
             </selectionEntry>
-            <selectionEntry type="upgrade" import="true" name="Tactical bombs" hidden="true" id="2fff-7bd2-e0f3-225">
-              <modifiers>
-                <modifier type="set" value="false" field="hidden">
-                  <conditions>
-                    <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="1de2-24db-fc2c-1025" shared="true" id="29d9-308d-2299-1e45"/>
-                  </conditions>
-                </modifier>
-              </modifiers>
-              <profiles>
-                <profile name="Tactical bombs" typeId="2c22-15c0-450f-768" typeName="(4) Abilities" hidden="false" id="5bb6-fab2-5d3-f3e6">
-                  <characteristics>
-                    <characteristic name="Description" typeId="770f-11ab-9f54-73e8">Each time this model ends a Normal move, you can select one enemy unit it moved over during that move and roll one D6: on a 4+, that unit suffers D6 mortal wounds.</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
-            </selectionEntry>
           </selectionEntries>
+          <entryLinks>
+            <entryLink import="true" name="Tactical bombs" hidden="false" type="selectionEntry" id="2a8e-5cfb-4e5-ca2f" targetId="48f1-cca6-3fc4-b391"/>
+          </entryLinks>
         </selectionEntryGroup>
         <selectionEntryGroup name="Wing Mount - Secondary" hidden="true" id="3745-62e0-f045-6ecc">
           <constraints>
@@ -715,7 +745,7 @@ Updated for 10th. Don&apos;t Support BattleSribe. Harrass the French.</readme>
             </profile>
             <profile name="Keywords (Ground Scanner Technician)" typeId="drop-0000-0000-key1" typeName="[Keywords]" hidden="false" id="f610-79b8-ac9d-7f7">
               <characteristics>
-                <characteristic name="Keywords" typeId="2a81-7738-d2ef-20f3">GROUND SCANNER TECHNICIAN </characteristic>
+                <characteristic name="Keywords" typeId="2a81-7738-d2ef-20f3">GROUND SCANNER TECHNICIAN</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -747,7 +777,7 @@ unit, add 1 to the Hit roll.</characteristic>
             </profile>
             <profile name="Keywords (Tactical Air Controller)" typeId="drop-0000-0000-key1" typeName="[Keywords]" hidden="false" id="12dc-916f-4384-8a9c">
               <characteristics>
-                <characteristic name="Keywords" typeId="2a81-7738-d2ef-20f3">TACTICAL AIR CONTROLLER </characteristic>
+                <characteristic name="Keywords" typeId="2a81-7738-d2ef-20f3">TACTICAL AIR CONTROLLER</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -925,6 +955,7 @@ Whilst an AIRCRAFT model is being commander by the Named Ace, its Weapons have 
           </modifiers>
         </infoLink>
         <infoLink id="eb5b-5207-7d28-640c" name="Hover" hidden="false" targetId="eec5-5f54-9c03-c305" type="rule"/>
+        <infoLink id="b41d-17b2-c209-11cc" name="Deep Strike" hidden="false" targetId="7cb5-dd6b-dd87-ad3b" type="rule"/>
       </infoLinks>
       <categoryLinks>
         <categoryLink id="d0b1-c1e3-31ac-4902" name="New CategoryLink" hidden="false" targetId="ba07-411c-2832-1f79" primary="true"/>
@@ -1247,6 +1278,7 @@ Whilst an AIRCRAFT model is being commander by the Named Ace, its Weapons have 
           </modifiers>
         </infoLink>
         <infoLink id="b430-d5e5-47b7-2a1d" name="Hover" hidden="false" targetId="eec5-5f54-9c03-c305" type="rule"/>
+        <infoLink id="2274-4595-952f-7c95" name="Deep Strike" hidden="false" targetId="7cb5-dd6b-dd87-ad3b" type="rule"/>
       </infoLinks>
       <modifierGroups>
         <modifierGroup>
@@ -2807,6 +2839,42 @@ BREACHER SQUAD | DROP OGRYN SQUAD | DROP TROOPERS SQUAD | DROP VETERAN SQUAD|
                 </selectionEntryGroup>
               </selectionEntryGroups>
             </selectionEntry>
+            <selectionEntry type="model" import="true" name="Drop Veteran - Special Weapon" hidden="false" id="1da5-5c62-f7b8-e9ec">
+              <profiles>
+                <profile name="Drop Veteran" typeId="drop-0000-0000-0001" typeName="(1) Profiles" hidden="false" id="e278-f667-461-d29d">
+                  <characteristics>
+                    <characteristic name="M" typeId="a2ab-842f-e968-ca80">6&quot;</characteristic>
+                    <characteristic name="T" typeId="bc9c-e3f3-3186-a7f0">3</characteristic>
+                    <characteristic name="SV" typeId="b5ba-b467-6f5a-cca9">5+</characteristic>
+                    <characteristic name="W" typeId="00d9-a17e-9b2e-a053">1</characteristic>
+                    <characteristic name="LD" typeId="c45a-6afc-f077-7edc">6+</characteristic>
+                    <characteristic name="OC" typeId="7d96-9381-1b91-9d5e">2</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <selectionEntryGroups>
+                <selectionEntryGroup name="Special Weapon Selection" hidden="false" id="53d9-7e2c-c2ac-bce1">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d17c-71a7-a370-37f6"/>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="6fa5-dfbd-2ffb-276a"/>
+                  </constraints>
+                  <entryLinks>
+                    <entryLink import="true" name="Flamer" hidden="false" type="selectionEntry" id="82f9-6192-cc39-d888" targetId="ca87-a804-145a-5811"/>
+                    <entryLink import="true" name="Grenade launcher" hidden="false" type="selectionEntry" id="88ae-63c9-6af4-ea67" targetId="drop-weap-glin-bs04"/>
+                    <entryLink import="true" name="Meltagun" hidden="false" type="selectionEntry" id="4a2d-11a3-1f6b-cfc7" targetId="1a1b-85e3-4af6-aae6"/>
+                    <entryLink import="true" name="Plasmagun" hidden="false" type="selectionEntry" id="15d8-c53d-40b1-53a6" targetId="b988-e33d-20e3-4b61"/>
+                  </entryLinks>
+                </selectionEntryGroup>
+              </selectionEntryGroups>
+              <entryLinks>
+                <entryLink import="true" name="Close combat weapon" hidden="false" type="selectionEntry" id="4e40-f9c3-ced7-6c9" targetId="drop-weap-ccin-ws04">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b7cc-6555-c9c8-5733"/>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="a61e-72c-c68b-6448"/>
+                  </constraints>
+                </entryLink>
+              </entryLinks>
+            </selectionEntry>
           </selectionEntries>
           <modifierGroups>
             <modifierGroup type="and">
@@ -2879,7 +2947,7 @@ RECON BIKE SQUAD</characteristic>
         </profile>
         <profile name="Keywords" typeId="drop-0000-0000-key1" typeName="[Keywords]" hidden="false" id="3a19-f504-e521-82ed">
           <characteristics>
-            <characteristic name="Keywords" typeId="2a81-7738-d2ef-20f3"> MOUNTED, IMPERIUM, GRENADES, HUSSARS PLATOON LEADER </characteristic>
+            <characteristic name="Keywords" typeId="2a81-7738-d2ef-20f3">MOUNTED, IMPERIUM, GRENADES, HUSSARS PLATOON LEADER</characteristic>
           </characteristics>
         </profile>
         <profile name="Keywords - Faction" typeId="drop-0000-0000-key1" typeName="[Keywords]" hidden="false" id="c3cf-6408-307c-c342">
@@ -4128,7 +4196,7 @@ RECON BIKE SQUAD</characteristic>
         </profile>
         <profile name="Keywords" typeId="drop-0000-0000-key1" typeName="[Keywords]" hidden="false" id="61da-ad37-5b91-7d85">
           <characteristics>
-            <characteristic name="Keywords" typeId="2a81-7738-d2ef-20f3">INFANTRY, IMPERIUM, GRENADES, REGIMENT, PLATOON, SPECIAL WEAPONS SQUAD </characteristic>
+            <characteristic name="Keywords" typeId="2a81-7738-d2ef-20f3">INFANTRY, IMPERIUM, GRENADES, REGIMENT, PLATOON, SPECIAL WEAPONS SQUAD</characteristic>
           </characteristics>
         </profile>
         <profile id="a7ce-b655-71eb-7bfd" name="Keywords - Faction" hidden="false" typeId="drop-0000-0000-key1" typeName="[Keywords]">
@@ -4668,14 +4736,14 @@ BREACHER SQUAD | DROP OGRYN SQUAD | DROP TROOPERS SQUAD | DROP VETERAN SQUAD 
             <characteristic name="Keywords" typeId="2a81-7738-d2ef-20f3">INFANTRY, CHARACTER, IMPERIUM, GRENADES, OFFICER, DROP COMMISSAR</characteristic>
           </characteristics>
         </profile>
-        <profile name=" Once per battle round, at the start of any phase, you can select one friendly DROP TROOPS INFANTRY unit that is Battle-shocked and within 12&quot; of this model. If you do, one model in that unit is destroyed, and that unit is then no longer Battle-shocked." typeId="2c22-15c0-450f-768" typeName="(4) Abilities" hidden="false" id="b91b-8100-1286-8731">
+        <profile name="Once per battle round, at the start of any phase, you can select one friendly DROP TROOPS INFANTRY unit that is Battle-shocked and within 12&quot; of this model. If you do, one model in that unit is destroyed, and that unit is then no longer Battle-shocked." typeId="2c22-15c0-450f-768" typeName="(4) Abilities" hidden="false" id="b91b-8100-1286-8731">
           <characteristics>
             <characteristic name="Description" typeId="770f-11ab-9f54-73e8">While another OFFICER model is in the same unit as this model, you can re-roll Battle-shock tests taken for that unit.</characteristic>
           </characteristics>
         </profile>
         <profile name="Summary Execution" typeId="2c22-15c0-450f-768" typeName="(4) Abilities" hidden="false" id="3173-c4df-1be7-aa18">
           <characteristics>
-            <characteristic name="Description" typeId="770f-11ab-9f54-73e8"> Once per battle round, at the start of any phase, you can select one friendly DROP TROOPS INFANTRY unit that is Battle-shocked and within 12&quot; of this model. If you do, one model in that unit is destroyed, and that unit is then no longer Battle-shocked.</characteristic>
+            <characteristic name="Description" typeId="770f-11ab-9f54-73e8">Once per battle round, at the start of any phase, you can select one friendly DROP TROOPS INFANTRY unit that is Battle-shocked and within 12&quot; of this model. If you do, one model in that unit is destroyed, and that unit is then no longer Battle-shocked.</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -4934,6 +5002,12 @@ TAUROS ASSAULT VEHICLE | TAUROS ANIHILATOR | TAUROS VENATOR | TAUROS ERASER</
           </selectionEntryGroups>
         </selectionEntryGroup>
       </selectionEntryGroups>
+      <categoryLinks>
+        <categoryLink targetId="9cfd-1c32-585f-7d5c" id="9480-b216-11f3-2048" primary="true" name="Character"/>
+        <categoryLink targetId="6905-0693-ec68-090a" id="cca0-e706-1d05-3b81" primary="false" name="Tauros"/>
+        <categoryLink targetId="00ae-55c5-373d-5977" id="4480-4266-950b-6db" primary="false" name="Tauros Command Vehicle"/>
+        <categoryLink targetId="14a0-40c9-2748-ae6e" id="6f03-532f-3d93-55da" primary="false" name="Mounted"/>
+      </categoryLinks>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Command Squad - Stormtrooper" hidden="false" id="9e62-573-7c5b-cbf4">
       <categoryLinks>
@@ -5322,6 +5396,1788 @@ STORMTROOPER SQUAD</characteristic>
       </costs>
       <entryLinks>
         <entryLink import="true" name="(Loyal Protector)" hidden="false" type="selectionEntryGroup" id="55b6-2459-af50-530a" targetId="7ad5-3a25-e66c-c275"/>
+      </entryLinks>
+    </selectionEntry>
+    <selectionEntry type="model" import="true" name="Cyclops Demolition Vehicle" hidden="false" id="1c8e-15c4-8a78-4d71">
+      <categoryLinks>
+        <categoryLink targetId="dbd4-63-af05-998" id="e60-825f-6949-4f66" primary="true" name="Vehicle"/>
+        <categoryLink targetId="1ae0-e842-d1ee-b248" id="5ed9-c581-816d-25a5" primary="false" name="Cyclops Demolition Vehicle"/>
+      </categoryLinks>
+      <costs>
+        <cost name="pts" typeId="51b2-306e-1021-d207" value="25"/>
+      </costs>
+      <constraints>
+        <constraint type="max" value="3" field="selections" scope="roster" shared="true" id="21c-51c4-7378-f308" includeChildSelections="true" includeChildForces="true"/>
+      </constraints>
+      <profiles>
+        <profile name="Cyclops Demolition Vehicle" typeId="drop-0000-0000-0001" typeName="(1) Profiles" hidden="false" id="93e3-e137-999a-12f1">
+          <characteristics>
+            <characteristic name="M" typeId="a2ab-842f-e968-ca80">8&quot;</characteristic>
+            <characteristic name="T" typeId="bc9c-e3f3-3186-a7f0">4</characteristic>
+            <characteristic name="SV" typeId="b5ba-b467-6f5a-cca9">3+</characteristic>
+            <characteristic name="W" typeId="00d9-a17e-9b2e-a053">4</characteristic>
+            <characteristic name="LD" typeId="c45a-6afc-f077-7edc">8+</characteristic>
+            <characteristic name="OC" typeId="7d96-9381-1b91-9d5e">0</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Unstable Payload" typeId="2c22-15c0-450f-768" typeName="(4) Abilities" hidden="false" id="2b44-a236-5751-f7f8">
+          <characteristics>
+            <characteristic name="Description" typeId="770f-11ab-9f54-73e8">When rolling for this model’s Deadly Demise ability, units within 6&quot; suffer mortal wounds on a 4+, instead of on a 6.</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Demolition Charges" typeId="2c22-15c0-450f-768" typeName="(4) Abilities" hidden="false" id="1f6f-396e-3d8e-f2ac">
+          <characteristics>
+            <characteristic name="Description" typeId="770f-11ab-9f54-73e8">Each time this model or an enemy unit ends a move, if this model is within 3&quot; of one or more enemy units, select one of those enemy units. This model is destroyed, but instead of rolling for its Deadly Demise ability, roll one D6: on a 2-5, that enemy unit suffers D3 mortal wounds; on a 6, that enemy unit suffers D6 mortal wounds.</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Compact" typeId="drop-0000-0000-0005" typeName="(5) Transport" hidden="false" id="f9a3-99ea-4798-2a1">
+          <characteristics>
+            <characteristic name="Capacity" typeId="749f-9fc6-2c2c-6aff">This model can embark within an DROP TROOPS TRANSPORT model as if it were an INFANTRY model. If it does, it takes up the space of 7 models.</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Keywords - Faction" typeId="drop-0000-0000-key1" typeName="[Keywords]" hidden="false" id="3a72-d300-386c-f148">
+          <characteristics>
+            <characteristic name="Keywords" typeId="2a81-7738-d2ef-20f3">DROP TROOPS</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Keywords" typeId="drop-0000-0000-key1" typeName="[Keywords]" hidden="false" id="8c58-1840-e655-a7bc">
+          <characteristics>
+            <characteristic name="Keywords" typeId="2a81-7738-d2ef-20f3">VEHICLE, IMPERIUM, CYCLOPS DEMOLITION VEHICLE</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Deadly Demise" hidden="false" type="rule" id="c23a-f40-a12f-9a28" targetId="b68a-5ded-65ac-98c">
+          <modifiers>
+            <modifier type="append" value="1" field="name"/>
+          </modifiers>
+        </infoLink>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Tarantula Battery" hidden="false" id="efbc-c6e9-311e-6cd1">
+      <categoryLinks>
+        <categoryLink targetId="dbd4-63-af05-998" id="10b6-9460-c0d3-4c32" primary="true" name="Vehicle"/>
+        <categoryLink targetId="2463-cff0-8d3e-16c2" id="b117-981f-c4c0-1754" primary="false" name="Tarantula Battery"/>
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry type="model" import="true" name="Tarantula Battery" hidden="false" id="5a02-eb0d-c03c-e334">
+          <constraints>
+            <constraint type="max" value="3" field="selections" scope="parent" shared="true" id="1721-d11a-d41a-edff"/>
+          </constraints>
+          <selectionEntryGroups>
+            <selectionEntryGroup name="Weapon Choice" hidden="false" id="cc53-2bec-35d6-6edd" defaultSelectionEntryId="3128-1c23-9f3f-5369">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c131-7926-3e54-368c"/>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="6c9-c784-be92-da37"/>
+              </constraints>
+              <entryLinks>
+                <entryLink import="true" name="Twin heavy bolter" hidden="false" type="selectionEntry" id="3128-1c23-9f3f-5369" targetId="9c08-42a4-f8b4-cfd5"/>
+                <entryLink import="true" name="Twin lascannon" hidden="false" type="selectionEntry" id="ea0e-ac38-e61e-dc61" targetId="8f2f-2992-856c-71db"/>
+              </entryLinks>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
+          <profiles>
+            <profile name="Tarantula Sentry Gun" typeId="drop-0000-0000-0001" typeName="(1) Profiles" hidden="false" id="70e4-d34a-17fb-49a7">
+              <characteristics>
+                <characteristic name="M" typeId="a2ab-842f-e968-ca80">-</characteristic>
+                <characteristic name="T" typeId="bc9c-e3f3-3186-a7f0">5</characteristic>
+                <characteristic name="SV" typeId="b5ba-b467-6f5a-cca9">3+</characteristic>
+                <characteristic name="W" typeId="00d9-a17e-9b2e-a053">4</characteristic>
+                <characteristic name="LD" typeId="c45a-6afc-f077-7edc">7+</characteristic>
+                <characteristic name="OC" typeId="7d96-9381-1b91-9d5e">0</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <entryLinks>
+            <entryLink import="true" name="Close combat weapon" hidden="false" type="selectionEntry" id="8944-5018-380a-64ea" targetId="drop-weap-ccin-ws04">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="79c1-a815-8069-1ea2"/>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="9c55-a7d5-9fcd-c12d"/>
+              </constraints>
+            </entryLink>
+          </entryLinks>
+          <costs>
+            <cost name="pts" typeId="51b2-306e-1021-d207" value="35"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+      <constraints>
+        <constraint type="max" value="3" field="selections" scope="roster" shared="true" id="86b2-bab2-df51-8284"/>
+      </constraints>
+      <infoLinks>
+        <infoLink name="Deadly Demise" hidden="false" type="rule" id="7d68-387f-e09c-ae81" targetId="b68a-5ded-65ac-98c">
+          <modifiers>
+            <modifier type="append" value="1" field="name"/>
+          </modifiers>
+        </infoLink>
+        <infoLink name="Deep Strike" hidden="false" type="rule" id="fb66-16de-d0a8-ef1c" targetId="7cb5-dd6b-dd87-ad3b"/>
+      </infoLinks>
+      <profiles>
+        <profile name="Keywords - Faction" typeId="drop-0000-0000-key1" typeName="[Keywords]" hidden="false" id="b9dd-dde1-9cf9-b0a4">
+          <characteristics>
+            <characteristic name="Keywords" typeId="2a81-7738-d2ef-20f3">DROP TROOPS</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Keywords" typeId="drop-0000-0000-key1" typeName="[Keywords]" hidden="false" id="8cdb-ae43-9267-e6cb">
+          <characteristics>
+            <characteristic name="Keywords" typeId="2a81-7738-d2ef-20f3">VEHICLE, IMPERIUM, TARANTULA BATTERY</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Sniper Squad" hidden="false" id="4e1e-47c2-99b6-4f62">
+      <categoryLinks>
+        <categoryLink targetId="bd83-4d1a-43b3-b9c3" id="9882-bb77-7738-f9fa" primary="false" name="Sniper Squad"/>
+        <categoryLink targetId="cf47-a0d7-7207-29dc" id="56a3-6095-61b2-6f3" primary="true" name="Infantry"/>
+      </categoryLinks>
+      <costs>
+        <cost name="pts" typeId="51b2-306e-1021-d207" value="50"/>
+      </costs>
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="Sniper Team" hidden="false" id="9ffe-5c20-3daf-c74b">
+          <constraints>
+            <constraint type="min" value="3" field="selections" scope="parent" shared="true" id="f756-53cd-a47c-af8d"/>
+            <constraint type="max" value="3" field="selections" scope="parent" shared="true" id="4cb1-7be6-17a8-c899"/>
+          </constraints>
+          <selectionEntryGroups>
+            <selectionEntryGroup name="Weapon Choice" hidden="false" id="1a2c-f0f4-2725-9de1" defaultSelectionEntryId="e414-8c28-63b5-deaf">
+              <entryLinks>
+                <entryLink import="true" name="Sniper rifle" hidden="false" type="selectionEntry" id="e414-8c28-63b5-deaf" targetId="efc0-a002-7382-63be"/>
+                <entryLink import="true" name="Anti-material rifle" hidden="false" type="selectionEntry" id="1c03-f941-8c2c-a35f" targetId="e313-6cf5-941e-ab4f"/>
+              </entryLinks>
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="2fb-3068-f06d-4665"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="80e8-520e-fc48-b26a"/>
+              </constraints>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Spotter&apos;s Magnocular" hidden="false" id="8680-c68c-806-2d53">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2159-be3-355f-b70b"/>
+              </constraints>
+              <profiles>
+                <profile name="Spotter&apos;s Magnocular" typeId="2c22-15c0-450f-768" typeName="(4) Abilities" hidden="false" id="71a1-13df-7854-6105">
+                  <characteristics>
+                    <characteristic name="Description" typeId="770f-11ab-9f54-73e8">Each time a model in this unit makes a ranged attack, you can ignore any or all modifiers to that attack’s Weapon Skill characteristic and/or that attack’s Hit roll.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+            </selectionEntry>
+          </selectionEntries>
+          <entryLinks>
+            <entryLink import="true" name="Lasgun" hidden="false" type="selectionEntry" id="9cc-2246-6845-bb48" targetId="drop-weap-lgcl-bs04">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="310f-9320-52d6-715c"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a310-6458-6f8e-724f"/>
+              </constraints>
+            </entryLink>
+            <entryLink import="true" name="Close combat weapon" hidden="false" type="selectionEntry" id="9f03-8060-9907-31a9" targetId="drop-weap-ccin-ws04">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="310f-9320-52d6-715c"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a310-6458-6f8e-724f"/>
+              </constraints>
+            </entryLink>
+          </entryLinks>
+          <profiles>
+            <profile name="Sniper Team" typeId="drop-0000-0000-0001" typeName="(1) Profiles" hidden="false" id="7967-9805-bd18-82de">
+              <characteristics>
+                <characteristic name="M" typeId="a2ab-842f-e968-ca80">6&quot;</characteristic>
+                <characteristic name="T" typeId="bc9c-e3f3-3186-a7f0">3</characteristic>
+                <characteristic name="SV" typeId="b5ba-b467-6f5a-cca9">5+</characteristic>
+                <characteristic name="W" typeId="00d9-a17e-9b2e-a053">2</characteristic>
+                <characteristic name="LD" typeId="c45a-6afc-f077-7edc">7+</characteristic>
+                <characteristic name="OC" typeId="7d96-9381-1b91-9d5e">2</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+        </selectionEntry>
+      </selectionEntries>
+      <profiles>
+        <profile name="Keywords - Faction" typeId="drop-0000-0000-key1" typeName="[Keywords]" hidden="false" id="4799-75c5-9031-bf89">
+          <characteristics>
+            <characteristic name="Keywords" typeId="2a81-7738-d2ef-20f3">DROP TROOPS</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Keywords" typeId="drop-0000-0000-key1" typeName="[Keywords]" hidden="false" id="9d79-dea1-8f29-3aba">
+          <characteristics>
+            <characteristic name="Keywords" typeId="2a81-7738-d2ef-20f3">INFANTRY, IMPERIUM, GRENADES, SMOKE, REGIMENT, PLATOON, SNIPER SQUAD</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Mark the Target" typeId="2c22-15c0-450f-768" typeName="(4) Abilities" hidden="false" id="871c-30bf-33ec-8ab">
+          <characteristics>
+            <characteristic name="Description" typeId="770f-11ab-9f54-73e8">Each time this unit Remains Stationary, until the start of your next Movement phase, ranged weapons equipped by models in this unit have the [DEVASTATING WOUNDS] ability.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Deep Strike" hidden="false" type="rule" id="f0bd-1946-8ebd-2bd1" targetId="7cb5-dd6b-dd87-ad3b"/>
+      </infoLinks>
+      <constraints>
+        <constraint type="max" value="3" field="selections" scope="roster" shared="true" id="8792-b1c4-31ef-7503" includeChildSelections="true" includeChildForces="true"/>
+      </constraints>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Tauros - Venator" hidden="false" id="31d1-bae7-47aa-82">
+      <categoryLinks>
+        <categoryLink targetId="14a0-40c9-2748-ae6e" id="d1cd-6dda-3947-2abd" primary="true" name="Mounted"/>
+        <categoryLink targetId="6905-0693-ec68-090a" id="489f-dbd0-be85-fdbe" primary="false" name="Tauros"/>
+        <categoryLink targetId="55e8-0307-ef0c-e1eb" id="9b6c-7bb5-4828-22d8" primary="false" name="Tauros Venator"/>
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry type="model" import="true" name="Tauros Venator" hidden="false" id="1532-3baa-ddef-899c">
+          <costs>
+            <cost name="pts" typeId="51b2-306e-1021-d207" value="65"/>
+          </costs>
+          <constraints>
+            <constraint type="max" value="3" field="selections" scope="parent" shared="true" id="acb4-c059-7a3-12a0"/>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="3f7b-54e4-77f4-3f0d"/>
+          </constraints>
+          <profiles>
+            <profile name="Tauros Venator" typeId="drop-0000-0000-0001" typeName="(1) Profiles" hidden="false" id="3b8e-f206-df4d-3fa5">
+              <characteristics>
+                <characteristic name="M" typeId="a2ab-842f-e968-ca80">15&quot;</characteristic>
+                <characteristic name="T" typeId="bc9c-e3f3-3186-a7f0">6</characteristic>
+                <characteristic name="SV" typeId="b5ba-b467-6f5a-cca9">4+</characteristic>
+                <characteristic name="W" typeId="00d9-a17e-9b2e-a053">6</characteristic>
+                <characteristic name="LD" typeId="c45a-6afc-f077-7edc">6+</characteristic>
+                <characteristic name="OC" typeId="7d96-9381-1b91-9d5e">1</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <selectionEntryGroups>
+            <selectionEntryGroup name="Weapon Selection" hidden="false" id="1243-8e61-55de-45e4">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="c73d-a297-93a0-221d"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5a3-2768-b526-c23c"/>
+              </constraints>
+              <entryLinks>
+                <entryLink import="true" name="Tauros twin multilaser" hidden="false" type="selectionEntry" id="656a-87ec-2b4e-6893" targetId="7110-afca-45eb-9fa1"/>
+                <entryLink import="true" name="Tauros twin lascannons" hidden="false" type="selectionEntry" id="baf7-307f-b84f-96cf" targetId="533f-19d6-6428-3bb7"/>
+              </entryLinks>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
+          <entryLinks>
+            <entryLink import="true" name="Hunter-killer missile" hidden="false" type="selectionEntry" id="56d8-297e-6350-a9c6" targetId="1145-d368-9650-767c">
+              <constraints>
+                <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="6d94-ecb0-7976-71c7"/>
+              </constraints>
+            </entryLink>
+            <entryLink import="true" name="Armoured frame" hidden="false" type="selectionEntry" id="26bb-85fb-4ea0-eac6" targetId="bc8b-7ce5-238a-78ef">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="617-6c31-20ab-4b40"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f191-fbe7-9405-c198"/>
+              </constraints>
+            </entryLink>
+          </entryLinks>
+        </selectionEntry>
+      </selectionEntries>
+      <infoLinks>
+        <infoLink name="Stealth" hidden="false" type="rule" id="1cd6-f4ff-cf4c-37f7" targetId="bec5-4288-34a6-ccfa"/>
+        <infoLink name="Deadly Demise" hidden="false" type="rule" id="a0ee-4363-b54e-f5d6" targetId="b68a-5ded-65ac-98c">
+          <modifiers>
+            <modifier type="append" value="1" field="name"/>
+          </modifiers>
+        </infoLink>
+      </infoLinks>
+      <profiles>
+        <profile name="Keywords - Faction" typeId="drop-0000-0000-key1" typeName="[Keywords]" hidden="false" id="197a-f0c7-386d-7e71">
+          <characteristics>
+            <characteristic name="Keywords" typeId="2a81-7738-d2ef-20f3">DROP TROOPS</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Keywords" typeId="drop-0000-0000-key1" typeName="[Keywords]" hidden="false" id="39c-d1d7-92f-34f9">
+          <characteristics>
+            <characteristic name="Keywords" typeId="2a81-7738-d2ef-20f3">MOUNTED, IMPERIUM, SMOKE, SQUADRON, TAUROS, TAUROS VENATOR</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Venator Targeting Array" typeId="2c22-15c0-450f-768" typeName="(4) Abilities" hidden="false" id="defe-ab39-e4a5-7b7e">
+          <characteristics>
+            <characteristic name="Description" typeId="770f-11ab-9f54-73e8">Each time this model makes a ranged attack that targets an INFANTRY unit, improve the Armour Penetration characteristic of that attack by 1.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <constraints>
+        <constraint type="max" value="3" field="selections" scope="roster" shared="true" id="2cac-7d7f-275-2432" includeChildSelections="true" includeChildForces="true"/>
+      </constraints>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Tauros - Assault Vehicle" hidden="false" id="fc2-349d-a768-3e89">
+      <categoryLinks>
+        <categoryLink targetId="14a0-40c9-2748-ae6e" id="f245-d2c3-cd38-c1cd" primary="true" name="Mounted"/>
+        <categoryLink targetId="6905-0693-ec68-090a" id="7487-bf81-d20-98e9" primary="false" name="Tauros"/>
+        <categoryLink targetId="c3ac-ba74-4d1f-86de" id="c767-b721-d6f-8e16" primary="false" name="Tauros Assault Vehicle"/>
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry type="model" import="true" name="Tauros Assault Vehicle" hidden="false" id="6255-9eef-4836-305e">
+          <costs>
+            <cost name="pts" typeId="51b2-306e-1021-d207" value="60"/>
+          </costs>
+          <constraints>
+            <constraint type="max" value="3" field="selections" scope="parent" shared="true" id="acb4-c059-7a3-12a0"/>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="3f7b-54e4-77f4-3f0d"/>
+          </constraints>
+          <profiles>
+            <profile name="Tauros Assault Vehicle" typeId="drop-0000-0000-0001" typeName="(1) Profiles" hidden="false" id="e5b-fb84-219-18f7">
+              <characteristics>
+                <characteristic name="M" typeId="a2ab-842f-e968-ca80">15&quot;</characteristic>
+                <characteristic name="T" typeId="bc9c-e3f3-3186-a7f0">6</characteristic>
+                <characteristic name="SV" typeId="b5ba-b467-6f5a-cca9">4+</characteristic>
+                <characteristic name="W" typeId="00d9-a17e-9b2e-a053">6</characteristic>
+                <characteristic name="LD" typeId="c45a-6afc-f077-7edc">6+</characteristic>
+                <characteristic name="OC" typeId="7d96-9381-1b91-9d5e">1</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <selectionEntryGroups>
+            <selectionEntryGroup name="Weapon Selection" hidden="false" id="45a6-f4ad-8c35-f0e4" defaultSelectionEntryId="c379-7e1d-6f50-86a9">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="c73d-a297-93a0-221d"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5a3-2768-b526-c23c"/>
+              </constraints>
+              <entryLinks>
+                <entryLink import="true" name="Tauros grenade launcher" hidden="false" type="selectionEntry" id="c379-7e1d-6f50-86a9" targetId="263-94be-2f25-6de3"/>
+                <entryLink import="true" name="Tauros heavy flamer" hidden="false" type="selectionEntry" id="a419-f165-a7a8-3acd" targetId="26e7-a8e9-882a-77bf"/>
+              </entryLinks>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
+          <entryLinks>
+            <entryLink import="true" name="Hunter-killer missile" hidden="false" type="selectionEntry" id="c733-dcca-3ca-7f8e" targetId="1145-d368-9650-767c">
+              <constraints>
+                <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="6d94-ecb0-7976-71c7"/>
+              </constraints>
+            </entryLink>
+            <entryLink import="true" name="Armoured frame" hidden="false" type="selectionEntry" id="ec85-c299-de14-81fe" targetId="bc8b-7ce5-238a-78ef">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="617-6c31-20ab-4b40"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f191-fbe7-9405-c198"/>
+              </constraints>
+            </entryLink>
+          </entryLinks>
+        </selectionEntry>
+      </selectionEntries>
+      <infoLinks>
+        <infoLink name="Stealth" hidden="false" type="rule" id="5aac-750-bda4-8bb5" targetId="bec5-4288-34a6-ccfa"/>
+        <infoLink name="Deadly Demise" hidden="false" type="rule" id="604e-3e3-ba0f-c814" targetId="b68a-5ded-65ac-98c">
+          <modifiers>
+            <modifier type="append" value="1" field="name"/>
+          </modifiers>
+        </infoLink>
+      </infoLinks>
+      <profiles>
+        <profile name="Keywords - Faction" typeId="drop-0000-0000-key1" typeName="[Keywords]" hidden="false" id="6e04-7341-f6c3-474d">
+          <characteristics>
+            <characteristic name="Keywords" typeId="2a81-7738-d2ef-20f3">DROP TROOPS</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Keywords" typeId="drop-0000-0000-key1" typeName="[Keywords]" hidden="false" id="e27b-b666-2d35-a5c3">
+          <characteristics>
+            <characteristic name="Keywords" typeId="2a81-7738-d2ef-20f3">MOUNTED, IMPERIUM, SMOKE, SQUADRON, TAUROS, TAUROS ASSAULT VEHICLE</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Daring Recon" typeId="2c22-15c0-450f-768" typeName="(4) Abilities" hidden="false" id="416e-33b8-5f7e-71c4">
+          <characteristics>
+            <characteristic name="Description" typeId="770f-11ab-9f54-73e8">At the start of your Shooting phase, select one enemy unit within 18&quot; of and visible to this unit. Until the end of the phase, each time a friendly DROP TROOPS model makes an attack that targets that unit, re-roll a Hit roll of 1 and, if that attack has the [INDIRECT FIRE] ability, it does not suffer the penalty to the Hit roll for shooting at a target that is not visible to the attacking unit.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <constraints>
+        <constraint type="max" value="3" field="selections" scope="roster" shared="true" id="c5b2-6d00-8137-6a62" includeChildSelections="true" includeChildForces="true"/>
+      </constraints>
+    </selectionEntry>
+    <selectionEntry type="model" import="true" name="Tauros - Explorer" hidden="false" id="cf4f-6263-db9d-eaf0">
+      <categoryLinks>
+        <categoryLink targetId="14a0-40c9-2748-ae6e" id="e634-c490-4709-4bd5" primary="true" name="Mounted"/>
+        <categoryLink targetId="6905-0693-ec68-090a" id="e0d2-4e8c-8dd-538d" primary="false" name="Tauros"/>
+        <categoryLink targetId="f80f-5850-e86c-bfc8" id="c5d5-2885-a1e3-231e" primary="false" name="Tauros Explorer"/>
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="Vox Relay" hidden="false" id="ad89-f0b8-13f9-7654">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="f290-d61e-544d-47a4"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="46e5-817c-aac6-a158"/>
+          </constraints>
+          <profiles>
+            <profile name="Vox Relay" typeId="2c22-15c0-450f-768" typeName="(4) Abilities" hidden="false" id="eeeb-1286-c630-aad1">
+              <characteristics>
+                <characteristic name="Description" typeId="770f-11ab-9f54-73e8">While a DROP TROOPS unit is within 6” of this model, that model unit is always considered to be at range of the Voice of Command ability of any OFFICER in your army.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+        </selectionEntry>
+      </selectionEntries>
+      <infoLinks>
+        <infoLink name="Stealth" hidden="false" type="rule" id="41bb-b6ac-9605-dcb4" targetId="bec5-4288-34a6-ccfa"/>
+        <infoLink name="Deadly Demise" hidden="false" type="rule" id="366f-2bd1-2539-e5ba" targetId="b68a-5ded-65ac-98c">
+          <modifiers>
+            <modifier type="append" value="1" field="name"/>
+          </modifiers>
+        </infoLink>
+        <infoLink name="Lone Operative" hidden="false" type="rule" id="7ed9-8367-343b-b853" targetId="a8a0-8fe7-898-e0f3"/>
+      </infoLinks>
+      <profiles>
+        <profile name="Keywords - Faction" typeId="drop-0000-0000-key1" typeName="[Keywords]" hidden="false" id="21e7-6be0-c79c-bfcc">
+          <characteristics>
+            <characteristic name="Keywords" typeId="2a81-7738-d2ef-20f3">DROP TROOPS</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Keywords" typeId="drop-0000-0000-key1" typeName="[Keywords]" hidden="false" id="1f54-43ec-49ff-af21">
+          <characteristics>
+            <characteristic name="Keywords" typeId="2a81-7738-d2ef-20f3">MOUNTED, IMPERIUM, SMOKE, TAUROS, TAUROS EXPLORER</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Target Scrambler (Aura)" typeId="2c22-15c0-450f-768" typeName="(4) Abilities" hidden="false" id="18b3-a44d-dc95-d13f">
+          <characteristics>
+            <characteristic name="Description" typeId="770f-11ab-9f54-73e8">While a friendly DROP TROOPS unit is within 6&quot; of this unit, each time a ranged attack targets that unit, models in that unit have the Benefit of Cover against that attack. In addition, while a friendly DROP TROOPS unit (excluding VEHICLES) is within 6&quot; of this unit, models in that unit have the Stealth ability.</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Tauros Explorer" typeId="drop-0000-0000-0001" typeName="(1) Profiles" hidden="false" id="8fdf-a435-12a5-d0c7">
+          <characteristics>
+            <characteristic name="M" typeId="a2ab-842f-e968-ca80">15&quot;</characteristic>
+            <characteristic name="T" typeId="bc9c-e3f3-3186-a7f0">6</characteristic>
+            <characteristic name="SV" typeId="b5ba-b467-6f5a-cca9">4+</characteristic>
+            <characteristic name="W" typeId="00d9-a17e-9b2e-a053">6</characteristic>
+            <characteristic name="LD" typeId="c45a-6afc-f077-7edc">6+</characteristic>
+            <characteristic name="OC" typeId="7d96-9381-1b91-9d5e">1</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <constraints>
+        <constraint type="max" value="3" field="selections" scope="roster" shared="true" id="c5b2-6d00-8137-6a62" includeChildSelections="true" includeChildForces="true"/>
+      </constraints>
+      <costs>
+        <cost name="pts" typeId="51b2-306e-1021-d207" value="65"/>
+      </costs>
+      <entryLinks>
+        <entryLink import="true" name="Hunter-killer missile" hidden="false" type="selectionEntry" id="a2b4-15f4-9347-875d" targetId="1145-d368-9650-767c">
+          <constraints>
+            <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="6d94-ecb0-7976-71c7"/>
+          </constraints>
+        </entryLink>
+        <entryLink import="true" name="Armoured frame" hidden="false" type="selectionEntry" id="892-7c45-df28-c664" targetId="bc8b-7ce5-238a-78ef">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="617-6c31-20ab-4b40"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f191-fbe7-9405-c198"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
+    </selectionEntry>
+    <selectionEntry type="model" import="true" name="Tauros - Mechanis" hidden="false" id="4979-716d-2f99-69e0">
+      <categoryLinks>
+        <categoryLink targetId="14a0-40c9-2748-ae6e" id="6955-cc15-32f4-5032" primary="true" name="Mounted"/>
+        <categoryLink targetId="6905-0693-ec68-090a" id="d9d4-c10e-419c-12da" primary="false" name="Tauros"/>
+        <categoryLink targetId="f80f-5850-e86c-bfc8" id="c28d-33fe-c497-3ce8" primary="false" name="Tauros Explorer"/>
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="Ammo Supply" hidden="false" id="71fa-d6b-625e-c7e4">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="f290-d61e-544d-47a4"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="46e5-817c-aac6-a158"/>
+          </constraints>
+          <profiles>
+            <profile name="Ammo Supply" typeId="2c22-15c0-450f-768" typeName="(4) Abilities" hidden="false" id="fde7-844c-d2ad-51c8">
+              <characteristics>
+                <characteristic name="Description" typeId="770f-11ab-9f54-73e8">In your Command phase, this model resupply one friendly DROP TROOPS model within 3&quot; of it. That unit regain 1 [ONE SHOT] weapon it is equipped with.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+        </selectionEntry>
+      </selectionEntries>
+      <infoLinks>
+        <infoLink name="Stealth" hidden="false" type="rule" id="92b6-935c-6c31-c66f" targetId="bec5-4288-34a6-ccfa"/>
+        <infoLink name="Deadly Demise" hidden="false" type="rule" id="4d3b-f26c-f500-f06" targetId="b68a-5ded-65ac-98c">
+          <modifiers>
+            <modifier type="append" value="1" field="name"/>
+          </modifiers>
+        </infoLink>
+        <infoLink name="Lone Operative" hidden="false" type="rule" id="19bc-a957-b852-36c0" targetId="a8a0-8fe7-898-e0f3"/>
+      </infoLinks>
+      <profiles>
+        <profile name="Keywords - Faction" typeId="drop-0000-0000-key1" typeName="[Keywords]" hidden="false" id="e118-1954-e3ba-f6c4">
+          <characteristics>
+            <characteristic name="Keywords" typeId="2a81-7738-d2ef-20f3">DROP TROOPS</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Keywords" typeId="drop-0000-0000-key1" typeName="[Keywords]" hidden="false" id="3284-b8d1-9b1c-e48a">
+          <characteristics>
+            <characteristic name="Keywords" typeId="2a81-7738-d2ef-20f3">MOUNTED, IMPERIUM, SMOKE, TAUROS, TAUROS MECHANIS</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Support Vehicle" typeId="2c22-15c0-450f-768" typeName="(4) Abilities" hidden="false" id="ead4-893c-bc15-f15c">
+          <characteristics>
+            <characteristic name="Description" typeId="770f-11ab-9f54-73e8">In your Command phase, select one friendly DROP TROOPS VEHICLE model within 3&quot; of this model. That VEHICLE model regains up to D3 lost wounds and, until the start of your next Command phase, each time that VEHICLE model makes an attack, re-roll a Hit roll of 1. The same VEHICLE model cannot be selected for both this ability and the ENGINEER SQUAD&apos;s Battlefield Repairs ability in the same turn, and each model can only be selected for this ability once per Command phase.</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Tauros Mechanis" typeId="drop-0000-0000-0001" typeName="(1) Profiles" hidden="false" id="bb39-bde-427f-c401">
+          <characteristics>
+            <characteristic name="M" typeId="a2ab-842f-e968-ca80">15&quot;</characteristic>
+            <characteristic name="T" typeId="bc9c-e3f3-3186-a7f0">6</characteristic>
+            <characteristic name="SV" typeId="b5ba-b467-6f5a-cca9">4+</characteristic>
+            <characteristic name="W" typeId="00d9-a17e-9b2e-a053">6</characteristic>
+            <characteristic name="LD" typeId="c45a-6afc-f077-7edc">6+</characteristic>
+            <characteristic name="OC" typeId="7d96-9381-1b91-9d5e">1</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <constraints>
+        <constraint type="max" value="3" field="selections" scope="roster" shared="true" id="c5b2-6d00-8137-6a62" includeChildSelections="true" includeChildForces="true"/>
+      </constraints>
+      <costs>
+        <cost name="pts" typeId="51b2-306e-1021-d207" value="65"/>
+      </costs>
+      <entryLinks>
+        <entryLink import="true" name="Hunter-killer missile" hidden="false" type="selectionEntry" id="b36b-62d0-29f-d2db" targetId="1145-d368-9650-767c">
+          <constraints>
+            <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="6d94-ecb0-7976-71c7"/>
+          </constraints>
+        </entryLink>
+        <entryLink import="true" name="Armoured frame" hidden="false" type="selectionEntry" id="cd-f79c-f25-4cb2" targetId="bc8b-7ce5-238a-78ef">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="617-6c31-20ab-4b40"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f191-fbe7-9405-c198"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
+    </selectionEntry>
+    <selectionEntry type="model" import="true" name="Tauros - Medicae" hidden="false" id="8f80-c4fd-1934-e949">
+      <categoryLinks>
+        <categoryLink targetId="14a0-40c9-2748-ae6e" id="60f8-7977-7d5c-a015" primary="true" name="Mounted"/>
+        <categoryLink targetId="6905-0693-ec68-090a" id="20fa-83ff-5709-8a33" primary="false" name="Tauros"/>
+        <categoryLink targetId="9afb-1b56-c7b0-e3e9" id="79eb-1112-cf9-656a" primary="false" name="Tauros Medicae"/>
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="Medical Supply" hidden="false" id="c334-c78-dbbd-ac0e">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="f290-d61e-544d-47a4"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="46e5-817c-aac6-a158"/>
+          </constraints>
+          <profiles>
+            <profile name="Medical Supply (Aura)" typeId="2c22-15c0-450f-768" typeName="(4) Abilities" hidden="false" id="1eac-46fe-4af5-a928">
+              <characteristics>
+                <characteristic name="Description" typeId="770f-11ab-9f54-73e8">INFANTRY unit within 3” of this model have the Feel No Pain 6+ ability.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <infoLinks>
+            <infoLink name="Feel No Pain" hidden="false" type="rule" id="a366-83f-51ee-edd0" targetId="9bf4-280f-bbe2-6fbb">
+              <modifiers>
+                <modifier type="append" value="6+ (Infantry)" field="name"/>
+              </modifiers>
+            </infoLink>
+          </infoLinks>
+        </selectionEntry>
+      </selectionEntries>
+      <infoLinks>
+        <infoLink name="Stealth" hidden="false" type="rule" id="e13b-f8a1-739a-d1a5" targetId="bec5-4288-34a6-ccfa"/>
+        <infoLink name="Deadly Demise" hidden="false" type="rule" id="ddc3-3ce-d0e3-c57d" targetId="b68a-5ded-65ac-98c">
+          <modifiers>
+            <modifier type="append" value="1" field="name"/>
+          </modifiers>
+        </infoLink>
+        <infoLink name="Lone Operative" hidden="false" type="rule" id="89d7-6813-157e-16c8" targetId="a8a0-8fe7-898-e0f3"/>
+      </infoLinks>
+      <profiles>
+        <profile name="Keywords - Faction" typeId="drop-0000-0000-key1" typeName="[Keywords]" hidden="false" id="118c-c4ed-f11c-3de8">
+          <characteristics>
+            <characteristic name="Keywords" typeId="2a81-7738-d2ef-20f3">DROP TROOPS</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Keywords" typeId="drop-0000-0000-key1" typeName="[Keywords]" hidden="false" id="b219-bb58-c3d0-6b34">
+          <characteristics>
+            <characteristic name="Keywords" typeId="2a81-7738-d2ef-20f3">MOUNTED, IMPERIUM, SMOKE, TAUROS, TAUROS MEDICAE</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Medical Vehicle" typeId="2c22-15c0-450f-768" typeName="(4) Abilities" hidden="false" id="8674-dd20-288b-63aa">
+          <characteristics>
+            <characteristic name="Description" typeId="770f-11ab-9f54-73e8">In your Command phase, select one friendly DROP TROOPS INFANTRY unit that is below Starting Strengh, you can return up to D3 destroyed INFANTRY models to this unit.</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Tauros Medicae" typeId="drop-0000-0000-0001" typeName="(1) Profiles" hidden="false" id="84b4-26b0-3723-7944">
+          <characteristics>
+            <characteristic name="M" typeId="a2ab-842f-e968-ca80">15&quot;</characteristic>
+            <characteristic name="T" typeId="bc9c-e3f3-3186-a7f0">6</characteristic>
+            <characteristic name="SV" typeId="b5ba-b467-6f5a-cca9">4+</characteristic>
+            <characteristic name="W" typeId="00d9-a17e-9b2e-a053">6</characteristic>
+            <characteristic name="LD" typeId="c45a-6afc-f077-7edc">6+</characteristic>
+            <characteristic name="OC" typeId="7d96-9381-1b91-9d5e">1</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <constraints>
+        <constraint type="max" value="3" field="selections" scope="roster" shared="true" id="c5b2-6d00-8137-6a62" includeChildSelections="true" includeChildForces="true"/>
+      </constraints>
+      <costs>
+        <cost name="pts" typeId="51b2-306e-1021-d207" value="65"/>
+      </costs>
+      <entryLinks>
+        <entryLink import="true" name="Hunter-killer missile" hidden="false" type="selectionEntry" id="db5d-ec6e-ac8f-538a" targetId="1145-d368-9650-767c">
+          <constraints>
+            <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="6d94-ecb0-7976-71c7"/>
+          </constraints>
+        </entryLink>
+        <entryLink import="true" name="Armoured frame" hidden="false" type="selectionEntry" id="6120-86cc-5634-7cbe" targetId="bc8b-7ce5-238a-78ef">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="617-6c31-20ab-4b40"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f191-fbe7-9405-c198"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Tauros - Annihilator" hidden="false" id="9e58-2a73-f7fd-aa42">
+      <categoryLinks>
+        <categoryLink targetId="14a0-40c9-2748-ae6e" id="25ea-5527-cdd9-fd30" primary="true" name="Mounted"/>
+        <categoryLink targetId="6905-0693-ec68-090a" id="27b0-e09f-4bf5-31a0" primary="false" name="Tauros"/>
+        <categoryLink targetId="aa00-0bc7-dfa3-ab89" id="dcda-2ac1-755c-92db" primary="false" name="Tauros Annihilator"/>
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry type="model" import="true" name="Tauros Annihilator" hidden="false" id="2acc-e29d-46e9-2b8">
+          <costs>
+            <cost name="pts" typeId="51b2-306e-1021-d207" value="65"/>
+          </costs>
+          <constraints>
+            <constraint type="max" value="3" field="selections" scope="parent" shared="true" id="acb4-c059-7a3-12a0"/>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="3f7b-54e4-77f4-3f0d"/>
+          </constraints>
+          <profiles>
+            <profile name="Tauros Annihilator" typeId="drop-0000-0000-0001" typeName="(1) Profiles" hidden="false" id="9e0c-8da3-64b5-aac5">
+              <characteristics>
+                <characteristic name="M" typeId="a2ab-842f-e968-ca80">15&quot;</characteristic>
+                <characteristic name="T" typeId="bc9c-e3f3-3186-a7f0">6</characteristic>
+                <characteristic name="SV" typeId="b5ba-b467-6f5a-cca9">4+</characteristic>
+                <characteristic name="W" typeId="00d9-a17e-9b2e-a053">6</characteristic>
+                <characteristic name="LD" typeId="c45a-6afc-f077-7edc">6+</characteristic>
+                <characteristic name="OC" typeId="7d96-9381-1b91-9d5e">1</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <selectionEntryGroups>
+            <selectionEntryGroup name="Weapon Selection" hidden="false" id="11ad-2b0f-1cc2-fa23" defaultSelectionEntryId="33a1-e6e8-c48-3f35">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="c73d-a297-93a0-221d"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5a3-2768-b526-c23c"/>
+              </constraints>
+              <entryLinks>
+                <entryLink import="true" name="Tauros missile launcher" hidden="false" type="selectionEntry" id="5db9-5d6b-e9c6-ff2e" targetId="5148-cf0-2efd-e805"/>
+                <entryLink import="true" name="Tauros twin lascannons" hidden="false" type="selectionEntry" id="33a1-e6e8-c48-3f35" targetId="533f-19d6-6428-3bb7"/>
+              </entryLinks>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
+          <entryLinks>
+            <entryLink import="true" name="Hunter-killer missile" hidden="false" type="selectionEntry" id="e62e-3ea9-f9d9-50cc" targetId="1145-d368-9650-767c">
+              <constraints>
+                <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="6d94-ecb0-7976-71c7"/>
+              </constraints>
+            </entryLink>
+            <entryLink import="true" name="Armoured frame" hidden="false" type="selectionEntry" id="c98c-5a72-7491-1aca" targetId="bc8b-7ce5-238a-78ef">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="617-6c31-20ab-4b40"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f191-fbe7-9405-c198"/>
+              </constraints>
+            </entryLink>
+          </entryLinks>
+        </selectionEntry>
+      </selectionEntries>
+      <infoLinks>
+        <infoLink name="Stealth" hidden="false" type="rule" id="4b5c-554c-b6fa-7c33" targetId="bec5-4288-34a6-ccfa"/>
+        <infoLink name="Deadly Demise" hidden="false" type="rule" id="dec5-1d-a7cb-95eb" targetId="b68a-5ded-65ac-98c">
+          <modifiers>
+            <modifier type="append" value="1" field="name"/>
+          </modifiers>
+        </infoLink>
+      </infoLinks>
+      <profiles>
+        <profile name="Keywords - Faction" typeId="drop-0000-0000-key1" typeName="[Keywords]" hidden="false" id="5103-ec71-f3c0-87ed">
+          <characteristics>
+            <characteristic name="Keywords" typeId="2a81-7738-d2ef-20f3">DROP TROOPS</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Keywords" typeId="drop-0000-0000-key1" typeName="[Keywords]" hidden="false" id="9d5a-3256-ceac-c51a">
+          <characteristics>
+            <characteristic name="Keywords" typeId="2a81-7738-d2ef-20f3">MOUNTED, IMPERIUM, SMOKE, SQUADRON, TAUROS, TAUROS ANNIHILATOR</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Annihilator Targeting Array" typeId="2c22-15c0-450f-768" typeName="(4) Abilities" hidden="false" id="660c-99b5-9797-34b7">
+          <characteristics>
+            <characteristic name="Description" typeId="770f-11ab-9f54-73e8">Each time a ranged attack made by this model is allocated to a MONSTER or VEHICLE model, re-roll a Damage roll of 1.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <constraints>
+        <constraint type="max" value="3" field="selections" scope="roster" shared="true" id="c5b2-6d00-8137-6a62" includeChildSelections="true" includeChildForces="true"/>
+      </constraints>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Tauros - Striker" hidden="false" id="a8c5-8c78-b91f-1c66">
+      <categoryLinks>
+        <categoryLink targetId="14a0-40c9-2748-ae6e" id="40ed-4868-386f-bc30" primary="true" name="Mounted"/>
+        <categoryLink targetId="6905-0693-ec68-090a" id="39a4-ea14-12b5-65d6" primary="false" name="Tauros"/>
+        <categoryLink targetId="2448-c079-557c-0144" id="6906-f690-25fb-fbb2" primary="false" name="Tauros Eraser"/>
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry type="model" import="true" name="Tauros Striker" hidden="false" id="487d-39b3-6671-765">
+          <costs>
+            <cost name="pts" typeId="51b2-306e-1021-d207" value="60"/>
+          </costs>
+          <constraints>
+            <constraint type="max" value="3" field="selections" scope="parent" shared="true" id="acb4-c059-7a3-12a0"/>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="3f7b-54e4-77f4-3f0d"/>
+          </constraints>
+          <profiles>
+            <profile name="Tauros Striker" typeId="drop-0000-0000-0001" typeName="(1) Profiles" hidden="false" id="b160-53f-83-5dcf">
+              <characteristics>
+                <characteristic name="M" typeId="a2ab-842f-e968-ca80">15&quot;</characteristic>
+                <characteristic name="T" typeId="bc9c-e3f3-3186-a7f0">6</characteristic>
+                <characteristic name="SV" typeId="b5ba-b467-6f5a-cca9">4+</characteristic>
+                <characteristic name="W" typeId="00d9-a17e-9b2e-a053">6</characteristic>
+                <characteristic name="LD" typeId="c45a-6afc-f077-7edc">6+</characteristic>
+                <characteristic name="OC" typeId="7d96-9381-1b91-9d5e">1</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <selectionEntryGroups>
+            <selectionEntryGroup name="Weapon Selection" hidden="false" id="a8bc-4bf1-b6c2-a192" defaultSelectionEntryId="77a0-6d31-b4c2-a14">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="c73d-a297-93a0-221d"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5a3-2768-b526-c23c"/>
+              </constraints>
+              <entryLinks>
+                <entryLink import="true" name="Tauros hellstrike missiles" hidden="false" type="selectionEntry" id="b6bb-1aef-c618-bd12" targetId="92de-bd51-d6fd-6971"/>
+                <entryLink import="true" name="Tauros twin flak cannons" hidden="false" type="selectionEntry" id="77a0-6d31-b4c2-a14" targetId="2eb6-e422-5b4a-a9db"/>
+              </entryLinks>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
+          <entryLinks>
+            <entryLink import="true" name="Hunter-killer missile" hidden="false" type="selectionEntry" id="188c-8ecb-23ec-2a38" targetId="1145-d368-9650-767c">
+              <constraints>
+                <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="6d94-ecb0-7976-71c7"/>
+              </constraints>
+            </entryLink>
+            <entryLink import="true" name="Armoured frame" hidden="false" type="selectionEntry" id="809-ed32-b4f9-67b0" targetId="bc8b-7ce5-238a-78ef">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="617-6c31-20ab-4b40"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f191-fbe7-9405-c198"/>
+              </constraints>
+            </entryLink>
+          </entryLinks>
+        </selectionEntry>
+      </selectionEntries>
+      <infoLinks>
+        <infoLink name="Stealth" hidden="false" type="rule" id="de35-d213-9b4b-3b30" targetId="bec5-4288-34a6-ccfa"/>
+        <infoLink name="Deadly Demise" hidden="false" type="rule" id="257e-8598-74fd-34d2" targetId="b68a-5ded-65ac-98c">
+          <modifiers>
+            <modifier type="append" value="1" field="name"/>
+          </modifiers>
+        </infoLink>
+      </infoLinks>
+      <profiles>
+        <profile name="Keywords - Faction" typeId="drop-0000-0000-key1" typeName="[Keywords]" hidden="false" id="9dae-7d74-e01c-75fd">
+          <characteristics>
+            <characteristic name="Keywords" typeId="2a81-7738-d2ef-20f3">DROP TROOPS</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Keywords" typeId="drop-0000-0000-key1" typeName="[Keywords]" hidden="false" id="2e4a-f8ed-3954-4e9">
+          <characteristics>
+            <characteristic name="Keywords" typeId="2a81-7738-d2ef-20f3">MOUNTED, IMPERIUM, SMOKE, SQUADRON, TAUROS, TAUROS STRIKER</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Flak Battery" typeId="2c22-15c0-450f-768" typeName="(4) Abilities" hidden="false" id="3506-a841-ada8-9ba6">
+          <characteristics>
+            <characteristic name="Description" typeId="770f-11ab-9f54-73e8">Each time this model makes an attack that targets a unit that can Fly, you can re-roll the Hit roll.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <constraints>
+        <constraint type="max" value="3" field="selections" scope="roster" shared="true" id="c5b2-6d00-8137-6a62" includeChildSelections="true" includeChildForces="true"/>
+      </constraints>
+    </selectionEntry>
+    <selectionEntry type="model" import="true" name="Tauros - Maximus" hidden="false" id="6874-e5a7-2fdd-dd40">
+      <categoryLinks>
+        <categoryLink targetId="14a0-40c9-2748-ae6e" id="683f-a9c4-6cd8-375e" primary="false" name="Mounted"/>
+        <categoryLink targetId="6905-0693-ec68-090a" id="e12a-3f79-ce75-7486" primary="false" name="Tauros"/>
+        <categoryLink targetId="ba07-411c-2832-1f79" id="5d85-b56f-50a6-3bae" primary="true" name="Dedicated Transport"/>
+        <categoryLink targetId="b5e5-131d-33b8-937c" id="b036-a80c-2aba-3563" primary="false" name="Tauros Maximus"/>
+      </categoryLinks>
+      <infoLinks>
+        <infoLink name="Stealth" hidden="false" type="rule" id="4e6-5529-98a-ed56" targetId="bec5-4288-34a6-ccfa"/>
+        <infoLink name="Deadly Demise" hidden="false" type="rule" id="acd7-27-3f1-4c0" targetId="b68a-5ded-65ac-98c">
+          <modifiers>
+            <modifier type="append" value="1" field="name"/>
+          </modifiers>
+        </infoLink>
+        <infoLink name="Lone Operative" hidden="false" type="rule" id="f8af-50ac-5a6e-5ec0" targetId="a8a0-8fe7-898-e0f3"/>
+        <infoLink name="Firing Deck" hidden="false" type="rule" id="891d-10cc-ccf-ce6a" targetId="13b2-6518-dab3-7ea1">
+          <modifiers>
+            <modifier type="append" value="6" field="name"/>
+          </modifiers>
+        </infoLink>
+      </infoLinks>
+      <profiles>
+        <profile name="Keywords - Faction" typeId="drop-0000-0000-key1" typeName="[Keywords]" hidden="false" id="5b2a-6ce8-31ce-e139">
+          <characteristics>
+            <characteristic name="Keywords" typeId="2a81-7738-d2ef-20f3">DROP TROOPS</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Keywords" typeId="drop-0000-0000-key1" typeName="[Keywords]" hidden="false" id="c745-6e12-7ca5-9052">
+          <characteristics>
+            <characteristic name="Keywords" typeId="2a81-7738-d2ef-20f3">MOUNTED, IMPERIUM, TRANSPORT, DEDICATED TRANSPORT, SMOKE, TAUROS, TAUROS MAXIMUS</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Artillery Tractor" typeId="2c22-15c0-450f-768" typeName="(4) Abilities" hidden="false" id="6211-a7d4-1614-ed7c">
+          <characteristics>
+            <characteristic name="Description" typeId="770f-11ab-9f54-73e8">In your Movement phase, each time this model is selected to make a Normal Move it can tow 1 friendly DROP TROOPS ARTILLERY model within 1&quot; of it. If it does, after this model has finished its move, that ARTILLERY model can be moved to a position on the battlefield that is within 15&quot; of its original location and within 1&quot; of this model. An ARTILLERY model cannot be towed more than once per turn.</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Tauros Maximus" typeId="drop-0000-0000-0001" typeName="(1) Profiles" hidden="false" id="1001-fbb7-367b-a24f">
+          <characteristics>
+            <characteristic name="M" typeId="a2ab-842f-e968-ca80">15&quot;</characteristic>
+            <characteristic name="T" typeId="bc9c-e3f3-3186-a7f0">6</characteristic>
+            <characteristic name="SV" typeId="b5ba-b467-6f5a-cca9">4+</characteristic>
+            <characteristic name="W" typeId="00d9-a17e-9b2e-a053">6</characteristic>
+            <characteristic name="LD" typeId="c45a-6afc-f077-7edc">6+</characteristic>
+            <characteristic name="OC" typeId="7d96-9381-1b91-9d5e">1</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Tauros Maximus" typeId="drop-0000-0000-0005" typeName="(5) Transport" hidden="false" id="4837-77a8-32a9-be90">
+          <characteristics>
+            <characteristic name="Capacity" typeId="749f-9fc6-2c2c-6aff">This model has a transport capacity of 6 DROP TROOPS INFANTRY models. Each Heavy Weapons Team model and Veteran Heavy Weapons Team model takes up the space of 2 models. Each OGRYN model takes up the space of 3 models. It cannot transport Artillery models.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <constraints>
+        <constraint type="max" value="6" field="selections" scope="roster" shared="true" id="c5b2-6d00-8137-6a62" includeChildSelections="true" includeChildForces="true"/>
+      </constraints>
+      <costs>
+        <cost name="pts" typeId="51b2-306e-1021-d207" value="40"/>
+      </costs>
+      <entryLinks>
+        <entryLink import="true" name="Hunter-killer missile" hidden="false" type="selectionEntry" id="1d02-75e0-1189-3f7d" targetId="1145-d368-9650-767c">
+          <constraints>
+            <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="6d94-ecb0-7976-71c7"/>
+          </constraints>
+        </entryLink>
+        <entryLink import="true" name="Armoured frame" hidden="false" type="selectionEntry" id="ab0a-5281-58c9-a983" targetId="bc8b-7ce5-238a-78ef">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="617-6c31-20ab-4b40"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f191-fbe7-9405-c198"/>
+          </constraints>
+        </entryLink>
+        <entryLink import="true" name="Tauros bull bar" hidden="false" type="selectionEntry" id="705e-8bcb-7a41-344c" targetId="8062-3cd1-631c-d7a4">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="617-6c31-20ab-4b40"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f191-fbe7-9405-c198"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
+    </selectionEntry>
+    <selectionEntry type="model" import="true" name="Tauros - Magnum" hidden="false" id="ca40-a194-87d7-f5a3">
+      <categoryLinks>
+        <categoryLink targetId="14a0-40c9-2748-ae6e" id="7cea-2956-e501-4f2" primary="false" name="Mounted"/>
+        <categoryLink targetId="6905-0693-ec68-090a" id="6093-aabc-7ad8-d88a" primary="false" name="Tauros"/>
+        <categoryLink targetId="ba07-411c-2832-1f79" id="3041-f818-a3db-1298" primary="true" name="Dedicated Transport"/>
+        <categoryLink targetId="7cbc-6626-7eb4-dc8e" id="fc8e-f46b-7836-eeb3" primary="false" name="Tauros Magnum"/>
+      </categoryLinks>
+      <infoLinks>
+        <infoLink name="Stealth" hidden="false" type="rule" id="bc53-c46b-3ab0-5d05" targetId="bec5-4288-34a6-ccfa"/>
+        <infoLink name="Deadly Demise" hidden="false" type="rule" id="88a4-154a-79d6-e299" targetId="b68a-5ded-65ac-98c">
+          <modifiers>
+            <modifier type="append" value="1" field="name"/>
+          </modifiers>
+        </infoLink>
+        <infoLink name="Lone Operative" hidden="false" type="rule" id="f62f-25ba-eada-c70c" targetId="a8a0-8fe7-898-e0f3"/>
+        <infoLink name="Firing Deck" hidden="false" type="rule" id="ae8f-aa4-dab5-1339" targetId="13b2-6518-dab3-7ea1">
+          <modifiers>
+            <modifier type="append" value="10" field="name"/>
+          </modifiers>
+        </infoLink>
+      </infoLinks>
+      <profiles>
+        <profile name="Keywords - Faction" typeId="drop-0000-0000-key1" typeName="[Keywords]" hidden="false" id="241d-3146-9c04-d7c9">
+          <characteristics>
+            <characteristic name="Keywords" typeId="2a81-7738-d2ef-20f3">DROP TROOPS</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Keywords" typeId="drop-0000-0000-key1" typeName="[Keywords]" hidden="false" id="78c2-2927-dc5e-22f5">
+          <characteristics>
+            <characteristic name="Keywords" typeId="2a81-7738-d2ef-20f3">MOUNTED, IMPERIUM, TRANSPORT, DEDICATED TRANSPORT, SMOKE, TAUROS, TAUROS MAGNUM</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Artillery Tractor" typeId="2c22-15c0-450f-768" typeName="(4) Abilities" hidden="false" id="7792-16b7-9ac6-2590">
+          <characteristics>
+            <characteristic name="Description" typeId="770f-11ab-9f54-73e8">In your Movement phase, each time this model is selected to make a Normal Move it can tow 1 friendly DROP TROOPS ARTILLERY model within 1&quot; of it. If it does, after this model has finished its move, that ARTILLERY model can be moved to a position on the battlefield that is within 15&quot; of its original location and within 1&quot; of this model. An ARTILLERY model cannot be towed more than once per turn.</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Tauros Maximus" typeId="drop-0000-0000-0001" typeName="(1) Profiles" hidden="false" id="b92e-85f4-f8a-72b">
+          <characteristics>
+            <characteristic name="M" typeId="a2ab-842f-e968-ca80">15&quot;</characteristic>
+            <characteristic name="T" typeId="bc9c-e3f3-3186-a7f0">6</characteristic>
+            <characteristic name="SV" typeId="b5ba-b467-6f5a-cca9">4+</characteristic>
+            <characteristic name="W" typeId="00d9-a17e-9b2e-a053">6</characteristic>
+            <characteristic name="LD" typeId="c45a-6afc-f077-7edc">6+</characteristic>
+            <characteristic name="OC" typeId="7d96-9381-1b91-9d5e">1</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Tauros Magnum" typeId="drop-0000-0000-0005" typeName="(5) Transport" hidden="false" id="809f-49b-a325-f649">
+          <characteristics>
+            <characteristic name="Capacity" typeId="749f-9fc6-2c2c-6aff">This model has a transport capacity of 10 DROP TROOPS INFANTRY models. Each Heavy Weapons Team model and Veteran Heavy Weapons Team model takes up the space of 2 models. Each OGRYN model takes up the space of 3 models. It cannot transport Artillery models.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <constraints>
+        <constraint type="max" value="6" field="selections" scope="roster" shared="true" id="c5b2-6d00-8137-6a62" includeChildSelections="true" includeChildForces="true"/>
+      </constraints>
+      <costs>
+        <cost name="pts" typeId="51b2-306e-1021-d207" value="50"/>
+      </costs>
+      <entryLinks>
+        <entryLink import="true" name="Hunter-killer missile" hidden="false" type="selectionEntry" id="55cc-dd82-b1d3-5786" targetId="1145-d368-9650-767c">
+          <constraints>
+            <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="6d94-ecb0-7976-71c7"/>
+          </constraints>
+        </entryLink>
+        <entryLink import="true" name="Armoured frame" hidden="false" type="selectionEntry" id="e630-deb7-7d8c-2ee4" targetId="bc8b-7ce5-238a-78ef">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="617-6c31-20ab-4b40"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f191-fbe7-9405-c198"/>
+          </constraints>
+        </entryLink>
+        <entryLink import="true" name="Tauros bull bar" hidden="false" type="selectionEntry" id="68ab-bcbf-3061-2008" targetId="8062-3cd1-631c-d7a4">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="617-6c31-20ab-4b40"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f191-fbe7-9405-c198"/>
+          </constraints>
+        </entryLink>
+        <entryLink import="true" name="Heavy stubber" hidden="false" type="selectionEntry" id="b3b5-d4d3-1108-4bb9" targetId="57ef-9ff5-b3ae-3f7c">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="dcb0-3ddc-11f9-961e"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="3b62-c864-208-bfe5"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
+    </selectionEntry>
+    <selectionEntry type="model" import="true" name="Aircraft - Aquila Lander" hidden="false" id="b270-a64e-f2f5-7e1d">
+      <categoryLinks>
+        <categoryLink targetId="ba07-411c-2832-1f79" id="c0b-1bb1-265d-8bc2" primary="true" name="Dedicated Transport"/>
+        <categoryLink targetId="63f1-e6e8-f6f6-a4f0" id="3167-f815-f640-c096" primary="false" name="Aircraft"/>
+        <categoryLink targetId="3415-3cd7-8111-a6e7" id="ae77-bded-7a10-71d0" primary="false" name="Aquila Lander"/>
+      </categoryLinks>
+      <profiles>
+        <profile name="Aquila Lander" typeId="drop-0000-0000-0005" typeName="(5) Transport" hidden="false" id="e0b9-518d-14d8-c357">
+          <characteristics>
+            <characteristic name="Capacity" typeId="749f-9fc6-2c2c-6aff">This model has a transport capacity of 15 DROP TROOPS INFANTRY models. Each Heavy Weapons Team model and Veteran Heavy Weapons Team model takes up the space of 2 models. Each OGRYN model takes up the space of 3 models. It cannot transport Artillery models.</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Aerial Deployment" typeId="2c22-15c0-450f-768" typeName="(4) Abilities" hidden="false" id="ff98-fc18-5f0d-5ad2">
+          <characteristics>
+            <characteristic name="Description" typeId="770f-11ab-9f54-73e8">If this model starts the game in Hover mode and in Strategic Reserves, it can be set up in the Reinforcements step of your first, second or third Movement phase, regardless of any mission rules.</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Aquila Lander" typeId="drop-0000-0000-0001" typeName="(1) Profiles" hidden="false" id="3313-8620-7696-dadd">
+          <characteristics>
+            <characteristic name="M" typeId="a2ab-842f-e968-ca80">20+&quot;</characteristic>
+            <characteristic name="T" typeId="bc9c-e3f3-3186-a7f0">9</characteristic>
+            <characteristic name="SV" typeId="b5ba-b467-6f5a-cca9">3+</characteristic>
+            <characteristic name="W" typeId="00d9-a17e-9b2e-a053">12</characteristic>
+            <characteristic name="LD" typeId="c45a-6afc-f077-7edc">7+</characteristic>
+            <characteristic name="OC" typeId="7d96-9381-1b91-9d5e">0</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="3b94-92e-e7cc-8b2f" name="Keywords - Faction" hidden="false" typeId="drop-0000-0000-key1" typeName="[Keywords]">
+          <characteristics>
+            <characteristic name="Keywords" typeId="2a81-7738-d2ef-20f3">DROP TROOPS</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="f348-af3-872-440d" name="Keywords" hidden="false" typeId="drop-0000-0000-key1" typeName="[Keywords]">
+          <characteristics>
+            <characteristic name="Keywords" typeId="2a81-7738-d2ef-20f3">VEHICLE, FLY, AIRCRAFT, IMPERIAL, TRANSPORT, DEDICATED TRANSPORT, AQUILA LANDER</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="c6bb-6b6e-700f-34a6" name="Damaged: 1-5 Wounds Remaining" hidden="false" typeId="2c22-15c0-450f-768" typeName="(4) Abilities">
+          <characteristics>
+            <characteristic name="Description" typeId="770f-11ab-9f54-73e8">While this model has 1-5 wounds remaining, each time this model makes an attack, subtract 1 from the Hit roll.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink id="4fe8-30a9-4ca3-a206" name="Hover" hidden="false" targetId="eec5-5f54-9c03-c305" type="rule"/>
+        <infoLink id="c942-9b95-99bd-6634" name="Deadly Demise" hidden="false" targetId="b68a-5ded-65ac-98c" type="rule">
+          <modifiers>
+            <modifier type="append" field="name" value="D6"/>
+          </modifiers>
+        </infoLink>
+        <infoLink id="4e6c-fa39-db7e-cd60" name="Deep Strike" hidden="false" targetId="7cb5-dd6b-dd87-ad3b" type="rule"/>
+      </infoLinks>
+      <entryLinks>
+        <entryLink import="true" name="Armoured hull" hidden="false" type="selectionEntry" id="3757-ff20-3540-838a" targetId="a4a1-4428-b09b-c3f6">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="afbd-6ba7-ff90-c7e3"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="cbe1-8209-35e5-476a"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Weapon Choice" hidden="false" id="ba19-2804-ac1e-3ad8" defaultSelectionEntryId="c82d-12f8-2ac1-2fd9">
+          <entryLinks>
+            <entryLink import="true" name="Militarum multi-laser" hidden="false" type="selectionEntry" id="c82d-12f8-2ac1-2fd9" targetId="9891-7452-ca38-7c78"/>
+            <entryLink import="true" name="Heavy bolter" hidden="false" type="selectionEntry" id="6181-ece-28c9-1848" targetId="b4d2-6ca2-68f4-7aee"/>
+            <entryLink import="true" name="Autocannon" hidden="false" type="selectionEntry" id="7b71-e9e3-e2d6-355e" targetId="86be-4503-528a-0104"/>
+          </entryLinks>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="1c02-568e-869b-4602"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1dc4-955a-d9f3-b87a"/>
+          </constraints>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <costs>
+        <cost name="pts" typeId="51b2-306e-1021-d207" value="85"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry type="model" import="true" name="Aircraft - Arvus Lighter" hidden="false" id="a472-9d38-aaf5-f390">
+      <categoryLinks>
+        <categoryLink targetId="ba07-411c-2832-1f79" id="8a94-cfc-4a52-8610" primary="true" name="Dedicated Transport"/>
+        <categoryLink targetId="63f1-e6e8-f6f6-a4f0" id="513a-70b1-1a14-7ec9" primary="false" name="Aircraft"/>
+        <categoryLink targetId="96d7-4817-b077-e2be" id="5ed9-5874-1f00-cef6" primary="false" name="Arvus Lighter"/>
+      </categoryLinks>
+      <profiles>
+        <profile name="Arvus Lighter" typeId="drop-0000-0000-0005" typeName="(5) Transport" hidden="false" id="b472-5d4e-9bde-e024">
+          <characteristics>
+            <characteristic name="Capacity" typeId="749f-9fc6-2c2c-6aff">This model has a transport capacity of 12 DROP TROOPS INFANTRY models. Each Heavy Weapons Team model and Veteran Heavy Weapons Team model takes up the space of 2 models. Each OGRYN model takes up the space of 3 models. It cannot transport Artillery models.</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Aerial Deployment" typeId="2c22-15c0-450f-768" typeName="(4) Abilities" hidden="false" id="fd98-5379-330-96cd">
+          <characteristics>
+            <characteristic name="Description" typeId="770f-11ab-9f54-73e8">If this model starts the game in Hover mode and in Strategic Reserves, it can be set up in the Reinforcements step of your first, second or third Movement phase, regardless of any mission rules.</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Arvus Lighter" typeId="drop-0000-0000-0001" typeName="(1) Profiles" hidden="false" id="91f3-6102-fd7f-62e1">
+          <characteristics>
+            <characteristic name="M" typeId="a2ab-842f-e968-ca80">20+&quot;</characteristic>
+            <characteristic name="T" typeId="bc9c-e3f3-3186-a7f0">88</characteristic>
+            <characteristic name="SV" typeId="b5ba-b467-6f5a-cca9">3+</characteristic>
+            <characteristic name="W" typeId="00d9-a17e-9b2e-a053">8</characteristic>
+            <characteristic name="LD" typeId="c45a-6afc-f077-7edc">7+</characteristic>
+            <characteristic name="OC" typeId="7d96-9381-1b91-9d5e">0</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="c519-56ea-61f8-ceda" name="Keywords - Faction" hidden="false" typeId="drop-0000-0000-key1" typeName="[Keywords]">
+          <characteristics>
+            <characteristic name="Keywords" typeId="2a81-7738-d2ef-20f3">DROP TROOPS</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="502b-27b2-5f12-6a46" name="Keywords" hidden="false" typeId="drop-0000-0000-key1" typeName="[Keywords]">
+          <characteristics>
+            <characteristic name="Keywords" typeId="2a81-7738-d2ef-20f3">VEHICLE, FLY, AIRCRAFT, IMPERIAL, TRANSPORT, DEDICATED TRANSPORT, ARVUS LIGHTER</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="9694-87d-ea83-7a7b" name="Damaged: 1-5 Wounds Remaining" hidden="false" typeId="2c22-15c0-450f-768" typeName="(4) Abilities">
+          <characteristics>
+            <characteristic name="Description" typeId="770f-11ab-9f54-73e8">While this model has 1-5 wounds remaining, each time this model makes an attack, subtract 1 from the Hit roll.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink id="1d0f-465-b402-740c" name="Hover" hidden="false" targetId="eec5-5f54-9c03-c305" type="rule"/>
+        <infoLink id="5c2d-3b66-84d-201c" name="Deadly Demise" hidden="false" targetId="b68a-5ded-65ac-98c" type="rule">
+          <modifiers>
+            <modifier type="append" field="name" value="D6"/>
+          </modifiers>
+        </infoLink>
+        <infoLink id="a7b9-e944-265e-97fb" name="Deep Strike" hidden="false" targetId="7cb5-dd6b-dd87-ad3b" type="rule"/>
+      </infoLinks>
+      <entryLinks>
+        <entryLink import="true" name="Armoured hull" hidden="false" type="selectionEntry" id="5cee-a937-d6e-6b6e" targetId="a4a1-4428-b09b-c3f6">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="afbd-6ba7-ff90-c7e3"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="cbe1-8209-35e5-476a"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
+      <costs>
+        <cost name="pts" typeId="51b2-306e-1021-d207" value="95"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry type="model" import="true" name="Aircraft - Avenger Strike Fighter" hidden="false" id="e74a-b324-59a5-77b5">
+      <categoryLinks>
+        <categoryLink targetId="30ca-0bd1-ee10-70c3" id="327b-a941-d942-adb8" primary="false" name="Avenger Strike Fighter"/>
+        <categoryLink targetId="63f1-e6e8-f6f6-a4f0" id="2e1b-2157-5447-b5c8" primary="false" name="Aircraft"/>
+        <categoryLink targetId="dbd4-63-af05-998" id="79ed-adb8-eb1d-1328" primary="true" name="Vehicle"/>
+      </categoryLinks>
+      <costs>
+        <cost name="pts" typeId="51b2-306e-1021-d207" value="140"/>
+      </costs>
+      <entryLinks>
+        <entryLink id="cc72-e60d-52ff-c86f" name="Aircraft Equipment &amp; Options" hidden="false" collective="false" import="true" targetId="3d09-88ba-8e23-8aff" type="selectionEntryGroup"/>
+      </entryLinks>
+      <profiles>
+        <profile name="Avenger Strike Fighter" typeId="drop-0000-0000-0001" typeName="(1) Profiles" hidden="false" id="d0c3-bf45-9d9a-97c5">
+          <characteristics>
+            <characteristic name="M" typeId="a2ab-842f-e968-ca80">20+&quot;</characteristic>
+            <characteristic name="T" typeId="bc9c-e3f3-3186-a7f0">9</characteristic>
+            <characteristic name="SV" typeId="b5ba-b467-6f5a-cca9">3+</characteristic>
+            <characteristic name="W" typeId="00d9-a17e-9b2e-a053">14</characteristic>
+            <characteristic name="LD" typeId="c45a-6afc-f077-7edc">7+</characteristic>
+            <characteristic name="OC" typeId="7d96-9381-1b91-9d5e">0</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="193d-e052-fcf1-d38c" name="Keywords - Faction" hidden="false" typeId="drop-0000-0000-key1" typeName="[Keywords]">
+          <characteristics>
+            <characteristic name="Keywords" typeId="2a81-7738-d2ef-20f3">DROP TROOPS</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="6442-6a6a-ec7d-970e" name="Keywords" hidden="false" typeId="drop-0000-0000-key1" typeName="[Keywords]">
+          <characteristics>
+            <characteristic name="Keywords" typeId="2a81-7738-d2ef-20f3">VEHICLE, FLY, AIRCRAFT, IMPERIUM, AVENGER STRIKE FIGHTER</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Fiery Vengeance" typeId="2c22-15c0-450f-768" typeName="(4) Abilities" hidden="false" id="d601-7923-604a-649c">
+          <characteristics>
+            <characteristic name="Description" typeId="770f-11ab-9f54-73e8">Once per turn, in your opponent’s Shooting phase, when another friendly DROP TROOPS unit within 6&quot; of this model is destroyed by an attack made by a unit that can FLY, one model from your army with this ability can use it. If it does, after the attacking unit has finished making its attacks, that model can shoot as if it were your Shooting phase, but when resolving those attacks it can only target that enemy unit (and only if it is an eligible target).</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="ca91-4565-1a1c-2ef" name="Damaged: 1-5 Wounds Remaining" hidden="false" typeId="2c22-15c0-450f-768" typeName="(4) Abilities">
+          <characteristics>
+            <characteristic name="Description" typeId="770f-11ab-9f54-73e8">While this model has 1-5 wounds remaining, each time this model makes an attack, subtract 1 from the Hit roll.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink id="873-3fa7-c702-a205" name="Deadly Demise" hidden="false" targetId="b68a-5ded-65ac-98c" type="rule">
+          <modifiers>
+            <modifier type="append" field="name" value="D6"/>
+          </modifiers>
+        </infoLink>
+        <infoLink id="ddd4-3592-efaa-f5bc" name="Deep Strike" hidden="false" targetId="7cb5-dd6b-dd87-ad3b" type="rule"/>
+      </infoLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Loadout" hidden="false" id="6a84-ee81-5c75-4c15">
+          <selectionEntryGroups>
+            <selectionEntryGroup name="Wing Mounts" hidden="false" id="ad08-5692-f96f-4950">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="92e2-1a-ad52-ca2c"/>
+              </constraints>
+              <entryLinks>
+                <entryLink import="true" name="Missile Rack - Hellstrike" hidden="false" type="selectionEntry" id="3782-ecc-9aa2-371c" targetId="6152-454f-88f0-499d"/>
+                <entryLink import="true" name="Missile Rack - Hellfury" hidden="false" type="selectionEntry" id="decb-d8a4-5341-9ac0" targetId="7d8d-864a-d986-9ab3"/>
+                <entryLink import="true" name="Tactical bombs" hidden="false" type="selectionEntry" id="c60-73c8-f66f-8d84" targetId="48f1-cca6-3fc4-b391"/>
+              </entryLinks>
+              <selectionEntries>
+                <selectionEntry type="upgrade" import="true" name="2x Autocannons" hidden="false" id="dd39-7f6c-95bf-aff5">
+                  <entryLinks>
+                    <entryLink import="true" name="Autocannon" hidden="false" type="selectionEntry" id="e0d3-652-35b9-269f" targetId="86be-4503-528a-0104">
+                      <constraints>
+                        <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="eac8-ceb8-44da-7595"/>
+                        <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="41c0-5b7e-ec0f-72bd"/>
+                      </constraints>
+                    </entryLink>
+                  </entryLinks>
+                </selectionEntry>
+                <selectionEntry type="upgrade" import="true" name="2x Militarum multi-lasers" hidden="false" id="42fb-8b78-3f0b-3f50">
+                  <entryLinks>
+                    <entryLink import="true" name="Militarum multi-laser" hidden="false" type="selectionEntry" id="6aa3-4fb0-152a-f6d6" targetId="9891-7452-ca38-7c78">
+                      <constraints>
+                        <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="eac8-ceb8-44da-7595"/>
+                        <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="41c0-5b7e-ec0f-72bd"/>
+                      </constraints>
+                    </entryLink>
+                  </entryLinks>
+                </selectionEntry>
+                <selectionEntry type="upgrade" import="true" name="2x Missile launchers" hidden="false" id="bed4-f157-c051-2405">
+                  <entryLinks>
+                    <entryLink import="true" name="Missile launcher" hidden="false" type="selectionEntry" id="a4c3-9ee9-c74e-3403" targetId="a85a-18af-143d-fe70">
+                      <constraints>
+                        <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="eac8-ceb8-44da-7595"/>
+                        <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="41c0-5b7e-ec0f-72bd"/>
+                      </constraints>
+                    </entryLink>
+                  </entryLinks>
+                </selectionEntry>
+              </selectionEntries>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
+          <entryLinks>
+            <entryLink import="true" name="Armoured hull" hidden="false" type="selectionEntry" id="70b6-7c82-7537-53dd" targetId="a4a1-4428-b09b-c3f6">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="894-4f68-21ab-65ab"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="96b0-2f85-bb61-6fe7"/>
+              </constraints>
+            </entryLink>
+            <entryLink import="true" name="Heavy stubber" hidden="false" type="selectionEntry" id="e925-9ab9-afc-a17a" targetId="57ef-9ff5-b3ae-3f7c">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="894-4f68-21ab-65ab"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="96b0-2f85-bb61-6fe7"/>
+              </constraints>
+            </entryLink>
+            <entryLink import="true" name="Avenger bolt cannon" hidden="false" type="selectionEntry" id="dad8-280b-ca04-a771" targetId="5de2-145b-8b71-29fb">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="894-4f68-21ab-65ab"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="96b0-2f85-bb61-6fe7"/>
+              </constraints>
+            </entryLink>
+          </entryLinks>
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="2x Nose Mounted Lascannons" hidden="false" id="3134-977f-5575-d770">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="953d-e70a-ada-d90f"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d745-3d4c-9331-dd6"/>
+              </constraints>
+              <entryLinks>
+                <entryLink import="true" name="Lascannon" hidden="false" type="selectionEntry" id="b2e9-d17d-1c4c-41f9" targetId="drop-weap-lcav-bs04">
+                  <constraints>
+                    <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="dc88-32fa-9194-353d"/>
+                    <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="5e99-27d7-a708-7f51"/>
+                  </constraints>
+                </entryLink>
+              </entryLinks>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+    </selectionEntry>
+    <selectionEntry type="model" import="true" name="Aircraft - Lightning Strike Fighter" hidden="false" id="9a8f-4f60-2ac0-69be">
+      <categoryLinks>
+        <categoryLink targetId="63f1-e6e8-f6f6-a4f0" id="fd6d-a4ef-75a8-8d51" primary="false" name="Aircraft"/>
+        <categoryLink targetId="dbd4-63-af05-998" id="2f5a-1045-7ab6-59a7" primary="true" name="Vehicle"/>
+        <categoryLink targetId="30ca-0bd1-ee10-70c3" id="4ea5-3846-ee33-7cdb" primary="false" name="Avenger Strike Fighter"/>
+      </categoryLinks>
+      <costs>
+        <cost name="pts" typeId="51b2-306e-1021-d207" value="140"/>
+      </costs>
+      <infoLinks>
+        <infoLink id="f6bc-f794-678e-2de2" name="Deep Strike" hidden="false" targetId="7cb5-dd6b-dd87-ad3b" type="rule"/>
+        <infoLink id="448a-cd01-344d-fa37" name="Deadly Demise" hidden="false" targetId="b68a-5ded-65ac-98c" type="rule">
+          <modifiers>
+            <modifier type="append" field="name" value="D6"/>
+          </modifiers>
+        </infoLink>
+      </infoLinks>
+      <profiles>
+        <profile id="84ec-a612-9db4-bb2e" name="Keywords - Faction" hidden="false" typeId="drop-0000-0000-key1" typeName="[Keywords]">
+          <characteristics>
+            <characteristic name="Keywords" typeId="2a81-7738-d2ef-20f3">DROP TROOPS</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="84e4-66f1-3fa0-7a91" name="Keywords" hidden="false" typeId="drop-0000-0000-key1" typeName="[Keywords]">
+          <characteristics>
+            <characteristic name="Keywords" typeId="2a81-7738-d2ef-20f3">VEHICLE, FLY, AIRCRAFT, IMPERIAL, LIGHNING STRIKE FIGHTER</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Lightning Strike Fighter" typeId="drop-0000-0000-0001" typeName="(1) Profiles" hidden="false" id="55c8-6f3e-2c56-361">
+          <characteristics>
+            <characteristic name="M" typeId="a2ab-842f-e968-ca80">20+&quot;</characteristic>
+            <characteristic name="T" typeId="bc9c-e3f3-3186-a7f0">10</characteristic>
+            <characteristic name="SV" typeId="b5ba-b467-6f5a-cca9">2+</characteristic>
+            <characteristic name="W" typeId="00d9-a17e-9b2e-a053">14</characteristic>
+            <characteristic name="LD" typeId="c45a-6afc-f077-7edc">7+</characteristic>
+            <characteristic name="OC" typeId="7d96-9381-1b91-9d5e">0</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Agile Dogfighter" typeId="2c22-15c0-450f-768" typeName="(4) Abilities" hidden="false" id="5b85-449b-f0db-bc4c">
+          <characteristics>
+            <characteristic name="Description" typeId="770f-11ab-9f54-73e8">Each time an attack targets this model, subtract 1 from the Hit roll.</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="6870-9110-a7fd-d967" name="Damaged: 1-5 Wounds Remaining" hidden="false" typeId="2c22-15c0-450f-768" typeName="(4) Abilities">
+          <characteristics>
+            <characteristic name="Description" typeId="770f-11ab-9f54-73e8">While this model has 1-5 wounds remaining, each time this model makes an attack, subtract 1 from the Hit roll.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Loadout" hidden="false" id="1234-f314-5803-4c33">
+          <entryLinks>
+            <entryLink import="true" name="Armoured hull" hidden="false" type="selectionEntry" id="e527-9296-b331-dc8a" targetId="a4a1-4428-b09b-c3f6">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="894-4f68-21ab-65ab"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="96b0-2f85-bb61-6fe7"/>
+              </constraints>
+            </entryLink>
+            <entryLink import="true" name="Lightning autocannon" hidden="false" type="selectionEntry" id="5ef6-2974-50b9-c83e" targetId="e011-5cc5-f2b0-8c9">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="96b0-2f85-bb61-6fe7"/>
+              </constraints>
+            </entryLink>
+          </entryLinks>
+          <selectionEntryGroups>
+            <selectionEntryGroup name="Wing Mounts" hidden="false" id="6310-6b21-612-d69a">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="92e2-1a-ad52-ca2c"/>
+              </constraints>
+              <entryLinks>
+                <entryLink import="true" name="Missile Rack - Hellstrike" hidden="false" type="selectionEntry" id="1028-9800-db5a-da8f" targetId="6152-454f-88f0-499d"/>
+                <entryLink import="true" name="Missile Rack - Hellfury" hidden="false" type="selectionEntry" id="d73e-bc6e-fe87-ddb1" targetId="7d8d-864a-d986-9ab3"/>
+                <entryLink import="true" name="Tactical bombs" hidden="false" type="selectionEntry" id="a419-550d-b321-cfaf" targetId="48f1-cca6-3fc4-b391"/>
+                <entryLink import="true" name="Missile Rack - Skystrike" hidden="false" type="selectionEntry" id="104f-48e7-1b1e-4450" targetId="58f0-53e9-ee84-daad"/>
+              </entryLinks>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="2x Nose Mounted Lascannons" hidden="false" id="9d4d-67be-1433-8201">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="953d-e70a-ada-d90f"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d745-3d4c-9331-dd6"/>
+              </constraints>
+              <entryLinks>
+                <entryLink import="true" name="Lascannon" hidden="false" type="selectionEntry" id="5555-a0a-51dc-3009" targetId="drop-weap-lcav-bs04">
+                  <constraints>
+                    <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="dc88-32fa-9194-353d"/>
+                    <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="5e99-27d7-a708-7f51"/>
+                  </constraints>
+                </entryLink>
+              </entryLinks>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <entryLinks>
+        <entryLink id="f35e-1130-d5c3-846" name="Aircraft Equipment &amp; Options" hidden="false" collective="false" import="true" targetId="3d09-88ba-8e23-8aff" type="selectionEntryGroup"/>
+      </entryLinks>
+    </selectionEntry>
+    <selectionEntry type="model" import="true" name="Aircraft - Thunderbolt Heavy Fighter" hidden="false" id="fdeb-e5d4-8595-b067">
+      <categoryLinks>
+        <categoryLink targetId="63f1-e6e8-f6f6-a4f0" id="4ab0-a41-4503-e5a0" primary="false" name="Aircraft"/>
+        <categoryLink targetId="dbd4-63-af05-998" id="dc92-ae01-c2f1-93e4" primary="true" name="Vehicle"/>
+        <categoryLink targetId="be2b-e155-40e3-39a1" id="1530-1a29-c84f-95f2" primary="false" name="Thunderbolt Heavy Fighter"/>
+      </categoryLinks>
+      <costs>
+        <cost name="pts" typeId="51b2-306e-1021-d207" value="190"/>
+      </costs>
+      <infoLinks>
+        <infoLink id="ff20-add5-abd3-c585" name="Deep Strike" hidden="false" targetId="7cb5-dd6b-dd87-ad3b" type="rule"/>
+        <infoLink id="2b28-7c91-cedc-47d8" name="Deadly Demise" hidden="false" targetId="b68a-5ded-65ac-98c" type="rule">
+          <modifiers>
+            <modifier type="append" field="name" value="D6"/>
+          </modifiers>
+        </infoLink>
+      </infoLinks>
+      <profiles>
+        <profile id="da4d-ada5-fc0e-6dc4" name="Keywords - Faction" hidden="false" typeId="drop-0000-0000-key1" typeName="[Keywords]">
+          <characteristics>
+            <characteristic name="Keywords" typeId="2a81-7738-d2ef-20f3">DROP TROOPS</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="3ae9-bfdb-26e2-5b82" name="Keywords" hidden="false" typeId="drop-0000-0000-key1" typeName="[Keywords]">
+          <characteristics>
+            <characteristic name="Keywords" typeId="2a81-7738-d2ef-20f3">VEHICLE, FLY, AIRCRAFT, IMPERIAL, THUNDERBOLT HEAVY FIGHTER</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Thunderbolt Heavy Fighter" typeId="drop-0000-0000-0001" typeName="(1) Profiles" hidden="false" id="aaae-3ded-9b61-917a">
+          <characteristics>
+            <characteristic name="M" typeId="a2ab-842f-e968-ca80">20+&quot;</characteristic>
+            <characteristic name="T" typeId="bc9c-e3f3-3186-a7f0">10</characteristic>
+            <characteristic name="SV" typeId="b5ba-b467-6f5a-cca9">3+</characteristic>
+            <characteristic name="W" typeId="00d9-a17e-9b2e-a053">15</characteristic>
+            <characteristic name="LD" typeId="c45a-6afc-f077-7edc">7+</characteristic>
+            <characteristic name="OC" typeId="7d96-9381-1b91-9d5e">0</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Fighter Craft" typeId="2c22-15c0-450f-768" typeName="(4) Abilities" hidden="false" id="1695-9737-5fdb-51c1">
+          <characteristics>
+            <characteristic name="Description" typeId="770f-11ab-9f54-73e8">Each time this model makes a ranged attack that targets a unit that can FLY, add 1 to the Hit roll.</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="fbf6-f234-104a-f42c" name="Damaged: 1-5 Wounds Remaining" hidden="false" typeId="2c22-15c0-450f-768" typeName="(4) Abilities">
+          <characteristics>
+            <characteristic name="Description" typeId="770f-11ab-9f54-73e8">While this model has 1-5 wounds remaining, each time this model makes an attack, subtract 1 from the Hit roll.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Loadout" hidden="false" id="3910-7a86-f965-15">
+          <entryLinks>
+            <entryLink import="true" name="Armoured hull" hidden="false" type="selectionEntry" id="5b3-fedb-358-c58d" targetId="a4a1-4428-b09b-c3f6">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="894-4f68-21ab-65ab"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="96b0-2f85-bb61-6fe7"/>
+              </constraints>
+            </entryLink>
+            <entryLink import="true" name="Thunderbolt nose autocannons" hidden="false" type="selectionEntry" id="30c8-a52b-c45b-7697" targetId="4958-bd85-7ab6-a716">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="96b0-2f85-bb61-6fe7"/>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="6fe9-8889-27a5-2d03"/>
+              </constraints>
+            </entryLink>
+          </entryLinks>
+          <selectionEntryGroups>
+            <selectionEntryGroup name="Wing Mounts" hidden="false" id="1c7c-3e8c-6097-c3fa">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="92e2-1a-ad52-ca2c"/>
+              </constraints>
+              <entryLinks>
+                <entryLink import="true" name="Missile Rack - Hellstrike" hidden="false" type="selectionEntry" id="cd71-e266-613d-ab05" targetId="6152-454f-88f0-499d"/>
+                <entryLink import="true" name="Missile Rack - Hellfury" hidden="false" type="selectionEntry" id="4651-7edb-9e52-b3b5" targetId="7d8d-864a-d986-9ab3"/>
+                <entryLink import="true" name="Tactical bombs" hidden="false" type="selectionEntry" id="9136-7fc4-35ad-5e11" targetId="48f1-cca6-3fc4-b391"/>
+                <entryLink import="true" name="Missile Rack - Skystrike" hidden="false" type="selectionEntry" id="7a94-af3e-5d43-c729" targetId="58f0-53e9-ee84-daad"/>
+              </entryLinks>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="2x Nose Mounted Lascannons" hidden="false" id="53d7-266a-f98-f242">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="953d-e70a-ada-d90f"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d745-3d4c-9331-dd6"/>
+              </constraints>
+              <entryLinks>
+                <entryLink import="true" name="Lascannon" hidden="false" type="selectionEntry" id="551c-b54e-cb85-d766" targetId="drop-weap-lcav-bs04">
+                  <constraints>
+                    <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="dc88-32fa-9194-353d"/>
+                    <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="5e99-27d7-a708-7f51"/>
+                  </constraints>
+                </entryLink>
+              </entryLinks>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <entryLinks>
+        <entryLink id="ef2c-4449-ca1c-5f00" name="Aircraft Equipment &amp; Options" hidden="false" collective="false" import="true" targetId="3d09-88ba-8e23-8aff" type="selectionEntryGroup"/>
+      </entryLinks>
+    </selectionEntry>
+    <selectionEntry type="model" import="true" name="Aircraft - Thunderbolt Fury Heavy Fighter" hidden="false" id="6e63-33a4-74a8-693e">
+      <categoryLinks>
+        <categoryLink targetId="63f1-e6e8-f6f6-a4f0" id="fb05-b8c0-5e79-94f7" primary="false" name="Aircraft"/>
+        <categoryLink targetId="dbd4-63-af05-998" id="5a7c-f089-478-3d91" primary="true" name="Vehicle"/>
+        <categoryLink targetId="65d2-4ebc-1bc6-8c91" id="3901-833b-5722-b7cd" primary="false" name="Thunderbolt Fury Heavy Fighter"/>
+      </categoryLinks>
+      <costs>
+        <cost name="pts" typeId="51b2-306e-1021-d207" value="200"/>
+      </costs>
+      <infoLinks>
+        <infoLink id="a6ef-1298-bd18-d29f" name="Deep Strike" hidden="false" targetId="7cb5-dd6b-dd87-ad3b" type="rule"/>
+        <infoLink id="5dc2-8425-2b8c-6c3d" name="Deadly Demise" hidden="false" targetId="b68a-5ded-65ac-98c" type="rule">
+          <modifiers>
+            <modifier type="append" field="name" value="D6"/>
+          </modifiers>
+        </infoLink>
+      </infoLinks>
+      <profiles>
+        <profile id="76bb-1d9b-32aa-f811" name="Keywords - Faction" hidden="false" typeId="drop-0000-0000-key1" typeName="[Keywords]">
+          <characteristics>
+            <characteristic name="Keywords" typeId="2a81-7738-d2ef-20f3">DROP TROOPS</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="3fb3-f9e6-89b7-6759" name="Keywords" hidden="false" typeId="drop-0000-0000-key1" typeName="[Keywords]">
+          <characteristics>
+            <characteristic name="Keywords" typeId="2a81-7738-d2ef-20f3">VEHICLE, FLY, AIRCRAFT, IMPERIAL, THUNDERBOLT FURY HEAVY FIGHTER</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Thunderbolt Fury" typeId="drop-0000-0000-0001" typeName="(1) Profiles" hidden="false" id="7aeb-b569-9c14-e57d">
+          <characteristics>
+            <characteristic name="M" typeId="a2ab-842f-e968-ca80">20+&quot;</characteristic>
+            <characteristic name="T" typeId="bc9c-e3f3-3186-a7f0">10</characteristic>
+            <characteristic name="SV" typeId="b5ba-b467-6f5a-cca9">3+</characteristic>
+            <characteristic name="W" typeId="00d9-a17e-9b2e-a053">15</characteristic>
+            <characteristic name="LD" typeId="c45a-6afc-f077-7edc">7+</characteristic>
+            <characteristic name="OC" typeId="7d96-9381-1b91-9d5e">0</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Strafing Run" typeId="2c22-15c0-450f-768" typeName="(4) Abilities" hidden="false" id="cb53-9aeb-68b1-af70">
+          <characteristics>
+            <characteristic name="Description" typeId="770f-11ab-9f54-73e8">Each time this model makes a ranged attack that targets a unit that cannot FLY, add 1 to the Hit roll.</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="cef0-cf0f-266a-c441" name="Damaged: 1-5 Wounds Remaining" hidden="false" typeId="2c22-15c0-450f-768" typeName="(4) Abilities">
+          <characteristics>
+            <characteristic name="Description" typeId="770f-11ab-9f54-73e8">While this model has 1-5 wounds remaining, each time this model makes an attack, subtract 1 from the Hit roll.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Loadout" hidden="false" id="634c-f2da-d501-2a5c">
+          <entryLinks>
+            <entryLink import="true" name="Armoured hull" hidden="false" type="selectionEntry" id="df9c-2f11-4809-6447" targetId="a4a1-4428-b09b-c3f6">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="894-4f68-21ab-65ab"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="96b0-2f85-bb61-6fe7"/>
+              </constraints>
+            </entryLink>
+            <entryLink import="true" name="Thunderbolt nose bolt cannon" hidden="false" type="selectionEntry" id="c5ec-4356-7f0b-3984" targetId="938c-6ed4-94e8-4cfb">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="96b0-2f85-bb61-6fe7"/>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="6fe9-8889-27a5-2d03"/>
+              </constraints>
+            </entryLink>
+          </entryLinks>
+          <selectionEntryGroups>
+            <selectionEntryGroup name="Wing Mounts" hidden="false" id="645c-13fa-55ae-e09">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="92e2-1a-ad52-ca2c"/>
+              </constraints>
+              <entryLinks>
+                <entryLink import="true" name="Missile Rack - Hellstrike" hidden="false" type="selectionEntry" id="f4b3-2a0d-4a2d-cf4f" targetId="6152-454f-88f0-499d"/>
+                <entryLink import="true" name="Missile Rack - Hellfury" hidden="false" type="selectionEntry" id="e341-d2ee-83ff-1c15" targetId="7d8d-864a-d986-9ab3"/>
+                <entryLink import="true" name="Tactical bombs" hidden="false" type="selectionEntry" id="b165-10ea-2eed-ca98" targetId="48f1-cca6-3fc4-b391"/>
+                <entryLink import="true" name="Missile Rack - Skystrike" hidden="false" type="selectionEntry" id="bf7c-fdb-dea6-c473" targetId="58f0-53e9-ee84-daad"/>
+              </entryLinks>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="2x Nose Mounted Lascannons" hidden="false" id="6e13-5362-451a-4739">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="953d-e70a-ada-d90f"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d745-3d4c-9331-dd6"/>
+              </constraints>
+              <entryLinks>
+                <entryLink import="true" name="Lascannon" hidden="false" type="selectionEntry" id="66b8-5d76-b2da-54fe" targetId="drop-weap-lcav-bs04">
+                  <constraints>
+                    <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="dc88-32fa-9194-353d"/>
+                    <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="5e99-27d7-a708-7f51"/>
+                  </constraints>
+                </entryLink>
+              </entryLinks>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <entryLinks>
+        <entryLink id="266-6b21-7097-91e0" name="Aircraft Equipment &amp; Options" hidden="false" collective="false" import="true" targetId="3d09-88ba-8e23-8aff" type="selectionEntryGroup"/>
+      </entryLinks>
+    </selectionEntry>
+    <selectionEntry type="model" import="true" name="Aircraft - Marauder Bomber" hidden="false" id="35a2-99dd-57aa-f270">
+      <categoryLinks>
+        <categoryLink targetId="63f1-e6e8-f6f6-a4f0" id="2dee-734f-666-c651" primary="false" name="Aircraft"/>
+        <categoryLink targetId="dbd4-63-af05-998" id="cc70-da0-6286-44e9" primary="true" name="Vehicle"/>
+        <categoryLink targetId="ce80-e0c5-6c3f-496a" id="5f5-8abf-d0e2-ff1e" primary="false" name="Marauder Bomber"/>
+        <categoryLink targetId="5929-ad51-d006-e008" id="ee83-bb21-c66b-174e" primary="false" name="Titanic"/>
+      </categoryLinks>
+      <costs>
+        <cost name="pts" typeId="51b2-306e-1021-d207" value="345"/>
+      </costs>
+      <infoLinks>
+        <infoLink id="485f-1c24-733a-6dc4" name="Deep Strike" hidden="false" targetId="7cb5-dd6b-dd87-ad3b" type="rule"/>
+        <infoLink id="eb9e-9d83-dd86-8b05" name="Deadly Demise" hidden="false" targetId="b68a-5ded-65ac-98c" type="rule">
+          <modifiers>
+            <modifier type="append" field="name" value="D6+2"/>
+          </modifiers>
+        </infoLink>
+      </infoLinks>
+      <profiles>
+        <profile id="2f9f-bedd-26-211d" name="Keywords - Faction" hidden="false" typeId="drop-0000-0000-key1" typeName="[Keywords]">
+          <characteristics>
+            <characteristic name="Keywords" typeId="2a81-7738-d2ef-20f3">DROP TROOPS</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="dac4-4e5e-aea4-f9d7" name="Keywords" hidden="false" typeId="drop-0000-0000-key1" typeName="[Keywords]">
+          <characteristics>
+            <characteristic name="Keywords" typeId="2a81-7738-d2ef-20f3">VEHICLE, TITANIC, FLY, AIRCRAFT, IMPERIUM, MARAUDER BOMBER</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Marauder Bomber" typeId="drop-0000-0000-0001" typeName="(1) Profiles" hidden="false" id="ee47-ccbb-8200-40ce">
+          <characteristics>
+            <characteristic name="M" typeId="a2ab-842f-e968-ca80">20+&quot;</characteristic>
+            <characteristic name="T" typeId="bc9c-e3f3-3186-a7f0">10</characteristic>
+            <characteristic name="SV" typeId="b5ba-b467-6f5a-cca9">2+</characteristic>
+            <characteristic name="W" typeId="00d9-a17e-9b2e-a053">20</characteristic>
+            <characteristic name="LD" typeId="c45a-6afc-f077-7edc">7+</characteristic>
+            <characteristic name="OC" typeId="7d96-9381-1b91-9d5e">0</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Flying Fortress" typeId="2c22-15c0-450f-768" typeName="(4) Abilities" hidden="false" id="abe0-5b70-3648-9497">
+          <characteristics>
+            <characteristic name="Description" typeId="770f-11ab-9f54-73e8">When using Heavy bomb or Inferno bomb ability, you can reroll the dice to determine if an enemy unit suffers mortal wounds.</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="46f2-3b4a-281d-72d2" name="Damaged: 1-7 Wounds Remaining" hidden="false" typeId="2c22-15c0-450f-768" typeName="(4) Abilities">
+          <characteristics>
+            <characteristic name="Description" typeId="770f-11ab-9f54-73e8">While this model has 1-5 wounds remaining, each time this model makes an attack, subtract 1 from the Hit roll.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Loadout" hidden="false" id="b863-f03f-7c38-b9ff">
+          <entryLinks>
+            <entryLink import="true" name="Armoured hull" hidden="false" type="selectionEntry" id="d05c-20e9-1807-1db4" targetId="a4a1-4428-b09b-c3f6">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="894-4f68-21ab-65ab"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="96b0-2f85-bb61-6fe7"/>
+              </constraints>
+            </entryLink>
+          </entryLinks>
+          <selectionEntryGroups>
+            <selectionEntryGroup name="Bomb Bay" hidden="false" id="bd59-a3f0-eae-429a" defaultSelectionEntryId="9832-ad1c-7010-979e">
+              <selectionEntries>
+                <selectionEntry type="upgrade" import="true" name="Heavy Bombs" hidden="false" id="9832-ad1c-7010-979e">
+                  <profiles>
+                    <profile name="Heavy Bombs" typeId="2c22-15c0-450f-768" typeName="(4) Abilities" hidden="false" id="9f23-4f38-6139-6adb">
+                      <characteristics>
+                        <characteristic name="Description" typeId="770f-11ab-9f54-73e8">Each time the bearer ends a Normal move, you can select one enemy unit it moved over during that move and roll nine D6, adding 1 to each result if that unit is a MONSTER or VEHICLE: for each 4+, that unit suffers 1 mortal wound.</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                </selectionEntry>
+                <selectionEntry type="upgrade" import="true" name="Inferno Bombs" hidden="false" id="b31a-c8b9-a76c-9c13">
+                  <profiles>
+                    <profile name="Inferno Bombs" typeId="2c22-15c0-450f-768" typeName="(4) Abilities" hidden="false" id="a054-fa12-502f-5deb">
+                      <characteristics>
+                        <characteristic name="Description" typeId="770f-11ab-9f54-73e8">Each time the bearer ends a Normal move, you can select one enemy unit it moved over during that move and roll nine D6, adding 1 to each result if that unit is not a MONSTER or VEHICLE: for each 4+, that unit suffers 1 mortal wound.</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                </selectionEntry>
+              </selectionEntries>
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="9cff-c48e-8b55-7537"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="fb56-3380-df85-ff9c"/>
+              </constraints>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Rear Turret - 2x Heavy bolter" hidden="false" id="be39-15f5-b711-9b67">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="953d-e70a-ada-d90f"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d745-3d4c-9331-dd6"/>
+              </constraints>
+              <entryLinks>
+                <entryLink import="true" name="Heavy bolter" hidden="false" type="selectionEntry" id="1169-f838-8ec-42b" targetId="b4d2-6ca2-68f4-7aee">
+                  <constraints>
+                    <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="dc88-32fa-9194-353d"/>
+                    <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="5e99-27d7-a708-7f51"/>
+                  </constraints>
+                </entryLink>
+              </entryLinks>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Front Turret - 2x Lascannon" hidden="false" id="7fe8-3499-e451-a9dc">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="953d-e70a-ada-d90f"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d745-3d4c-9331-dd6"/>
+              </constraints>
+              <entryLinks>
+                <entryLink import="true" name="Lascannon" hidden="false" type="selectionEntry" id="8b04-1464-3cff-5f9c" targetId="drop-weap-lcav-bs04">
+                  <constraints>
+                    <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="dc88-32fa-9194-353d"/>
+                    <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="5e99-27d7-a708-7f51"/>
+                  </constraints>
+                </entryLink>
+              </entryLinks>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Middle Turret - 2x Heavy bolter" hidden="false" id="9e8c-4f05-1496-b2e7">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="953d-e70a-ada-d90f"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d745-3d4c-9331-dd6"/>
+              </constraints>
+              <entryLinks>
+                <entryLink import="true" name="Heavy bolter" hidden="false" type="selectionEntry" id="c308-234c-3c53-ddf8" targetId="b4d2-6ca2-68f4-7aee">
+                  <constraints>
+                    <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="dc88-32fa-9194-353d"/>
+                    <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="5e99-27d7-a708-7f51"/>
+                  </constraints>
+                </entryLink>
+              </entryLinks>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <entryLinks>
+        <entryLink id="cbda-e9f4-9a25-1422" name="Aircraft Equipment &amp; Options" hidden="false" collective="false" import="true" targetId="3d09-88ba-8e23-8aff" type="selectionEntryGroup"/>
+      </entryLinks>
+    </selectionEntry>
+    <selectionEntry type="model" import="true" name="Aircraft - Marauder Destroyer" hidden="false" id="e99c-d0fa-6749-8f59">
+      <categoryLinks>
+        <categoryLink targetId="63f1-e6e8-f6f6-a4f0" id="5b29-fa0-199b-de25" primary="false" name="Aircraft"/>
+        <categoryLink targetId="dbd4-63-af05-998" id="c415-2421-4f06-f492" primary="true" name="Vehicle"/>
+        <categoryLink targetId="ce80-e0c5-6c3f-496a" id="bb59-e9da-6caa-b105" primary="false" name="Marauder Bomber"/>
+        <categoryLink targetId="5929-ad51-d006-e008" id="83f0-e987-2fc6-7e3b" primary="false" name="Titanic"/>
+      </categoryLinks>
+      <costs>
+        <cost name="pts" typeId="51b2-306e-1021-d207" value="375"/>
+      </costs>
+      <infoLinks>
+        <infoLink id="2bf2-b72c-4629-ae13" name="Deep Strike" hidden="false" targetId="7cb5-dd6b-dd87-ad3b" type="rule"/>
+        <infoLink id="e2ee-edb8-e452-7143" name="Deadly Demise" hidden="false" targetId="b68a-5ded-65ac-98c" type="rule">
+          <modifiers>
+            <modifier type="append" field="name" value="D6+2"/>
+          </modifiers>
+        </infoLink>
+      </infoLinks>
+      <profiles>
+        <profile id="5cd3-93b8-5b08-c8ae" name="Keywords - Faction" hidden="false" typeId="drop-0000-0000-key1" typeName="[Keywords]">
+          <characteristics>
+            <characteristic name="Keywords" typeId="2a81-7738-d2ef-20f3">DROP TROOPS</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="2c2f-8a84-72f1-b1f6" name="Keywords" hidden="false" typeId="drop-0000-0000-key1" typeName="[Keywords]">
+          <characteristics>
+            <characteristic name="Keywords" typeId="2a81-7738-d2ef-20f3">VEHICLE, TITANIC, FLY, AIRCRAFT, IMPERIUM, MARAUDER BOMBER</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Marauder Bomber" typeId="drop-0000-0000-0001" typeName="(1) Profiles" hidden="false" id="73bc-1ff2-c65b-798b">
+          <characteristics>
+            <characteristic name="M" typeId="a2ab-842f-e968-ca80">20+&quot;</characteristic>
+            <characteristic name="T" typeId="bc9c-e3f3-3186-a7f0">10</characteristic>
+            <characteristic name="SV" typeId="b5ba-b467-6f5a-cca9">2+</characteristic>
+            <characteristic name="W" typeId="00d9-a17e-9b2e-a053">20</characteristic>
+            <characteristic name="LD" typeId="c45a-6afc-f077-7edc">7+</characteristic>
+            <characteristic name="OC" typeId="7d96-9381-1b91-9d5e">0</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Flying Fortress" typeId="2c22-15c0-450f-768" typeName="(4) Abilities" hidden="false" id="4b30-ba79-3171-5703">
+          <characteristics>
+            <characteristic name="Description" typeId="770f-11ab-9f54-73e8">When using Heavy bomb or Inferno bomb ability, you can reroll the dice to determine if an enemy unit suffers mortal wounds.</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="2ba8-9e74-2a58-60c6" name="Damaged: 1-7 Wounds Remaining" hidden="false" typeId="2c22-15c0-450f-768" typeName="(4) Abilities">
+          <characteristics>
+            <characteristic name="Description" typeId="770f-11ab-9f54-73e8">While this model has 1-5 wounds remaining, each time this model makes an attack, subtract 1 from the Hit roll.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Loadout" hidden="false" id="a20f-a988-5751-5833">
+          <entryLinks>
+            <entryLink import="true" name="Armoured hull" hidden="false" type="selectionEntry" id="a40d-ad17-5d82-d8ce" targetId="a4a1-4428-b09b-c3f6">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="894-4f68-21ab-65ab"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="96b0-2f85-bb61-6fe7"/>
+              </constraints>
+            </entryLink>
+            <entryLink import="true" name="Marauder nose autocannons" hidden="false" type="selectionEntry" id="bd89-5ac3-b1b3-9c6" targetId="fd45-99c3-428b-709c">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="894-4f68-21ab-65ab"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="96b0-2f85-bb61-6fe7"/>
+              </constraints>
+            </entryLink>
+          </entryLinks>
+          <selectionEntryGroups>
+            <selectionEntryGroup name="Wing Mounts" hidden="false" id="cc9b-1137-11ab-600a" defaultSelectionEntryId="9832-ad1c-7010-979e">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="fb56-3380-df85-ff9c"/>
+              </constraints>
+              <entryLinks>
+                <entryLink import="true" name="Missile Rack - Hellfury" hidden="false" type="selectionEntry" id="ba10-cd4-c861-6af0" targetId="7d8d-864a-d986-9ab3"/>
+                <entryLink import="true" name="Missile Rack - Hellstrike" hidden="false" type="selectionEntry" id="3a82-b8e-8f39-3869" targetId="6152-454f-88f0-499d"/>
+                <entryLink import="true" name="Missile Rack - Skystrike" hidden="false" type="selectionEntry" id="5dd3-45ad-c6bc-346" targetId="58f0-53e9-ee84-daad"/>
+              </entryLinks>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Rear Turret - 2x Assault cannon" hidden="false" id="b1fd-e8b5-90f9-19c5">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="953d-e70a-ada-d90f"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d745-3d4c-9331-dd6"/>
+              </constraints>
+              <entryLinks>
+                <entryLink import="true" name="Assault cannon" hidden="false" type="selectionEntry" id="a90b-a0cc-1ba1-bc24" targetId="ec0d-29ba-b52f-c60d">
+                  <constraints>
+                    <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="dc88-32fa-9194-353d"/>
+                    <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="5e99-27d7-a708-7f51"/>
+                  </constraints>
+                </entryLink>
+              </entryLinks>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Middle Turret - 2x Heavy bolter" hidden="false" id="6206-8f04-94e3-18a">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="953d-e70a-ada-d90f"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d745-3d4c-9331-dd6"/>
+              </constraints>
+              <entryLinks>
+                <entryLink import="true" name="Heavy bolter" hidden="false" type="selectionEntry" id="9c3-e806-fead-6930" targetId="b4d2-6ca2-68f4-7aee">
+                  <constraints>
+                    <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="dc88-32fa-9194-353d"/>
+                    <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="5e99-27d7-a708-7f51"/>
+                  </constraints>
+                </entryLink>
+              </entryLinks>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <entryLinks>
+        <entryLink id="dd7b-7b90-22a9-9b8c" name="Aircraft Equipment &amp; Options" hidden="false" collective="false" import="true" targetId="3d09-88ba-8e23-8aff" type="selectionEntryGroup"/>
       </entryLinks>
     </selectionEntry>
   </selectionEntries>
