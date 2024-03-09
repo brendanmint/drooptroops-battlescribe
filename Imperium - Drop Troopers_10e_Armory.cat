@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="1fa0-82c3-b596-3c67" name="Imperium - Drop Troops - Armory" revision="2" battleScribeVersion="2.03" authorName="Elysian Drop Troop Discord Server" authorContact="Report typos/issues on the Discord in #battlescribe-development to brendanmint." authorUrl="https://discord.gg/47u9YjKxYN" library="true" gameSystemId="sys-352e-adc2-7639-d6a9" gameSystemRevision="3" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
+<catalogue id="1fa0-82c3-b596-3c67" name="Imperium - Drop Troops - Armory" revision="3" battleScribeVersion="2.03" authorName="Elysian Drop Troop Discord Server" authorContact="Report typos/issues on the Discord in #battlescribe-development to brendanmint." authorUrl="https://discord.gg/47u9YjKxYN" library="true" gameSystemId="sys-352e-adc2-7639-d6a9" gameSystemRevision="3" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
   <readme>This catalogue contains weapon profiles for the Drop Troops Fandex/Fan Index.</readme>
   <profileTypes>
     <profileType id="drop-0000-0000-0002" name="(2) Ranged Weapons">
@@ -83,6 +83,7 @@
     <categoryEntry id="706d-d81e-51e0-95ce" name="Infrared Targeting" hidden="false"/>
     <categoryEntry id="5c5d-d03e-87a7-fc78" name="Chaff Launchers" hidden="false"/>
     <categoryEntry name="Command Squad" hidden="false" id="3668-63fa-dedc-8f63"/>
+    <categoryEntry name="Infantry Squad" hidden="false" id="9bb0-994d-eeae-e02"/>
   </categoryEntries>
   <sharedSelectionEntries>
     <selectionEntry id="drop-weap-lpcl-bs04" name="Laspistol" hidden="false" collective="true" import="true" type="upgrade">
@@ -1705,13 +1706,13 @@
     </selectionEntry>
     <selectionEntry id="bc8b-7ce5-238a-78ef" name="Armoured frame" hidden="false" collective="false" import="true" type="upgrade">
       <profiles>
-        <profile id="33b9-8992-1cc-4621" name="Armoured hull" hidden="false" typeId="drop-0000-0000-0003" typeName="(3) Melee Weapons">
+        <profile id="33b9-8992-1cc-4621" name="Armoured frame" hidden="false" typeId="drop-0000-0000-0003" typeName="(3) Melee Weapons">
           <characteristics>
             <characteristic name="Keywords" typeId="0e3f-bafb-acb0-1686"/>
             <characteristic name="Range" typeId="90c0-7005-ea63-310a">Melee</characteristic>
-            <characteristic name="A" typeId="6dcc-b14d-28fa-925a">3</characteristic>
-            <characteristic name="WS" typeId="239a-a913-887d-47e2"/>
-            <characteristic name="S" typeId="e03e-7e24-9f08-8ee1">6</characteristic>
+            <characteristic name="A" typeId="6dcc-b14d-28fa-925a">2</characteristic>
+            <characteristic name="WS" typeId="239a-a913-887d-47e2">4+</characteristic>
+            <characteristic name="S" typeId="e03e-7e24-9f08-8ee1">5</characteristic>
             <characteristic name="AP" typeId="60c6-2697-02bd-9114">0</characteristic>
             <characteristic name="D" typeId="64dd-dc29-b221-0d2b">1</characteristic>
           </characteristics>
@@ -2933,6 +2934,139 @@
             <modifier type="set" field="hidden" value="true">
               <conditions>
                 <condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="edc0-ab68-6a3a-4ba7" type="lessThan"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </infoLink>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Battery las small arms" hidden="false" id="3a-5dcd-18b7-18a9">
+      <profiles>
+        <profile name="Battery las small arms" typeId="drop-0000-0000-0002" typeName="(2) Ranged Weapons" hidden="false" id="63b9-939-1a13-bb4">
+          <characteristics>
+            <characteristic name="Keywords" typeId="157a-063a-0fc2-18b6">PISTOL</characteristic>
+            <characteristic name="Range" typeId="b112-14ec-89e7-1cff">18&quot;</characteristic>
+            <characteristic name="A" typeId="0b5a-540c-4640-c561">4</characteristic>
+            <characteristic name="BS" typeId="142d-5bca-588a-1ef0">4+</characteristic>
+            <characteristic name="S" typeId="abcb-6e5c-c603-49f2">3</characteristic>
+            <characteristic name="AP" typeId="2239-5a6b-492d-cd27">0</characteristic>
+            <characteristic name="D" typeId="2a24-d5ba-05b6-add4">1</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Pistol" hidden="false" id="cb17-a42e-8f83-a349" targetId="8bf7-8812-923d-29e4" type="rule">
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="lessThan" value="1" field="selections" scope="roster" childId="edc0-ab68-6a3a-4ba7" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </infoLink>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Battery close combat weapons" hidden="false" id="7372-7f1d-2898-d17e" collective="true">
+      <comment>(WS 4+)</comment>
+      <profiles>
+        <profile name="Battery close combat weapons" typeId="drop-0000-0000-0003" typeName="(3) Melee Weapons" hidden="false" id="67bf-8ea4-165f-136c">
+          <characteristics>
+            <characteristic name="Keywords" typeId="0e3f-bafb-acb0-1686"/>
+            <characteristic name="Range" typeId="90c0-7005-ea63-310a">Melee</characteristic>
+            <characteristic name="A" typeId="6dcc-b14d-28fa-925a">3</characteristic>
+            <characteristic name="WS" typeId="239a-a913-887d-47e2">4+</characteristic>
+            <characteristic name="S" typeId="e03e-7e24-9f08-8ee1">3</characteristic>
+            <characteristic name="AP" typeId="60c6-2697-02bd-9114">0</characteristic>
+            <characteristic name="D" typeId="64dd-dc29-b221-0d2b">1</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <costs>
+        <cost name="pts" hidden="false" id="fa09-d94d-7e71-980d" typeId="51b2-306e-1021-d207" value="0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Heavy mortar" hidden="false" id="75e8-fec9-394b-4955">
+      <profiles>
+        <profile name="Heavy mortar" typeId="drop-0000-0000-0002" typeName="(2) Ranged Weapons" hidden="false" id="3aab-8355-d360-97dd">
+          <characteristics>
+            <characteristic name="Keywords" typeId="157a-063a-0fc2-18b6">BLAST, HEAVY, INDIRECT FIRE</characteristic>
+            <characteristic name="Range" typeId="b112-14ec-89e7-1cff">48&quot;</characteristic>
+            <characteristic name="A" typeId="0b5a-540c-4640-c561">D6+6</characteristic>
+            <characteristic name="BS" typeId="142d-5bca-588a-1ef0">5+</characteristic>
+            <characteristic name="S" typeId="abcb-6e5c-c603-49f2">5</characteristic>
+            <characteristic name="AP" typeId="2239-5a6b-492d-cd27">-1</characteristic>
+            <characteristic name="D" typeId="2a24-d5ba-05b6-add4">1</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Blast" hidden="false" id="fbc2-8422-a31f-e00e" targetId="6c1f-1cf7-ff25-c99e" type="rule">
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="lessThan" value="1" field="selections" scope="roster" childId="edc0-ab68-6a3a-4ba7" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </infoLink>
+        <infoLink name="Heavy" hidden="false" id="69ed-3632-28a0-ed05" targetId="1202-10a8-78e9-4c67" type="rule">
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="lessThan" value="1" field="selections" scope="roster" childId="edc0-ab68-6a3a-4ba7" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </infoLink>
+        <infoLink name="Indirect Fire" hidden="false" id="5ea3-f727-cf41-e94a" targetId="4ddd-4e29-acdd-5e6d" type="rule">
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="lessThan" value="1" field="selections" scope="roster" childId="edc0-ab68-6a3a-4ba7" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </infoLink>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Light howitzer" hidden="false" id="4150-2dcc-1c7a-fcf2">
+      <profiles>
+        <profile name="Light howitzer" typeId="drop-0000-0000-0002" typeName="(2) Ranged Weapons" hidden="false" id="36e6-8d5e-9b1c-fcf8">
+          <characteristics>
+            <characteristic name="Keywords" typeId="157a-063a-0fc2-18b6">BLAST, HEAVY, INDIRECT FIRE</characteristic>
+            <characteristic name="Range" typeId="b112-14ec-89e7-1cff">48&quot;</characteristic>
+            <characteristic name="A" typeId="0b5a-540c-4640-c561">D6</characteristic>
+            <characteristic name="BS" typeId="142d-5bca-588a-1ef0">5+</characteristic>
+            <characteristic name="S" typeId="abcb-6e5c-c603-49f2">7</characteristic>
+            <characteristic name="AP" typeId="2239-5a6b-492d-cd27">-1</characteristic>
+            <characteristic name="D" typeId="2a24-d5ba-05b6-add4">2</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Blast" hidden="false" id="dca8-d62-5c14-a0ee" targetId="6c1f-1cf7-ff25-c99e" type="rule">
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="lessThan" value="1" field="selections" scope="roster" childId="edc0-ab68-6a3a-4ba7" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </infoLink>
+        <infoLink name="Heavy" hidden="false" id="890b-14bb-212c-b365" targetId="1202-10a8-78e9-4c67" type="rule">
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="lessThan" value="1" field="selections" scope="roster" childId="edc0-ab68-6a3a-4ba7" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </infoLink>
+        <infoLink name="Indirect Fire" hidden="false" id="1d6a-a9de-6832-a2da" targetId="4ddd-4e29-acdd-5e6d" type="rule">
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="lessThan" value="1" field="selections" scope="roster" childId="edc0-ab68-6a3a-4ba7" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
               </conditions>
             </modifier>
           </modifiers>

@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="e2fd-5870-7ccd-a263" name="Imperium - Drop Troops Fan Index 10e" revision="72" battleScribeVersion="2.03" authorName="Elysian Drop Troop Discord Server" authorContact="Report typos/issues on the Discord in #battlescribe-development to brendanmint." authorUrl="https://discord.gg/47u9YjKxYN" library="false" gameSystemId="sys-352e-adc2-7639-d6a9" gameSystemRevision="3" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
-  <readme>Index Version a10.1.3
-- BS Data Revision 72 -
-Updated for 10th.
+<catalogue id="e2fd-5870-7ccd-a263" name="Imperium - Drop Troops Fan Index 10e" revision="73" battleScribeVersion="2.03" authorName="Elysian Drop Troop Discord Server" authorContact="Report typos/issues on the Discord in #battlescribe-development to brendanmint." authorUrl="https://discord.gg/47u9YjKxYN" library="false" gameSystemId="sys-352e-adc2-7639-d6a9" gameSystemRevision="3" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
+  <readme>Index Version a10.1.5
+- BS Data Revision 73 -
+Kept you waiting, huh?
 
 
-All units in the Index have been added. Please reach out on the Elysian Discord server if you find any typos or errors. Note that I have changed some things around for better balance and readability.
+Please reach out on the Elysian Discord server if you find any typos or errors. Note that I may have changed some things around for better balance and readability.
 
 
 Don&apos;t Support BattleSribe.
@@ -60,13 +60,6 @@ Do harrass the French.</readme>
       </characteristicTypes>
     </profileType>
   </profileTypes>
-  <entryLinks>
-    <entryLink id="72fe-a72e-bc33-cb54" name="Weapon Type Rule Display" hidden="false" collective="false" import="true" targetId="edc0-ab68-6a3a-4ba7" type="selectionEntry">
-      <categoryLinks>
-        <categoryLink targetId="4ac9-fd30-1e3d-b249" id="44ff-8bbd-4644-b36f" primary="true" name="Configuration"/>
-      </categoryLinks>
-    </entryLink>
-  </entryLinks>
   <sharedSelectionEntries>
     <selectionEntry type="upgrade" import="true" name="Vox-caster" hidden="false" id="de6b-81c8-2351-1f50">
       <profiles>
@@ -529,13 +522,16 @@ Do harrass the French.</readme>
               <profiles>
                 <profile name="Hidden Predator" typeId="47a3-20ef-a891-7dcb" typeName="(4) Leader" hidden="false" id="54d1-1ca3-62d6-c398">
                   <characteristics>
-                    <characteristic name="Description" typeId="38f0-8ffb-aef1-9045">OFFICER models only. While the bearer is leading a unit that did not move during the Movement phase, it gets the benefit of cover against ranged attacks.</characteristic>
+                    <characteristic name="Description" typeId="38f0-8ffb-aef1-9045">OFFICER models only. The bearer’s unit gets the Lone Operative special rule.</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
               <costs>
-                <cost name="pts" typeId="51b2-306e-1021-d207" value="15"/>
+                <cost name="pts" typeId="51b2-306e-1021-d207" value="20"/>
               </costs>
+              <infoLinks>
+                <infoLink name="Lone Operative" hidden="false" id="b821-163f-ea0-faf1" type="rule" targetId="a8a0-8fe7-898-e0f3"/>
+              </infoLinks>
             </selectionEntry>
             <selectionEntry type="upgrade" import="true" name="The Ashes of Barret" hidden="false" id="dfb6-a464-ae84-a072">
               <constraints>
@@ -546,12 +542,12 @@ Do harrass the French.</readme>
               <profiles>
                 <profile name="The Ashes of Barret" typeId="47a3-20ef-a891-7dcb" typeName="(4) Leader" hidden="false" id="fc53-cf99-4bbb-fd38">
                   <characteristics>
-                    <characteristic name="Description" typeId="38f0-8ffb-aef1-9045">OFFICER models only. While the bearer is leading a unit, each time a model in that unit is destroyed, before removing the model as a casualty, that model musters one last surge of strength before succumbing to its wounds. It can either shoot with one of its weapons as if it were the Shooting phase, or make a single attack as if it were the Fight phase.</characteristic>
+                    <characteristic name="Description" typeId="38f0-8ffb-aef1-9045">OFFICER models only. The bearer’s unit have a 6+ feel no pain, while this unit is within range of an objective marker this changes to a 4+ instead.</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
               <costs>
-                <cost name="pts" typeId="51b2-306e-1021-d207" value="10"/>
+                <cost name="pts" typeId="51b2-306e-1021-d207" value="15"/>
               </costs>
             </selectionEntry>
             <selectionEntry type="upgrade" import="true" name="Trademark Item" hidden="false" id="b47c-8bc1-46a7-b7a4">
@@ -563,7 +559,7 @@ Do harrass the French.</readme>
               <profiles>
                 <profile name="Trademark Item" typeId="47a3-20ef-a891-7dcb" typeName="(4) Leader" hidden="false" id="ab55-ba22-dbb3-b1e7">
                   <characteristics>
-                    <characteristic name="Description" typeId="38f0-8ffb-aef1-9045">OFFICER model only. While leading a unit, you can re-roll that unit failed Battleshock test.</characteristic>
+                    <characteristic name="Description" typeId="38f0-8ffb-aef1-9045">OFFICER model only. The bearer can order Battle-shocked units, orders from the bearer are still in effect, even if the affected unit is battle-shocked.</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -598,6 +594,16 @@ Do harrass the French.</readme>
             <profile name="Ogryn Bodyguard" typeId="2c22-15c0-450f-768" typeName="(4) Abilities" hidden="false" id="478-4373-83c7-2d2a">
               <characteristics>
                 <characteristic name="Description" typeId="770f-11ab-9f54-73e8">While one or more Officer models are in the same unit as this model, those Officer models have the Feel No Pain 4+ ability.</characteristic>
+              </characteristics>
+            </profile>
+            <profile name="Ogryn Bodyguard" hidden="false" id="1e38-65eb-68f0-ac1" typeId="c547-1836-d8a-ff4f" typeName="Unit">
+              <characteristics>
+                <characteristic name="M" typeId="e703-ecb6-5ce7-aec1">6&quot;</characteristic>
+                <characteristic name="T" typeId="d29d-cf75-fc2d-34a4">6</characteristic>
+                <characteristic name="SV" typeId="450-a17e-9d5e-29da">5+</characteristic>
+                <characteristic name="W" typeId="750a-a2ec-90d3-21fe">6</characteristic>
+                <characteristic name="LD" typeId="58d2-b879-49c7-43bc">7+</characteristic>
+                <characteristic name="OC" typeId="bef7-942a-1a23-59f8">1</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -658,6 +664,7 @@ Do harrass the French.</readme>
                 <modifier type="append" value="4+ (Officer)" field="name"/>
               </modifiers>
             </infoLink>
+            <infoLink name="Loyal Protector" hidden="false" id="47be-a895-2700-332d" type="rule" targetId="a05e-c756-488f-d76a"/>
           </infoLinks>
         </selectionEntry>
         <selectionEntry type="model" import="true" name="Grid Coordinator" hidden="false" id="e702-b3aa-56e-291a">
@@ -707,7 +714,7 @@ Do harrass the French.</readme>
         </selectionEntry>
         <selectionEntry type="model" import="true" name="Ground Scanner Technician" hidden="false" id="d480-a1-dd2a-c610">
           <costs>
-            <cost name="pts" typeId="51b2-306e-1021-d207" value="10"/>
+            <cost name="pts" typeId="51b2-306e-1021-d207" value="20"/>
           </costs>
           <constraints>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="3299-1cbf-dc1d-128c"/>
@@ -752,7 +759,7 @@ Do harrass the French.</readme>
         </selectionEntry>
         <selectionEntry type="model" import="true" name="Tactical Air Controller" hidden="false" id="f792-6be3-b04c-506a">
           <costs>
-            <cost name="pts" typeId="51b2-306e-1021-d207" value="20"/>
+            <cost name="pts" typeId="51b2-306e-1021-d207" value="25"/>
           </costs>
           <constraints>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="289e-7efe-9d22-6eb6"/>
@@ -771,8 +778,7 @@ Do harrass the French.</readme>
             </profile>
             <profile name="Aeronautica Coordinator" typeId="2c22-15c0-450f-768" typeName="(4) Abilities" hidden="false" id="7f07-bbf7-d459-9989">
               <characteristics>
-                <characteristic name="Description" typeId="770f-11ab-9f54-73e8">At the start of your Shooting phase, select one enemy unit within 30&quot; of and visible to this unit’s Tactical Air Controller model. Until the end of the phase, each time a friendly DROP TROOPS AIRCRAFT model or a DROP TROOPS model using the Hover ability makes a ranged attack that targets that
-unit, add 1 to the Hit roll.</characteristic>
+                <characteristic name="Description" typeId="770f-11ab-9f54-73e8">At the start of your Shooting phase, select one enemy unit within 30&quot; of and visible to this unit’s Tactical Air Controller model. Until the end of the phase, each time a friendly DROP TROOPS AIRCRAFT model or a DROP TROOPS model using the Hover ability makes a ranged attack that targets that unit, add 1 to the Hit roll.</characteristic>
               </characteristics>
             </profile>
             <profile name="Keywords (Tactical Air Controller)" typeId="drop-0000-0000-key1" typeName="[Keywords]" hidden="false" id="12dc-916f-4384-8a9c">
@@ -826,7 +832,7 @@ unit, add 1 to the Hit roll.</characteristic>
         <profile id="1807-ee4e-53a5-4531" name="Navy Pilot" hidden="false" typeId="2c22-15c0-450f-768" typeName="(4) Abilities">
           <characteristics>
             <characteristic name="Description" typeId="770f-11ab-9f54-73e8">Instead of being set up on the battlefield during deployment, this model must begin the battle leading an aircraft.
-Whilst an AIRCRAFT model is being commander by the Named Ace, its Weapons have a Ballistic Skill of 3+ and gains the CHARACTER and NAMED ACE keyword.</characteristic>
+Whilst an AIRCRAFT model is being piloted by the Named Ace, its Weapons have a Ballistic Skill of 3+ and gains the CHARACTER and NAMED ACE keyword.</characteristic>
           </characteristics>
         </profile>
         <profile id="902a-7c47-eca8-a72f" name="Keywords - Faction" hidden="false" typeId="drop-0000-0000-key1" typeName="[Keywords]">
@@ -834,32 +840,31 @@ Whilst an AIRCRAFT model is being commander by the Named Ace, its Weapons have 
             <characteristic name="Keywords" typeId="2a81-7738-d2ef-20f3">DROP TROOPS</characteristic>
           </characteristics>
         </profile>
+        <profile name="Named Ace" typeId="47a3-20ef-a891-7dcb" typeName="(4) Leader" hidden="false" id="d87e-28bb-93cf-92a2">
+          <characteristics>
+            <characteristic name="Description" typeId="38f0-8ffb-aef1-9045">This OFFICER can issue 2 Orders to an AIRCRAFT or VEHICLE model using the Hover ability. This Officer can only issue the Duty and Honour! and Take Aim! Orders.</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Attachments" typeId="2c22-15c0-450f-768" typeName="(4) Abilities" hidden="true" id="a471-5a75-550d-ab6a">
+          <characteristics>
+            <characteristic name="Description" typeId="770f-11ab-9f54-73e8">This unit can be attached to the following units:
+ARVUS LIGHTER | AQUILA LANDER | VALKYRIE SKY TALON | VALKYRIE ASSAULT CARRIER | VENDETTA GUNSHIP | VULTURE GUNSHIP | THUNDERBOLT HEAVY FIGHTER | THUNDERBOLT FURY | AVENGER STRIKE FIGHTER | LIGHTNING STRIKE FIGHTER | MARAUDER BOMBER | MARAUDER DESTROYER</characteristic>
+          </characteristics>
+          <modifiers>
+            <modifier type="set" value="false" field="hidden">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="fc2c-bf31-921a-4d3" shared="true" includeChildSelections="false" includeChildForces="false"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <comment>Units this Unit can attach to.</comment>
+        </profile>
       </profiles>
       <infoGroups>
         <infoGroup id="bbd0-755b-e255-c60" name="Leader" hidden="false">
           <profiles>
-            <profile id="63cc-a7d3-abac-62ac" name="Pilot" hidden="false" typeId="drop-0000-0000-0004" typeName="(4) Abilities">
-              <characteristics>
-                <characteristic name="Description" typeId="6764-d089-de39-efd9">This unit can pilot to the following units:
-・ARVUS LIGHTER
-・AQUILA LANDER
-・VALKYRIE SKY TALON
-・VALKYRIE ASSAULT CARRIER
-・VENDETTA GUNSHIP
-・VULTURE GUNSHIP
-・THUNDERBOLT HEAVY FIGHTER
-・THUNDERBOLT FURY
-・AVENGER STRIKE FIGHTER
-・LIGHTNING STRIKE FIGHTER
-・MARAUDER BOMBER
-・MARAUDER DESTROYER</characteristic>
-              </characteristics>
-            </profile>
-            <profile id="6e86-6404-27db-2da6" name="Using Named Ace" hidden="false" typeId="drop-0000-0000-0004" typeName="(4) Abilities">
-              <characteristics>
-                <characteristic name="Description" typeId="6764-d089-de39-efd9">When the Aircraft model your Named Ace is piloting is destroyed, the Named Ace is treated as a model disembarking from a destroyed Transport – set them up within 3&quot; of the Aircraft model before it is removed. The Named Ace then uses the profile, wargear, abilities and keywords shown on this profile, but cannot be selected as the target of any of your Stratagems. Your Named Ace unit is not considered to be destroyed until this model is also destroyed</characteristic>
-              </characteristics>
-            </profile>
+            <profile id="63cc-a7d3-abac-62ac" name="Pilot" hidden="false" typeId="drop-0000-0000-0004"/>
+            <profile id="6e86-6404-27db-2da6" name="Using Named Ace" hidden="false" typeId="drop-0000-0000-0004"/>
           </profiles>
         </infoGroup>
       </infoGroups>
@@ -998,7 +1003,7 @@ Whilst an AIRCRAFT model is being commander by the Named Ace, its Weapons have 
         </entryLink>
       </entryLinks>
       <costs>
-        <cost name="pts" typeId="51b2-306e-1021-d207" value="200"/>
+        <cost name="pts" typeId="51b2-306e-1021-d207" value="160"/>
       </costs>
       <constraints>
         <constraint type="max" value="6" field="selections" scope="roster" shared="true" id="9968-fb6c-3440-496c" includeChildSelections="true" includeChildForces="true"/>
@@ -1083,7 +1088,7 @@ Whilst an AIRCRAFT model is being commander by the Named Ace, its Weapons have 
         </modifierGroup>
       </modifierGroups>
       <costs>
-        <cost name="pts" typeId="51b2-306e-1021-d207" value="225"/>
+        <cost name="pts" typeId="51b2-306e-1021-d207" value="180"/>
       </costs>
       <constraints>
         <constraint type="max" value="3" field="selections" scope="roster" shared="true" id="931f-1a07-db04-e0f7" includeChildSelections="true" includeChildForces="true"/>
@@ -1195,7 +1200,7 @@ Whilst an AIRCRAFT model is being commander by the Named Ace, its Weapons have 
         </entryLink>
       </entryLinks>
       <costs>
-        <cost name="pts" typeId="51b2-306e-1021-d207" value="220"/>
+        <cost name="pts" typeId="51b2-306e-1021-d207" value="180"/>
       </costs>
       <constraints>
         <constraint type="max" value="3" field="selections" scope="roster" shared="true" id="c870-ab03-b6b9-dea2" includeChildForces="true" includeChildSelections="true"/>
@@ -1292,7 +1297,7 @@ Whilst an AIRCRAFT model is being commander by the Named Ace, its Weapons have 
         </modifierGroup>
       </modifierGroups>
       <costs>
-        <cost name="pts" typeId="51b2-306e-1021-d207" value="150"/>
+        <cost name="pts" typeId="51b2-306e-1021-d207" value="120"/>
       </costs>
       <constraints>
         <constraint type="max" value="6" field="selections" scope="roster" shared="true" id="f48a-c881-46af-d660" includeChildForces="true" includeChildSelections="true"/>
@@ -1310,12 +1315,12 @@ Whilst an AIRCRAFT model is being commander by the Named Ace, its Weapons have 
             <characteristic name="Keywords" typeId="2a81-7738-d2ef-20f3">INFANTRY, BATTLELINE, IMPERIUM, GRENADES, REGIMENT, PLATOON, DROP TROOPERS SQUAD</characteristic>
           </characteristics>
         </profile>
-        <profile name="Holding &apos;til the End" typeId="2c22-15c0-450f-768" typeName="(4) Abilities" hidden="false" id="a7ef-5443-6a5c-781d">
+        <profile name="First Wave of Assault" typeId="2c22-15c0-450f-768" typeName="(4) Abilities" hidden="false" id="a7ef-5443-6a5c-781d">
           <characteristics>
-            <characteristic name="Description" typeId="770f-11ab-9f54-73e8">If you control an objective marker at the end of your Command phase and this unit is within range of that objective marker, that objective marker remains under your control, even if you have no models within range of it, until your opponent controls it at the start or end of any turn.</characteristic>
+            <characteristic name="Description" typeId="770f-11ab-9f54-73e8">When using the Deep Strike ability, this unit can be set up in the Reinforcements step of your first, second or third Movement phase, regardless of any mission rules. But must be set up more than 9&quot; away from all enemy models.</characteristic>
           </characteristics>
         </profile>
-        <profile name="Double Leaders" typeId="47a3-20ef-a891-7dcb" typeName="(4) Leader" hidden="false" id="5bf1-60a8-23a2-3537">
+        <profile name="Unit Composition" typeId="47a3-20ef-a891-7dcb" typeName="(4) Leader" hidden="false" id="5bf1-60a8-23a2-3537">
           <characteristics>
             <characteristic name="Description" typeId="38f0-8ffb-aef1-9045">This unit can have up to two Leader units attached to it, provided no more than one of those units is a COMMAND SQUAD unit. If it does, and this Bodyguard unit is destroyed, the Leader units attached to it become separate units, with their original Starting Strengths.</characteristic>
           </characteristics>
@@ -1392,12 +1397,12 @@ Whilst an AIRCRAFT model is being commander by the Named Ace, its Weapons have 
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="470-f955-6526-65b7"/>
           </constraints>
           <costs>
-            <cost name="pts" typeId="51b2-306e-1021-d207" value="75"/>
+            <cost name="pts" typeId="51b2-306e-1021-d207" value="65"/>
           </costs>
         </selectionEntry>
       </selectionEntries>
       <costs>
-        <cost name="pts" typeId="51b2-306e-1021-d207" value="75"/>
+        <cost name="pts" typeId="51b2-306e-1021-d207" value="65"/>
       </costs>
       <selectionEntryGroups>
         <selectionEntryGroup name="Squad Loadout" hidden="false" id="704d-2bc2-7eb9-f07e" defaultSelectionEntryId="b514-2c0e-cabc-c110">
@@ -1417,18 +1422,9 @@ Whilst an AIRCRAFT model is being commander by the Named Ace, its Weapons have 
                   </constraints>
                 </entryLink>
               </entryLinks>
-              <profiles>
-                <profile name="Drop Trooper" typeId="drop-0000-0000-0001" typeName="(1) Profiles" hidden="false" id="75f4-235c-bcf7-6329">
-                  <characteristics>
-                    <characteristic name="M" typeId="a2ab-842f-e968-ca80">6&quot;</characteristic>
-                    <characteristic name="T" typeId="bc9c-e3f3-3186-a7f0">3</characteristic>
-                    <characteristic name="SV" typeId="b5ba-b467-6f5a-cca9"/>
-                    <characteristic name="W" typeId="00d9-a17e-9b2e-a053">1</characteristic>
-                    <characteristic name="LD" typeId="c45a-6afc-f077-7edc">6+</characteristic>
-                    <characteristic name="OC" typeId="7d96-9381-1b91-9d5e">2</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
+              <infoLinks>
+                <infoLink name="Drop Trooper" hidden="false" id="2d69-1a09-abed-27ae" type="profile" targetId="5970-fc2d-58d0-85dd"/>
+              </infoLinks>
             </selectionEntry>
             <selectionEntry type="model" import="true" name="Drop Trooper - Special Weapon" hidden="false" id="525d-d592-7428-2860">
               <entryLinks>
@@ -1439,18 +1435,6 @@ Whilst an AIRCRAFT model is being commander by the Named Ace, its Weapons have 
                   </constraints>
                 </entryLink>
               </entryLinks>
-              <profiles>
-                <profile name="Drop Trooper" typeId="drop-0000-0000-0001" typeName="(1) Profiles" hidden="false" id="e85b-def4-6e94-3651">
-                  <characteristics>
-                    <characteristic name="M" typeId="a2ab-842f-e968-ca80">6&quot;</characteristic>
-                    <characteristic name="T" typeId="bc9c-e3f3-3186-a7f0">3</characteristic>
-                    <characteristic name="SV" typeId="b5ba-b467-6f5a-cca9"/>
-                    <characteristic name="W" typeId="00d9-a17e-9b2e-a053">1</characteristic>
-                    <characteristic name="LD" typeId="c45a-6afc-f077-7edc">6+</characteristic>
-                    <characteristic name="OC" typeId="7d96-9381-1b91-9d5e">2</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
               <constraints>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f98a-410b-68b-3dcf"/>
               </constraints>
@@ -1475,6 +1459,9 @@ Whilst an AIRCRAFT model is being commander by the Named Ace, its Weapons have 
                   </entryLinks>
                 </selectionEntryGroup>
               </selectionEntryGroups>
+              <infoLinks>
+                <infoLink name="Drop Trooper" hidden="false" id="5f8a-ba0e-ae55-1fde" type="profile" targetId="5970-fc2d-58d0-85dd"/>
+              </infoLinks>
             </selectionEntry>
             <selectionEntry type="model" import="true" name="Drop Trooper - Vox" hidden="false" id="6f23-bbcd-e260-ce78">
               <entryLinks>
@@ -1497,18 +1484,6 @@ Whilst an AIRCRAFT model is being commander by the Named Ace, its Weapons have 
                   </constraints>
                 </entryLink>
               </entryLinks>
-              <profiles>
-                <profile name="Drop Trooper" typeId="drop-0000-0000-0001" typeName="(1) Profiles" hidden="false" id="2074-d63e-2d9f-12a6">
-                  <characteristics>
-                    <characteristic name="M" typeId="a2ab-842f-e968-ca80">6&quot;</characteristic>
-                    <characteristic name="T" typeId="bc9c-e3f3-3186-a7f0">3</characteristic>
-                    <characteristic name="SV" typeId="b5ba-b467-6f5a-cca9"/>
-                    <characteristic name="W" typeId="00d9-a17e-9b2e-a053">1</characteristic>
-                    <characteristic name="LD" typeId="c45a-6afc-f077-7edc">6+</characteristic>
-                    <characteristic name="OC" typeId="7d96-9381-1b91-9d5e">2</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
               <constraints>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="17e4-1335-1948-6264"/>
               </constraints>
@@ -1519,6 +1494,9 @@ Whilst an AIRCRAFT model is being commander by the Named Ace, its Weapons have 
                   </conditions>
                 </modifier>
               </modifiers>
+              <infoLinks>
+                <infoLink name="Drop Trooper" hidden="false" id="54ab-fb9-5b8d-ec09" type="profile" targetId="5970-fc2d-58d0-85dd"/>
+              </infoLinks>
             </selectionEntry>
             <selectionEntry type="model" import="true" name="Drop Trooper - Explosive Charge" hidden="false" id="9314-f3f5-fea1-30dc">
               <entryLinks>
@@ -1541,18 +1519,6 @@ Whilst an AIRCRAFT model is being commander by the Named Ace, its Weapons have 
                   </constraints>
                 </entryLink>
               </entryLinks>
-              <profiles>
-                <profile name="Drop Trooper" typeId="drop-0000-0000-0001" typeName="(1) Profiles" hidden="false" id="45e4-ef8-d8a5-3480">
-                  <characteristics>
-                    <characteristic name="M" typeId="a2ab-842f-e968-ca80">6&quot;</characteristic>
-                    <characteristic name="T" typeId="bc9c-e3f3-3186-a7f0">3</characteristic>
-                    <characteristic name="SV" typeId="b5ba-b467-6f5a-cca9"/>
-                    <characteristic name="W" typeId="00d9-a17e-9b2e-a053">1</characteristic>
-                    <characteristic name="LD" typeId="c45a-6afc-f077-7edc">6+</characteristic>
-                    <characteristic name="OC" typeId="7d96-9381-1b91-9d5e">2</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
               <constraints>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9bf8-e2bc-a45a-5805"/>
               </constraints>
@@ -1563,6 +1529,9 @@ Whilst an AIRCRAFT model is being commander by the Named Ace, its Weapons have 
                   </conditions>
                 </modifier>
               </modifiers>
+              <infoLinks>
+                <infoLink name="Drop Trooper" hidden="false" id="b3b6-db02-f171-30a7" type="profile" targetId="5970-fc2d-58d0-85dd"/>
+              </infoLinks>
             </selectionEntry>
           </selectionEntries>
           <constraints>
@@ -1601,9 +1570,9 @@ Whilst an AIRCRAFT model is being commander by the Named Ace, its Weapons have 
             <characteristic name="Keywords" typeId="2a81-7738-d2ef-20f3">INFANTRY, BATTLELINE, IMPERIUM, GRENADES, REGIMENT, PLATOON, DROP TROOPERS SQUAD</characteristic>
           </characteristics>
         </profile>
-        <profile name="Holding &apos;til the End" typeId="2c22-15c0-450f-768" typeName="(4) Abilities" hidden="false" id="a235-9f8f-9ea0-65ca">
+        <profile name="Perfect Landing" typeId="2c22-15c0-450f-768" typeName="(4) Abilities" hidden="false" id="a235-9f8f-9ea0-65ca">
           <characteristics>
-            <characteristic name="Description" typeId="770f-11ab-9f54-73e8">If you control an objective marker at the end of your Command phase and this unit is within range of that objective marker, that objective marker remains under your control, even if you have no models within range of it, until your opponent controls it at the start or end of any turn.</characteristic>
+            <characteristic name="Description" typeId="770f-11ab-9f54-73e8">When this unit is set up on the battlefield using the Deep Strike ability, it can perform a perfect landing. If it does, this unit can be set up anywhere on the battlefield that is more than 3&quot; horizontally away from all enemy units, but until the end of the turn, it is not eligible to declare a charge.</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -1625,7 +1594,7 @@ Whilst an AIRCRAFT model is being commander by the Named Ace, its Weapons have 
                 <characteristic name="T" typeId="bc9c-e3f3-3186-a7f0">3</characteristic>
                 <characteristic name="SV" typeId="b5ba-b467-6f5a-cca9">5+</characteristic>
                 <characteristic name="W" typeId="00d9-a17e-9b2e-a053">1</characteristic>
-                <characteristic name="LD" typeId="c45a-6afc-f077-7edc">6+</characteristic>
+                <characteristic name="LD" typeId="c45a-6afc-f077-7edc">7+</characteristic>
                 <characteristic name="OC" typeId="7d96-9381-1b91-9d5e">2</characteristic>
               </characteristics>
             </profile>
@@ -1664,7 +1633,7 @@ Whilst an AIRCRAFT model is being commander by the Named Ace, its Weapons have 
         </selectionEntry>
       </selectionEntries>
       <costs>
-        <cost name="pts" typeId="51b2-306e-1021-d207" value="85"/>
+        <cost name="pts" typeId="51b2-306e-1021-d207" value="80"/>
       </costs>
       <selectionEntryGroups>
         <selectionEntryGroup name="Squad Loadout" hidden="false" id="ca5f-a2c7-b7-ed89" defaultSelectionEntryId="f196-4df3-8526-f10b">
@@ -1684,32 +1653,11 @@ Whilst an AIRCRAFT model is being commander by the Named Ace, its Weapons have 
                   </constraints>
                 </entryLink>
               </entryLinks>
-              <profiles>
-                <profile name="Drop Veteran" typeId="drop-0000-0000-0001" typeName="(1) Profiles" hidden="false" id="47bb-ce86-af34-37ca">
-                  <characteristics>
-                    <characteristic name="M" typeId="a2ab-842f-e968-ca80">6&quot;</characteristic>
-                    <characteristic name="T" typeId="bc9c-e3f3-3186-a7f0">3</characteristic>
-                    <characteristic name="SV" typeId="b5ba-b467-6f5a-cca9">5+</characteristic>
-                    <characteristic name="W" typeId="00d9-a17e-9b2e-a053">1</characteristic>
-                    <characteristic name="LD" typeId="c45a-6afc-f077-7edc">6+</characteristic>
-                    <characteristic name="OC" typeId="7d96-9381-1b91-9d5e">2</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
+              <infoLinks>
+                <infoLink name="Drop Veteran" hidden="false" id="8a80-d561-e8bb-a225" type="profile" targetId="6108-2140-401b-1a13"/>
+              </infoLinks>
             </selectionEntry>
             <selectionEntry type="model" import="true" name="Drop Veteran - Special Weapon" hidden="false" id="ad56-ea12-296-99e3">
-              <profiles>
-                <profile name="Drop Veteran" typeId="drop-0000-0000-0001" typeName="(1) Profiles" hidden="false" id="880f-9240-ae21-cb77">
-                  <characteristics>
-                    <characteristic name="M" typeId="a2ab-842f-e968-ca80">6&quot;</characteristic>
-                    <characteristic name="T" typeId="bc9c-e3f3-3186-a7f0">3</characteristic>
-                    <characteristic name="SV" typeId="b5ba-b467-6f5a-cca9">5+</characteristic>
-                    <characteristic name="W" typeId="00d9-a17e-9b2e-a053">1</characteristic>
-                    <characteristic name="LD" typeId="c45a-6afc-f077-7edc">6+</characteristic>
-                    <characteristic name="OC" typeId="7d96-9381-1b91-9d5e">2</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
               <constraints>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="17e4-1335-1948-6264"/>
               </constraints>
@@ -1735,6 +1683,9 @@ Whilst an AIRCRAFT model is being commander by the Named Ace, its Weapons have 
                   </constraints>
                 </entryLink>
               </entryLinks>
+              <infoLinks>
+                <infoLink name="Drop Veteran" hidden="false" id="615c-88c2-5095-a52d" type="profile" targetId="6108-2140-401b-1a13"/>
+              </infoLinks>
             </selectionEntry>
             <selectionEntry type="model" import="true" name="Drop Veteran - Vox" hidden="false" id="cfb0-9e4a-f8e2-6cf6">
               <entryLinks>
@@ -1751,18 +1702,6 @@ Whilst an AIRCRAFT model is being commander by the Named Ace, its Weapons have 
                   </constraints>
                 </entryLink>
               </entryLinks>
-              <profiles>
-                <profile name="Drop Veteran" typeId="drop-0000-0000-0001" typeName="(1) Profiles" hidden="false" id="84f0-412b-7d9c-7144">
-                  <characteristics>
-                    <characteristic name="M" typeId="a2ab-842f-e968-ca80">6&quot;</characteristic>
-                    <characteristic name="T" typeId="bc9c-e3f3-3186-a7f0">3</characteristic>
-                    <characteristic name="SV" typeId="b5ba-b467-6f5a-cca9">5+</characteristic>
-                    <characteristic name="W" typeId="00d9-a17e-9b2e-a053">1</characteristic>
-                    <characteristic name="LD" typeId="c45a-6afc-f077-7edc">6+</characteristic>
-                    <characteristic name="OC" typeId="7d96-9381-1b91-9d5e">2</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
               <constraints>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="17e4-1335-1948-6264"/>
               </constraints>
@@ -1778,6 +1717,9 @@ Whilst an AIRCRAFT model is being commander by the Named Ace, its Weapons have 
                   </constraints>
                 </selectionEntryGroup>
               </selectionEntryGroups>
+              <infoLinks>
+                <infoLink name="Drop Veteran" hidden="false" id="4859-d7d2-9acb-b3ba" type="profile" targetId="6108-2140-401b-1a13"/>
+              </infoLinks>
             </selectionEntry>
             <selectionEntry type="model" import="true" name="Drop Veteran - Explosive Charge" hidden="false" id="c9be-ad48-329f-2cb">
               <entryLinks>
@@ -1794,18 +1736,6 @@ Whilst an AIRCRAFT model is being commander by the Named Ace, its Weapons have 
                   </constraints>
                 </entryLink>
               </entryLinks>
-              <profiles>
-                <profile name="Drop Veteran" typeId="drop-0000-0000-0001" typeName="(1) Profiles" hidden="false" id="8481-4d4c-c20c-ca3d">
-                  <characteristics>
-                    <characteristic name="M" typeId="a2ab-842f-e968-ca80">6&quot;</characteristic>
-                    <characteristic name="T" typeId="bc9c-e3f3-3186-a7f0">3</characteristic>
-                    <characteristic name="SV" typeId="b5ba-b467-6f5a-cca9">5+</characteristic>
-                    <characteristic name="W" typeId="00d9-a17e-9b2e-a053">1</characteristic>
-                    <characteristic name="LD" typeId="c45a-6afc-f077-7edc">6+</characteristic>
-                    <characteristic name="OC" typeId="7d96-9381-1b91-9d5e">2</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
               <selectionEntryGroups>
                 <selectionEntryGroup name="Weapon Choice" hidden="false" id="770e-6016-766e-b492" defaultSelectionEntryId="2de3-996f-7597-26d1">
                   <entryLinks>
@@ -1821,6 +1751,9 @@ Whilst an AIRCRAFT model is being commander by the Named Ace, its Weapons have 
               <constraints>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="19a6-3a4-1254-b8af"/>
               </constraints>
+              <infoLinks>
+                <infoLink name="Drop Veteran" hidden="false" id="9b4d-4560-85d4-a86d" type="profile" targetId="6108-2140-401b-1a13"/>
+              </infoLinks>
             </selectionEntry>
             <selectionEntry type="model" import="true" name="Drop Veteran Heavy Weapons Team" hidden="false" id="770-a870-c644-5822">
               <entryLinks>
@@ -1838,14 +1771,14 @@ Whilst an AIRCRAFT model is being commander by the Named Ace, its Weapons have 
                 </entryLink>
               </entryLinks>
               <profiles>
-                <profile name="Drop Veteran" typeId="drop-0000-0000-0001" typeName="(1) Profiles" hidden="false" id="9680-d705-d687-5f4d">
+                <profile name="Drop Veteran Heavy Weapons Team" typeId="drop-0000-0000-0001" typeName="(1) Profiles" hidden="false" id="9680-d705-d687-5f4d">
                   <characteristics>
                     <characteristic name="M" typeId="a2ab-842f-e968-ca80">6&quot;</characteristic>
                     <characteristic name="T" typeId="bc9c-e3f3-3186-a7f0">3</characteristic>
                     <characteristic name="SV" typeId="b5ba-b467-6f5a-cca9">5+</characteristic>
-                    <characteristic name="W" typeId="00d9-a17e-9b2e-a053">1</characteristic>
-                    <characteristic name="LD" typeId="c45a-6afc-f077-7edc">6+</characteristic>
-                    <characteristic name="OC" typeId="7d96-9381-1b91-9d5e">2</characteristic>
+                    <characteristic name="W" typeId="00d9-a17e-9b2e-a053">2</characteristic>
+                    <characteristic name="LD" typeId="c45a-6afc-f077-7edc">7+</characteristic>
+                    <characteristic name="OC" typeId="7d96-9381-1b91-9d5e">4</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -1887,18 +1820,9 @@ Whilst an AIRCRAFT model is being commander by the Named Ace, its Weapons have 
                   </constraints>
                 </entryLink>
               </entryLinks>
-              <profiles>
-                <profile name="Drop Veteran" typeId="drop-0000-0000-0001" typeName="(1) Profiles" hidden="false" id="47d-92be-440-2c5d">
-                  <characteristics>
-                    <characteristic name="M" typeId="a2ab-842f-e968-ca80">6&quot;</characteristic>
-                    <characteristic name="T" typeId="bc9c-e3f3-3186-a7f0">3</characteristic>
-                    <characteristic name="SV" typeId="b5ba-b467-6f5a-cca9">5+</characteristic>
-                    <characteristic name="W" typeId="00d9-a17e-9b2e-a053">1</characteristic>
-                    <characteristic name="LD" typeId="c45a-6afc-f077-7edc">6+</characteristic>
-                    <characteristic name="OC" typeId="7d96-9381-1b91-9d5e">2</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
+              <infoLinks>
+                <infoLink name="Drop Veteran" hidden="false" id="2c09-b070-dafb-929b" type="profile" targetId="6108-2140-401b-1a13"/>
+              </infoLinks>
             </selectionEntry>
           </selectionEntries>
           <constraints>
@@ -1929,7 +1853,7 @@ Whilst an AIRCRAFT model is being commander by the Named Ace, its Weapons have 
       <selectionEntries>
         <selectionEntry type="model" import="true" name="Drop Sentinel" hidden="false" id="a65c-702b-b72c-74f1">
           <costs>
-            <cost name="pts" typeId="51b2-306e-1021-d207" value="55"/>
+            <cost name="pts" typeId="51b2-306e-1021-d207" value="60"/>
           </costs>
           <selectionEntryGroups>
             <selectionEntryGroup name="Loadout" hidden="false" id="a017-71c3-55f2-3db" defaultSelectionEntryId="c2e7-a4ed-4696-c03f">
@@ -2149,7 +2073,7 @@ Whilst an AIRCRAFT model is being commander by the Named Ace, its Weapons have 
                 <characteristic name="T" typeId="bc9c-e3f3-3186-a7f0">7</characteristic>
                 <characteristic name="SV" typeId="b5ba-b467-6f5a-cca9">3+</characteristic>
                 <characteristic name="W" typeId="00d9-a17e-9b2e-a053">7</characteristic>
-                <characteristic name="LD" typeId="c45a-6afc-f077-7edc">6+</characteristic>
+                <characteristic name="LD" typeId="c45a-6afc-f077-7edc">7+</characteristic>
                 <characteristic name="OC" typeId="7d96-9381-1b91-9d5e">2</characteristic>
               </characteristics>
             </profile>
@@ -2236,7 +2160,7 @@ Whilst an AIRCRAFT model is being commander by the Named Ace, its Weapons have 
         </profile>
         <profile name="Iron Discipline (Aura)" typeId="2c22-15c0-450f-768" typeName="(4) Abilities" hidden="false" id="6720-318e-5e17-e08b">
           <characteristics>
-            <characteristic name="Description" typeId="770f-11ab-9f54-73e8">: Any friendly DROP TROOPS units within 6&apos;&apos; of a model with this ability may re-roll failed Battleshock tests.</characteristic>
+            <characteristic name="Description" typeId="770f-11ab-9f54-73e8">Any friendly DROP TROOPS units within 6&apos;&apos; of a model with this ability may re-roll failed Battleshock tests.</characteristic>
           </characteristics>
         </profile>
         <profile typeId="2c22-15c0-450f-768" typeName="(4) Abilities" hidden="true" id="70ab-51fe-c6b5-9631" name="Attachments">
@@ -2266,28 +2190,15 @@ BREACHER SQUAD | DROP OGRYN SQUAD | DROP TROOPERS SQUAD | DROP VETERAN SQUAD|
                 <entryLink import="true" name="Chainsword" hidden="false" type="selectionEntry" id="5a0-308b-95ca-d6e6" targetId="drop-weap-csch-ws03"/>
                 <entryLink import="true" name="Power sword" hidden="false" type="selectionEntry" id="da2f-b964-f93d-addc" targetId="drop-weap-psch-ws03"/>
                 <entryLink import="true" name="Powerfist" hidden="false" type="selectionEntry" id="f672-1643-1fd9-1030" targetId="drop-weap-pfch-ws03"/>
-                <entryLink import="true" name="Boltgun" hidden="false" type="selectionEntry" id="9b21-d2e0-9dae-e7d7" targetId="ac23-4d30-c7b3-7724">
-                  <modifiers>
-                    <modifier type="set" value="true" field="hidden">
-                      <conditionGroups>
-                        <conditionGroup type="or">
-                          <conditions>
-                            <condition type="atLeast" value="1" field="selections" scope="parent" childId="7c58-82e2-439c-b937" shared="true"/>
-                            <condition type="atLeast" value="1" field="selections" scope="parent" childId="drop-weap-lggl-bs03" shared="true"/>
-                          </conditions>
-                        </conditionGroup>
-                      </conditionGroups>
-                    </modifier>
-                  </modifiers>
-                </entryLink>
                 <entryLink import="true" name="Plasma pistol" hidden="false" type="selectionEntry" id="66e0-78b1-c21d-6e56" targetId="3cde-18ef-885e-8a94">
                   <modifiers>
                     <modifier type="set" value="true" field="hidden">
                       <conditionGroups>
                         <conditionGroup type="or">
                           <conditions>
-                            <condition type="atLeast" value="1" field="selections" scope="parent" childId="7c58-82e2-439c-b937" shared="true"/>
+                            <condition type="atLeast" value="1" field="selections" scope="parent" childId="ac23-4d30-c7b3-7724" shared="true"/>
                             <condition type="atLeast" value="1" field="selections" scope="parent" childId="drop-weap-lggl-bs03" shared="true"/>
+                            <condition type="atLeast" value="1" field="selections" scope="parent" childId="7c58-82e2-439c-b937" shared="true"/>
                           </conditions>
                         </conditionGroup>
                       </conditionGroups>
@@ -2316,6 +2227,7 @@ BREACHER SQUAD | DROP OGRYN SQUAD | DROP TROOPERS SQUAD | DROP VETERAN SQUAD|
                           <conditions>
                             <condition type="atLeast" value="1" field="selections" scope="parent" childId="7c58-82e2-439c-b937" shared="true"/>
                             <condition type="atLeast" value="1" field="selections" scope="parent" childId="drop-weap-lggl-bs03" shared="true"/>
+                            <condition type="atLeast" value="1" field="selections" scope="parent" childId="ac23-4d30-c7b3-7724" shared="true"/>
                           </conditions>
                         </conditionGroup>
                       </conditionGroups>
@@ -2351,6 +2263,15 @@ BREACHER SQUAD | DROP OGRYN SQUAD | DROP TROOPERS SQUAD | DROP VETERAN SQUAD|
                     </modifier>
                   </modifiers>
                 </entryLink>
+                <entryLink import="true" name="Boltgun" hidden="false" id="96f5-d911-4bfb-fbb2" type="selectionEntry" targetId="ac23-4d30-c7b3-7724">
+                  <modifiers>
+                    <modifier type="set" value="true" field="hidden">
+                      <conditions>
+                        <condition type="atLeast" value="1" field="selections" scope="parent" childId="drop-weap-pfch-ws03" shared="true" includeChildSelections="false"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
+                </entryLink>
               </entryLinks>
             </selectionEntryGroup>
           </selectionEntryGroups>
@@ -2368,52 +2289,7 @@ BREACHER SQUAD | DROP OGRYN SQUAD | DROP TROOPERS SQUAD | DROP VETERAN SQUAD|
         <constraint type="max" value="3" field="selections" scope="roster" shared="true" id="46e0-eba5-5c63-e040" includeChildSelections="true" includeChildForces="true"/>
       </constraints>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Display Order List" hidden="false" id="e25-8716-3fd8-6155">
-      <profiles>
-        <profile name="3. Take Aim!" typeId="1af4-cc1b-d855-9856" typeName="Orders" hidden="false" id="954a-f174-436a-ae4b">
-          <characteristics>
-            <characteristic name="Order Effect" typeId="3af1-229d-9ea8-7aab">Improve the Ballistic Skill characteristic of ranged weapons equipped by models in this unit by 1.</characteristic>
-          </characteristics>
-        </profile>
-        <profile name="2. Move and Fire!" typeId="1af4-cc1b-d855-9856" typeName="Orders" hidden="false" id="e360-52af-c4c2-ed69">
-          <characteristics>
-            <characteristic name="Order Effect" typeId="3af1-229d-9ea8-7aab">Ranged weapons in the ordered unit gain [ASSAULT].</characteristic>
-          </characteristics>
-        </profile>
-        <profile name="4. First Rank, Fire! Second Rank, Fire!" typeId="1af4-cc1b-d855-9856" typeName="Orders" hidden="false" id="7b7f-564b-ee4b-28d1">
-          <characteristics>
-            <characteristic name="Order Effect" typeId="3af1-229d-9ea8-7aab">Improve the Attacks characteristic of Rapid Fire weapons equipped by models in this unit by 1.</characteristic>
-          </characteristics>
-        </profile>
-        <profile name="5. Take Cover!" typeId="1af4-cc1b-d855-9856" typeName="Orders" hidden="false" id="6a1d-1351-6b82-ea6c">
-          <characteristics>
-            <characteristic name="Order Effect" typeId="3af1-229d-9ea8-7aab">Improve the Save characteristic of models in this unit by 1 (this cannot improve a model’s Save to better than 3+).</characteristic>
-          </characteristics>
-        </profile>
-        <profile name="1. Move! Move! Move!" typeId="1af4-cc1b-d855-9856" typeName="Orders" hidden="false" id="5305-911-d349-d840">
-          <characteristics>
-            <characteristic name="Order Effect" typeId="3af1-229d-9ea8-7aab">Add 3&quot; to the Move characteristic of models in this unit.</characteristic>
-          </characteristics>
-        </profile>
-        <profile name="6. Duty and Honor!" typeId="1af4-cc1b-d855-9856" typeName="Orders" hidden="false" id="9da-949e-e4c0-fac3">
-          <characteristics>
-            <characteristic name="Order Effect" typeId="3af1-229d-9ea8-7aab">Improve the Leadership and Objective Control characteristics of models in this unit by 1.</characteristic>
-          </characteristics>
-        </profile>
-        <profile name="Fix Bayonets! (Commissar Only)" typeId="1af4-cc1b-d855-9856" typeName="Orders" hidden="false" id="2281-c9a3-c1a2-2e68">
-          <characteristics>
-            <characteristic name="Order Effect" typeId="3af1-229d-9ea8-7aab">Improve the Weapon Skill characteristic of melee weapons equipped by models in this unit by 1.</characteristic>
-          </characteristics>
-        </profile>
-      </profiles>
-      <constraints>
-        <constraint field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7b6e-95e1-808c-638" type="max"/>
-      </constraints>
-      <categoryLinks>
-        <categoryLink targetId="4ac9-fd30-1e3d-b249" id="9c14-a21b-bf9d-a2cc" primary="true" name="Configuration"/>
-      </categoryLinks>
-    </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Detachment" hidden="false" id="beec-4c1e-94f7-7a51">
+    <selectionEntry type="upgrade" import="true" name="Detachment - Drop and Hold" hidden="false" id="beec-4c1e-94f7-7a51">
       <constraints>
         <constraint type="min" value="1" field="selections" scope="roster" shared="true" id="e8de-55c2-42cc-c807"/>
         <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="ab06-21bc-cf06-64ad"/>
@@ -2429,17 +2305,9 @@ BREACHER SQUAD | DROP OGRYN SQUAD | DROP TROOPERS SQUAD | DROP VETERAN SQUAD|
         </profile>
       </profiles>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Display Leader Attachment Lists" hidden="false" id="fc2c-bf31-921a-4d3">
-      <constraints>
-        <constraint field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7b6e-95e1-808c-638" type="max"/>
-      </constraints>
-      <categoryLinks>
-        <categoryLink targetId="4ac9-fd30-1e3d-b249" id="7a00-c0fc-56b8-a86e" primary="true" name="Configuration"/>
-      </categoryLinks>
-    </selectionEntry>
     <selectionEntry type="unit" import="true" name="Command Squad - Drop Platoon" hidden="false" id="1336-1e7a-7fb4-7918">
       <costs>
-        <cost name="pts" typeId="51b2-306e-1021-d207" value="75"/>
+        <cost name="pts" typeId="51b2-306e-1021-d207" value="70"/>
       </costs>
       <selectionEntries>
         <selectionEntry type="model" import="true" name="Platoon Commander" hidden="false" id="940d-1d8f-e23e-c27b">
@@ -2454,7 +2322,7 @@ BREACHER SQUAD | DROP OGRYN SQUAD | DROP TROOPERS SQUAD | DROP VETERAN SQUAD|
                 <characteristic name="T" typeId="bc9c-e3f3-3186-a7f0">3</characteristic>
                 <characteristic name="SV" typeId="b5ba-b467-6f5a-cca9">5+</characteristic>
                 <characteristic name="W" typeId="00d9-a17e-9b2e-a053">4</characteristic>
-                <characteristic name="LD" typeId="c45a-6afc-f077-7edc">6+</characteristic>
+                <characteristic name="LD" typeId="c45a-6afc-f077-7edc">7+</characteristic>
                 <characteristic name="OC" typeId="7d96-9381-1b91-9d5e">1</characteristic>
               </characteristics>
             </profile>
@@ -2469,28 +2337,15 @@ BREACHER SQUAD | DROP OGRYN SQUAD | DROP TROOPERS SQUAD | DROP VETERAN SQUAD|
                 <entryLink import="true" name="Chainsword" hidden="false" type="selectionEntry" id="a3b-3feb-188f-22a2" targetId="drop-weap-csch-ws03"/>
                 <entryLink import="true" name="Power sword" hidden="false" type="selectionEntry" id="83c-2af1-2a22-a522" targetId="drop-weap-psch-ws03"/>
                 <entryLink import="true" name="Powerfist" hidden="false" type="selectionEntry" id="38da-a62e-fce-d03f" targetId="drop-weap-pfch-ws03"/>
-                <entryLink import="true" name="Boltgun" hidden="false" type="selectionEntry" id="28d4-8109-1e05-90f1" targetId="ac23-4d30-c7b3-7724">
-                  <modifiers>
-                    <modifier type="set" value="true" field="hidden">
-                      <conditionGroups>
-                        <conditionGroup type="or">
-                          <conditions>
-                            <condition type="atLeast" value="1" field="selections" scope="parent" childId="7c58-82e2-439c-b937" shared="true"/>
-                            <condition type="atLeast" value="1" field="selections" scope="parent" childId="drop-weap-lggl-bs03" shared="true"/>
-                          </conditions>
-                        </conditionGroup>
-                      </conditionGroups>
-                    </modifier>
-                  </modifiers>
-                </entryLink>
                 <entryLink import="true" name="Plasma pistol" hidden="false" type="selectionEntry" id="71b3-6492-1b0-d6e5" targetId="3cde-18ef-885e-8a94">
                   <modifiers>
                     <modifier type="set" value="true" field="hidden">
                       <conditionGroups>
                         <conditionGroup type="or">
                           <conditions>
-                            <condition type="atLeast" value="1" field="selections" scope="parent" childId="7c58-82e2-439c-b937" shared="true"/>
+                            <condition type="atLeast" value="1" field="selections" scope="parent" childId="ac23-4d30-c7b3-7724" shared="true"/>
                             <condition type="atLeast" value="1" field="selections" scope="parent" childId="drop-weap-lggl-bs03" shared="true"/>
+                            <condition type="atLeast" value="1" field="selections" scope="parent" childId="7c58-82e2-439c-b937" shared="true"/>
                           </conditions>
                         </conditionGroup>
                       </conditionGroups>
@@ -2519,6 +2374,7 @@ BREACHER SQUAD | DROP OGRYN SQUAD | DROP TROOPERS SQUAD | DROP VETERAN SQUAD|
                           <conditions>
                             <condition type="atLeast" value="1" field="selections" scope="parent" childId="7c58-82e2-439c-b937" shared="true"/>
                             <condition type="atLeast" value="1" field="selections" scope="parent" childId="drop-weap-lggl-bs03" shared="true"/>
+                            <condition type="atLeast" value="1" field="selections" scope="parent" childId="ac23-4d30-c7b3-7724" shared="true"/>
                           </conditions>
                         </conditionGroup>
                       </conditionGroups>
@@ -2551,6 +2407,20 @@ BREACHER SQUAD | DROP OGRYN SQUAD | DROP TROOPERS SQUAD | DROP VETERAN SQUAD|
                       <conditions>
                         <condition type="atLeast" value="1" field="selections" scope="parent" childId="drop-weap-pfch-ws03" shared="true" includeChildSelections="false"/>
                       </conditions>
+                    </modifier>
+                  </modifiers>
+                </entryLink>
+                <entryLink import="true" name="Boltgun" hidden="false" id="28d4-8109-1e05-90f1" type="selectionEntry" targetId="ac23-4d30-c7b3-7724">
+                  <modifiers>
+                    <modifier type="set" value="true" field="hidden">
+                      <conditionGroups>
+                        <conditionGroup type="or">
+                          <conditions>
+                            <condition type="atLeast" value="1" field="selections" scope="parent" childId="7c58-82e2-439c-b937" shared="true"/>
+                            <condition type="atLeast" value="1" field="selections" scope="parent" childId="drop-weap-lggl-bs03" shared="true"/>
+                          </conditions>
+                        </conditionGroup>
+                      </conditionGroups>
                     </modifier>
                   </modifiers>
                 </entryLink>
@@ -2594,7 +2464,7 @@ BREACHER SQUAD | DROP OGRYN SQUAD | DROP TROOPERS SQUAD | DROP VETERAN SQUAD|
         <profile typeId="2c22-15c0-450f-768" typeName="(4) Abilities" hidden="true" id="60a9-1695-68fd-cfe2" name="Attachments">
           <characteristics>
             <characteristic name="Description" typeId="770f-11ab-9f54-73e8">This unit can be attached to the following units:
-BREACHER SQUAD | DROP OGRYN SQUAD | DROP TROOPERS SQUAD | DROP VETERAN SQUAD| HEAVY WEAPONS SQUAD | SAPPERS SQUAD | SPECIAL WEAPONS SQUAD | STORMTROOPER SQUAD</characteristic>
+BREACHER SQUAD | DROP TROOPERS SQUAD | DROP VETERAN SQUAD| HEAVY WEAPONS SQUAD | SAPPERS SQUAD | SPECIAL WEAPONS SQUAD | STORMTROOPER SQUAD</characteristic>
           </characteristics>
           <modifiers>
             <modifier type="set" value="false" field="hidden">
@@ -2634,18 +2504,9 @@ BREACHER SQUAD | DROP OGRYN SQUAD | DROP TROOPERS SQUAD | DROP VETERAN SQUAD|
                   </constraints>
                 </entryLink>
               </entryLinks>
-              <profiles>
-                <profile name="Drop Veteran" typeId="drop-0000-0000-0001" typeName="(1) Profiles" hidden="false" id="a65a-1389-3198-844f">
-                  <characteristics>
-                    <characteristic name="M" typeId="a2ab-842f-e968-ca80">6&quot;</characteristic>
-                    <characteristic name="T" typeId="bc9c-e3f3-3186-a7f0">3</characteristic>
-                    <characteristic name="SV" typeId="b5ba-b467-6f5a-cca9">5+</characteristic>
-                    <characteristic name="W" typeId="00d9-a17e-9b2e-a053">1</characteristic>
-                    <characteristic name="LD" typeId="c45a-6afc-f077-7edc">6+</characteristic>
-                    <characteristic name="OC" typeId="7d96-9381-1b91-9d5e">2</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
+              <infoLinks>
+                <infoLink name="Drop Veteran" hidden="false" id="4af1-9ee9-3d3e-1562" type="profile" targetId="6108-2140-401b-1a13"/>
+              </infoLinks>
             </selectionEntry>
             <selectionEntry type="model" import="true" name="Drop Veteran - Explosive Charge" hidden="false" id="a90d-79af-88e4-2d89">
               <entryLinks>
@@ -2668,21 +2529,12 @@ BREACHER SQUAD | DROP OGRYN SQUAD | DROP TROOPERS SQUAD | DROP VETERAN SQUAD|
                   </constraints>
                 </entryLink>
               </entryLinks>
-              <profiles>
-                <profile name="Drop Veteran" typeId="drop-0000-0000-0001" typeName="(1) Profiles" hidden="false" id="a92b-d131-5198-824c">
-                  <characteristics>
-                    <characteristic name="M" typeId="a2ab-842f-e968-ca80">6&quot;</characteristic>
-                    <characteristic name="T" typeId="bc9c-e3f3-3186-a7f0">3</characteristic>
-                    <characteristic name="SV" typeId="b5ba-b467-6f5a-cca9">5+</characteristic>
-                    <characteristic name="W" typeId="00d9-a17e-9b2e-a053">1</characteristic>
-                    <characteristic name="LD" typeId="c45a-6afc-f077-7edc">6+</characteristic>
-                    <characteristic name="OC" typeId="7d96-9381-1b91-9d5e">2</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
               <constraints>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="19a6-3a4-1254-b8af"/>
               </constraints>
+              <infoLinks>
+                <infoLink name="Drop Veteran" hidden="false" id="b89e-4cef-9233-e2ee" type="profile" targetId="6108-2140-401b-1a13"/>
+              </infoLinks>
             </selectionEntry>
             <selectionEntry type="model" import="true" name="Drop Veteran - Master Vox" hidden="false" id="c9a-cb21-f918-ae57">
               <entryLinks>
@@ -2705,21 +2557,12 @@ BREACHER SQUAD | DROP OGRYN SQUAD | DROP TROOPERS SQUAD | DROP VETERAN SQUAD|
                   </constraints>
                 </entryLink>
               </entryLinks>
-              <profiles>
-                <profile name="Drop Veteran" typeId="drop-0000-0000-0001" typeName="(1) Profiles" hidden="false" id="1b1a-68d8-4958-575c">
-                  <characteristics>
-                    <characteristic name="M" typeId="a2ab-842f-e968-ca80">6&quot;</characteristic>
-                    <characteristic name="T" typeId="bc9c-e3f3-3186-a7f0">3</characteristic>
-                    <characteristic name="SV" typeId="b5ba-b467-6f5a-cca9">5+</characteristic>
-                    <characteristic name="W" typeId="00d9-a17e-9b2e-a053">1</characteristic>
-                    <characteristic name="LD" typeId="c45a-6afc-f077-7edc">6+</characteristic>
-                    <characteristic name="OC" typeId="7d96-9381-1b91-9d5e">2</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
               <constraints>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="19a6-3a4-1254-b8af"/>
               </constraints>
+              <infoLinks>
+                <infoLink name="Drop Veteran" hidden="false" id="81bf-29d0-8c6c-16bb" type="profile" targetId="6108-2140-401b-1a13"/>
+              </infoLinks>
             </selectionEntry>
             <selectionEntry type="model" import="true" name="Drop Veteran - Medipack" hidden="false" id="c622-6154-f164-14da">
               <entryLinks>
@@ -2742,21 +2585,12 @@ BREACHER SQUAD | DROP OGRYN SQUAD | DROP TROOPERS SQUAD | DROP VETERAN SQUAD|
                   </constraints>
                 </entryLink>
               </entryLinks>
-              <profiles>
-                <profile name="Drop Veteran" typeId="drop-0000-0000-0001" typeName="(1) Profiles" hidden="false" id="240b-ed94-b49e-dc26">
-                  <characteristics>
-                    <characteristic name="M" typeId="a2ab-842f-e968-ca80">6&quot;</characteristic>
-                    <characteristic name="T" typeId="bc9c-e3f3-3186-a7f0">3</characteristic>
-                    <characteristic name="SV" typeId="b5ba-b467-6f5a-cca9">5+</characteristic>
-                    <characteristic name="W" typeId="00d9-a17e-9b2e-a053">1</characteristic>
-                    <characteristic name="LD" typeId="c45a-6afc-f077-7edc">6+</characteristic>
-                    <characteristic name="OC" typeId="7d96-9381-1b91-9d5e">2</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
               <constraints>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="19a6-3a4-1254-b8af"/>
               </constraints>
+              <infoLinks>
+                <infoLink name="Drop Veteran" hidden="false" id="9a01-a012-6b0c-5800" type="profile" targetId="6108-2140-401b-1a13"/>
+              </infoLinks>
             </selectionEntry>
             <selectionEntry type="model" import="true" name="Drop Veteran - Regimental Standard" hidden="false" id="e648-ece1-7871-3de">
               <entryLinks>
@@ -2779,21 +2613,12 @@ BREACHER SQUAD | DROP OGRYN SQUAD | DROP TROOPERS SQUAD | DROP VETERAN SQUAD|
                   </constraints>
                 </entryLink>
               </entryLinks>
-              <profiles>
-                <profile name="Drop Veteran" typeId="drop-0000-0000-0001" typeName="(1) Profiles" hidden="false" id="bef1-414a-10f5-24ca">
-                  <characteristics>
-                    <characteristic name="M" typeId="a2ab-842f-e968-ca80">6&quot;</characteristic>
-                    <characteristic name="T" typeId="bc9c-e3f3-3186-a7f0">3</characteristic>
-                    <characteristic name="SV" typeId="b5ba-b467-6f5a-cca9">5+</characteristic>
-                    <characteristic name="W" typeId="00d9-a17e-9b2e-a053">1</characteristic>
-                    <characteristic name="LD" typeId="c45a-6afc-f077-7edc">6+</characteristic>
-                    <characteristic name="OC" typeId="7d96-9381-1b91-9d5e">2</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
               <constraints>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="19a6-3a4-1254-b8af"/>
               </constraints>
+              <infoLinks>
+                <infoLink name="Drop Veteran" hidden="false" id="b6cf-1ead-e95c-d2c4" type="profile" targetId="6108-2140-401b-1a13"/>
+              </infoLinks>
             </selectionEntry>
             <selectionEntry type="model" import="true" name="Drop Veteran Heavy Weapons Team" hidden="false" id="7b35-6459-1d1f-d94a">
               <entryLinks>
@@ -2811,14 +2636,14 @@ BREACHER SQUAD | DROP OGRYN SQUAD | DROP TROOPERS SQUAD | DROP VETERAN SQUAD|
                 </entryLink>
               </entryLinks>
               <profiles>
-                <profile name="Drop Veteran" typeId="drop-0000-0000-0001" typeName="(1) Profiles" hidden="false" id="a237-dad2-14d2-93f5">
+                <profile name="Drop Veteran Heavy Weapon Team" typeId="drop-0000-0000-0001" typeName="(1) Profiles" hidden="false" id="a237-dad2-14d2-93f5">
                   <characteristics>
                     <characteristic name="M" typeId="a2ab-842f-e968-ca80">6&quot;</characteristic>
                     <characteristic name="T" typeId="bc9c-e3f3-3186-a7f0">3</characteristic>
                     <characteristic name="SV" typeId="b5ba-b467-6f5a-cca9">5+</characteristic>
-                    <characteristic name="W" typeId="00d9-a17e-9b2e-a053">1</characteristic>
-                    <characteristic name="LD" typeId="c45a-6afc-f077-7edc">6+</characteristic>
-                    <characteristic name="OC" typeId="7d96-9381-1b91-9d5e">2</characteristic>
+                    <characteristic name="W" typeId="00d9-a17e-9b2e-a053">2</characteristic>
+                    <characteristic name="LD" typeId="c45a-6afc-f077-7edc">7+</characteristic>
+                    <characteristic name="OC" typeId="7d96-9381-1b91-9d5e">4</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -2840,18 +2665,6 @@ BREACHER SQUAD | DROP OGRYN SQUAD | DROP TROOPERS SQUAD | DROP VETERAN SQUAD|
               </selectionEntryGroups>
             </selectionEntry>
             <selectionEntry type="model" import="true" name="Drop Veteran - Special Weapon" hidden="false" id="1da5-5c62-f7b8-e9ec">
-              <profiles>
-                <profile name="Drop Veteran" typeId="drop-0000-0000-0001" typeName="(1) Profiles" hidden="false" id="e278-f667-461-d29d">
-                  <characteristics>
-                    <characteristic name="M" typeId="a2ab-842f-e968-ca80">6&quot;</characteristic>
-                    <characteristic name="T" typeId="bc9c-e3f3-3186-a7f0">3</characteristic>
-                    <characteristic name="SV" typeId="b5ba-b467-6f5a-cca9">5+</characteristic>
-                    <characteristic name="W" typeId="00d9-a17e-9b2e-a053">1</characteristic>
-                    <characteristic name="LD" typeId="c45a-6afc-f077-7edc">6+</characteristic>
-                    <characteristic name="OC" typeId="7d96-9381-1b91-9d5e">2</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
               <selectionEntryGroups>
                 <selectionEntryGroup name="Special Weapon Selection" hidden="false" id="53d9-7e2c-c2ac-bce1">
                   <constraints>
@@ -2874,6 +2687,9 @@ BREACHER SQUAD | DROP OGRYN SQUAD | DROP TROOPERS SQUAD | DROP VETERAN SQUAD|
                   </constraints>
                 </entryLink>
               </entryLinks>
+              <infoLinks>
+                <infoLink name="Drop Veteran" hidden="false" id="1883-5540-251-b8b3" type="profile" targetId="6108-2140-401b-1a13"/>
+              </infoLinks>
             </selectionEntry>
           </selectionEntries>
           <modifierGroups>
@@ -2903,7 +2719,7 @@ BREACHER SQUAD | DROP OGRYN SQUAD | DROP TROOPERS SQUAD | DROP VETERAN SQUAD|
     </selectionEntry>
     <selectionEntry type="model" import="true" name="Recon Bike Leader" hidden="false" id="c43f-d6c7-e5c0-1eeb">
       <costs>
-        <cost name="pts" typeId="51b2-306e-1021-d207" value="60"/>
+        <cost name="pts" typeId="51b2-306e-1021-d207" value="65"/>
       </costs>
       <categoryLinks>
         <categoryLink targetId="9cfd-1c32-585f-7d5c" id="f804-99f3-995f-661b" primary="true" name="Character"/>
@@ -3477,7 +3293,7 @@ RECON BIKE SQUAD</characteristic>
       <profiles>
         <profile name="Fight on the Move" typeId="2c22-15c0-450f-768" typeName="(4) Abilities" hidden="false" id="29df-3456-f4eb-da57">
           <characteristics>
-            <characteristic name="Description" typeId="770f-11ab-9f54-73e8">: In your Shooting phase, after this unit has shot, if it is not within Engagement Range of any enemy units, it can make a Normal move of up to 6&quot;. If it does, until the end of the turn, this unit is not eligible to declare a charge.</characteristic>
+            <characteristic name="Description" typeId="770f-11ab-9f54-73e8">In your Shooting phase, after this unit has shot, if it is not within Engagement Range of any enemy units, it can make a Normal move of up to 6&quot;. If it does, until the end of the turn, this unit is not eligible to declare a charge.</characteristic>
           </characteristics>
         </profile>
         <profile id="3a17-a047-7dcd-10ff" name="Keywords" hidden="false" typeId="drop-0000-0000-key1" typeName="[Keywords]">
@@ -3495,7 +3311,7 @@ RECON BIKE SQUAD</characteristic>
         <constraint type="max" value="3" field="selections" scope="roster" shared="true" id="87d1-127f-7c85-8419" includeChildSelections="true" includeChildForces="true"/>
       </constraints>
     </selectionEntry>
-    <selectionEntry type="unit" import="true" name="Breacher Squad" hidden="false" id="7dce-2edd-b8d5-b089">
+    <selectionEntry type="unit" import="true" name="Breacher Squad" hidden="true" id="7dce-2edd-b8d5-b089">
       <selectionEntries>
         <selectionEntry type="model" import="true" name="Breacher Sergeant" hidden="false" id="cf6c-9489-8821-95fc">
           <profiles>
@@ -3650,6 +3466,13 @@ RECON BIKE SQUAD</characteristic>
       <constraints>
         <constraint type="max" value="3" field="selections" scope="roster" shared="true" id="3eb7-9807-23e9-7dd1" includeChildSelections="true" includeChildForces="true"/>
       </constraints>
+      <modifiers>
+        <modifier type="set" value="false" field="hidden">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="roster" childId="6fd-351b-fc0d-6328" shared="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Sapper Squad" hidden="false" id="b105-8779-9b22-cd1">
       <selectionEntries>
@@ -3708,18 +3531,9 @@ RECON BIKE SQUAD</characteristic>
                   </constraints>
                 </entryLink>
               </entryLinks>
-              <profiles>
-                <profile name="Sapper" typeId="drop-0000-0000-0001" typeName="(1) Profiles" hidden="false" id="1323-7e0a-c754-38d6">
-                  <characteristics>
-                    <characteristic name="M" typeId="a2ab-842f-e968-ca80">6&quot;</characteristic>
-                    <characteristic name="T" typeId="bc9c-e3f3-3186-a7f0">3</characteristic>
-                    <characteristic name="SV" typeId="b5ba-b467-6f5a-cca9">5+</characteristic>
-                    <characteristic name="W" typeId="00d9-a17e-9b2e-a053">1</characteristic>
-                    <characteristic name="LD" typeId="c45a-6afc-f077-7edc">7+</characteristic>
-                    <characteristic name="OC" typeId="7d96-9381-1b91-9d5e">1</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
+              <infoLinks>
+                <infoLink name="Sapper" hidden="false" id="ea0e-abd6-907e-fb0a" type="profile" targetId="9bb-edd9-c8db-a7a6"/>
+              </infoLinks>
             </selectionEntry>
             <selectionEntry type="model" import="true" name="Sapper - Explosive Charge" hidden="false" id="4e27-eaa2-b323-b0af">
               <entryLinks>
@@ -3742,21 +3556,12 @@ RECON BIKE SQUAD</characteristic>
                   </constraints>
                 </entryLink>
               </entryLinks>
-              <profiles>
-                <profile name="Sapper" typeId="drop-0000-0000-0001" typeName="(1) Profiles" hidden="false" id="3f74-7d3d-a0ff-ad5c">
-                  <characteristics>
-                    <characteristic name="M" typeId="a2ab-842f-e968-ca80">6&quot;</characteristic>
-                    <characteristic name="T" typeId="bc9c-e3f3-3186-a7f0">3</characteristic>
-                    <characteristic name="SV" typeId="b5ba-b467-6f5a-cca9">5+</characteristic>
-                    <characteristic name="W" typeId="00d9-a17e-9b2e-a053">1</characteristic>
-                    <characteristic name="LD" typeId="c45a-6afc-f077-7edc">7+</characteristic>
-                    <characteristic name="OC" typeId="7d96-9381-1b91-9d5e">1</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
               <constraints>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="693b-51c8-73ff-d14f"/>
               </constraints>
+              <infoLinks>
+                <infoLink name="Sapper" hidden="false" id="8e85-2ff4-ea9e-67f6" type="profile" targetId="9bb-edd9-c8db-a7a6"/>
+              </infoLinks>
             </selectionEntry>
             <selectionEntry type="model" import="true" name="Sapper - Vox" hidden="false" id="2d6c-7af6-5073-1929">
               <entryLinks>
@@ -3779,21 +3584,12 @@ RECON BIKE SQUAD</characteristic>
                   </constraints>
                 </entryLink>
               </entryLinks>
-              <profiles>
-                <profile name="Sapper" typeId="drop-0000-0000-0001" typeName="(1) Profiles" hidden="false" id="4ce0-8b20-216e-f839">
-                  <characteristics>
-                    <characteristic name="M" typeId="a2ab-842f-e968-ca80">6&quot;</characteristic>
-                    <characteristic name="T" typeId="bc9c-e3f3-3186-a7f0">3</characteristic>
-                    <characteristic name="SV" typeId="b5ba-b467-6f5a-cca9">5+</characteristic>
-                    <characteristic name="W" typeId="00d9-a17e-9b2e-a053">1</characteristic>
-                    <characteristic name="LD" typeId="c45a-6afc-f077-7edc">7+</characteristic>
-                    <characteristic name="OC" typeId="7d96-9381-1b91-9d5e">1</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
               <constraints>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e343-7073-57ad-4008"/>
               </constraints>
+              <infoLinks>
+                <infoLink name="Sapper" hidden="false" id="d052-24a5-ae3e-184a" type="profile" targetId="9bb-edd9-c8db-a7a6"/>
+              </infoLinks>
             </selectionEntry>
             <selectionEntry type="model" import="true" name="Sapper - Flamer" hidden="false" id="e640-a277-151d-1cd1">
               <entryLinks>
@@ -3810,21 +3606,12 @@ RECON BIKE SQUAD</characteristic>
                   </constraints>
                 </entryLink>
               </entryLinks>
-              <profiles>
-                <profile name="Sapper" typeId="drop-0000-0000-0001" typeName="(1) Profiles" hidden="false" id="847b-bd5f-afc5-751">
-                  <characteristics>
-                    <characteristic name="M" typeId="a2ab-842f-e968-ca80">6&quot;</characteristic>
-                    <characteristic name="T" typeId="bc9c-e3f3-3186-a7f0">3</characteristic>
-                    <characteristic name="SV" typeId="b5ba-b467-6f5a-cca9">5+</characteristic>
-                    <characteristic name="W" typeId="00d9-a17e-9b2e-a053">1</characteristic>
-                    <characteristic name="LD" typeId="c45a-6afc-f077-7edc">7+</characteristic>
-                    <characteristic name="OC" typeId="7d96-9381-1b91-9d5e">1</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
               <constraints>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8c98-2064-b361-4657"/>
               </constraints>
+              <infoLinks>
+                <infoLink name="Sapper" hidden="false" id="2565-49c9-866f-7e4b" type="profile" targetId="9bb-edd9-c8db-a7a6"/>
+              </infoLinks>
             </selectionEntry>
             <selectionEntry type="model" import="true" name="Sapper - Lascutter" hidden="false" id="fd15-4638-8289-a96d">
               <entryLinks>
@@ -3841,21 +3628,12 @@ RECON BIKE SQUAD</characteristic>
                   </constraints>
                 </entryLink>
               </entryLinks>
-              <profiles>
-                <profile name="Sapper" typeId="drop-0000-0000-0001" typeName="(1) Profiles" hidden="false" id="2b26-63a6-823c-f25a">
-                  <characteristics>
-                    <characteristic name="M" typeId="a2ab-842f-e968-ca80">6&quot;</characteristic>
-                    <characteristic name="T" typeId="bc9c-e3f3-3186-a7f0">3</characteristic>
-                    <characteristic name="SV" typeId="b5ba-b467-6f5a-cca9">5+</characteristic>
-                    <characteristic name="W" typeId="00d9-a17e-9b2e-a053">1</characteristic>
-                    <characteristic name="LD" typeId="c45a-6afc-f077-7edc">7+</characteristic>
-                    <characteristic name="OC" typeId="7d96-9381-1b91-9d5e">1</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
               <constraints>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8c98-2064-b361-4657"/>
               </constraints>
+              <infoLinks>
+                <infoLink name="Sapper" hidden="false" id="5a8c-8cdb-63a5-fe80" type="profile" targetId="9bb-edd9-c8db-a7a6"/>
+              </infoLinks>
             </selectionEntry>
             <selectionEntry type="model" import="true" name="Sapper - Meltagun" hidden="false" id="1952-c8d7-c5d8-22e2">
               <entryLinks>
@@ -3872,21 +3650,12 @@ RECON BIKE SQUAD</characteristic>
                   </constraints>
                 </entryLink>
               </entryLinks>
-              <profiles>
-                <profile name="Sapper" typeId="drop-0000-0000-0001" typeName="(1) Profiles" hidden="false" id="6222-686b-374b-28c0">
-                  <characteristics>
-                    <characteristic name="M" typeId="a2ab-842f-e968-ca80">6&quot;</characteristic>
-                    <characteristic name="T" typeId="bc9c-e3f3-3186-a7f0">3</characteristic>
-                    <characteristic name="SV" typeId="b5ba-b467-6f5a-cca9">5+</characteristic>
-                    <characteristic name="W" typeId="00d9-a17e-9b2e-a053">1</characteristic>
-                    <characteristic name="LD" typeId="c45a-6afc-f077-7edc">7+</characteristic>
-                    <characteristic name="OC" typeId="7d96-9381-1b91-9d5e">1</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
               <constraints>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8c98-2064-b361-4657"/>
               </constraints>
+              <infoLinks>
+                <infoLink name="Sapper" hidden="false" id="1a4b-95cc-7e08-9725" type="profile" targetId="9bb-edd9-c8db-a7a6"/>
+              </infoLinks>
             </selectionEntry>
             <selectionEntry type="model" import="true" name="Sapper - Melta mine" hidden="false" id="975-5cf0-8852-2bcd">
               <entryLinks>
@@ -3909,21 +3678,12 @@ RECON BIKE SQUAD</characteristic>
                   </constraints>
                 </entryLink>
               </entryLinks>
-              <profiles>
-                <profile name="Sapper" typeId="drop-0000-0000-0001" typeName="(1) Profiles" hidden="false" id="457a-b4b5-6aa2-2f26">
-                  <characteristics>
-                    <characteristic name="M" typeId="a2ab-842f-e968-ca80">6&quot;</characteristic>
-                    <characteristic name="T" typeId="bc9c-e3f3-3186-a7f0">3</characteristic>
-                    <characteristic name="SV" typeId="b5ba-b467-6f5a-cca9">5+</characteristic>
-                    <characteristic name="W" typeId="00d9-a17e-9b2e-a053">1</characteristic>
-                    <characteristic name="LD" typeId="c45a-6afc-f077-7edc">7+</characteristic>
-                    <characteristic name="OC" typeId="7d96-9381-1b91-9d5e">1</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
               <constraints>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e343-7073-57ad-4008"/>
               </constraints>
+              <infoLinks>
+                <infoLink name="Sapper" hidden="false" id="fe0d-c67c-db32-b400" type="profile" targetId="9bb-edd9-c8db-a7a6"/>
+              </infoLinks>
             </selectionEntry>
           </selectionEntries>
           <constraints>
@@ -3953,7 +3713,7 @@ RECON BIKE SQUAD</characteristic>
         <infoLink name="Deep Strike" hidden="false" type="rule" id="63b-65a1-6272-a4f6" targetId="7cb5-dd6b-dd87-ad3b"/>
       </infoLinks>
       <costs>
-        <cost name="pts" typeId="51b2-306e-1021-d207" value="85"/>
+        <cost name="pts" typeId="51b2-306e-1021-d207" value="75"/>
       </costs>
       <constraints>
         <constraint type="max" value="3" field="selections" scope="roster" shared="true" id="5596-afd4-ffca-2d15" includeChildSelections="true" includeChildForces="true"/>
@@ -4131,18 +3891,9 @@ RECON BIKE SQUAD</characteristic>
                 <constraint type="min" value="3" field="selections" scope="parent" shared="true" id="756b-d048-948c-1f75"/>
                 <constraint type="max" value="3" field="selections" scope="parent" shared="true" id="fe8c-22c6-af98-756"/>
               </constraints>
-              <profiles>
-                <profile name="Drop Trooper" typeId="drop-0000-0000-0001" typeName="(1) Profiles" hidden="false" id="ca22-327c-4549-7000">
-                  <characteristics>
-                    <characteristic name="M" typeId="a2ab-842f-e968-ca80">6&quot;</characteristic>
-                    <characteristic name="T" typeId="bc9c-e3f3-3186-a7f0">3</characteristic>
-                    <characteristic name="SV" typeId="b5ba-b467-6f5a-cca9"/>
-                    <characteristic name="W" typeId="00d9-a17e-9b2e-a053">1</characteristic>
-                    <characteristic name="LD" typeId="c45a-6afc-f077-7edc">6+</characteristic>
-                    <characteristic name="OC" typeId="7d96-9381-1b91-9d5e">2</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
+              <infoLinks>
+                <infoLink name="Drop Trooper" hidden="false" id="67c7-d890-fe8b-552e" type="profile" targetId="5970-fc2d-58d0-85dd"/>
+              </infoLinks>
             </selectionEntry>
             <selectionEntry type="model" import="true" name="Drop Trooper - Special Weapon" hidden="false" id="6dc-9972-9014-e044">
               <entryLinks>
@@ -4157,18 +3908,6 @@ RECON BIKE SQUAD</characteristic>
                 <constraint type="min" value="3" field="selections" scope="parent" shared="true" id="756b-d048-948c-1f75"/>
                 <constraint type="max" value="3" field="selections" scope="parent" shared="true" id="743b-5038-4c70-6efd"/>
               </constraints>
-              <profiles>
-                <profile name="Drop Trooper" typeId="drop-0000-0000-0001" typeName="(1) Profiles" hidden="false" id="f40c-2052-762c-420b">
-                  <characteristics>
-                    <characteristic name="M" typeId="a2ab-842f-e968-ca80">6&quot;</characteristic>
-                    <characteristic name="T" typeId="bc9c-e3f3-3186-a7f0">3</characteristic>
-                    <characteristic name="SV" typeId="b5ba-b467-6f5a-cca9"/>
-                    <characteristic name="W" typeId="00d9-a17e-9b2e-a053">1</characteristic>
-                    <characteristic name="LD" typeId="c45a-6afc-f077-7edc">6+</characteristic>
-                    <characteristic name="OC" typeId="7d96-9381-1b91-9d5e">2</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
               <selectionEntryGroups>
                 <selectionEntryGroup name="Weapon Selection" hidden="false" id="713a-b0ed-af2d-69f9">
                   <constraints>
@@ -4184,6 +3923,9 @@ RECON BIKE SQUAD</characteristic>
                   </entryLinks>
                 </selectionEntryGroup>
               </selectionEntryGroups>
+              <infoLinks>
+                <infoLink name="Drop Trooper" hidden="false" id="d148-815a-faa-1e89" type="profile" targetId="5970-fc2d-58d0-85dd"/>
+              </infoLinks>
             </selectionEntry>
           </selectionEntries>
         </selectionEntryGroup>
@@ -4314,18 +4056,9 @@ RECON BIKE SQUAD</characteristic>
                   </constraints>
                 </entryLink>
               </entryLinks>
-              <profiles>
-                <profile name="Stormtrooper" typeId="drop-0000-0000-0001" typeName="(1) Profiles" hidden="false" id="2a52-9a6-f3e1-da27">
-                  <characteristics>
-                    <characteristic name="M" typeId="a2ab-842f-e968-ca80">6&quot;</characteristic>
-                    <characteristic name="T" typeId="bc9c-e3f3-3186-a7f0">3</characteristic>
-                    <characteristic name="SV" typeId="b5ba-b467-6f5a-cca9">4+</characteristic>
-                    <characteristic name="W" typeId="00d9-a17e-9b2e-a053">1</characteristic>
-                    <characteristic name="LD" typeId="c45a-6afc-f077-7edc">7+</characteristic>
-                    <characteristic name="OC" typeId="7d96-9381-1b91-9d5e">1</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
+              <infoLinks>
+                <infoLink name="Stormtrooper" hidden="false" id="613f-d74b-a384-b4ef" type="profile" targetId="6464-ec5a-b5fc-a0a5"/>
+              </infoLinks>
             </selectionEntry>
             <selectionEntry type="model" import="true" name="Stormtrooper - Vox" hidden="false" id="6742-e348-10d-d6d3">
               <entryLinks>
@@ -4348,21 +4081,12 @@ RECON BIKE SQUAD</characteristic>
                   </constraints>
                 </entryLink>
               </entryLinks>
-              <profiles>
-                <profile name="Stormtrooper" typeId="drop-0000-0000-0001" typeName="(1) Profiles" hidden="false" id="1931-7316-ccfc-391e">
-                  <characteristics>
-                    <characteristic name="M" typeId="a2ab-842f-e968-ca80">6&quot;</characteristic>
-                    <characteristic name="T" typeId="bc9c-e3f3-3186-a7f0">3</characteristic>
-                    <characteristic name="SV" typeId="b5ba-b467-6f5a-cca9">4+</characteristic>
-                    <characteristic name="W" typeId="00d9-a17e-9b2e-a053">1</characteristic>
-                    <characteristic name="LD" typeId="c45a-6afc-f077-7edc">7+</characteristic>
-                    <characteristic name="OC" typeId="7d96-9381-1b91-9d5e">1</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
               <constraints>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a03d-5189-18d3-26b"/>
               </constraints>
+              <infoLinks>
+                <infoLink name="Stormtrooper" hidden="false" id="5d34-ac35-e236-a713" type="profile" targetId="6464-ec5a-b5fc-a0a5"/>
+              </infoLinks>
             </selectionEntry>
             <selectionEntry type="model" import="true" name="Stormtrooper - Explosive Charge" hidden="false" id="8b5d-3683-fed4-fe3b">
               <entryLinks>
@@ -4385,18 +4109,6 @@ RECON BIKE SQUAD</characteristic>
                   </constraints>
                 </entryLink>
               </entryLinks>
-              <profiles>
-                <profile name="Stormtrooper" typeId="drop-0000-0000-0001" typeName="(1) Profiles" hidden="false" id="dd08-45e5-edbc-90af">
-                  <characteristics>
-                    <characteristic name="M" typeId="a2ab-842f-e968-ca80">6&quot;</characteristic>
-                    <characteristic name="T" typeId="bc9c-e3f3-3186-a7f0">3</characteristic>
-                    <characteristic name="SV" typeId="b5ba-b467-6f5a-cca9">4+</characteristic>
-                    <characteristic name="W" typeId="00d9-a17e-9b2e-a053">1</characteristic>
-                    <characteristic name="LD" typeId="c45a-6afc-f077-7edc">7+</characteristic>
-                    <characteristic name="OC" typeId="7d96-9381-1b91-9d5e">1</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
               <constraints>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e1bd-84e8-4c10-b3ae"/>
               </constraints>
@@ -4439,6 +4151,9 @@ RECON BIKE SQUAD</characteristic>
                   </constraints>
                 </selectionEntry>
               </selectionEntries>
+              <infoLinks>
+                <infoLink name="Stormtrooper" hidden="false" id="1ac1-3ec-51c0-ddf4" type="profile" targetId="6464-ec5a-b5fc-a0a5"/>
+              </infoLinks>
             </selectionEntry>
             <selectionEntry type="model" import="true" name="Stormtrooper - Ballistic shield" hidden="false" id="8179-791e-759a-5673">
               <entryLinks>
@@ -4455,18 +4170,9 @@ RECON BIKE SQUAD</characteristic>
                   </constraints>
                 </entryLink>
               </entryLinks>
-              <profiles>
-                <profile name="Stormtrooper" typeId="drop-0000-0000-0001" typeName="(1) Profiles" hidden="false" id="6814-2c54-7b19-feb4">
-                  <characteristics>
-                    <characteristic name="M" typeId="a2ab-842f-e968-ca80">6&quot;</characteristic>
-                    <characteristic name="T" typeId="bc9c-e3f3-3186-a7f0">3</characteristic>
-                    <characteristic name="SV" typeId="b5ba-b467-6f5a-cca9">4+</characteristic>
-                    <characteristic name="W" typeId="00d9-a17e-9b2e-a053">1</characteristic>
-                    <characteristic name="LD" typeId="c45a-6afc-f077-7edc">7+</characteristic>
-                    <characteristic name="OC" typeId="7d96-9381-1b91-9d5e">1</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
+              <infoLinks>
+                <infoLink name="Stormtrooper" hidden="false" id="252d-5d8a-139-cee" type="profile" targetId="6464-ec5a-b5fc-a0a5"/>
+              </infoLinks>
             </selectionEntry>
             <selectionEntry type="model" import="true" name="Stormtrooper - Special Weapon" hidden="false" id="1118-fc6e-fd65-6289">
               <entryLinks>
@@ -4477,18 +4183,6 @@ RECON BIKE SQUAD</characteristic>
                   </constraints>
                 </entryLink>
               </entryLinks>
-              <profiles>
-                <profile name="Stormtrooper" typeId="drop-0000-0000-0001" typeName="(1) Profiles" hidden="false" id="e87-aaf8-9f80-905a">
-                  <characteristics>
-                    <characteristic name="M" typeId="a2ab-842f-e968-ca80">6&quot;</characteristic>
-                    <characteristic name="T" typeId="bc9c-e3f3-3186-a7f0">3</characteristic>
-                    <characteristic name="SV" typeId="b5ba-b467-6f5a-cca9">4+</characteristic>
-                    <characteristic name="W" typeId="00d9-a17e-9b2e-a053">1</characteristic>
-                    <characteristic name="LD" typeId="c45a-6afc-f077-7edc">7+</characteristic>
-                    <characteristic name="OC" typeId="7d96-9381-1b91-9d5e">1</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
               <selectionEntryGroups>
                 <selectionEntryGroup name="Weapon Options" hidden="false" id="5131-b626-a015-d840">
                   <entryLinks>
@@ -4507,6 +4201,9 @@ RECON BIKE SQUAD</characteristic>
               <constraints>
                 <constraint type="max" value="4" field="selections" scope="parent" shared="true" id="2065-4cf1-2085-404f"/>
               </constraints>
+              <infoLinks>
+                <infoLink name="Stormtrooper" hidden="false" id="f1d3-7245-82ac-ad52" type="profile" targetId="6464-ec5a-b5fc-a0a5"/>
+              </infoLinks>
             </selectionEntry>
           </selectionEntries>
           <constraints>
@@ -4530,13 +4227,13 @@ RECON BIKE SQUAD</characteristic>
             <constraint type="max" value="3" field="selections" scope="parent" shared="true" id="7170-c2c4-4ca9-694d"/>
           </constraints>
           <profiles>
-            <profile name="Heavy Weapon Team" typeId="drop-0000-0000-0001" typeName="(1) Profiles" hidden="false" id="f931-39d8-4823-c3d2">
+            <profile name="Heavy Weapons Team" typeId="drop-0000-0000-0001" typeName="(1) Profiles" hidden="false" id="f931-39d8-4823-c3d2">
               <characteristics>
                 <characteristic name="M" typeId="a2ab-842f-e968-ca80">6&quot;</characteristic>
                 <characteristic name="T" typeId="bc9c-e3f3-3186-a7f0">3</characteristic>
                 <characteristic name="SV" typeId="b5ba-b467-6f5a-cca9">5+</characteristic>
                 <characteristic name="W" typeId="00d9-a17e-9b2e-a053">2</characteristic>
-                <characteristic name="LD" typeId="c45a-6afc-f077-7edc">6+</characteristic>
+                <characteristic name="LD" typeId="c45a-6afc-f077-7edc">7+</characteristic>
                 <characteristic name="OC" typeId="7d96-9381-1b91-9d5e">2</characteristic>
               </characteristics>
             </profile>
@@ -4688,11 +4385,7 @@ RECON BIKE SQUAD</characteristic>
           </constraints>
           <entryLinks>
             <entryLink import="true" name="Bolt pistol" hidden="false" type="selectionEntry" id="42b4-a763-87ce-109f" targetId="5935-24a5-f83d-d84"/>
-            <entryLink import="true" name="Boltgun" hidden="false" type="selectionEntry" id="ca61-848f-4dbd-7644" targetId="ac23-4d30-c7b3-7724"/>
-            <entryLink import="true" name="Lasgun" hidden="false" type="selectionEntry" id="553c-72db-9248-d960" targetId="2781-3772-7cc6-a6c8"/>
-            <entryLink import="true" name="Lasgun w/ auxiliary grenade launcher" hidden="false" type="selectionEntry" id="5088-25a6-43b1-1897" targetId="drop-weap-lggl-bs03"/>
             <entryLink import="true" name="Plasma pistol" hidden="false" type="selectionEntry" id="d2a7-96c2-74ca-f89a" targetId="3cde-18ef-885e-8a94"/>
-            <entryLink import="true" name="Hot-shot laspistol" hidden="false" type="selectionEntry" id="958-12de-9e27-481f" targetId="f267-a205-3180-1074"/>
           </entryLinks>
         </selectionEntryGroup>
       </selectionEntryGroups>
@@ -4703,7 +4396,7 @@ RECON BIKE SQUAD</characteristic>
             <characteristic name="T" typeId="bc9c-e3f3-3186-a7f0">3</characteristic>
             <characteristic name="SV" typeId="b5ba-b467-6f5a-cca9">5+</characteristic>
             <characteristic name="W" typeId="00d9-a17e-9b2e-a053">4</characteristic>
-            <characteristic name="LD" typeId="c45a-6afc-f077-7edc">3+</characteristic>
+            <characteristic name="LD" typeId="c45a-6afc-f077-7edc">6+</characteristic>
             <characteristic name="OC" typeId="7d96-9381-1b91-9d5e">1</characteristic>
           </characteristics>
         </profile>
@@ -4736,7 +4429,7 @@ BREACHER SQUAD | DROP OGRYN SQUAD | DROP TROOPERS SQUAD | DROP VETERAN SQUAD 
             <characteristic name="Keywords" typeId="2a81-7738-d2ef-20f3">INFANTRY, CHARACTER, IMPERIUM, GRENADES, OFFICER, DROP COMMISSAR</characteristic>
           </characteristics>
         </profile>
-        <profile name="Once per battle round, at the start of any phase, you can select one friendly DROP TROOPS INFANTRY unit that is Battle-shocked and within 12&quot; of this model. If you do, one model in that unit is destroyed, and that unit is then no longer Battle-shocked." typeId="2c22-15c0-450f-768" typeName="(4) Abilities" hidden="false" id="b91b-8100-1286-8731">
+        <profile name="Political Overwatch" typeId="2c22-15c0-450f-768" typeName="(4) Abilities" hidden="false" id="b91b-8100-1286-8731">
           <characteristics>
             <characteristic name="Description" typeId="770f-11ab-9f54-73e8">While another OFFICER model is in the same unit as this model, you can re-roll Battle-shock tests taken for that unit.</characteristic>
           </characteristics>
@@ -4744,6 +4437,11 @@ BREACHER SQUAD | DROP OGRYN SQUAD | DROP TROOPERS SQUAD | DROP VETERAN SQUAD 
         <profile name="Summary Execution" typeId="2c22-15c0-450f-768" typeName="(4) Abilities" hidden="false" id="3173-c4df-1be7-aa18">
           <characteristics>
             <characteristic name="Description" typeId="770f-11ab-9f54-73e8">Once per battle round, at the start of any phase, you can select one friendly DROP TROOPS INFANTRY unit that is Battle-shocked and within 12&quot; of this model. If you do, one model in that unit is destroyed, and that unit is then no longer Battle-shocked.</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Invulnerable Save" typeId="47a3-20ef-a891-7dcb" typeName="(4) Leader" hidden="false" id="f49-3ab1-9812-244b">
+          <characteristics>
+            <characteristic name="Description" typeId="38f0-8ffb-aef1-9045">5+</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -4799,13 +4497,18 @@ DROP SENTINEL | SENTINEL POWERLIFTER | SUPPORT SENTINEL</characteristic>
             <characteristic name="T" typeId="bc9c-e3f3-3186-a7f0">6</characteristic>
             <characteristic name="SV" typeId="b5ba-b467-6f5a-cca9">3+</characteristic>
             <characteristic name="W" typeId="00d9-a17e-9b2e-a053">6</characteristic>
-            <characteristic name="LD" typeId="c45a-6afc-f077-7edc">6+</characteristic>
+            <characteristic name="LD" typeId="c45a-6afc-f077-7edc">7+</characteristic>
             <characteristic name="OC" typeId="7d96-9381-1b91-9d5e">2</characteristic>
           </characteristics>
         </profile>
         <profile name="Sentinel Command Vehicle" typeId="47a3-20ef-a891-7dcb" typeName="(4) Leader" hidden="false" id="eb20-d442-582b-fa12">
           <characteristics>
             <characteristic name="Description" typeId="38f0-8ffb-aef1-9045">This unit’s OFFICER can issue 1 Order to a SQUADRON unit.</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Vox-Net" hidden="false" id="4b00-9fe8-a1cf-f1e8" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities">
+          <characteristics>
+            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Each time this model issues an Order, it can issue it to an eligible unit up to 12&quot; away.</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -4858,7 +4561,7 @@ DROP SENTINEL | SENTINEL POWERLIFTER | SUPPORT SENTINEL</characteristic>
         <constraint type="max" value="3" field="selections" scope="roster" shared="true" id="ef82-362d-3c47-8c53"/>
       </constraints>
       <costs>
-        <cost name="pts" typeId="51b2-306e-1021-d207" value="75"/>
+        <cost name="pts" typeId="51b2-306e-1021-d207" value="80"/>
       </costs>
     </selectionEntry>
     <selectionEntry type="model" import="true" name="Command Vehicle - Tauros" hidden="false" id="b2b7-ab4f-99c0-6315">
@@ -4905,11 +4608,11 @@ TAUROS ASSAULT VEHICLE | TAUROS ANIHILATOR | TAUROS VENATOR | TAUROS ERASER</
         </profile>
         <profile name="Tauros Command Vehicle" typeId="drop-0000-0000-0001" typeName="(1) Profiles" hidden="false" id="4538-d541-3f5b-d321">
           <characteristics>
-            <characteristic name="M" typeId="a2ab-842f-e968-ca80">15&quot;</characteristic>
+            <characteristic name="M" typeId="a2ab-842f-e968-ca80">12&quot;</characteristic>
             <characteristic name="T" typeId="bc9c-e3f3-3186-a7f0">6</characteristic>
             <characteristic name="SV" typeId="b5ba-b467-6f5a-cca9">4+</characteristic>
             <characteristic name="W" typeId="00d9-a17e-9b2e-a053">6</characteristic>
-            <characteristic name="LD" typeId="c45a-6afc-f077-7edc">6+</characteristic>
+            <characteristic name="LD" typeId="c45a-6afc-f077-7edc">7+</characteristic>
             <characteristic name="OC" typeId="7d96-9381-1b91-9d5e">2</characteristic>
           </characteristics>
         </profile>
@@ -4930,7 +4633,7 @@ TAUROS ASSAULT VEHICLE | TAUROS ANIHILATOR | TAUROS VENATOR | TAUROS ERASER</
         </profile>
         <profile name="Focused fire" typeId="2c22-15c0-450f-768" typeName="(4) Abilities" hidden="false" id="a514-9fe9-d3e2-5831">
           <characteristics>
-            <characteristic name="Description" typeId="770f-11ab-9f54-73e8">While this model is leading a unit, weapons equipped by models in that unit have the [LETHAL HITS] ability.</characteristic>
+            <characteristic name="Description" typeId="770f-11ab-9f54-73e8">While this model is leading a unit, weapons equipped by models in that unit have the [SUSTAINED HITS 1] ability.</characteristic>
           </characteristics>
         </profile>
         <profile name="Tauros Command Vehicle" typeId="47a3-20ef-a891-7dcb" typeName="(4) Leader" hidden="false" id="5b4-7f14-32f7-fc15">
@@ -5064,6 +4767,7 @@ TAUROS ASSAULT VEHICLE | TAUROS ANIHILATOR | TAUROS VENATOR | TAUROS ERASER</
                     </modifier>
                   </modifiers>
                 </entryLink>
+                <entryLink import="true" name="Boltgun" hidden="false" id="c3d3-b66c-7129-fa0a" type="selectionEntry" targetId="ac23-4d30-c7b3-7724"/>
               </entryLinks>
             </selectionEntryGroup>
             <selectionEntryGroup name="Sidearm" hidden="false" id="4672-3550-c7d1-a601" defaultSelectionEntryId="3983-1f6c-5fcb-e790">
@@ -5635,11 +5339,11 @@ STORMTROOPER SQUAD</characteristic>
           <profiles>
             <profile name="Tauros Venator" typeId="drop-0000-0000-0001" typeName="(1) Profiles" hidden="false" id="3b8e-f206-df4d-3fa5">
               <characteristics>
-                <characteristic name="M" typeId="a2ab-842f-e968-ca80">15&quot;</characteristic>
+                <characteristic name="M" typeId="a2ab-842f-e968-ca80">12&quot;</characteristic>
                 <characteristic name="T" typeId="bc9c-e3f3-3186-a7f0">6</characteristic>
                 <characteristic name="SV" typeId="b5ba-b467-6f5a-cca9">4+</characteristic>
                 <characteristic name="W" typeId="00d9-a17e-9b2e-a053">6</characteristic>
-                <characteristic name="LD" typeId="c45a-6afc-f077-7edc">6+</characteristic>
+                <characteristic name="LD" typeId="c45a-6afc-f077-7edc">7+</characteristic>
                 <characteristic name="OC" typeId="7d96-9381-1b91-9d5e">1</characteristic>
               </characteristics>
             </profile>
@@ -5718,11 +5422,11 @@ STORMTROOPER SQUAD</characteristic>
           <profiles>
             <profile name="Tauros Assault Vehicle" typeId="drop-0000-0000-0001" typeName="(1) Profiles" hidden="false" id="e5b-fb84-219-18f7">
               <characteristics>
-                <characteristic name="M" typeId="a2ab-842f-e968-ca80">15&quot;</characteristic>
+                <characteristic name="M" typeId="a2ab-842f-e968-ca80">12&quot;</characteristic>
                 <characteristic name="T" typeId="bc9c-e3f3-3186-a7f0">6</characteristic>
                 <characteristic name="SV" typeId="b5ba-b467-6f5a-cca9">4+</characteristic>
                 <characteristic name="W" typeId="00d9-a17e-9b2e-a053">6</characteristic>
-                <characteristic name="LD" typeId="c45a-6afc-f077-7edc">6+</characteristic>
+                <characteristic name="LD" typeId="c45a-6afc-f077-7edc">7+</characteristic>
                 <characteristic name="OC" typeId="7d96-9381-1b91-9d5e">1</characteristic>
               </characteristics>
             </profile>
@@ -5805,7 +5509,6 @@ STORMTROOPER SQUAD</characteristic>
         </selectionEntry>
       </selectionEntries>
       <infoLinks>
-        <infoLink name="Stealth" hidden="false" type="rule" id="41bb-b6ac-9605-dcb4" targetId="bec5-4288-34a6-ccfa"/>
         <infoLink name="Deadly Demise" hidden="false" type="rule" id="366f-2bd1-2539-e5ba" targetId="b68a-5ded-65ac-98c">
           <modifiers>
             <modifier type="append" value="1" field="name"/>
@@ -5831,11 +5534,11 @@ STORMTROOPER SQUAD</characteristic>
         </profile>
         <profile name="Tauros Explorer" typeId="drop-0000-0000-0001" typeName="(1) Profiles" hidden="false" id="8fdf-a435-12a5-d0c7">
           <characteristics>
-            <characteristic name="M" typeId="a2ab-842f-e968-ca80">15&quot;</characteristic>
+            <characteristic name="M" typeId="a2ab-842f-e968-ca80">12&quot;</characteristic>
             <characteristic name="T" typeId="bc9c-e3f3-3186-a7f0">6</characteristic>
             <characteristic name="SV" typeId="b5ba-b467-6f5a-cca9">4+</characteristic>
             <characteristic name="W" typeId="00d9-a17e-9b2e-a053">6</characteristic>
-            <characteristic name="LD" typeId="c45a-6afc-f077-7edc">6+</characteristic>
+            <characteristic name="LD" typeId="c45a-6afc-f077-7edc">7+</characteristic>
             <characteristic name="OC" typeId="7d96-9381-1b91-9d5e">1</characteristic>
           </characteristics>
         </profile>
@@ -5882,7 +5585,6 @@ STORMTROOPER SQUAD</characteristic>
         </selectionEntry>
       </selectionEntries>
       <infoLinks>
-        <infoLink name="Stealth" hidden="false" type="rule" id="92b6-935c-6c31-c66f" targetId="bec5-4288-34a6-ccfa"/>
         <infoLink name="Deadly Demise" hidden="false" type="rule" id="4d3b-f26c-f500-f06" targetId="b68a-5ded-65ac-98c">
           <modifiers>
             <modifier type="append" value="1" field="name"/>
@@ -5908,11 +5610,11 @@ STORMTROOPER SQUAD</characteristic>
         </profile>
         <profile name="Tauros Mechanis" typeId="drop-0000-0000-0001" typeName="(1) Profiles" hidden="false" id="bb39-bde-427f-c401">
           <characteristics>
-            <characteristic name="M" typeId="a2ab-842f-e968-ca80">15&quot;</characteristic>
+            <characteristic name="M" typeId="a2ab-842f-e968-ca80">12&quot;</characteristic>
             <characteristic name="T" typeId="bc9c-e3f3-3186-a7f0">6</characteristic>
             <characteristic name="SV" typeId="b5ba-b467-6f5a-cca9">4+</characteristic>
             <characteristic name="W" typeId="00d9-a17e-9b2e-a053">6</characteristic>
-            <characteristic name="LD" typeId="c45a-6afc-f077-7edc">6+</characteristic>
+            <characteristic name="LD" typeId="c45a-6afc-f077-7edc">7+</characteristic>
             <characteristic name="OC" typeId="7d96-9381-1b91-9d5e">1</characteristic>
           </characteristics>
         </profile>
@@ -5966,7 +5668,6 @@ STORMTROOPER SQUAD</characteristic>
         </selectionEntry>
       </selectionEntries>
       <infoLinks>
-        <infoLink name="Stealth" hidden="false" type="rule" id="e13b-f8a1-739a-d1a5" targetId="bec5-4288-34a6-ccfa"/>
         <infoLink name="Deadly Demise" hidden="false" type="rule" id="ddc3-3ce-d0e3-c57d" targetId="b68a-5ded-65ac-98c">
           <modifiers>
             <modifier type="append" value="1" field="name"/>
@@ -5992,11 +5693,11 @@ STORMTROOPER SQUAD</characteristic>
         </profile>
         <profile name="Tauros Medicae" typeId="drop-0000-0000-0001" typeName="(1) Profiles" hidden="false" id="84b4-26b0-3723-7944">
           <characteristics>
-            <characteristic name="M" typeId="a2ab-842f-e968-ca80">15&quot;</characteristic>
+            <characteristic name="M" typeId="a2ab-842f-e968-ca80">12&quot;</characteristic>
             <characteristic name="T" typeId="bc9c-e3f3-3186-a7f0">6</characteristic>
             <characteristic name="SV" typeId="b5ba-b467-6f5a-cca9">4+</characteristic>
             <characteristic name="W" typeId="00d9-a17e-9b2e-a053">6</characteristic>
-            <characteristic name="LD" typeId="c45a-6afc-f077-7edc">6+</characteristic>
+            <characteristic name="LD" typeId="c45a-6afc-f077-7edc">7+</characteristic>
             <characteristic name="OC" typeId="7d96-9381-1b91-9d5e">1</characteristic>
           </characteristics>
         </profile>
@@ -6039,11 +5740,11 @@ STORMTROOPER SQUAD</characteristic>
           <profiles>
             <profile name="Tauros Annihilator" typeId="drop-0000-0000-0001" typeName="(1) Profiles" hidden="false" id="9e0c-8da3-64b5-aac5">
               <characteristics>
-                <characteristic name="M" typeId="a2ab-842f-e968-ca80">15&quot;</characteristic>
+                <characteristic name="M" typeId="a2ab-842f-e968-ca80">12&quot;</characteristic>
                 <characteristic name="T" typeId="bc9c-e3f3-3186-a7f0">6</characteristic>
                 <characteristic name="SV" typeId="b5ba-b467-6f5a-cca9">4+</characteristic>
                 <characteristic name="W" typeId="00d9-a17e-9b2e-a053">6</characteristic>
-                <characteristic name="LD" typeId="c45a-6afc-f077-7edc">6+</characteristic>
+                <characteristic name="LD" typeId="c45a-6afc-f077-7edc">7+</characteristic>
                 <characteristic name="OC" typeId="7d96-9381-1b91-9d5e">1</characteristic>
               </characteristics>
             </profile>
@@ -6122,11 +5823,11 @@ STORMTROOPER SQUAD</characteristic>
           <profiles>
             <profile name="Tauros Striker" typeId="drop-0000-0000-0001" typeName="(1) Profiles" hidden="false" id="b160-53f-83-5dcf">
               <characteristics>
-                <characteristic name="M" typeId="a2ab-842f-e968-ca80">15&quot;</characteristic>
+                <characteristic name="M" typeId="a2ab-842f-e968-ca80">12&quot;</characteristic>
                 <characteristic name="T" typeId="bc9c-e3f3-3186-a7f0">6</characteristic>
                 <characteristic name="SV" typeId="b5ba-b467-6f5a-cca9">4+</characteristic>
                 <characteristic name="W" typeId="00d9-a17e-9b2e-a053">6</characteristic>
-                <characteristic name="LD" typeId="c45a-6afc-f077-7edc">6+</characteristic>
+                <characteristic name="LD" typeId="c45a-6afc-f077-7edc">7+</characteristic>
                 <characteristic name="OC" typeId="7d96-9381-1b91-9d5e">1</characteristic>
               </characteristics>
             </profile>
@@ -6226,11 +5927,11 @@ STORMTROOPER SQUAD</characteristic>
         </profile>
         <profile name="Tauros Maximus" typeId="drop-0000-0000-0001" typeName="(1) Profiles" hidden="false" id="1001-fbb7-367b-a24f">
           <characteristics>
-            <characteristic name="M" typeId="a2ab-842f-e968-ca80">15&quot;</characteristic>
+            <characteristic name="M" typeId="a2ab-842f-e968-ca80">12&quot;</characteristic>
             <characteristic name="T" typeId="bc9c-e3f3-3186-a7f0">6</characteristic>
             <characteristic name="SV" typeId="b5ba-b467-6f5a-cca9">4+</characteristic>
             <characteristic name="W" typeId="00d9-a17e-9b2e-a053">6</characteristic>
-            <characteristic name="LD" typeId="c45a-6afc-f077-7edc">6+</characteristic>
+            <characteristic name="LD" typeId="c45a-6afc-f077-7edc">7+</characteristic>
             <characteristic name="OC" typeId="7d96-9381-1b91-9d5e">1</characteristic>
           </characteristics>
         </profile>
@@ -6305,11 +6006,11 @@ STORMTROOPER SQUAD</characteristic>
         </profile>
         <profile name="Tauros Maximus" typeId="drop-0000-0000-0001" typeName="(1) Profiles" hidden="false" id="b92e-85f4-f8a-72b">
           <characteristics>
-            <characteristic name="M" typeId="a2ab-842f-e968-ca80">15&quot;</characteristic>
+            <characteristic name="M" typeId="a2ab-842f-e968-ca80">12&quot;</characteristic>
             <characteristic name="T" typeId="bc9c-e3f3-3186-a7f0">6</characteristic>
             <characteristic name="SV" typeId="b5ba-b467-6f5a-cca9">4+</characteristic>
             <characteristic name="W" typeId="00d9-a17e-9b2e-a053">6</characteristic>
-            <characteristic name="LD" typeId="c45a-6afc-f077-7edc">6+</characteristic>
+            <characteristic name="LD" typeId="c45a-6afc-f077-7edc">7+</characteristic>
             <characteristic name="OC" typeId="7d96-9381-1b91-9d5e">1</characteristic>
           </characteristics>
         </profile>
@@ -6448,7 +6149,7 @@ STORMTROOPER SQUAD</characteristic>
         <profile name="Arvus Lighter" typeId="drop-0000-0000-0001" typeName="(1) Profiles" hidden="false" id="91f3-6102-fd7f-62e1">
           <characteristics>
             <characteristic name="M" typeId="a2ab-842f-e968-ca80">20+&quot;</characteristic>
-            <characteristic name="T" typeId="bc9c-e3f3-3186-a7f0">88</characteristic>
+            <characteristic name="T" typeId="bc9c-e3f3-3186-a7f0">8</characteristic>
             <characteristic name="SV" typeId="b5ba-b467-6f5a-cca9">3+</characteristic>
             <characteristic name="W" typeId="00d9-a17e-9b2e-a053">8</characteristic>
             <characteristic name="LD" typeId="c45a-6afc-f077-7edc">7+</characteristic>
@@ -6936,7 +6637,7 @@ STORMTROOPER SQUAD</characteristic>
         <categoryLink targetId="5929-ad51-d006-e008" id="ee83-bb21-c66b-174e" primary="false" name="Titanic"/>
       </categoryLinks>
       <costs>
-        <cost name="pts" typeId="51b2-306e-1021-d207" value="345"/>
+        <cost name="pts" typeId="51b2-306e-1021-d207" value="300"/>
       </costs>
       <infoLinks>
         <infoLink id="485f-1c24-733a-6dc4" name="Deep Strike" hidden="false" targetId="7cb5-dd6b-dd87-ad3b" type="rule"/>
@@ -7074,7 +6775,7 @@ STORMTROOPER SQUAD</characteristic>
         <categoryLink targetId="5929-ad51-d006-e008" id="83f0-e987-2fc6-7e3b" primary="false" name="Titanic"/>
       </categoryLinks>
       <costs>
-        <cost name="pts" typeId="51b2-306e-1021-d207" value="375"/>
+        <cost name="pts" typeId="51b2-306e-1021-d207" value="320"/>
       </costs>
       <infoLinks>
         <infoLink id="2bf2-b72c-4629-ae13" name="Deep Strike" hidden="false" targetId="7cb5-dd6b-dd87-ad3b" type="rule"/>
@@ -7180,6 +6881,417 @@ STORMTROOPER SQUAD</characteristic>
         <entryLink id="dd7b-7b90-22a9-9b8c" name="Aircraft Equipment &amp; Options" hidden="false" collective="false" import="true" targetId="3d09-88ba-8e23-8aff" type="selectionEntryGroup"/>
       </entryLinks>
     </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Show/Hide Options" hidden="false" id="4338-8fd8-5bdb-51d2">
+      <categoryLinks>
+        <categoryLink targetId="4ac9-fd30-1e3d-b249" id="1e84-4afa-e3b1-3652" primary="true" name="Configuration"/>
+      </categoryLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Options" hidden="false" id="4f68-87e4-25c9-f9ee">
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Show Legacy Units" hidden="false" id="6fd-351b-fc0d-6328">
+              <constraints>
+                <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="4c1b-8d10-3291-ba06"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="df8c-58-4214-12b9"/>
+                <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="340c-b3a2-d32a-b36e" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+              </constraints>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Display Order List" hidden="false" id="e25-8716-3fd8-6155">
+              <profiles>
+                <profile name="3. Take Aim!" typeId="1af4-cc1b-d855-9856" typeName="Orders" hidden="false" id="97f6-5cb9-a0cd-68f">
+                  <characteristics>
+                    <characteristic name="Order Effect" hidden="false" id="fd17-8939-a7e2-db9a" typeId="3af1-229d-9ea8-7aab">Improve the Ballistic Skill characteristic of ranged weapons equipped by models in this unit by 1.</characteristic>
+                  </characteristics>
+                </profile>
+                <profile name="2. Move and Fire!" typeId="1af4-cc1b-d855-9856" typeName="Orders" hidden="false" id="9524-9b51-720f-e258">
+                  <characteristics>
+                    <characteristic name="Order Effect" hidden="false" id="d559-4a93-f341-ae74" typeId="3af1-229d-9ea8-7aab">Ranged weapons in the ordered unit gain [ASSAULT].</characteristic>
+                  </characteristics>
+                </profile>
+                <profile name="4. First Rank, Fire! Second Rank, Fire!" typeId="1af4-cc1b-d855-9856" typeName="Orders" hidden="false" id="9299-82c4-901d-bbeb">
+                  <characteristics>
+                    <characteristic name="Order Effect" hidden="false" id="1f0d-953b-67ec-baf8" typeId="3af1-229d-9ea8-7aab">Improve the Attacks characteristic of Rapid Fire weapons equipped by models in this unit by 1.</characteristic>
+                  </characteristics>
+                </profile>
+                <profile name="5. Take Cover!" typeId="1af4-cc1b-d855-9856" typeName="Orders" hidden="false" id="f79b-8944-e8-4a25">
+                  <characteristics>
+                    <characteristic name="Order Effect" hidden="false" id="afd-d197-2825-991b" typeId="3af1-229d-9ea8-7aab">Improve the Save characteristic of models in this unit by 1 (this cannot improve a model’s Save to better than 3+).</characteristic>
+                  </characteristics>
+                </profile>
+                <profile name="1. Move! Move! Move!" typeId="1af4-cc1b-d855-9856" typeName="Orders" hidden="false" id="df08-1967-d65d-7277">
+                  <characteristics>
+                    <characteristic name="Order Effect" hidden="false" id="e6e6-4f85-b523-a889" typeId="3af1-229d-9ea8-7aab">Add 3&quot; to the Move characteristic of models in this unit.</characteristic>
+                  </characteristics>
+                </profile>
+                <profile name="6. Duty and Honor!" typeId="1af4-cc1b-d855-9856" typeName="Orders" hidden="false" id="13de-6359-9af1-92f9">
+                  <characteristics>
+                    <characteristic name="Order Effect" hidden="false" id="11de-1755-2d91-d456" typeId="3af1-229d-9ea8-7aab">Improve the Leadership and Objective Control characteristics of models in this unit by 1.</characteristic>
+                  </characteristics>
+                </profile>
+                <profile name="Fix Bayonets! (Commissar Only)" typeId="1af4-cc1b-d855-9856" typeName="Orders" hidden="false" id="dc26-9a04-e288-5ead">
+                  <characteristics>
+                    <characteristic name="Order Effect" hidden="false" id="2913-b220-975-7b4b" typeId="3af1-229d-9ea8-7aab">Improve the Weapon Skill characteristic of melee weapons equipped by models in this unit by 1.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="1e08-d5a6-7374-a49c" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+              </constraints>
+              <categoryLinks>
+                <categoryLink name="Configuration" hidden="false" id="d3e9-dbb9-852b-69b3" targetId="4ac9-fd30-1e3d-b249" primary="true"/>
+              </categoryLinks>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Dispaly Leader Attachments" hidden="false" id="fc2c-bf31-921a-4d3">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="9623-c8c1-d751-5e5f" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+              </constraints>
+              <categoryLinks>
+                <categoryLink name="Configuration" hidden="false" id="2721-11ff-df08-570d" targetId="4ac9-fd30-1e3d-b249" primary="true"/>
+              </categoryLinks>
+            </selectionEntry>
+          </selectionEntries>
+          <entryLinks>
+            <entryLink import="true" name="Show Weapon Type Rules" hidden="false" id="72fe-a72e-bc33-cb54" collective="false" targetId="edc0-ab68-6a3a-4ba7" type="selectionEntry">
+              <categoryLinks>
+                <categoryLink name="Configuration" hidden="false" id="c6a8-e9bc-931-a782" targetId="4ac9-fd30-1e3d-b249" primary="true"/>
+              </categoryLinks>
+            </entryLink>
+          </entryLinks>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Infantry Squad" hidden="false" id="5641-2616-d723-4708" collective="false">
+      <profiles>
+        <profile name="Keywords - Faction" typeId="drop-0000-0000-key1" typeName="[Keywords]" hidden="false" id="5364-d498-23c1-f21b">
+          <characteristics>
+            <characteristic name="Keywords" hidden="false" id="811d-77ab-b7d7-6f0b" typeId="2a81-7738-d2ef-20f3">DROP TROOPS</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Keywords" typeId="drop-0000-0000-key1" typeName="[Keywords]" hidden="false" id="72c6-a621-d973-1206">
+          <characteristics>
+            <characteristic name="Keywords" typeId="2a81-7738-d2ef-20f3">INFANTRY, BATTLELINE, IMPERIUM, GRENADES, REGIMENT, PLATOON, INFANTRY SQUAD</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Defenders of Humanity" typeId="2c22-15c0-450f-768" typeName="(4) Abilities" hidden="false" id="9e8c-c219-ff39-d766">
+          <characteristics>
+            <characteristic name="Description" typeId="770f-11ab-9f54-73e8">Each time a ranged attack targets this unit, if this unit is within range of an objective marker you control, models in this unit have the Benefit of Cover against that attack.</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Unit Composition" typeId="47a3-20ef-a891-7dcb" typeName="(4) Leader" hidden="false" id="5f9a-cd97-22cd-48ff">
+          <characteristics>
+            <characteristic name="Description" typeId="38f0-8ffb-aef1-9045">This unit can have up to two Leader units attached to it, provided no more than one of those units is a COMMAND SQUAD unit. If it does, and this Bodyguard unit is destroyed, the Leader units attached to it become separate units, with their original Starting Strengths.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <categoryLinks>
+        <categoryLink name="Battleline" hidden="false" id="3dd4-69b9-cb4a-5243" targetId="e338-111e-d0c6-b687" primary="true"/>
+        <categoryLink name="Infantry" hidden="false" id="6c9c-5a7-bb80-5822" targetId="cf47-a0d7-7207-29dc" primary="false"/>
+        <categoryLink targetId="9bb0-994d-eeae-e02" id="6eaa-678a-97a6-8ca9" primary="false" name="Infantry Squad"/>
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry type="model" import="true" name="Infantry Sergeant" hidden="false" id="f59-e189-aa82-5a68" collective="false">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="a0d8-1898-d8c2-c7e3" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+            <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="a403-6978-145f-b992" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+          </constraints>
+          <profiles>
+            <profile name="Infantry Sergeant" typeId="drop-0000-0000-0001" typeName="(1) Profiles" hidden="false" id="2769-8792-34e1-7f6e">
+              <characteristics>
+                <characteristic name="M" typeId="a2ab-842f-e968-ca80">6&quot;</characteristic>
+                <characteristic name="T" typeId="bc9c-e3f3-3186-a7f0">3</characteristic>
+                <characteristic name="SV" typeId="b5ba-b467-6f5a-cca9">5+</characteristic>
+                <characteristic name="W" typeId="00d9-a17e-9b2e-a053">1</characteristic>
+                <characteristic name="LD" typeId="c45a-6afc-f077-7edc">7+</characteristic>
+                <characteristic name="OC" typeId="7d96-9381-1b91-9d5e">2</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <selectionEntryGroups>
+            <selectionEntryGroup name="Weapon - Melee" hidden="false" id="1114-4ca6-906c-c800" collective="false" import="true" defaultSelectionEntryId="f6b9-47bc-60e0-bf3c">
+              <entryLinks>
+                <entryLink import="true" name="Chainsword" hidden="false" id="835e-228c-b40c-84d8" type="selectionEntry" targetId="drop-weap-csin-ws04" collective="false"/>
+                <entryLink import="true" name="Power weapon" hidden="false" id="2f73-d37c-6a1-f7b9" type="selectionEntry" targetId="drop-weap-psin-ws04"/>
+                <entryLink import="true" name="Powerfist" hidden="false" id="798b-7ff5-b276-9c6e" type="selectionEntry" targetId="drop-weap-pfin-ws04"/>
+              </entryLinks>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="eb2f-7dd7-9321-88d6"/>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="dc96-736c-6ece-8cb2"/>
+              </constraints>
+            </selectionEntryGroup>
+            <selectionEntryGroup name="Weapon - Ranged" hidden="false" id="b2de-c4f3-2053-7e5a" collective="false" import="true" defaultSelectionEntryId="6dd2-beb3-7fbb-cd86">
+              <entryLinks>
+                <entryLink import="true" name="Lasgun" hidden="false" id="af96-7138-ca89-160f" type="selectionEntry" targetId="3924-1693-a404-7f01"/>
+                <entryLink import="true" name="Lasgun w/ auxiliary grenade launcher" hidden="false" id="489-48df-da7-f086" type="selectionEntry" targetId="drop-weap-lggl-bs04"/>
+                <entryLink import="true" name="Bolt pistol" hidden="false" id="6a33-bb49-7f3-542d" type="selectionEntry" targetId="drop-weap-bpin-bs04"/>
+                <entryLink import="true" name="Boltgun" hidden="false" id="ebc4-114a-e001-d70c" type="selectionEntry" targetId="drop-weap-bgin-bs04"/>
+                <entryLink import="true" name="Plasma pistol" hidden="false" id="582b-e338-b3bb-537f" type="selectionEntry" targetId="drop-weap-plpi-bs04"/>
+                <entryLink import="true" name="Laspistol" hidden="false" id="636e-6d7a-d3e9-13a2" type="selectionEntry" targetId="drop-weap-lpcl-bs04"/>
+              </entryLinks>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ec18-9dfd-b1d1-77e5"/>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="1b63-a2eb-2b77-5a12"/>
+              </constraints>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
+          <costs>
+            <cost name="pts" hidden="false" id="6f88-b31f-c77e-70d3" typeId="51b2-306e-1021-d207" value="0"/>
+          </costs>
+          <modifiers>
+            <modifier type="set" value="2" field="a0d8-1898-d8c2-c7e3">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="parent" childId="5576-e636-f135-b213" shared="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="set" value="1" field="a403-6978-145f-b992">
+              <conditions>
+                <condition type="lessThan" value="1" field="selections" scope="parent" childId="5576-e636-f135-b213" shared="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Double Sized" hidden="false" id="5576-e636-f135-b213">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2bdb-ac-e46c-3700"/>
+          </constraints>
+          <costs>
+            <cost name="pts" typeId="51b2-306e-1021-d207" value="60"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+      <costs>
+        <cost name="pts" typeId="51b2-306e-1021-d207" value="60"/>
+      </costs>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Squad Loadout" hidden="false" id="c63d-516c-8d08-49cc" defaultSelectionEntryId="b514-2c0e-cabc-c110">
+          <selectionEntries>
+            <selectionEntry type="model" import="true" name="Guardsman" hidden="false" id="b428-8c8b-9b3b-fc10">
+              <entryLinks>
+                <entryLink import="true" name="Lasgun" hidden="false" id="d2c4-e538-e28e-949c" type="selectionEntry" targetId="drop-weap-lgcl-bs04">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5c36-ba03-eac9-c853"/>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="8702-9eef-7776-cfe4"/>
+                  </constraints>
+                </entryLink>
+                <entryLink import="true" name="Close combat weapon" hidden="false" id="8777-52fb-b803-6226" type="selectionEntry" targetId="drop-weap-ccin-ws04">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2978-b216-3562-a653"/>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="71ea-b972-7030-42a0"/>
+                  </constraints>
+                </entryLink>
+              </entryLinks>
+              <infoLinks>
+                <infoLink name="Infantry Trooper" hidden="false" id="f8cc-2312-34b2-a1c7" type="profile" targetId="f0f4-fa07-bfd2-b4c"/>
+              </infoLinks>
+            </selectionEntry>
+            <selectionEntry type="model" import="true" name="Guardsman - Special Weapon" hidden="false" id="14bd-f83f-ef82-80ce">
+              <entryLinks>
+                <entryLink import="true" name="Close combat weapon" hidden="false" id="57c0-8f13-a9c1-b731" type="selectionEntry" targetId="drop-weap-ccin-ws04">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="3c8-ddba-a073-7d22"/>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="cef3-89a3-b4f8-89d8"/>
+                  </constraints>
+                </entryLink>
+              </entryLinks>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9b8e-3895-d263-aefa"/>
+              </constraints>
+              <modifiers>
+                <modifier type="set" value="2" field="9b8e-3895-d263-aefa">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="parent" childId="5576-e636-f135-b213" shared="true" id="aa8e-7639-a747-7603"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <selectionEntryGroups>
+                <selectionEntryGroup name="Special Weapon Selection" hidden="false" id="4e9-76bc-85be-bb10">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d1c7-384b-988a-ad49"/>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="e6b-e2f2-b9d5-eafd"/>
+                  </constraints>
+                  <entryLinks>
+                    <entryLink import="true" name="Flamer" hidden="false" id="c4f7-eb6c-c45c-f0e3" type="selectionEntry" targetId="ca87-a804-145a-5811"/>
+                    <entryLink import="true" name="Grenade launcher" hidden="false" id="c03d-9576-114f-6ec3" type="selectionEntry" targetId="drop-weap-glin-bs04"/>
+                    <entryLink import="true" name="Meltagun" hidden="false" id="3e23-2d14-186b-828a" type="selectionEntry" targetId="1a1b-85e3-4af6-aae6"/>
+                    <entryLink import="true" name="Plasmagun" hidden="false" id="b8f6-982-29f7-3af2" type="selectionEntry" targetId="b988-e33d-20e3-4b61"/>
+                  </entryLinks>
+                </selectionEntryGroup>
+              </selectionEntryGroups>
+              <infoLinks>
+                <infoLink name="Guardsman" hidden="false" id="919d-cf88-aacf-4c0d" type="profile" targetId="f0f4-fa07-bfd2-b4c"/>
+              </infoLinks>
+            </selectionEntry>
+            <selectionEntry type="model" import="true" name="Guardsman - Vox" hidden="false" id="d698-7dae-fab4-b6e2">
+              <entryLinks>
+                <entryLink import="true" name="Lasgun" hidden="false" id="aa11-bdb9-b96c-b84e" type="selectionEntry" targetId="drop-weap-lgcl-bs04">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9cb0-8533-1357-857f"/>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="e409-7b77-cb34-1084"/>
+                  </constraints>
+                </entryLink>
+                <entryLink import="true" name="Vox-caster" hidden="false" id="ccc6-68ca-3e36-47de" type="selectionEntry" targetId="de6b-81c8-2351-1f50">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6871-6ff7-8abc-dca9"/>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="c9fd-242f-42d8-a2a7"/>
+                  </constraints>
+                </entryLink>
+                <entryLink import="true" name="Close combat weapon" hidden="false" id="2c3e-1d8f-9ab-4f64" type="selectionEntry" targetId="drop-weap-ccin-ws04">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1729-a5e9-f018-4ff8"/>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="b91-aad4-8cb0-7930"/>
+                  </constraints>
+                </entryLink>
+              </entryLinks>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="fb2f-308f-4e0d-950c"/>
+              </constraints>
+              <modifiers>
+                <modifier type="set" value="2" field="fb2f-308f-4e0d-950c">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="parent" childId="5576-e636-f135-b213" shared="true" id="5a6f-284e-6b20-a9a4"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <infoLinks>
+                <infoLink name="Guardsman" hidden="false" id="de9e-d6d4-7758-fc25" type="profile" targetId="f0f4-fa07-bfd2-b4c"/>
+              </infoLinks>
+            </selectionEntry>
+            <selectionEntry type="model" import="true" name="Heavy Weapons Team" hidden="false" id="c3ca-42c-cf3e-6aee">
+              <entryLinks>
+                <entryLink import="true" name="Las small arms" hidden="false" id="5398-1c1-9927-2f7b" type="selectionEntry" targetId="2540-ef18-3b93-cc61">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="46d4-f9fc-3f56-ddfc"/>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="24fc-551c-bd60-486d"/>
+                  </constraints>
+                </entryLink>
+                <entryLink import="true" name="Close combat weapon" hidden="false" id="329c-f944-3661-72ab" type="selectionEntry" targetId="drop-weap-ccin-ws04">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c19f-4a69-270c-497f"/>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="2482-cddc-9f95-d149"/>
+                  </constraints>
+                </entryLink>
+              </entryLinks>
+              <profiles>
+                <profile name="Heavy Weapons Team" typeId="drop-0000-0000-0001" typeName="(1) Profiles" hidden="false" id="bd6d-8ad4-5582-7537">
+                  <characteristics>
+                    <characteristic name="M" typeId="a2ab-842f-e968-ca80">6&quot;</characteristic>
+                    <characteristic name="T" typeId="bc9c-e3f3-3186-a7f0">3</characteristic>
+                    <characteristic name="SV" typeId="b5ba-b467-6f5a-cca9">5+</characteristic>
+                    <characteristic name="W" typeId="00d9-a17e-9b2e-a053">2</characteristic>
+                    <characteristic name="LD" typeId="c45a-6afc-f077-7edc">7+</characteristic>
+                    <characteristic name="OC" typeId="7d96-9381-1b91-9d5e">4</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="bb7e-575f-647f-dc13"/>
+              </constraints>
+              <selectionEntryGroups>
+                <selectionEntryGroup name="Weapon Choice" hidden="false" id="7234-e4e8-c758-30c0" defaultSelectionEntryId="3b0f-792b-b849-f5a">
+                  <entryLinks>
+                    <entryLink import="true" name="Missile launcher" hidden="false" id="726c-487e-2df1-4e84" type="selectionEntry" targetId="a85a-18af-143d-fe70"/>
+                    <entryLink import="true" name="Heavy bolter" hidden="false" id="d8f6-2e4-54db-9be5" type="selectionEntry" targetId="1e18-84aa-2621-a04b"/>
+                    <entryLink import="true" name="Mortar" hidden="false" id="fc0d-1cba-3608-c53e" type="selectionEntry" targetId="e673-5312-fb0c-2448"/>
+                  </entryLinks>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="747-ebd2-bbc2-cf48"/>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="8c54-6cf4-2daf-a50b"/>
+                  </constraints>
+                </selectionEntryGroup>
+              </selectionEntryGroups>
+            </selectionEntry>
+          </selectionEntries>
+          <constraints>
+            <constraint type="min" value="9" field="selections" scope="parent" shared="true" id="37e5-43c0-ad3-873d"/>
+            <constraint type="max" value="9" field="selections" scope="parent" shared="true" id="6d0c-d921-eb9f-b4df"/>
+          </constraints>
+          <modifierGroups>
+            <modifierGroup type="and">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="parent" childId="5576-e636-f135-b213" shared="true"/>
+              </conditions>
+              <modifiers>
+                <modifier type="set" value="18" field="37e5-43c0-ad3-873d"/>
+                <modifier type="set" value="18" field="6d0c-d921-eb9f-b4df"/>
+              </modifiers>
+            </modifierGroup>
+          </modifierGroups>
+          <modifiers>
+            <modifier type="decrement" value="1" field="6d0c-d921-eb9f-b4df">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="parent" childId="c3ca-42c-cf3e-6aee" shared="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <infoLinks>
+        <infoLink name="Deep Strike" hidden="false" id="2881-b426-d5fc-9827" type="rule" targetId="7cb5-dd6b-dd87-ad3b"/>
+      </infoLinks>
+      <constraints>
+        <constraint type="max" value="6" field="selections" scope="roster" shared="true" id="ce68-c81-e2fb-632a" includeChildSelections="true" includeChildForces="true"/>
+      </constraints>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Sky-Hammer Battery" hidden="false" id="fce0-776b-4e1c-3f86">
+      <categoryLinks>
+        <categoryLink targetId="7748-524d-a777-399d" id="8861-701a-7edd-ef00" primary="false" name="Sky Hammer Battery"/>
+        <categoryLink targetId="8cab-448d-37b7-32bc" id="7da1-55e6-99a6-66ec" primary="false" name="Artillery"/>
+      </categoryLinks>
+      <profiles>
+        <profile name="Keywords - Faction" typeId="drop-0000-0000-key1" typeName="[Keywords]" hidden="false" id="9ac2-e0ae-b054-b5ae">
+          <characteristics>
+            <characteristic name="Keywords" typeId="2a81-7738-d2ef-20f3">DROP TROOPS</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Keywords" typeId="drop-0000-0000-key1" typeName="[Keywords]" hidden="false" id="6da2-4c41-d539-87ed">
+          <characteristics>
+            <characteristic name="Keywords" typeId="2a81-7738-d2ef-20f3">INFANTRY, ARTILLERY, IMPERIUM, GRENADES, REGIMENT, PLATOON, SKY HAMMER BATTERY</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Suppressing Fire" typeId="2c22-15c0-450f-768" typeName="(4) Abilities" hidden="false" id="d24f-1e63-8c2e-e3c4">
+          <characteristics>
+            <characteristic name="Description" typeId="770f-11ab-9f54-73e8">In your Shooting phase, after this model has shot, if one or more of those attacks made with its ranged weapon scored a hit against an enemy INFANTRY unit, until the end of your opponent’s next turn, that unit is shaken. While a unit is shaken, subtract 2&quot; from its Move characteristic and subtract 2 from Advance and Charge rolls made for it.</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="New Profile" hidden="false" id="101b-508c-fa51-5025" typeId="drop-0000-0000-0001" typeName="(1) Profiles">
+          <characteristics>
+            <characteristic name="M" typeId="a2ab-842f-e968-ca80">4&quot;</characteristic>
+            <characteristic name="T" typeId="bc9c-e3f3-3186-a7f0">5</characteristic>
+            <characteristic name="SV" typeId="b5ba-b467-6f5a-cca9">4+</characteristic>
+            <characteristic name="W" typeId="00d9-a17e-9b2e-a053">6</characteristic>
+            <characteristic name="LD" typeId="c45a-6afc-f077-7edc">7+</characteristic>
+            <characteristic name="OC" typeId="7d96-9381-1b91-9d5e">2</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <entryLinks>
+        <entryLink import="true" name="Battery las small arms" hidden="false" id="dd8e-1e62-6143-f6dd" type="selectionEntry" targetId="3a-5dcd-18b7-18a9">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="83dc-318e-fc1f-e30a"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a312-7932-fbe4-3075"/>
+          </constraints>
+        </entryLink>
+        <entryLink import="true" name="Battery close combat weapons" hidden="false" id="1350-66fb-9f1a-23c0" type="selectionEntry" targetId="7372-7f1d-2898-d17e">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="8457-58ef-afda-7889"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="baf7-b5d-eeff-96d6"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Weapon Choice" hidden="false" id="2bd4-4cd5-9247-2552" defaultSelectionEntryId="b3ef-cd2a-78d8-ca76">
+          <entryLinks>
+            <entryLink import="true" name="Light howitzer" hidden="false" id="9623-1645-f358-bf06" type="selectionEntry" targetId="4150-2dcc-1c7a-fcf2"/>
+            <entryLink import="true" name="Heavy mortar" hidden="false" id="b3ef-cd2a-78d8-ca76" type="selectionEntry" targetId="75e8-fec9-394b-4955"/>
+          </entryLinks>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="dc1f-226c-ea-124c"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a7c9-69eb-7347-297e"/>
+          </constraints>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <costs>
+        <cost name="pts" typeId="51b2-306e-1021-d207" value="60"/>
+      </costs>
+    </selectionEntry>
   </selectionEntries>
   <sharedRules>
     <rule name="Voice of Command" hidden="false" id="2866-38c6-e06b-b935">
@@ -7188,5 +7300,63 @@ STORMTROOPER SQUAD</characteristic>
 
 Until the start of your next Command phase, the unit you selected is affected by that Order. Unless otherwise stated, a unit can only be affected by one Order at a time (any Order subsequently issued to that unit replaces the current one). If a unit being affected by an Order becomes Battle-shocked, that Order ceases to affect that unit.</description>
     </rule>
+    <rule name="Loyal Protector" hidden="false" id="a05e-c756-488f-d76a">
+      <description>At the start of the Declare Battle Formations step, this model must join one COMMAND SQUAD unit from your army (a COMMAND SQUAD cannot have more than one Loyal Protector model joined to it). This model then counts as part of that COMMAND SQUAD for the rest of the battle, and its Starting Strength is increased accordingly. If it is not possible to join this model to a COMMAND SQUAD, it does not take part in the battle and counts as having been destroyed.
+
+
+While this model is joined to a unit, it can embark within any TRANSPORT that unit can embark within, and takes up the space of 3 models.</description>
+    </rule>
   </sharedRules>
+  <sharedProfiles>
+    <profile name="Drop Trooper" hidden="false" id="5970-fc2d-58d0-85dd" typeId="drop-0000-0000-0001" typeName="(1) Profiles">
+      <characteristics>
+        <characteristic name="M" typeId="a2ab-842f-e968-ca80">6&quot;</characteristic>
+        <characteristic name="T" typeId="bc9c-e3f3-3186-a7f0">3</characteristic>
+        <characteristic name="SV" typeId="b5ba-b467-6f5a-cca9">5+</characteristic>
+        <characteristic name="W" typeId="00d9-a17e-9b2e-a053">1</characteristic>
+        <characteristic name="LD" typeId="c45a-6afc-f077-7edc">7+</characteristic>
+        <characteristic name="OC" typeId="7d96-9381-1b91-9d5e">2</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Drop Veteran" typeId="drop-0000-0000-0001" typeName="(1) Profiles" hidden="false" id="6108-2140-401b-1a13">
+      <characteristics>
+        <characteristic name="M" typeId="a2ab-842f-e968-ca80">6&quot;</characteristic>
+        <characteristic name="T" typeId="bc9c-e3f3-3186-a7f0">3</characteristic>
+        <characteristic name="SV" typeId="b5ba-b467-6f5a-cca9">5+</characteristic>
+        <characteristic name="W" typeId="00d9-a17e-9b2e-a053">1</characteristic>
+        <characteristic name="LD" typeId="c45a-6afc-f077-7edc">7+</characteristic>
+        <characteristic name="OC" typeId="7d96-9381-1b91-9d5e">2</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Guardsman" typeId="drop-0000-0000-0001" typeName="(1) Profiles" hidden="false" id="f0f4-fa07-bfd2-b4c">
+      <characteristics>
+        <characteristic name="M" typeId="a2ab-842f-e968-ca80">6&quot;</characteristic>
+        <characteristic name="T" typeId="bc9c-e3f3-3186-a7f0">3</characteristic>
+        <characteristic name="SV" typeId="b5ba-b467-6f5a-cca9">5+</characteristic>
+        <characteristic name="W" typeId="00d9-a17e-9b2e-a053">1</characteristic>
+        <characteristic name="LD" typeId="c45a-6afc-f077-7edc">7+</characteristic>
+        <characteristic name="OC" typeId="7d96-9381-1b91-9d5e">2</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Sapper" typeId="drop-0000-0000-0001" typeName="(1) Profiles" hidden="false" id="9bb-edd9-c8db-a7a6">
+      <characteristics>
+        <characteristic name="M" typeId="a2ab-842f-e968-ca80">6&quot;</characteristic>
+        <characteristic name="T" typeId="bc9c-e3f3-3186-a7f0">3</characteristic>
+        <characteristic name="SV" typeId="b5ba-b467-6f5a-cca9">5+</characteristic>
+        <characteristic name="W" typeId="00d9-a17e-9b2e-a053">1</characteristic>
+        <characteristic name="LD" typeId="c45a-6afc-f077-7edc">7+</characteristic>
+        <characteristic name="OC" typeId="7d96-9381-1b91-9d5e">1</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Stormtrooper" typeId="drop-0000-0000-0001" typeName="(1) Profiles" hidden="false" id="6464-ec5a-b5fc-a0a5">
+      <characteristics>
+        <characteristic name="M" typeId="a2ab-842f-e968-ca80">6&quot;</characteristic>
+        <characteristic name="T" typeId="bc9c-e3f3-3186-a7f0">3</characteristic>
+        <characteristic name="SV" typeId="b5ba-b467-6f5a-cca9">4+</characteristic>
+        <characteristic name="W" typeId="00d9-a17e-9b2e-a053">1</characteristic>
+        <characteristic name="LD" typeId="c45a-6afc-f077-7edc">7+</characteristic>
+        <characteristic name="OC" typeId="7d96-9381-1b91-9d5e">1</characteristic>
+      </characteristics>
+    </profile>
+  </sharedProfiles>
 </catalogue>
