@@ -845,15 +845,15 @@ Whilst an AIRCRAFT model is being piloted by the Named Ace, its Weapons have a 
             <characteristic name="Description" typeId="38f0-8ffb-aef1-9045">This OFFICER can issue 2 Orders to an AIRCRAFT or VEHICLE model using the Hover ability. This Officer can only issue the Duty and Honour! and Take Aim! Orders.</characteristic>
           </characteristics>
         </profile>
-        <profile name="Attachments" typeId="2c22-15c0-450f-768" typeName="(4) Abilities" hidden="true" id="a471-5a75-550d-ab6a">
+        <profile name="Available Craft" typeId="47a3-20ef-a891-7dcb" typeName="(4) Leader" hidden="true" id="a471-5a75-550d-ab6a">
           <characteristics>
-            <characteristic name="Description" typeId="770f-11ab-9f54-73e8">This unit can be attached to the following units:
+            <characteristic name="Description" typeId="38f0-8ffb-aef1-9045">This unit can be attached to the following units:
 ARVUS LIGHTER | AQUILA LANDER | VALKYRIE SKY TALON | VALKYRIE ASSAULT CARRIER | VENDETTA GUNSHIP | VULTURE GUNSHIP | THUNDERBOLT HEAVY FIGHTER | THUNDERBOLT FURY | AVENGER STRIKE FIGHTER | LIGHTNING STRIKE FIGHTER | MARAUDER BOMBER | MARAUDER DESTROYER</characteristic>
           </characteristics>
           <modifiers>
             <modifier type="set" value="false" field="hidden">
               <conditions>
-                <condition type="atLeast" value="1" field="selections" scope="force" childId="fc2c-bf31-921a-4d3" shared="true" includeChildSelections="false" includeChildForces="false"/>
+                <condition type="atLeast" value="1" field="selections" scope="roster" childId="fc2c-bf31-921a-4d2" shared="true" includeChildSelections="true" includeChildForces="false"/>
               </conditions>
             </modifier>
           </modifiers>
@@ -2163,15 +2163,15 @@ ARVUS LIGHTER | AQUILA LANDER | VALKYRIE SKY TALON | VALKYRIE ASSAULT CARRIER | 
             <characteristic name="Description" typeId="770f-11ab-9f54-73e8">Any friendly DROP TROOPS units within 6&apos;&apos; of a model with this ability may re-roll failed Battleshock tests.</characteristic>
           </characteristics>
         </profile>
-        <profile typeId="2c22-15c0-450f-768" typeName="(4) Abilities" hidden="true" id="70ab-51fe-c6b5-9631" name="Attachments">
+        <profile typeId="47a3-20ef-a891-7dcb" typeName="(4) Leader" hidden="true" id="70ab-51fe-c6b5-9631" name="Unit Composition">
           <characteristics>
-            <characteristic name="Description" typeId="770f-11ab-9f54-73e8">This unit can be attached to the following units:
+            <characteristic name="Description" typeId="38f0-8ffb-aef1-9045">This unit can be attached to the following units:
 BREACHER SQUAD | DROP OGRYN SQUAD | DROP TROOPERS SQUAD | DROP VETERAN SQUAD| HEAVY WEAPONS SQUAD | SAPPERS SQUAD | SPECIAL WEAPONS SQUAD | STORMTROOPER SQUAD</characteristic>
           </characteristics>
           <modifiers>
             <modifier type="set" value="false" field="hidden">
               <conditions>
-                <condition type="atLeast" value="1" field="selections" scope="force" childId="fc2c-bf31-921a-4d3" shared="true" includeChildSelections="false" includeChildForces="false"/>
+                <condition type="atLeast" value="1" field="selections" scope="roster" childId="fc2c-bf31-921a-4d2" shared="true" includeChildSelections="true" includeChildForces="false"/>
               </conditions>
             </modifier>
           </modifiers>
@@ -2461,15 +2461,15 @@ BREACHER SQUAD | DROP OGRYN SQUAD | DROP TROOPERS SQUAD | DROP VETERAN SQUAD|
             <characteristic name="Description" typeId="770f-11ab-9f54-73e8">While a friendly PLATOON unit is within 6” of this unit’s Platoon Commander, you can target that unit with Stratagems even while it is Battle-shocked.</characteristic>
           </characteristics>
         </profile>
-        <profile typeId="2c22-15c0-450f-768" typeName="(4) Abilities" hidden="true" id="60a9-1695-68fd-cfe2" name="Attachments">
+        <profile typeId="47a3-20ef-a891-7dcb" typeName="(4) Leader" hidden="true" id="60a9-1695-68fd-cfe2" name="Unit Composition">
           <characteristics>
-            <characteristic name="Description" typeId="770f-11ab-9f54-73e8">This unit can be attached to the following units:
+            <characteristic name="Description" typeId="38f0-8ffb-aef1-9045">This unit can be attached to the following units:
 BREACHER SQUAD | DROP TROOPERS SQUAD | DROP VETERAN SQUAD| HEAVY WEAPONS SQUAD | SAPPERS SQUAD | SPECIAL WEAPONS SQUAD | STORMTROOPER SQUAD</characteristic>
           </characteristics>
           <modifiers>
             <modifier type="set" value="false" field="hidden">
               <conditions>
-                <condition type="atLeast" value="1" field="selections" scope="force" childId="fc2c-bf31-921a-4d3" shared="true" includeChildSelections="false" includeChildForces="false"/>
+                <condition type="atLeast" value="1" field="selections" scope="roster" childId="fc2c-bf31-921a-4d2" shared="true" includeChildSelections="true" includeChildForces="false"/>
               </conditions>
             </modifier>
           </modifiers>
@@ -2747,15 +2747,15 @@ BREACHER SQUAD | DROP TROOPERS SQUAD | DROP VETERAN SQUAD| HEAVY WEAPONS SQUAD
             <characteristic name="Description" typeId="770f-11ab-9f54-73e8">In your Shooting phase, after this model’s unit has shot, if it is not within Engagement Range of any enemy units, that unit can make a Normal move of up to 6&quot; as if it were your Movement phase. If it does, until the end of the turn, that unit is not eligible to declare a charge.</characteristic>
           </characteristics>
         </profile>
-        <profile typeId="2c22-15c0-450f-768" typeName="(4) Abilities" hidden="true" id="fb5-ab30-a876-d927" name="Attachments">
+        <profile typeId="47a3-20ef-a891-7dcb" typeName="(4) Leader" hidden="true" id="fb5-ab30-a876-d927" name="Unit Composition">
           <characteristics>
-            <characteristic name="Description" typeId="770f-11ab-9f54-73e8">This unit can be attached to the following units:
+            <characteristic name="Description" typeId="38f0-8ffb-aef1-9045">This unit can be attached to the following units:
 RECON BIKE SQUAD</characteristic>
           </characteristics>
           <modifiers>
             <modifier type="set" value="false" field="hidden">
               <conditions>
-                <condition type="atLeast" value="1" field="selections" scope="force" childId="fc2c-bf31-921a-4d3" shared="true" includeChildSelections="false" includeChildForces="false"/>
+                <condition type="atLeast" value="1" field="selections" scope="roster" childId="fc2c-bf31-921a-4d2" shared="true" includeChildSelections="true" includeChildForces="false"/>
               </conditions>
             </modifier>
           </modifiers>
@@ -3469,7 +3469,7 @@ RECON BIKE SQUAD</characteristic>
       <modifiers>
         <modifier type="set" value="false" field="hidden">
           <conditions>
-            <condition type="atLeast" value="1" field="selections" scope="roster" childId="6fd-351b-fc0d-6328" shared="true"/>
+            <condition type="atLeast" value="1" field="selections" scope="roster" childId="6fd-351b-fc0d-6328" shared="true" includeChildSelections="true" includeChildForces="false"/>
           </conditions>
         </modifier>
       </modifiers>
@@ -4400,15 +4400,15 @@ RECON BIKE SQUAD</characteristic>
             <characteristic name="OC" typeId="7d96-9381-1b91-9d5e">1</characteristic>
           </characteristics>
         </profile>
-        <profile typeId="2c22-15c0-450f-768" typeName="(4) Abilities" hidden="true" id="ddd9-aec6-c4dd-30ac" name="Attachments">
+        <profile typeId="47a3-20ef-a891-7dcb" typeName="(4) Leader" hidden="true" id="ddd9-aec6-c4dd-30ac" name="Unit Composition">
           <characteristics>
-            <characteristic name="Description" typeId="770f-11ab-9f54-73e8">This unit can be attached to the following units:
+            <characteristic name="Description" typeId="38f0-8ffb-aef1-9045">This unit can be attached to the following units:
 BREACHER SQUAD | DROP OGRYN SQUAD | DROP TROOPERS SQUAD | DROP VETERAN SQUAD | HEAVY WEAPONS SQUAD | SAPPERS SQUAD | SPECIAL WEAPONS SQUAD | STORMTROOPER SQUAD</characteristic>
           </characteristics>
           <modifiers>
             <modifier type="set" value="false" field="hidden">
               <conditions>
-                <condition type="atLeast" value="1" field="selections" scope="force" childId="fc2c-bf31-921a-4d3" shared="true" includeChildSelections="false" includeChildForces="false"/>
+                <condition type="atLeast" value="1" field="selections" scope="roster" childId="fc2c-bf31-921a-4d2" shared="true" includeChildSelections="true" includeChildForces="false"/>
               </conditions>
             </modifier>
           </modifiers>
@@ -4477,15 +4477,15 @@ BREACHER SQUAD | DROP OGRYN SQUAD | DROP TROOPERS SQUAD | DROP VETERAN SQUAD 
             <characteristic name="Description" typeId="770f-11ab-9f54-73e8">If this model is leading a unit, all ranged weapons in that unit gains [TWIN-LINKED].</characteristic>
           </characteristics>
         </profile>
-        <profile typeId="2c22-15c0-450f-768" typeName="(4) Abilities" hidden="true" id="2ff0-7855-7063-7c5b" name="Attachments">
+        <profile typeId="47a3-20ef-a891-7dcb" typeName="(4) Leader" hidden="true" id="2ff0-7855-7063-7c5b" name="Unit Composition">
           <characteristics>
-            <characteristic name="Description" typeId="770f-11ab-9f54-73e8">This unit can be attached to the following units:
+            <characteristic name="Description" typeId="38f0-8ffb-aef1-9045">This unit can be attached to the following units:
 DROP SENTINEL | SENTINEL POWERLIFTER | SUPPORT SENTINEL</characteristic>
           </characteristics>
           <modifiers>
             <modifier type="set" value="false" field="hidden">
               <conditions>
-                <condition type="atLeast" value="1" field="selections" scope="force" childId="fc2c-bf31-921a-4d3" shared="true" includeChildSelections="false" includeChildForces="false"/>
+                <condition type="atLeast" value="1" field="selections" scope="roster" childId="fc2c-bf31-921a-4d2" shared="true" includeChildSelections="false" includeChildForces="false"/>
               </conditions>
             </modifier>
           </modifiers>
@@ -4592,15 +4592,15 @@ DROP SENTINEL | SENTINEL POWERLIFTER | SUPPORT SENTINEL</characteristic>
         <infoLink name="Voice of Command" hidden="false" type="rule" id="891d-42bc-f206-8bc2" targetId="2866-38c6-e06b-b935"/>
       </infoLinks>
       <profiles>
-        <profile typeId="2c22-15c0-450f-768" typeName="(4) Abilities" hidden="true" id="2988-28ed-9345-b212" name="Attachments">
+        <profile typeId="47a3-20ef-a891-7dcb" typeName="(4) Leader" hidden="true" id="2988-28ed-9345-b212" name="Unit Composition">
           <characteristics>
-            <characteristic name="Description" typeId="770f-11ab-9f54-73e8">This unit can be attached to the following units:
+            <characteristic name="Description" typeId="38f0-8ffb-aef1-9045">This unit can be attached to the following units:
 TAUROS ASSAULT VEHICLE | TAUROS ANIHILATOR | TAUROS VENATOR | TAUROS ERASER</characteristic>
           </characteristics>
           <modifiers>
             <modifier type="set" value="false" field="hidden">
               <conditions>
-                <condition type="atLeast" value="1" field="selections" scope="force" childId="fc2c-bf31-921a-4d3" shared="true" includeChildSelections="false" includeChildForces="false"/>
+                <condition type="atLeast" value="1" field="selections" scope="roster" childId="fc2c-bf31-921a-4d2" shared="true" includeChildSelections="true" includeChildForces="false"/>
               </conditions>
             </modifier>
           </modifiers>
@@ -4799,15 +4799,15 @@ TAUROS ASSAULT VEHICLE | TAUROS ANIHILATOR | TAUROS VENATOR | TAUROS ERASER</
         </selectionEntry>
       </selectionEntries>
       <profiles>
-        <profile typeId="2c22-15c0-450f-768" typeName="(4) Abilities" hidden="true" id="11c3-ab8c-fde2-c862" name="Attachments">
+        <profile typeId="47a3-20ef-a891-7dcb" typeName="(4) Leader" hidden="true" id="11c3-ab8c-fde2-c862" name="Unit Composition">
           <characteristics>
-            <characteristic name="Description" typeId="770f-11ab-9f54-73e8">This unit can be attached to the following units:
+            <characteristic name="Description" typeId="38f0-8ffb-aef1-9045">This unit can be attached to the following units:
 STORMTROOPER SQUAD</characteristic>
           </characteristics>
           <modifiers>
             <modifier type="set" value="false" field="hidden">
               <conditions>
-                <condition type="atLeast" value="1" field="selections" scope="force" childId="fc2c-bf31-921a-4d3" shared="true" includeChildSelections="false" includeChildForces="false"/>
+                <condition type="atLeast" value="1" field="selections" scope="roster" childId="fc2c-bf31-921a-4d2" shared="true" includeChildSelections="true" includeChildForces="false"/>
               </conditions>
             </modifier>
           </modifiers>
@@ -6885,79 +6885,80 @@ STORMTROOPER SQUAD</characteristic>
       <categoryLinks>
         <categoryLink targetId="4ac9-fd30-1e3d-b249" id="1e84-4afa-e3b1-3652" primary="true" name="Configuration"/>
       </categoryLinks>
-      <selectionEntryGroups>
-        <selectionEntryGroup name="Options" hidden="false" id="4f68-87e4-25c9-f9ee">
-          <selectionEntries>
-            <selectionEntry type="upgrade" import="true" name="Show Legacy Units" hidden="false" id="6fd-351b-fc0d-6328">
-              <constraints>
-                <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="4c1b-8d10-3291-ba06"/>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="df8c-58-4214-12b9"/>
-                <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="340c-b3a2-d32a-b36e" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-              </constraints>
-            </selectionEntry>
-            <selectionEntry type="upgrade" import="true" name="Display Order List" hidden="false" id="e25-8716-3fd8-6155">
-              <profiles>
-                <profile name="3. Take Aim!" typeId="1af4-cc1b-d855-9856" typeName="Orders" hidden="false" id="97f6-5cb9-a0cd-68f">
-                  <characteristics>
-                    <characteristic name="Order Effect" hidden="false" id="fd17-8939-a7e2-db9a" typeId="3af1-229d-9ea8-7aab">Improve the Ballistic Skill characteristic of ranged weapons equipped by models in this unit by 1.</characteristic>
-                  </characteristics>
-                </profile>
-                <profile name="2. Move and Fire!" typeId="1af4-cc1b-d855-9856" typeName="Orders" hidden="false" id="9524-9b51-720f-e258">
-                  <characteristics>
-                    <characteristic name="Order Effect" hidden="false" id="d559-4a93-f341-ae74" typeId="3af1-229d-9ea8-7aab">Ranged weapons in the ordered unit gain [ASSAULT].</characteristic>
-                  </characteristics>
-                </profile>
-                <profile name="4. First Rank, Fire! Second Rank, Fire!" typeId="1af4-cc1b-d855-9856" typeName="Orders" hidden="false" id="9299-82c4-901d-bbeb">
-                  <characteristics>
-                    <characteristic name="Order Effect" hidden="false" id="1f0d-953b-67ec-baf8" typeId="3af1-229d-9ea8-7aab">Improve the Attacks characteristic of Rapid Fire weapons equipped by models in this unit by 1.</characteristic>
-                  </characteristics>
-                </profile>
-                <profile name="5. Take Cover!" typeId="1af4-cc1b-d855-9856" typeName="Orders" hidden="false" id="f79b-8944-e8-4a25">
-                  <characteristics>
-                    <characteristic name="Order Effect" hidden="false" id="afd-d197-2825-991b" typeId="3af1-229d-9ea8-7aab">Improve the Save characteristic of models in this unit by 1 (this cannot improve a model’s Save to better than 3+).</characteristic>
-                  </characteristics>
-                </profile>
-                <profile name="1. Move! Move! Move!" typeId="1af4-cc1b-d855-9856" typeName="Orders" hidden="false" id="df08-1967-d65d-7277">
-                  <characteristics>
-                    <characteristic name="Order Effect" hidden="false" id="e6e6-4f85-b523-a889" typeId="3af1-229d-9ea8-7aab">Add 3&quot; to the Move characteristic of models in this unit.</characteristic>
-                  </characteristics>
-                </profile>
-                <profile name="6. Duty and Honor!" typeId="1af4-cc1b-d855-9856" typeName="Orders" hidden="false" id="13de-6359-9af1-92f9">
-                  <characteristics>
-                    <characteristic name="Order Effect" hidden="false" id="11de-1755-2d91-d456" typeId="3af1-229d-9ea8-7aab">Improve the Leadership and Objective Control characteristics of models in this unit by 1.</characteristic>
-                  </characteristics>
-                </profile>
-                <profile name="Fix Bayonets! (Commissar Only)" typeId="1af4-cc1b-d855-9856" typeName="Orders" hidden="false" id="dc26-9a04-e288-5ead">
-                  <characteristics>
-                    <characteristic name="Order Effect" hidden="false" id="2913-b220-975-7b4b" typeId="3af1-229d-9ea8-7aab">Improve the Weapon Skill characteristic of melee weapons equipped by models in this unit by 1.</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
-              <constraints>
-                <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="1e08-d5a6-7374-a49c" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-              </constraints>
-              <categoryLinks>
-                <categoryLink name="Configuration" hidden="false" id="d3e9-dbb9-852b-69b3" targetId="4ac9-fd30-1e3d-b249" primary="true"/>
-              </categoryLinks>
-            </selectionEntry>
-            <selectionEntry type="upgrade" import="true" name="Dispaly Leader Attachments" hidden="false" id="fc2c-bf31-921a-4d3">
-              <constraints>
-                <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="9623-c8c1-d751-5e5f" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-              </constraints>
-              <categoryLinks>
-                <categoryLink name="Configuration" hidden="false" id="2721-11ff-df08-570d" targetId="4ac9-fd30-1e3d-b249" primary="true"/>
-              </categoryLinks>
-            </selectionEntry>
-          </selectionEntries>
-          <entryLinks>
-            <entryLink import="true" name="Show Weapon Type Rules" hidden="false" id="72fe-a72e-bc33-cb54" collective="false" targetId="edc0-ab68-6a3a-4ba7" type="selectionEntry">
-              <categoryLinks>
-                <categoryLink name="Configuration" hidden="false" id="c6a8-e9bc-931-a782" targetId="4ac9-fd30-1e3d-b249" primary="true"/>
-              </categoryLinks>
-            </entryLink>
-          </entryLinks>
-        </selectionEntryGroup>
-      </selectionEntryGroups>
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="Display Leader Attachments" hidden="false" id="fc2c-bf31-921a-4d2">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="bb50-7b04-babb-53e2" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7b1e-b89d-dc3b-e625"/>
+          </constraints>
+          <categoryLinks>
+            <categoryLink name="Configuration" hidden="false" id="1d4a-53af-5e5a-9fbd" targetId="4ac9-fd30-1e3d-b249" primary="true"/>
+          </categoryLinks>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Display Order List" hidden="false" id="e25-8716-3fd8-6155">
+          <profiles>
+            <profile name="3. Take Aim!" typeId="1af4-cc1b-d855-9856" typeName="Orders" hidden="false" id="97f6-5cb9-a0cd-68f">
+              <characteristics>
+                <characteristic name="Order Effect" hidden="false" id="fd17-8939-a7e2-db9a" typeId="3af1-229d-9ea8-7aab">Improve the Ballistic Skill characteristic of ranged weapons equipped by models in this unit by 1.</characteristic>
+              </characteristics>
+            </profile>
+            <profile name="2. Move and Fire!" typeId="1af4-cc1b-d855-9856" typeName="Orders" hidden="false" id="9524-9b51-720f-e258">
+              <characteristics>
+                <characteristic name="Order Effect" hidden="false" id="d559-4a93-f341-ae74" typeId="3af1-229d-9ea8-7aab">Ranged weapons in the ordered unit gain [ASSAULT].</characteristic>
+              </characteristics>
+            </profile>
+            <profile name="4. First Rank, Fire! Second Rank, Fire!" typeId="1af4-cc1b-d855-9856" typeName="Orders" hidden="false" id="9299-82c4-901d-bbeb">
+              <characteristics>
+                <characteristic name="Order Effect" hidden="false" id="1f0d-953b-67ec-baf8" typeId="3af1-229d-9ea8-7aab">Improve the Attacks characteristic of Rapid Fire weapons equipped by models in this unit by 1.</characteristic>
+              </characteristics>
+            </profile>
+            <profile name="5. Take Cover!" typeId="1af4-cc1b-d855-9856" typeName="Orders" hidden="false" id="f79b-8944-e8-4a25">
+              <characteristics>
+                <characteristic name="Order Effect" hidden="false" id="afd-d197-2825-991b" typeId="3af1-229d-9ea8-7aab">Improve the Save characteristic of models in this unit by 1 (this cannot improve a model’s Save to better than 3+).</characteristic>
+              </characteristics>
+            </profile>
+            <profile name="1. Move! Move! Move!" typeId="1af4-cc1b-d855-9856" typeName="Orders" hidden="false" id="df08-1967-d65d-7277">
+              <characteristics>
+                <characteristic name="Order Effect" hidden="false" id="e6e6-4f85-b523-a889" typeId="3af1-229d-9ea8-7aab">Add 3&quot; to the Move characteristic of models in this unit.</characteristic>
+              </characteristics>
+            </profile>
+            <profile name="6. Duty and Honor!" typeId="1af4-cc1b-d855-9856" typeName="Orders" hidden="false" id="13de-6359-9af1-92f9">
+              <characteristics>
+                <characteristic name="Order Effect" hidden="false" id="11de-1755-2d91-d456" typeId="3af1-229d-9ea8-7aab">Improve the Leadership and Objective Control characteristics of models in this unit by 1.</characteristic>
+              </characteristics>
+            </profile>
+            <profile name="Fix Bayonets! (Commissar Only)" typeId="1af4-cc1b-d855-9856" typeName="Orders" hidden="false" id="dc26-9a04-e288-5ead">
+              <characteristics>
+                <characteristic name="Order Effect" hidden="false" id="2913-b220-975-7b4b" typeId="3af1-229d-9ea8-7aab">Improve the Weapon Skill characteristic of melee weapons equipped by models in this unit by 1.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="1e08-d5a6-7374-a49c" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f0d-846a-6d5f-f6e5"/>
+          </constraints>
+          <categoryLinks>
+            <categoryLink name="Configuration" hidden="false" id="d3e9-dbb9-852b-69b3" targetId="4ac9-fd30-1e3d-b249" primary="true"/>
+          </categoryLinks>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Show Legacy Units" hidden="false" id="6fd-351b-fc0d-6328">
+          <constraints>
+            <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="4c1b-8d10-3291-ba06"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="df8c-58-4214-12b9"/>
+            <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="340c-b3a2-d32a-b36e" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+          </constraints>
+        </selectionEntry>
+      </selectionEntries>
+      <entryLinks>
+        <entryLink import="true" name="Display Weapon Type Rules" hidden="false" id="72fe-a72e-bc33-cb54" collective="false" targetId="edc0-ab68-6a3a-4ba7" type="selectionEntry">
+          <categoryLinks>
+            <categoryLink name="Configuration" hidden="false" id="c6a8-e9bc-931-a782" targetId="4ac9-fd30-1e3d-b249" primary="true"/>
+          </categoryLinks>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="86bb-1ebc-ea53-582"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Infantry Squad" hidden="false" id="5641-2616-d723-4708" collective="false">
       <profiles>
